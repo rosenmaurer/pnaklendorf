@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitos de Ricardo Meyer</title>
-    <link rel="icon" type="image/png" href="eldersign.png">
-    <style>
-        body {
-            background-color: white;
-            color: black;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            padding: 40px 20px 10px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.2em;
-        }
-
-        header p {
-            font-style: italic;
-            font-size: 1.2em;
-            margin-top: 0;
-        }
-
-        nav {
-            margin: 20px 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        section {
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 20px;
-            text-align: left;
-        }
-
-        section h2 {
-            text-align: center;
-        }
-
-        footer {
-            margin: 40px 0;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitos de Ricardo Meyer</title>
+  <link rel="icon" href="images/eldersign.png" type="image/png">
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    section {
+      width: 48%;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+      margin-top: auto;
+    }
+    .left-section {
+      text-align: left;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .module-image {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>EL PAÍS DE PNAKLENDORF</h1>
-        <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
-        <p>KOBOLDS TRABAJANDO...</p>
-        <img src="Pnaklendorf.png" alt="Imagen decorativa">
-        <nav>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="mailto:rosenmaurer@gmail.com">Contacto</a>
-        </nav>
-    </header>
 
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy Ricardo Meyer Manríquez, nací en Chile. Desde muy pequeño me atrajo el terror y a los trece años descubrí Los Mitos de Cthulhu, algo que se ha convertido en mi pasión y que ha tenido una importancia trascendental en mi historia de vida. En 2023 decidí comenzar a "escribir en serio" y escribí mis primeros relatos, para luego en 2024 publicar junto a Yuke Kabula, amigo de la infancia y con quien colaboré en la Wiki Lovecraft, una pequeña antología con microrelatos que luego usaría como piezas de trasfondo para relatos futuros. Actualmente pertenezco al colectivo weird Refugio Bizarro, donde soy además editor de la eZine homónima. Tenemos un enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura.
-        </p>
-    </section>
+<header>
+  <h1>EL PAÍS DE PNAKLENDORF</h1>
+  <p>Kobolds trabajando...</p>
+</header>
 
-    <footer>
-        <p><a href="mailto:rosenmaurer@gmail.com">Envíame un correo electrónico</a></p>
-    </footer>
+<main>
+  <section class="left-section">
+    <h2>Sobre mí</h2>
+    <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
+    <p>Soy Ricardo Meyer Manríquez, nací en Chile. Desde muy pequeño me atrajo el terror y a los trece años descubrí Los Mitos de Cthulhu, algo que se ha convertido en mi pasión y que ha tenido una importancia trascendental en mi historia de vida. En 2023 decidí comenzar a "escribir en serio" y escribí mis primeros relatos, para luego en 2024 publicar junto a Yuke Kabula, amigo de la infancia y con quien colaboré en la Wiki Lovecraft, una pequeña antología con microrelatos que luego usaría como piezas de trasfondo para relatos futuros. Actualmente pertenezco al colectivo weird Refugio Bizarro, donde soy además editor de la eZine homónima. Tenemos un enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura.</p>
+  </section>
+
+  <section class="right-section">
+    <h2>Mi módulo en DriveThruRPG</h2>
+    <!-- Vista previa de la imagen del módulo -->
+    <img src="https://www.drivethrurpg.com/product/521214/SPANISH-La-Pedania-del-Agave" alt="Vista previa del módulo La Pedanía del Agave" class="module-image">
+    <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="contact">
+    <p>Envíame un correo electrónico: <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
+  </div>
+</footer>
+
 </body>
 </html>
