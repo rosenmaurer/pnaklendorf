@@ -17,7 +17,9 @@
       font-family: "Times New Roman", serif;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* Cambié a 'flex-start' para que empiece desde la parte superior */
+      flex-direction: column; /* Apilamos el contenido */
+      text-align: center;
     }
     .content {
       max-width: 800px;
@@ -32,19 +34,36 @@
     img.pnaklendorf-image {
       display: block;
       margin: 0 auto 20px auto;
-      max-width: 100%;
+      width: 100%; /* Hacemos que ocupe todo el ancho disponible */
       height: auto;
+    }
+    figure {
+      margin: 0;
+    }
+    .seal-container {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .seal-container a img {
+      width: 50px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    .seal-container a img:hover {
+      transform: scale(1.2);
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+  <figure>
+    <img src="Victory.jpg" alt="Victory, H.R. Giger" class="pnaklendorf-image">
+    <figcaption style="margin-top: 10px; font-style: italic; color: white;">
+      "Victory", por H.R. Giger. Una de las obras que representan a Pnaklendorf en todos sus aspectos.
+    </figcaption>
+  </figure>
+
   <div class="content">
-  <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="Victory.jpg" alt="Victory, H.R. Giger" style="max-width: 100%; height: auto;">
-  <figcaption style="margin-top: 10px; font-style: italic; color: white;">
-    "Victory", por H.R. Giger. Una de las obras que representan a Pnaklendorf en todos sus aspectos.
-  </figcaption>
-</figure>
     <h1>¿Qué es Pnaklendorf?</h1>
     <p>
       Pnaklendorf responde a la idea de arraigo teosófico original que tenía Clark Ashton Smith de Ubbo-Sathla, solo que Pnaklendorf es su aspecto pasivo/femenino. Encarna el <em>zeitgeist</em> de la Tierra misma, aunque también puede ser la Tierra misma, y eso es un punto de vista válido, desde una faceta de <em>Magna Mater</em> común en cultos como el de la Kybele frigia.
@@ -74,13 +93,12 @@
       Todo esto guarda mucha relación con la inoculación memética a la que se es sometido al leer el <em>Liber Veneris</em>, escrito por el poeta Reccaredus Anatolius Magnus.
     </p>
   </div>
-<div style="text-align: center; margin-top: 40px;">
-  <a href="index.html" style="display: inline-block;">
-    <img src="sellotindalos-asinnart.png" alt="Sello de Tindalos"
-         style="width: 50px; height: auto; transition: transform 0.3s;">
-  </a>
-</div>
-  </a>
+
+  <div class="seal-container">
+    <a href="index.html">
+      <img src="sellotindalos-asinnart.png" alt="Sello de Tindalos">
+    </a>
+  </div>
 </body>
 </html>
 
