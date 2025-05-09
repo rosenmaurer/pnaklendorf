@@ -18,85 +18,98 @@
   <meta property="og:type" content="website">
 
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-<style>
-  /* Borde y sombra doble */
-  .marco-doble {
-    border: 4px solid #B31B1B; /* Borde rojo escarlata */
-    padding: 15px;
-    margin: 30px 0;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6); /* Sombra para un toque misterioso */
-  }
+  <style>
+    /* Borde y sombra doble */
+    .marco-doble {
+      border: 4px solid #B31B1B; /* Borde rojo escarlata */
+      padding: 15px;
+      margin: 30px 0;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6); /* Sombra para un toque misterioso */
+    }
 
-  /* Estilos generales del body */
-  body {
-    font-family: 'EB Garamond', serif;
-    background-color: #000000; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+    /* Estilos generales del body */
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #000000; /* Fondo negro */
+      color: #ffffff; /* Texto blanco */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-  /* Estilos de los enlaces */
-  a {
-    color: #B31B1B; /* rojo escarlata */
-    text-decoration: none;
-  }
+    /* Estilos de los enlaces */
+    a {
+      color: #B31B1B; /* rojo escarlata */
+      text-decoration: none;
+    }
 
-  a:hover {
-    text-shadow: 0 0 5px #8e44ad;
-    color: #c39bd3;
-  }
+    a:hover {
+      text-shadow: 0 0 5px #8e44ad;
+      color: #c39bd3;
+    }
 
-  /* Encabezado y pie de página */
-  header, footer {
-    background-color: #000000; /* Fondo negro en el encabezado y pie de página */
-    text-align: center;
-    padding: 20px;
-    color: #ffffff; /* Texto blanco */
-  }
+    /* Encabezado y pie de página */
+    header, footer {
+      background-color: #000000; /* Fondo negro en el encabezado y pie de página */
+      text-align: center;
+      padding: 20px;
+      color: #ffffff; /* Texto blanco */
+    }
 
-  /* Estilos del main */
-  main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
+    /* Estilos del main */
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
 
-  .left-section,
-  .right-section {
-    width: 48%;
-  }
+    /* Sección izquierda */
+    .left-section {
+      width: 48%; /* Ajusta el ancho de la sección izquierda */
+    }
 
-  section {
-    margin-bottom: 20px;
-  }
+    /* Sección derecha */
+    .right-section {
+      width: 48%; /* Ajusta el ancho de la sección derecha */
+    }
 
-  /* Imágenes */
-  .module-image,
-  .pnaklendorf-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-  }
+    section {
+      margin-bottom: 20px;
+    }
 
-  .module-image {
-    max-width: 300px;
-  }
+    /* Imágenes */
+    .module-image,
+    .pnaklendorf-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: auto;
+    }
 
-  .pnaklendorf-image {
-    max-width: 500px;
-  }
+    .module-image {
+      max-width: 300px;
+    }
 
-  /* Texto justificado */
-  .justified-text {
-    text-align: justify;
-  }
-</style>
+    .pnaklendorf-image {
+      max-width: 500px;
+    }
+
+    /* Centrado de imagen de Cthulhu */
+    .centered-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+    }
+
+    /* Texto justificado */
+    .justified-text {
+      text-align: justify;
+    }
+  </style>
 </head>
 <body>
 
@@ -107,6 +120,7 @@
   
   <!-- Imagen de Pnaklendorf -->
   <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image"> 
+  
   <!-- Enlaces a las nuevas páginas -->
   <div style="text-align: center; margin-top: 10px;">
     <a href="historia-liber-veneris.html">Historia del Liber Veneris</a> | 
@@ -115,24 +129,25 @@
 </header>
 
 <main>
-  <div>
   <!-- Sección izquierda con el módulo -->
-  <section class="left-section">
-    <h2>La Pedanía del Agave (CthulhuD100)</h2>
-    <!-- Vista previa de la imagen del módulo -->
-    <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">
-      <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" target="_blank" class="module-image">
-    </a>
-    <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
-    </h2>
-   <center> <img src=eldersign.png </center>
-     
-  </section>
-  <!-- Sección derecha con "Sobre mí" y nueva sección -->
-  <section class="right-section">
-    <h2>Sobre mí</h2>
-    <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">Ricardo Meyer Manríquez</a>, conocido en los bajos fondos como Rosenmaurer, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
-    <!-- Nueva sección debajo de "Sobre mí" -->
+  <div class="left-section">
+    <section>
+      <h2>La Pedanía del Agave (CthulhuD100)</h2>
+      <!-- Vista previa de la imagen del módulo -->
+      <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">
+        <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" class="module-image">
+      </a>
+      <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
+    </section>
+  </div>
+
+  <!-- Sección derecha con "Sobre mí", "Redes sociales", "Futuros proyectos", "Bibliografía" y Cthulhu -->
+  <div class="right-section">
+    <section class="marco-doble">
+      <h2>Sobre mí</h2>
+      <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">Ricardo Meyer Manríquez</a>, conocido en los bajos fondos como Rosenmaurer, soy de Chile...</p>
+    </section>
+
     <section class="marco-doble">
       <h2>Bibliografía</h2>
       <ul>
@@ -149,15 +164,20 @@
         <li>Vitriolum: Sueño y Obra Onírica de Eric Krause (octubre 2025)</li>
       </ul>
     </section>
+
+    <section class="marco-doble">
       <h2>Redes sociales y enlaces</h2>
       <ul>
-      <li><a href="https://x.com/DonDagon">Perfil en Twitter (X): @DonDagon </a></li>
-      <li><a href="https://tercerafundacion.net/biblioteca/ver/persona/50383">Ficha en La Tercera Fundación </a></li>
-            </ul>
+        <li><a href="https://x.com/DonDagon">Perfil en Twitter (X): @DonDagon</a></li>
+        <li><a href="https://tercerafundacion.net/biblioteca/ver/persona/50383">Ficha en La Tercera Fundación</a></li>
+      </ul>
+    </section>
 
-          <center>  <img src="cthulhu_monkero_red.gif" alt="Kthulhu" width="150" /> </center>
-            
-  
+    <!-- Imagen de Cthulhu -->
+    <center>
+      <img src="cthulhu_monkero_red.gif" alt="Kthulhu" class="centered-image" />
+    </center>
+  </div>
 </main>
 
 <footer>
@@ -165,9 +185,9 @@
     <p>Envíame un correo electrónico: <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
   </div>
 </footer>
+
 </body>
 </html>
-
 
 
 
