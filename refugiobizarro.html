@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <title>Refugio Bizarro</title>
   <link rel="icon" href="Petralogo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Fuente Poppins -->
   <style>
     body {
-      font-family: "Times New Roman", serif;
+      font-family: 'Poppins', sans-serif; /* Fuente más estilizada */
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -68,6 +69,16 @@
       margin-top: 40px;
       text-align: center;
     }
+
+    .footer-link a {
+      color: #8e44ad;
+      text-decoration: none;
+    }
+
+    .footer-link a:hover {
+      text-shadow: 0 0 5px #8e44ad;
+      color: #c39bd3;
+    }
   </style>
 </head>
 <body>
@@ -80,4 +91,39 @@
       </div>
     </div>
 
-    <!-- Columna
+    <!-- Columna derecha (Redes sociales y H2) -->
+    <div class="right-column">
+      <h2>Sección para cosas que listarás después</h2>
+      
+      <div class="social-links">
+        <p><strong>Redes Sociales</strong></p>
+        <p><strong>Twitter y BlueSky (Ricardo Meyer):</strong></p>
+        <ul>
+          <li><a href="https://bsky.app/profile/refugiobizarro.bsky.social">BlueSky</a></li>
+          <li><a href="https://x.com/refugiobizarro">Twitter (X)</a></li>
+        </ul>
+
+        <p><strong>Instagram y Threads (Yuke Kabula):</strong></p>
+        <ul>
+          <li><a href="https://www.threads.net/@refugio.bizarro">Threads</a></li>
+          <li><a href="https://www.instagram.com/refugio.bizarro/">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-link">
+        <a href="index.html">Click acá para volver a Pnaklendorf</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enlace para "El Tirano del Sol Naciente" -->
+  <div class="footer-link">
+    <p><strong>Lee más sobre <a href="https://hplovecraft.fandom.com/es/wiki/El_tirano_del_sol_naciente">El Tirano del Sol Naciente</a></strong></p>
+  </div>
+
+  <!-- Enlace para "Wiki Lovecraft" -->
+  <div class="footer-link">
+    <p><strong>Visita la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft">Wiki Lovecraft</a></strong></p>
+  </div>
+</body>
+</html>
