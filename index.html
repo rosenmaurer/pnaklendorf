@@ -19,6 +19,43 @@
 
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <style>
+    #gr_updates_widget {
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  border: solid #d4af37 3px;
+  box-shadow: 0px 0px 10px 2px #000000aa,
+              inset 0px 0px 0px 1px #3f3f3f;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  height: 380px;
+  color: #f0e6d2;
+  font-family: 'Georgia', serif;
+  margin: 20px auto;
+}
+#gr_updates_widget p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #f0e6d2;
+}
+#gr_updates_widget iframe {
+  border: none;
+  width: 100%;
+  height: 330px;
+}
+#gr_footer {
+  margin-top: 10px;
+  text-align: center;
+}
+#gr_footer img {
+  width: 90px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+#gr_footer img:hover {
+  opacity: 1;
+}
     /* Borde y sombra doble */
     .marco-doble {
       border: 4px solid #B31B1B; /* Borde rojo escarlata */
@@ -139,6 +176,14 @@
 
     <!-- Imagen de Cthulhu -->
       <img src="cthulhu_monkero_red.gif" alt="Kthulhu" class="centered-image" />
+  </div>
+  
+  <div id="gr_updates_widget">
+  <iframe sandbox src="https://www.goodreads.com/widgets/user_update_widget?height=330&num_updates=4&user=182181266&width=250"></iframe>
+  <div id="gr_footer">
+    <a href="https://www.goodreads.com/">
+      <img alt="Goodreads" rel="nofollow" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" />
+    </a>
   </div>
 
   <!-- Sección derecha con Sobre mí, Bibliografía, Futuros proyectos y Redes sociales -->
