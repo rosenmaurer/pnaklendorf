@@ -4,16 +4,12 @@
   <meta charset="UTF-8">
   <title>Refugio Bizarro</title>
   <link rel="icon" href="Petralogo.png" type="image/png">
-  <meta name="description" content="Refugio Bizarro: Un colectivo de escritores weird enfocados en los Mitos de Cthulhu y la fantasía oscura.">
-  <meta name="author" content="Ricardo Meyer Manríquez y Yuke Kabula">
-  <meta name="keywords" content="Refugio Bizarro, Cthulhu, literatura weird, horror, fantasía oscura, Mitos de Cthulhu, Ricardo Meyer, Yuke Kabula">
-  <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY">
   <style>
     body {
       font-family: "Times New Roman", serif;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       min-height: 100vh;
       margin: 0;
@@ -22,60 +18,62 @@
       background-color: #000000;
       color: #ffffff;
     }
+
     header {
       text-align: center;
       margin-bottom: 40px;
     }
+
     header img {
       width: 120px;
       height: auto;
     }
+
     h1 {
       margin-top: 20px;
     }
+
     .content {
       max-width: 800px;
       text-align: justify;
       margin-bottom: 40px;
     }
-    a {
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+
+    .social-links a {
       color: #8e44ad;
       text-decoration: none;
       font-weight: bold;
+      transition: all 0.3s ease;
     }
-    a:hover {
+
+    .social-links a:hover {
       text-shadow: 0 0 5px #8e44ad;
       color: #c39bd3;
     }
+
     .footer-link {
       font-size: 1.2em;
       margin-top: 40px;
       text-align: center;
     }
 
-    /* Botones de redes sociales */
-    button {
-      background-color: #444444;
-      color: #fff;
-      font-size: 16px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #8e44ad;
+    .footer-link a {
+      color: #8e44ad;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    /* Espaciado entre botones */
-    .social-buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
+    .footer-link a:hover {
+      text-shadow: 0 0 5px #8e44ad;
+      color: #c39bd3;
     }
   </style>
 </head>
@@ -90,29 +88,32 @@
       Refugio Bizarro es un colectivo de escritores weird con un enfoque en Los Mitos de Cthulhu y la fantasía oscura, fundado a fines de 2024 por Ricardo Meyer y Yuke Kabula con el lanzamiento de una revista homónima con temática de Mitos de Cthulhu.
     </p>
     <p>
-      Su contenido es publicado principalmente en formato digital (PDF) y de distribución gratuita.
+      Su contenido es publicado principalmente en digital (PDF) y de distribución gratuita.
     </p>
   </div>
 
-  <!-- Botones de Redes Sociales -->
-  <section class="social-buttons">
-    <a href="https://bsky.app/profile/refugiobizarro.bsky.social" target="_blank" style="text-decoration: none;">
-      <button>BlueSky (Ricardo Meyer - Encargado de posts)</button>
+  <div class="social-links">
+    <h3>Redes Sociales</h3>
+    <a href="https://bsky.app/profile/refugiobizarro.bsky.social" target="_blank">
+      BlueSky (Gestionado por Ricardo Meyer)
     </a>
-    <a href="https://x.com/refugiobizarro" target="_blank" style="text-decoration: none;">
-      <button>Twitter (Ricardo Meyer - Encargado de posts)</button>
+    <a href="https://x.com/refugiobizarro" target="_blank">
+      Twitter (Gestionado por Ricardo Meyer)
     </a>
-    <a href="https://www.instagram.com/refugio.bizarro/" target="_blank" style="text-decoration: none;">
-      <button>Instagram (Yuke Kabula - Encargado de posts)</button>
+    <a href="https://www.threads.net/@refugio.bizarro" target="_blank">
+      Threads (Gestionado por Yuke Kabula)
     </a>
-    <a href="https://www.threads.net/@refugio.bizarro" target="_blank" style="text-decoration: none;">
-      <button>Threads (Yuke Kabula - Encargado de posts)</button>
+    <a href="https://www.instagram.com/refugio.bizarro/" target="_blank">
+      Instagram (Gestionado por Yuke Kabula)
     </a>
-  </section>
+  </div>
 
-  <!-- Enlace a la página principal -->
   <div class="footer-link">
     <a href="index.html">Click acá para volver a Pnaklendorf</a>
+  </div>
+</body>
+</html>
+
   </div>
 </body>
 </html>
