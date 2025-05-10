@@ -19,48 +19,26 @@
 
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <style>
-    #gr_updates_widget {
+   #gr_updates_widget {
   border-radius: 8px;
-  background-color: #1e1e1e;
-  border: solid #d4af37 3px;
-  box-shadow: 0px 0px 10px 2px #000000aa,
-              inset 0px 0px 0px 1px #3f3f3f;
+  background-color: #2f2f2f; /* Gris oscuro elegante */
+  border: solid #d4af37 3px; /* Borde dorado */
+  box-shadow: 0px 0px 10px 2px #000000aa, inset 0px 0px 0px 1px #3f3f3f;
   padding: 15px;
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;  /* Ajustado al tamaño de tu preferencia */
   height: 380px;
   color: #f0e6d2;
   font-family: 'Georgia', serif;
   margin: 20px auto;
-}
-#gr_updates_widget {
-  border-radius: 8px;
-  background-color: #f4f4f4; /* Gris muy claro */
-  border: solid #d1d1d1 2px; /* Bordes sutiles */
-  box-shadow: 0px 0px 10px 2px #00000022,
-              inset 0px 0px 0px 1px #cccccc;
-  padding: 15px;
-  width: 100%;
-  max-width: 280px;
-  height: 380px;
-  color: #333; /* Texto oscuro */
-  font-family: 'Georgia', serif;
-  margin: 20px auto; /* Esto centra el widget en su contenedor */
+  text-align: center;
 }
 
 #gr_updates_widget h2 {
   font-size: 18px;
   font-weight: bold;
-  color: #333; /* Título oscuro */
+  color: #f0e6d2; /* Texto dorado */
   margin-bottom: 10px;
-  text-align: center;
-}
-
-#gr_updates_widget p {
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  color: #333; /* Color de texto más oscuro */
 }
 
 #gr_updates_widget iframe {
@@ -71,22 +49,30 @@
 
 #gr_footer {
   margin-top: 10px;
-  text-align: center; /* Centrado del logo */
+  text-align: center;
 }
 
 #gr_footer a {
-  display: inline-block; /* Asegura que el logo se centre */
+  display: inline-block;
 }
 
 #gr_footer img {
-  width: 80px; /* Reducido el tamaño del logo */
-  height: auto; /* Mantener la proporción */
+  width: 80px;
+  height: auto;
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
 
 #gr_footer img:hover {
   opacity: 1;
+}
+
+.left-section {
+  width: 55%;  /* Ya está ajustado, no necesitas cambiarlo */
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido dentro de la sección izquierda */
 }
     /* Borde y sombra doble */
     .marco-doble {
@@ -196,15 +182,29 @@
 </header>
 
 <main>
-  <!-- Sección izquierda con La Pedanía del Agave y la imagen de Cthulhu -->
-  <div class="left-section">
-    <section class="left-section">
-      <h2>La Pedanía del Agave (CthulhuD100)</h2>
-      <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">
-        <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" target="_blank" class="module-image">
+ <div class="left-section">
+  <section class="left-section">
+    <h2>La Pedanía del Agave (CthulhuD100)</h2>
+    <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">
+      <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" target="_blank" class="module-image">
+    </a>
+    <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
+  </section>
+
+  <!-- Aquí se encuentra el widget de Goodreads -->
+  <div id="gr_updates_widget">
+    <h2>Mis reseñas en Goodreads</h2>
+    <iframe sandbox src="https://www.goodreads.com/widgets/user_update_widget?height=330&num_updates=4&user=182181266&width=250"></iframe>
+    <div id="gr_footer">
+      <a href="https://www.goodreads.com/">
+        <img alt="Goodreads" rel="nofollow" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" />
       </a>
-      <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
-    </section>
+    </div>
+  </div>
+
+  <!-- Imagen de Cthulhu -->
+  <img src="cthulhu_monkero_red.gif" alt="Kthulhu" class="centered-image" />
+</div>
 
     <!-- Imagen de Cthulhu -->
       <img src="cthulhu_monkero_red.gif" alt="Kthulhu" class="centered-image" />
