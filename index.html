@@ -10,51 +10,43 @@
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
   <link rel="icon" href="eldersign.png" type="image/x-icon">
 
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="Mitos de Ricardo Meyer">
+  <meta property="og:description" content="El país de Pnaklendorf">
+  <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png">
+  <meta property="og:url" content="https://pnaklendorf.com">
+  <meta property="og:type" content="website">
+
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <style>
-    /* Estilos generales */
-    body {
-      font-family: 'EB Garamond', serif;
-      background-color: #000000;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    /* Centrado y disposición de las secciones */
-    main {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-    }
-
-    .left-section, .right-section {
-      width: 45%; /* Aseguramos que ambas secciones tengan el mismo ancho */
-    }
-
-    /* Estilos de los widgets y contenido */
     #gr_updates_widget {
       float: left;
       border-radius: 5px;
       background-color: #fff;
       border: solid #683205 10px;
-      -webkit-box-shadow: 0px 0px 4px 1px #595959, inset 0px 0px 0px 1px #7D730B;
-      -moz-box-shadow: 0px 0px 4px 1px #595959, inset 0px 0px 0px 1px #7D730B;
-      box-shadow: 0px 0px 4px 1px #595959, inset 0px 0px 0px 1px #7D730B;
+      -webkit-box-shadow: 0px 0px 4px 1px #595959,
+      inset 0px 0px 0px 1px #7D730B;
+      -moz-box-shadow: 0px 0px 4px 1px #595959,
+      inset 0px 0px 0px 1px #7D730B;
+      box-shadow: 0px 0px 4px 1px #595959,
+      inset 0px 0px 0px 1px #7D730B;
       padding: 15px 0 0px 15px;
       width: 100%;
       max-width: 280px;
       height: 365px;
-      margin: 0 auto; /* Para asegurar que se centra */
+      margin: 0 auto;  /* Para asegurar que se centra */
     }
 
     #gr_footer {
       margin-bottom: 0px;
       height: 30px;
       text-align: center;
+    }
+
+    #gr_updates_widget p {
+      padding: 0px;
+      margin: 0;
+      font-size: 14px;
     }
 
     #gr_footer img {
@@ -67,33 +59,42 @@
       opacity: 1;
     }
 
-    /* Aseguramos que los elementos estén centrados dentro de sus secciones */
-    .left-section, .right-section {
+    /* Mantener simetría en la sección izquierda */
+    .left-section {
+      width: 45%;  /* Ajustado para ser más estrecho */
+      margin-left: 5%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: flex-start; /* Alineado al inicio */
+    }
+
+    .right-section {
+      width: 45%;  /* Ajustado para ser simétrico con la izquierda */
     }
 
     /* Borde y sombra doble */
     .marco-doble {
-      border: 4px solid #B31B1B;
+      border: 4px solid #B31B1B; /* Borde rojo escarlata */
       padding: 15px;
       margin: 30px 0;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 20px rgba(0,0,0,0.6); /* Sombra para un toque misterioso */
     }
 
-    /* Encabezado y pie de página */
-    header, footer {
-      background-color: #000000;
-      text-align: center;
-      padding: 20px;
-      color: #ffffff;
+    /* Estilos generales del body */
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #000000; /* Fondo negro */
+      color: #ffffff; /* Texto blanco */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    /* Enlaces */
+    /* Estilos de los enlaces */
     a {
-      color: #B31B1B;
+      color: #B31B1B; /* rojo escarlata */
       text-decoration: none;
     }
 
@@ -102,7 +103,26 @@
       color: #c39bd3;
     }
 
-    /* Imágenes centradas */
+    /* Encabezado y pie de página */
+    header, footer {
+      background-color: #000000; /* Fondo negro en el encabezado y pie de página */
+      text-align: center;
+      padding: 20px;
+      color: #ffffff; /* Texto blanco */
+    }
+
+    /* Estilos del main */
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    /* Imágenes */
     .module-image,
     .pnaklendorf-image {
       display: block;
@@ -119,14 +139,28 @@
     .pnaklendorf-image {
       max-width: 500px;
     }
+
+    /* Centrado de imagen de Cthulhu */
+    .centered-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Texto justificado */
+    .justified-text {
+      text-align: justify;
+    }
   </style>
 </head>
 <body>
 
-<header>
+<header style="position: relative;">
   <h1>EL PAÍS DE PNAKLENDORF</h1>
-  <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
+  <p class="center-text"><em>Homo sum, humani nihil a me alienum puto.</em></p>
   <p>Kobolds trabajando...</p>
+  
+  <!-- Imagen de Pnaklendorf -->
   <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image"> 
   <div style="text-align: center; margin-top: 10px;">
     <a href="historia-liber-veneris.html">Historia del Liber Veneris</a> | 
@@ -155,10 +189,11 @@
     </div>
   </div>
 
+  <!-- Sección derecha con Sobre mí, Bibliografía, Futuros proyectos y Redes sociales -->
   <div class="right-section">
     <section class="marco-doble">
       <h2>Sobre mí</h2>
-      <p>Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">Ricardo Meyer Manríquez</a>, conocido en los bajos fondos como Rosenmaurer, soy de Chile. Desde muy pequeño me atrajo el terror...</p>
+      <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">Ricardo Meyer Manríquez</a>, conocido en los bajos fondos como Rosenmaurer, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
     </section>
 
     <section class="marco-doble">
@@ -187,6 +222,8 @@
     </section>
   </div>
 </main>
+
+<img src="cthulhu_monkero_red.gif" alt="Cthulhu" class="centered-image" style="margin-bottom: 20px;"/>
 
 <footer>
   <div class="contact">
