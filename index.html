@@ -33,26 +33,54 @@
   font-family: 'Georgia', serif;
   margin: 20px auto;
 }
+#gr_updates_widget {
+  border-radius: 8px;
+  background-color: #f4f4f4; /* Gris muy claro */
+  border: solid #d1d1d1 2px; /* Bordes sutiles */
+  box-shadow: 0px 0px 10px 2px #00000022,
+              inset 0px 0px 0px 1px #cccccc;
+  padding: 15px;
+  width: 100%;
+  max-width: 280px;
+  height: 380px;
+  color: #333; /* Texto oscuro */
+  font-family: 'Georgia', serif;
+  float: left; /* Lo alinea a la izquierda */
+  margin: 20px 30px 20px 0; /* Espacio a la derecha */
+}
+
+#gr_updates_widget h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Título oscuro */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 #gr_updates_widget p {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  color: #f0e6d2;
+  color: #333; /* Color de texto más oscuro */
 }
+
 #gr_updates_widget iframe {
   border: none;
   width: 100%;
   height: 330px;
 }
+
 #gr_footer {
   margin-top: 10px;
   text-align: center;
 }
+
 #gr_footer img {
   width: 90px;
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
+
 #gr_footer img:hover {
   opacity: 1;
 }
@@ -179,12 +207,15 @@
   </div>
   
   <div id="gr_updates_widget">
+  <h2>Mis reseñas en Goodreads</h2>
   <iframe sandbox src="https://www.goodreads.com/widgets/user_update_widget?height=330&num_updates=4&user=182181266&width=250"></iframe>
   <div id="gr_footer">
     <a href="https://www.goodreads.com/">
       <img alt="Goodreads" rel="nofollow" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" />
     </a>
   </div>
+</div>
+
 
   <!-- Sección derecha con Sobre mí, Bibliografía, Futuros proyectos y Redes sociales -->
   <div class="right-section">
