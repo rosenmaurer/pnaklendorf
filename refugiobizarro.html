@@ -9,8 +9,9 @@
     body {
       font-family: 'Poppins', sans-serif; /* Fuente más estilizada */
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       min-height: 100vh;
       margin: 0;
       padding: 40px;
@@ -19,6 +20,18 @@
       color: #ffffff;
     }
 
+    /* Estilo del header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+    }
+
+    /* Estilo del contenedor principal */
     .container {
       display: flex;
       width: 100%;
@@ -82,6 +95,13 @@
   </style>
 </head>
 <body>
+
+  <!-- Header con logo -->
+  <header>
+    <img src="Petralogo.png" alt="Logo de Refugio Bizarro">
+    <h1>Refugio Bizarro</h1>
+  </header>
+
   <div class="container">
     <!-- Columna izquierda (Widget de compra) -->
     <div class="left-column">
@@ -116,14 +136,10 @@
     </div>
   </div>
 
-  <!-- Enlace para "El Tirano del Sol Naciente" -->
-  <div class="footer-link">
-    <p><strong>Lee más sobre <a href="https://hplovecraft.fandom.com/es/wiki/El_tirano_del_sol_naciente">El Tirano del Sol Naciente</a></strong></p>
-  </div>
-
   <!-- Enlace para "Wiki Lovecraft" -->
   <div class="footer-link">
     <p><strong>Visita la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft">Wiki Lovecraft</a></strong></p>
   </div>
+
 </body>
 </html>
