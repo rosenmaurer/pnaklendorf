@@ -45,8 +45,7 @@
   height: 380px;
   color: #333; /* Texto oscuro */
   font-family: 'Georgia', serif;
-  float: left; /* Lo alinea a la izquierda */
-  margin: 20px 30px 20px 0; /* Espacio a la derecha */
+  margin: 20px auto; /* Esto centra el widget en su contenedor */
 }
 
 #gr_updates_widget h2 {
@@ -72,11 +71,16 @@
 
 #gr_footer {
   margin-top: 10px;
-  text-align: center;
+  text-align: center; /* Centrado del logo */
+}
+
+#gr_footer a {
+  display: inline-block; /* Asegura que el logo se centre */
 }
 
 #gr_footer img {
-  width: 90px;
+  width: 80px; /* Reducido el tamaño del logo */
+  height: auto; /* Mantener la proporción */
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
@@ -214,6 +218,7 @@
       <img alt="Goodreads" rel="nofollow" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" />
     </a>
   </div>
+</div>
 </div>
 
 
