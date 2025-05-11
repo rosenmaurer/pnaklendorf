@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pnaklendorf.com/sitemap.xml
