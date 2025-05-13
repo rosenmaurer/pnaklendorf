@@ -6,7 +6,7 @@
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.">
   <meta name="author" content="Ricardo Meyer Manríquez">
   <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Rosenmaurer, Cthulhu, Ricardo Meyer Manríquez, Ricardo Meyer">
-  <title>Pnaklendorf | Mitos de Ricardo Meyer</title>
+<title>Pnaklendorf | Mitos de Ricardo Meyer</title>
 
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
   <link rel="icon" href="eldersign.png" type="image/x-icon">
@@ -19,12 +19,73 @@
   <meta property="og:type" content="website">
 
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-
   <style>
+    #gr_updates_widget {
+      float: left;
+      border-radius: 5px;
+      background-color: #fff;
+      border: solid #683205 10px;
+      -webkit-box-shadow: 0px 0px 4px 1px #595959,
+      inset 0px 0px 0px 1px #7D730B;
+      -moz-box-shadow: 0px 0px 4px 1px #595959,
+      inset 0px 0px 0px 1px #7D730B;
+      box-shadow: 0px 0px 4px 1px #595959,
+      inset 0px 0px 0px 1px #7D730B;
+      padding: 15px 0 0px 15px;
+      width: 100%;
+      max-width: 280px;
+      height: 365px;
+      margin: 0 auto;  /* Para asegurar que se centra */
+    }
+
+    #gr_footer {
+      margin-bottom: 0px;
+      height: 30px;
+      text-align: center;
+    }
+
+    #gr_updates_widget p {
+      padding: 0px;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    #gr_footer img {
+      width: 100px;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    #gr_footer img:hover {
+      opacity: 1;
+    }
+
+    /* Mantener simetría en la sección izquierda */
+    .left-section {
+      width: 45%;  /* Ajustado para ser más estrecho */
+      margin-left: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Alineado al inicio */
+    }
+
+    .right-section {
+      width: 45%;  /* Ajustado para ser simétrico con la izquierda */
+    }
+
+    /* Borde y sombra doble */
+    .marco-doble {
+      border: 4px solid #B31B1B; /* Borde rojo escarlata */
+      padding: 15px;
+      margin: 30px 0;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6); /* Sombra para un toque misterioso */
+    }
+
+    /* Estilos generales del body */
     body {
       font-family: 'EB Garamond', serif;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #000000; /* Fondo negro */
+      color: #ffffff; /* Texto blanco */
       margin: 0;
       padding: 0;
       display: flex;
@@ -32,15 +93,9 @@
       min-height: 100vh;
     }
 
-    header, footer {
-      background-color: #000000;
-      text-align: center;
-      padding: 20px;
-      color: #ffffff;
-    }
-
+    /* Estilos de los enlaces */
     a {
-      color: #B31B1B;
+      color: #B31B1B; /* rojo escarlata */
       text-decoration: none;
     }
 
@@ -49,23 +104,26 @@
       color: #c39bd3;
     }
 
+    /* Encabezado y pie de página */
+    header, footer {
+      background-color: #000000; /* Fondo negro en el encabezado y pie de página */
+      text-align: center;
+      padding: 20px;
+      color: #ffffff; /* Texto blanco */
+    }
+
+    /* Estilos del main */
     main {
       display: flex;
-      flex-direction: row; /* Cambié de columna a fila para la división left-right */
-      justify-content: space-between; /* Asegura que haya espacio entre las dos secciones */
+      justify-content: space-between;
       padding: 20px;
-      width: 100%;
     }
 
-    .left-section,
-    .right-section {
-      width: 48%; /* Cambié el ancho de cada sección para ajustarlas a la mitad del espacio */
+    section {
+      margin-bottom: 20px;
     }
 
-  .marco-doble ul {
-  text-align: left; /* Alinea el texto a la izquierda */
-  list-style-position: inside; /* Asegura que los puntos de la lista se alineen con el texto */
-}
+    /* Imágenes */
     .module-image,
     .pnaklendorf-image {
       display: block;
@@ -83,98 +141,96 @@
       max-width: 500px;
     }
 
+    /* Centrado de imagen de Cthulhu */
     .centered-image {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
 
+    /* Texto justificado */
     .justified-text {
       text-align: justify;
-    }
-
-    /* Centrado de texto general */
-    header,
-    .marco-doble h2,
-    .marco-doble p,
-    .marco-doble ul {
-      text-align: center;
-    }
-
-    section {
-      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <header style="position: relative;">
-    <h1>EL PAÍS DE PNAKLENDORF</h1>
-    <p class="description">Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.</p>
-    <p class="center-text"><em>Homo sum, humani nihil a me alienum puto.</em></p>
-    <p>Kobolds trabajando...</p>
+<header style="position: relative;">
+  <h1>EL PAÍS DE PNAKLENDORF</h1>
+  <p class="description">Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.</p>
+  <p class="center-text"><em>Homo sum, humani nihil a me alienum puto.</em></p>
+  <p>Kobolds trabajando...</p>
 
-    <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image">
-    <div style="text-align: center; margin-top: 10px;">
-      <a href="historia-liber-veneris.html">Historia del Liber Veneris</a> |
-      <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a> |
-      <a href="refugiobizarro.html" style="color: #28a745;">Refugio Bizarro</a>
-    </div>
-  </header>
-
+  <!-- Imagen de Pnaklendorf -->
+  <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image"> 
+  <div style="text-align: center; margin-top: 10px;">
+    <a href="historia-liber-veneris.html">Historia del Liber Veneris</a> | 
+    <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a> | 
+    <a href="refugiobizarro.html" style="color: #28a745;">Refugio Bizarro</a>
+  </div>
+</header>
 <main>
-  <div style="display: flex; width: 100%; max-width: 1200px; margin: 0 auto;">
-    <!-- Sección Left -->
-    <section class="left-section" style="flex: 1; padding-right: 10px;">
+  <div class="left-section">
+    <section class="left-section">
       <h2>La Pedanía del Agave (CthulhuD100)</h2>
       <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">
-        <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" class="module-image">
+        <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" target="_blank" class="module-image">
       </a>
       <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
     </section>
 
-    <!-- Sección Right -->
-    <section class="right-section" style="flex: 1; padding-left: 10px;">
-      <div class="marco-doble">
-        <h2>Sobre mí</h2>
-        <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">Ricardo Meyer Manríquez</a>, conocido en los bajos fondos como Rosenmaurer, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
+    <!-- Widget de Goodreads -->
+    <div id="gr_updates_widget">
+      <iframe sandbox id="the_iframe" src="https://goodreads.com/widgets/user_update_widget?height=400&num_updates=100&user=182181266&width=250" width="248" height="330" frameborder="0"></iframe>
+      <div id="gr_footer">
+        <a href="https://www.goodreads.com/">
+          <img alt="Goodreads: Book reviews, recommendations, and discussion" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" />
+        </a>
       </div>
+    </div>
+  </div>
 
-      <div class="marco-doble">
-        <h2>Bibliografía</h2>
-        <ul>
-          <li>Shangri-La 93: Los Mitos de Ghisguth (enero 2024)</li>
-          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
-          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
-        </ul>
-      </div>
+  <!-- Sección derecha con Sobre mí, Bibliografía, Futuros proyectos y Redes sociales -->
+  <div class="right-section">
+    <section class="marco-doble">
+      <h2>Sobre mí</h2>
+      <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">Ricardo Meyer Manríquez</a>, conocido en los bajos fondos como Rosenmaurer, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
+    </section>
 
-      <div class="marco-doble">
-        <h2>Futuros proyectos</h2>
-        <ul>
-          <li>Refugio Bizarro #3 (junio 2025)</li>
-          <li>Vitriolum: Sueño y Obra Onírica de Eric Krause (octubre 2025)</li>
-        </ul>
-      </div>
+    <section class="marco-doble">
+      <h2>Bibliografía</h2>
+      <ul>
+        <li> Shangri-La 93: Los Mitos de Ghisguth (enero 2024) </li>
+        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
+        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
+      </ul>
+    </section>
 
-      <div class="marco-doble">
-        <h2>Redes sociales y enlaces</h2>
-        <ul>
-          <li><a href="https://x.com/DonDagon">Perfil en Twitter (X): @DonDagon</a></li>
-          <li><a href="https://tercerafundacion.net/biblioteca/ver/persona/50383">Ficha en La Tercera Fundación</a></li>
-        </ul>
-      </div>
+    <section class="marco-doble">
+      <h2>Futuros proyectos</h2>
+      <ul>
+        <li>Refugio Bizarro #3 (junio 2025)</li>
+        <li>Vitriolum: Sueño y Obra Onírica de Eric Krause (octubre 2025)</li>
+      </ul>
+    </section>
+
+    <section class="marco-doble">
+      <h2>Redes sociales y enlaces</h2>
+      <ul>
+        <li><a href="https://x.com/DonDagon">Perfil en Twitter (X): @DonDagon</a></li>
+        <li><a href="https://tercerafundacion.net/biblioteca/ver/persona/50383">Ficha en La Tercera Fundación</a></li>
+      </ul>
     </section>
   </div>
 </main>
-  
-  <img src="cthulhu_monkero_red.gif" alt="Cthulhu" class="centered-image" style="margin-bottom: 20px;" />
 
-  <footer>
-    <div class="contact">
-      <p>Envíame un correo electrónico: <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
-    </div>
-  </footer>
+<img src="cthulhu_monkero_red.gif" alt="Cthulhu" class="centered-image" style="margin-bottom: 20px;"/>
+
+<footer>
+  <div class="contact">
+    <p>Envíame un correo electrónico: <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
+  </div>
+</footer>
+
 </body>
 </html>
-
-
