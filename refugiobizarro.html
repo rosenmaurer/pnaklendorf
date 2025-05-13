@@ -107,6 +107,24 @@
       text-shadow: 0 0 5px #8e44ad;
       color: #c39bd3;
     }
+    .projects-with-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.projects-text {
+  flex: 1;
+}
+
+.projects-image img {
+  width: 100px; /* Ajusta el tamaño según lo que desees */
+  height: auto;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+}
+
   </style>
 </head>
 <body>
@@ -119,19 +137,21 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="projects">
-  <div class="heading-with-icon">
-    <img src="Tolker_el_Olvidado.png" alt="Tolker">
+ <div class="projects-with-image">
+  <div class="projects-text">
     <h2>Proyectos publicados</h2>
+    <ul>
+      <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
+      <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
+      <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
+      <li><a href="https://leyenda.net/cthulhu/articulo.php?id=1556">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
+    </ul>
   </div>
-  <ul>
-    <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
-    <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
-    <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
-    <li><a href="https://leyenda.net/cthulhu/articulo.php?id=1556">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
-  </ul>
+  <div class="projects-image">
+    <img src="Tolker_el_Olvidado.png" alt="Tolker el Olvidado">
+  </div>
 </div>
+
 
     <div class="social-links">
       <h2>Redes Sociales</h2>
