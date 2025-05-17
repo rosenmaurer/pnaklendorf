@@ -38,6 +38,7 @@
       color: #B31B1B;
       text-decoration: none;
       transition: color 0.3s ease;
+      font-style: normal;
     }
 
     a:hover {
@@ -46,10 +47,10 @@
       text-decoration: underline;
     }
 
-    p {
+    p.kobolds-text {
+      color: #ffffff;
       text-align: center;
       font-style: italic;
-      color: #cccccc;
       max-width: 600px;
       margin: 2rem auto 1rem auto;
     }
@@ -67,7 +68,12 @@
       padding-top: 1rem;
       color: #777;
       font-size: 0.9rem;
-      margin-top: 3rem;
+    }
+
+    footer p,
+    footer a {
+      font-style: normal;
+      color: #777;
     }
 
     footer a {
@@ -87,7 +93,7 @@
     <!-- Puedes añadir más relatos aquí -->
   </ul>
 
-  <p>Kobolds trabajando como escribas para poder añadir más relatos... ¡paciencia!</p>
+  <p class="kobolds-text">Kobolds trabajando como escribas para poder añadir más relatos... ¡paciencia!</p>
   <img src="angrykobold.gif" alt="Kobold enojado" />
 
   <footer>
@@ -95,5 +101,6 @@
   </footer>
 </body>
 </html>
+
 
 
