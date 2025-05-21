@@ -37,6 +37,9 @@
       white-space: pre-wrap;
       line-height: 1.6;
       max-width: 50%;
+      padding-left: 2em;
+      padding-right: 1em;
+      box-sizing: border-box;
     }
 
     .imagen {
@@ -63,12 +66,24 @@
 
       .poema, .imagen {
         max-width: 100%;
+        padding: 0;
+      }
+
+      .poema {
+        padding: 1em;
       }
 
       h1 {
         font-size: 1.5em;
       }
-    }
+      .imagen img,
+.imagen .mediana {
+  max-width: 350px; /* o el valor que prefieras */
+  width: 100%;
+  height: auto;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px #222;
+}
   </style>
 </head>
 <body>
@@ -86,9 +101,13 @@ Y él se pregunta, ¿valió la pena por ellos morir?
 Te llevas las manos a los ojos para no ver cuando sangren,  
 Y lo único que Perdurará será su existencia con la caída.  
     </div>
-    <div class="imagen">
-      <img src="HombreDeNegro.jpg" alt="El Hombre de Negro">
-    </div>
+<div class="imagen">
+  <img src="HombreDeNegro.jpg" alt="El Hombre de Negro" class="mediana">
+</div>
+  </div>
+</body>
+</html>
+
   </div>
 </body>
 </html>
