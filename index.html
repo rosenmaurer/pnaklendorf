@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
-  <meta name="author" content="Ricardo Meyer Manríquez" />
-  <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Rosenmaurer, Cthulhu, Ricardo Meyer Manríquez, Ricardo Meyer" />
-  <title>Pnaklendorf | Mitos de Ricardo Meyer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.">
+  <meta name="author" content="Ricardo Meyer Manríquez">
+  <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Rosenmaurer, Cthulhu, Ricardo Meyer Manríquez, Ricardo Meyer">
+<title>Pnaklendorf | Mitos de Ricardo Meyer</title>
 
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
-  <link rel="icon" href="eldersign.png" type="image/x-icon" />
+  <link rel="icon" href="eldersign.png" type="image/x-icon">
 
   <!-- Open Graph para redes sociales -->
-  <meta property="og:title" content="Pnaklendorf | Mitos de Ricardo Meyer" />
-  <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
-  <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
-  <meta property="og:url" content="https://pnaklendorf.com" />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pnaklendorf | Mitos de Ricardo Meyer">
+  <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.">
+  <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png">
+  <meta property="og:url" content="https://pnaklendorf.com">
+  <meta property="og:type" content="website">
 
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <style>
     /* Mantener simetría en la sección izquierda */
     .left-section {
-      width: 45%;
+      width: 45%;  /* Ajustado para ser más estrecho */
       margin-left: 5%;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start; /* Alineado al inicio */
     }
 
     .right-section {
-      width: 45%;
+      width: 45%;  /* Ajustado para ser simétrico con la izquierda */
     }
 
     /* Borde y sombra doble */
     .marco-doble {
-      border: 4px solid #B31B1B;
+      border: 4px solid #B31B1B; /* Borde rojo escarlata */
       padding: 15px;
       margin: 30px 0;
-      box-shadow: 0 0 15px rgba(179, 27, 27, 0.7);
+      box-shadow: 0 0 20px rgba(0,0,0,0.6); /* Sombra para un toque misterioso */
     }
 
     /* Estilos generales del body */
     body {
       font-family: 'EB Garamond', serif;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #000000; /* Fondo negro */
+      color: #ffffff; /* Texto blanco */
       margin: 0;
       padding: 0;
       display: flex;
@@ -55,9 +55,8 @@
 
     /* Estilos de los enlaces */
     a {
-      color: #B31B1B;
+      color: #B31B1B; /* rojo escarlata */
       text-decoration: none;
-      transition: color 0.3s ease, text-shadow 0.3s ease;
     }
 
     a:hover {
@@ -66,12 +65,11 @@
     }
 
     /* Encabezado y pie de página */
-    header,
-    footer {
-      background-color: #000000;
+    header, footer {
+      background-color: #000000; /* Fondo negro en el encabezado y pie de página */
       text-align: center;
       padding: 20px;
-      color: #ffffff;
+      color: #ffffff; /* Texto blanco */
     }
 
     /* Estilos del main */
@@ -79,24 +77,10 @@
       display: flex;
       justify-content: space-between;
       padding: 20px;
-      flex-grow: 1;
     }
 
     section {
       margin-bottom: 20px;
-
-      /* Animación fade-in suave */
-      opacity: 0;
-      transform: translateY(10px);
-      animation: fadeInUp 1s forwards;
-      animation-delay: 0.3s;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     /* Imágenes */
@@ -128,239 +112,131 @@
     .justified-text {
       text-align: justify;
     }
-
-    /* Tipografía secundaria para subtítulos */
-    h2,
-    h3 {
-      font-family: 'EB Garamond', serif;
-      font-weight: 600;
-      color: #b31b1b;
-      border-bottom: 1px solid #4a4a4a;
-      padding-bottom: 0.25rem;
-      margin-bottom: 1rem;
-    }
-
-    /* Separador decorativo */
-    .separator {
-      height: 1px;
-      background: linear-gradient(to right, transparent, #b31b1b, transparent);
-      margin: 2rem 0;
-    }
-
-    /* Animación sutil en el logo (si tiene id="logo") */
-    #logo {
-      animation: glowPulse 3s infinite ease-in-out;
-    }
-
-    @keyframes glowPulse {
-      0%, 100% {
-        text-shadow: 0 0 5px #b31b1b;
-      }
-      50% {
-        text-shadow: 0 0 12px #c39bd3;
-      }
-    }
-
-    /* Responsive */
     @media (max-width: 768px) {
-      main {
-        flex-direction: column;
-        padding: 10px;
-      }
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
 
-      .left-section,
-      .right-section {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-      }
+  .left-section,
+  .right-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-      .pnaklendorf-image {
-        max-width: 100%;
-        height: auto;
-      }
+  .pnaklendorf-image {
+    max-width: 100%;
+    height: auto;
+  }
 
-      header img {
-        max-width: 100%;
-        height: auto;
-      }
+  header img {
+    max-width: 100%;
+    height: auto;
+  }
 
-      .marco-doble {
-        margin: 20px 0;
-        padding: 10px;
-      }
+  .marco-doble {
+    margin: 20px 0;
+    padding: 10px;
+  }
 
-      .module-image {
-        max-width: 100%;
-        height: auto;
-      }
+  .module-image {
+    max-width: 100%;
+    height: auto;
+  }
 
-      footer {
-        font-size: 14px;
-      }
+  footer {
+    font-size: 14px;
+  }
 
-      header h1 {
-        font-size: 24px;
-      }
+  header h1 {
+    font-size: 24px;
+  }
 
-      header p {
-        font-size: 16px;
-      }
-    }
-
-    /* Navegación */
-    nav ul.nav-links {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 20px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    nav ul.nav-links li {
-      display: inline;
-    }
-
-    nav ul.nav-links li a {
-      font-weight: 600;
-      padding: 6px 12px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      color: #B31B1B;
-      background: transparent;
-      border: 2px solid transparent;
-    }
-
-    nav ul.nav-links li a:hover,
-    nav ul.nav-links li a.highlight {
-      background-color: #B31B1B;
-      color: #fff;
-      border-color: #8e44ad;
-      text-shadow: none;
-    }
+  header p {
+    font-size: 16px;
+  }
+}
   </style>
 </head>
 <body>
-  <header id="main-header">
-    <div class="header-container" style="display:flex; align-items:center; justify-content:center; gap: 15px; flex-wrap: wrap;">
-      <h1 id="logo" style="margin:0;">EL PAÍS DE PNAKLENDORF</h1>
-      <img src="Pnaklendorf.png" alt="Pnaklendorf logo" class="header-logo" style="height: 60px; width: auto;" />
-    </div>
-    <nav aria-label="Navegación principal">
-      <ul class="nav-links">
-        <li><a href="historia-liber-veneris.html">Historia del Liber Veneris</a></li>
-        <li><a href="relatos-ricardo-meyer.html">Relatos</a></li>
-        <li><a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a></li>
-        <li><a href="refugiobizarro.html" class="highlight">Refugio Bizarro</a></li>
+<header style="position: relative;">
+  <h1>EL PAÍS DE PNAKLENDORF</h1>
+  <p class="description">Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.</p>
+  <p class="center-text"><em>Homo sum, humani nihil a me alienum puto.</em></p>
+  <p>Kobolds trabajando...</p>
+
+  <!-- Imagen de Pnaklendorf -->
+  <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image"> 
+  <div style="text-align: center; margin-top: 10px;">
+    <a href="historia-liber-veneris.html">Historia del Liber Veneris</a> | 
+    <a href="relatos-ricardo-meyer.html">Relatos</a> | 
+    <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a> | 
+    <a href="refugiobizarro.html" style="color: #28a745;">Refugio Bizarro</a>
+  </div>
+</header>
+<main>
+  <div class="left-section">
+    <section class="left-section">
+      <h2>La Pedanía del Agave (CthulhuD100)</h2>
+      <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">
+        <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" target="_blank" class="module-image">
+      </a>
+      <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
+    </section>
+    <h2
+   <h2 style="text-align: center;">
+  <a href="https://www.leyenda.net/cthulhu/perfil.php?id=1344" target="_blank">
+    <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" style="display: block; margin: auto; max-width: 100%;" />
+  </a>
+    </h2>
+      <h2>
+      <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank">
+    <img src="3F-1.png" alt="Banner de La Tercera Fundación" style="display: block; margin: auto; max-width: 100%;" />
+  </a>
+</h2>
+
+  </div>
+
+  <!-- Sección derecha con Sobre mí, Bibliografía, Futuros proyectos y Redes sociales -->
+  <div class="right-section">
+    <section class="marco-doble">
+      <h2>Sobre mí</h2>
+      <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">Ricardo Meyer Manríquez</a>, conocido en los bajos fondos como Rosenmaurer, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
+    </section>
+
+    <section class="marco-doble">
+      <h2>Bibliografía</h2>
+      <ul>
+        <li> Shangri-La 93: Los Mitos de Ghisguth (enero 2024) </li>
+        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
+        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
       </ul>
-    </nav>
-    <p class="header-description" style="margin-top: 0;">
-      Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.
-    </p>
-    <p class="header-quote" style="font-style: italic; margin-top: 0;"><em>Homo sum, humani nihil a me alienum puto.</em></p>
-  </header>
 
-  <main>
-    <div class="left-section">
-      <section>
-        <h2>La Pedanía del Agave (CthulhuD100)</h2>
-        <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg"
-            alt="Vista previa del módulo La Pedanía del Agave"
-            class="module-image"
-          />
-        </a>
-        <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
-      </section>
+    </section>
 
-      <section>
-        <h2 style="text-align: center;">
-          <a href="https://www.leyenda.net/cthulhu/perfil.php?id=1344" target="_blank" rel="noopener noreferrer">
-            <img
-              src="leyenda_banner.jpg"
-              alt="Banner de Leyenda.net"
-              style="display: block; margin: auto; max-width: 100%;"
-            />
-          </a>
-        </h2>
-      </section>
+    <section class="marco-doble">
+      <h2>Futuros proyectos</h2>
+      <ul>
+        <li>Refugio Bizarro #3 (junio 2025)</li>
+        <li>Vitriolum: Sueño y Obra Onírica de Eric Krause (octubre 2025)</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2 style="text-align: center;">
-          <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
-            <img
-              src="3F-1.png"
-              alt="Banner de La Tercera Fundación"
-              style="display: block; margin: auto; max-width: 100%;"
-            />
-          </a>
-        </h2>
-      </section>
-    </div>
+    <section class="marco-doble">
+      <h2>Redes sociales y enlaces</h2>
+      <ul>
+        <li><a href="https://x.com/DonDagon">Perfil en Twitter (X): @DonDagon</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
 
-    <!-- Sección derecha con Sobre mí, Bibliografía, Futuros proyectos y Redes sociales -->
-    <div class="right-section">
-      <section class="marco-doble">
-        <h2>Sobre mí</h2>
-        <p class="justified-text">
-          Me llamo
-          <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" rel="noopener noreferrer"
-            >Ricardo Meyer Manríquez</a
-          >,
-          conocido en los bajos fondos como Rosenmaurer, soy de Chile. Desde muy pequeño me atrajo el terror, y a los
-          trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y
-          trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos.
-          Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la
-          <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer"
-            >Wiki Lovecraft</a
-          >, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro
-          fundador del colectivo
-          <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank" rel="noopener noreferrer"
-            >Refugio Bizarro</a
-          >
-          y coordino y edito la eZine homónima.
-        </p>
-      </section>
+<img src="cthulhu_monkero_red.gif" alt="Cthulhu" class="centered-image" style="margin-bottom: 20px;"/>
 
-      <section class="marco-doble">
-        <h2>Bibliografía</h2>
-        <ul>
-          <li>Shangri-La 93: Los Mitos de Ghisguth (enero 2024)</li>
-          <li>
-            <a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531" target="_blank" rel="noopener noreferrer"
-              >Refugio Bizarro #1 (noviembre 2024)</a
-            >
-          </li>
-          <li>
-            <a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550" target="_blank" rel="noopener noreferrer"
-              >Refugio Bizarro #2 (marzo 2025)</a
-            >
-          </li>
-        </ul>
-      </section>
-
-      <section class="marco-doble">
-        <h2>Futuros proyectos</h2>
-        <ul>
-          <li>Refugio Bizarro #3 (junio 2025)</li>
-          <li>Vitriolum: Sueño y Obra Onírica de Eric Krause (octubre 2025)</li>
-        </ul>
-      </section>
-
-      <section class="marco-doble">
-        <h2>Redes sociales y enlaces</h2>
-        <ul>
-          <li><a href="https://x.com/DonDagon" target="_blank" rel="noopener noreferrer">Perfil en Twitter (X): @DonDagon</a></li>
-        </ul>
-      </section>
-    </div>
-  </main>
 <footer>
-    <p>© 2025 Ricardo Meyer Manríquez | <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
-  </footer>
+  <p>© 2025 Ricardo Meyer Manríquez | <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
+</footer>
+
 </body>
 </html>
-
