@@ -79,6 +79,7 @@
       display: flex;
       justify-content: space-between;
       padding: 20px;
+      flex-grow: 1;
     }
 
     section {
@@ -152,8 +153,7 @@
     }
 
     @keyframes glowPulse {
-      0%,
-      100% {
+      0%, 100% {
         text-shadow: 0 0 5px #b31b1b;
       }
       50% {
@@ -207,13 +207,46 @@
         font-size: 16px;
       }
     }
+
+    /* Navegación */
+    nav ul.nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul.nav-links li {
+      display: inline;
+    }
+
+    nav ul.nav-links li a {
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: #B31B1B;
+      background: transparent;
+      border: 2px solid transparent;
+    }
+
+    nav ul.nav-links li a:hover,
+    nav ul.nav-links li a.highlight {
+      background-color: #B31B1B;
+      color: #fff;
+      border-color: #8e44ad;
+      text-shadow: none;
+    }
   </style>
 </head>
 <body>
   <header id="main-header">
-    <div class="header-container">
-      <h1 id="logo">EL PAÍS DE PNAKLENDORF</h1>
-      <img src="Pnaklendorf.png" alt="Pnaklendorf logo" class="header-logo" />
+    <div class="header-container" style="display:flex; align-items:center; justify-content:center; gap: 15px; flex-wrap: wrap;">
+      <h1 id="logo" style="margin:0;">EL PAÍS DE PNAKLENDORF</h1>
+      <img src="Pnaklendorf.png" alt="Pnaklendorf logo" class="header-logo" style="height: 60px; width: auto;" />
     </div>
     <nav aria-label="Navegación principal">
       <ul class="nav-links">
@@ -223,10 +256,10 @@
         <li><a href="refugiobizarro.html" class="highlight">Refugio Bizarro</a></li>
       </ul>
     </nav>
-    <p class="header-description">
+    <p class="header-description" style="margin-top: 0;">
       Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez.
     </p>
-    <p class="header-quote"><em>Homo sum, humani nihil a me alienum puto.</em></p>
+    <p class="header-quote" style="font-style: italic; margin-top: 0;"><em>Homo sum, humani nihil a me alienum puto.</em></p>
   </header>
 
   <main>
@@ -325,17 +358,10 @@
       </section>
     </div>
   </main>
-
-  <img
-    src="cthulhu_monkero_red.gif"
-    alt="Cthulhu"
-    class="centered-image"
-    style="margin-bottom: 20px;"
-  />
-
-  <footer>
+<footer>
     <p>© 2025 Ricardo Meyer Manríquez | <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
   </footer>
+</body>
 </body>
 </html>
 
