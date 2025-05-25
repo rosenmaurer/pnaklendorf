@@ -155,8 +155,66 @@
 
   header p {
     font-size: 16px;
+  }body {
+  background: 
+    url('https://www.transparenttextures.com/patterns/old-mathematics.png') repeat,
+    #000000; /* tu fondo negro */
+}
+
+/* Fade-in suave para secciones */
+section {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+/* Hover suave en enlaces (agregado para complementar el que tienes) */
+a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Sombras muy suaves para tus .marco-doble */
+.marco-doble {
+  box-shadow: 0 0 15px rgba(179, 27, 27, 0.7);
+}
+
+/* Tipografía secundaria para subtítulos */
+h2, h3 {
+  font-family: 'EB Garamond', serif; /* Usamos la misma fuente para mantener coherencia */
+  font-weight: 600;
+  color: #b31b1b; /* un rojo escarlata más suave */
+  border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Separador decorativo */
+.separator {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #b31b1b, transparent);
+  margin: 2rem 0;
+}
+
+/* Animación sutil en el logo (si tienes un id #logo o cámbialo al selector correcto) */
+#logo {
+  animation: glowPulse 3s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #b31b1b;
+  }
+  50% {
+    text-shadow: 0 0 12px #c39bd3;
+  }
   </style>
 </head>
 <body>
