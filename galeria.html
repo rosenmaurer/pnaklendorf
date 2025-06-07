@@ -8,7 +8,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="eldersign.png" />
 
-  <!-- Open Graph (Facebook, WhatsApp, etc.) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Galería - Pnaklendorf" />
   <meta property="og:description" content="Galería de bosquejos y desahogos" />
   <meta property="og:image" content="pnaklendorf_decapitada.jpg" />
@@ -45,14 +45,12 @@
       font-style: italic;
       margin-top: 0;
       margin-bottom: 2rem;
-      font-family: 'Georgia', serif;
       letter-spacing: 0.8px;
-      user-select: none;
     }
 
     .gallery {
       max-width: 1200px;
-      margin: 2rem auto 4rem;
+      margin: 2rem auto 2rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
@@ -76,22 +74,25 @@
       box-shadow: 0 0 20px #c5b358cc;
     }
 
+    .volver-link {
+      display: block;
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 1rem;
+      color: #c5b358;
+      text-decoration: none;
+    }
+
+    .volver-link:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
       color: #666;
       border-top: 1px solid #333;
-    }
-
-    footer a {
-      color: #c5b358;
-      text-decoration: none;
-      margin-left: 1rem;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -114,15 +115,13 @@
     <img src="you.jpg" alt="You" />
   </section>
 
+  <a href="index.html" class="volver-link">volver al útero</a>
+
   <footer>
     &copy; 2025 Ricardo Meyer Manríquez. Todos los derechos reservados.
-    <a href="index.html">volver al útero</a>
   </footer>
 
 </body>
 </html>
-
-</html>
-
 
 
