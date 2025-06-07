@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Galería de bosquejos y desahogos" />
+
+<!-- Open Graph para Facebook, LinkedIn, WhatsApp, etc. -->
+<meta property="og:title" content="Galería - Pnaklendorf" />
+<meta property="og:description" content="Galería de bosquejos y desahogos" />
+<meta property="og:image" content="pnaklendorf_decapitada.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pnaklendorf.com/" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Galería - Pnaklendorf" />
+<meta name="twitter:description" content="Galería de bosquejos y desahogos" />
+<meta name="twitter:image" content="pnaklendorf_decapitada.jpg" />
   <title>Galería - Pnaklendorf</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       background-color: #0e0e0e;
@@ -13,41 +27,37 @@
       padding: 0;
     }
 
-    header {
-      padding: 2rem;
+    h1 {
       text-align: center;
-      background: #1a1a1a;
-      border-bottom: 1px solid #333;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      letter-spacing: 1px;
-      margin: 0;
+      padding: 2rem 1rem 1rem;
       color: #c5b358;
+      letter-spacing: 1.2px;
     }
 
     .gallery {
+      max-width: 1200px;
+      margin: 2rem auto 4rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
+      padding: 0 1rem;
     }
 
     .gallery img {
       width: 100%;
       height: auto;
-      border: 1px solid #333;
       border-radius: 6px;
+      border: 1px solid #333;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      background-color: #121212;
+      object-fit: cover;
     }
 
     .gallery img:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 20px rgba(197, 179, 88, 0.4);
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #c5b358cc;
     }
 
     footer {
@@ -61,17 +71,20 @@
 </head>
 <body>
 
-  <header>
-    <h1>Galería de Imágenes</h1>
-  </header>
+  <h1>Galería de Imágenes</h1>
 
   <section class="gallery">
-    <img src="https://via.placeholder.com/800x600?text=Imagen+1" alt="Imagen 1">
-    <img src="https://via.placeholder.com/800x600?text=Imagen+2" alt="Imagen 2">
-    <img src="https://via.placeholder.com/800x600?text=Imagen+3" alt="Imagen 3">
-    <img src="https://via.placeholder.com/800x600?text=Imagen+4" alt="Imagen 4">
-    <img src="https://via.placeholder.com/800x600?text=Imagen+5" alt="Imagen 5">
-    <img src="https://via.placeholder.com/800x600?text=Imagen+6" alt="Imagen 6">
+    <img src="catarsis.jpg" alt="Catarsis" />
+    <img src="el_hombre_astado.jpg" alt="El Hombre Astado" />
+    <img src="epitafio.jpg" alt="Epitafio" />
+    <img src="galeria/kobold.jpg" alt="Kobold" />
+    <img src="melek_taus_1.jpg" alt="Melek Taus 1" />
+    <img src="melek_taus_2.jpg" alt="Melek Taus 2" />
+    <img src="pnaklendorf_decapitada.jpg" alt="Pnaklendorf Decapitada" />
+    <img src="rostro_1.jpg" alt="Rostro 1" />
+    <img src="rostro_2.jpg" alt="Rostro 2" />
+    <img src="rostro_3.jpg" alt="Rostro 3" />
+    <img src="you.jpg" alt="You" />
   </section>
 
   <footer>
@@ -79,4 +92,6 @@
   </footer>
 
 </body>
+  </html>
 </html>
+
