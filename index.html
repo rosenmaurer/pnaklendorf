@@ -3,188 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <title>Pnaklendorf | Mitos de Ricardo Meyer Manríquez</title>
-  
+
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta name="author" content="Ricardo Meyer Manríquez" />
   <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Rosenmaurer, Cthulhu, Ricardo Meyer Manríquez, Ricardo Meyer" />
-  
+
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
-  
+
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/x-icon" />
-  
+
   <!-- Open Graph para redes sociales -->
   <meta property="og:title" content="Pnaklendorf | Mitos de Ricardo Meyer" />
   <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
   <meta property="og:url" content="https://pnaklendorf.com" />
   <meta property="og:type" content="website" />
-  
+
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
-  
+
   <style>
-    /* --- Body y fondo general --- */
+    /* --- Body estilo retro --- */
     body {
       font-family: 'EB Garamond', serif;
-      background: linear-gradient(180deg, #111 0%, #000 100%);
-      color: #fff;
+      background-color: #000000;
+      color: #FFFFFF;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
 
-    /* --- Encabezado y pie de página --- */
-    header, footer {
+    /* --- Encabezado --- */
+    header {
       text-align: center;
-      padding: 20px;
-      color: #ffffff;
-      background: linear-gradient(180deg, #000 0%, #111 100%);
+      background-color: #111111;
+      border-bottom: 3px solid #B31B1B;
+      padding: 15px;
     }
 
-    /* --- Barra de navegación moderna --- */
-    header nav {
-      background: linear-gradient(90deg, #111, #333);
-      padding: 12px 0;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
-      width: 100%;
-      display: block;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-    header nav a {
+    header h1 {
       color: #B31B1B;
-      font-weight: bold;
-      margin: 0 15px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-    header nav a:hover {
-      color: #d46a6a;
-      text-shadow: 0 0 4px #d46a6a;
-      transform: scale(1.05);
-    }
-    header nav .separator {
-      color: #888;
-      margin: 0 10px;
+      font-size: 32px;
+      margin: 0;
     }
 
-    /* --- Secciones principales --- */
+    header p {
+      color: #FFFFFF;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    header a img {
+      display: block;
+      margin: 10px auto;
+      max-width: 200px;
+      border: 2px solid #B31B1B;
+    }
+
+    /* --- Navegación estilo botones antiguos --- */
+    nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    nav a {
+      background-color: #B31B1B;
+      color: #FFFFFF;
+      padding: 6px 12px;
+      margin: 0 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px outset #FFFFFF;
+    }
+
+    nav a:hover {
+      background-color: #FFFFFF;
+      color: #B31B1B;
+      border: 2px inset #FFFFFF;
+    }
+
+    /* --- Contenido principal con tablas retro --- */
     main {
       display: flex;
-      justify-content: space-between;
-      padding: 20px;
+      justify-content: space-around;
       flex-wrap: wrap;
+      padding: 20px;
     }
 
     .left-section, .right-section {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .left-section {
-      width: 45%;
-      margin-left: 5%;
-    }
-    .right-section {
       width: 45%;
     }
 
     section {
+      background-color: #111111;
+      border: 2px solid #B31B1B;
+      padding: 10px;
       margin-bottom: 20px;
     }
 
-    /* --- Estilo moderno para los bloques --- */
-    .marco-doble {
-      border: 2px solid #B31B1B;
-      padding: 20px;
-      margin: 20px 0;
-      background: rgba(30, 30, 30, 0.85);
-      backdrop-filter: blur(6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-      border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .marco-doble:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.8);
-    }
-
-    /* --- Enlaces --- */
-    a {
+    section h2 {
       color: #B31B1B;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-    a:hover {
-      color: #d46a6a;
-      text-shadow: 0 0 4px #d46a6a;
+      font-size: 20px;
+      margin-top: 0;
     }
 
-    /* --- Títulos --- */
-    h2 {
-      color: #B31B1B;
-      text-shadow: 0 0 4px #8e44ad;
+    section p, section li {
+      color: #FFFFFF;
+      font-size: 14px;
     }
 
-    /* --- Imágenes --- */
     img {
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
+      margin: 10px auto;
+      max-width: 100%;
       height: auto;
+      border: 2px solid #B31B1B;
     }
-    .module-image { max-width: 300px; }
-    .pnaklendorf-image { max-width: 500px; }
 
     /* --- Banners reducidos --- */
     .banner-image {
-      max-width: 300px;
+      max-width: 250px;
       height: auto;
-      margin: 10px auto;
+      margin: 5px auto;
       display: block;
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      border: 2px solid #B31B1B;
     }
 
-    .centered-image {
-      display: block;
-      margin: 20px auto;
-      max-width: 90%;
+    /* --- Pie de página --- */
+    footer {
+      text-align: center;
+      background-color: #111111;
+      border-top: 3px solid #B31B1B;
+      padding: 10px;
+      font-size: 14px;
     }
 
-    .justified-text { text-align: justify; }
+    footer a {
+      color: #B31B1B;
+      text-decoration: none;
+    }
 
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Responsivo --- */
     @media (max-width: 768px) {
-      main {
-        flex-direction: column;
-        padding: 10px;
-      }
       .left-section, .right-section {
         width: 100%;
-        margin: 0;
       }
-      .pnaklendorf-image {
-        max-width: 100%;
-        height: auto;
+
+      nav a {
+        display: block;
+        margin: 5px auto;
       }
-      .module-image {
-        max-width: 100%;
-      }
-      .banner-image {
-        max-width: 100%;
-      }
-      footer { font-size: 14px; }
-      header h1 { font-size: 24px; }
-      header p { font-size: 16px; }
     }
   </style>
 </head>
@@ -192,20 +165,15 @@
 
 <header>
   <h1>EL PAÍS DE PNAKLENDORF</h1>
-  <p class="description">
-    Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez
-  </p>
-  <p class="center-text"><em>Homo sum, humani nihil a me alienum puto.</em></p>
+  <p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez</p>
+  <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
-  <!-- Logo -->
   <a href="/" rel="home">
-    <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image" />
+    <img src="Pnaklendorf.png" alt="Pnaklendorf" />
   </a>
 
-  <!-- Navegación -->
   <nav>
     <a href="relatos-ricardo-meyer.html">Relatos</a>
-    <span class="separator">|</span>
     <a href="refugiobizarro.html">Refugio Bizarro</a>
   </nav>
 </header>
@@ -215,7 +183,7 @@
     <section>
       <h2>La Pedanía del Agave (CthulhuD100)</h2>
       <a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave" target="_blank" rel="noopener noreferrer">
-        <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" class="module-image" />
+        <img src="https://d1vzi28wh99zvq.cloudfront.net/images/30780/521214.jpg" alt="Vista previa del módulo La Pedanía del Agave" />
       </a>
       <p>Haz clic en la imagen para obtener más información sobre el módulo.</p>
     </section>
@@ -235,12 +203,12 @@
   </div>
 
   <div class="right-section">
-    <section class="marco-doble">
+    <section>
       <h2>Sobre mí</h2>
-      <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" rel="noopener noreferrer">Ricardo Meyer Manríquez</a>, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank" rel="noopener noreferrer">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
+      <p>Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" rel="noopener noreferrer">Ricardo Meyer Manríquez</a>, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank" rel="noopener noreferrer">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
     </section>
 
-    <section class="marco-doble">
+    <section>
       <h2>Bibliografía</h2>
       <ul>
         <li>Shangri-La 93: Los Mitos de Ghisguth (enero 2024)</li>
@@ -250,7 +218,7 @@
       </ul>
     </section>
 
-    <section class="marco-doble">
+    <section>
       <h2>Futuros proyectos</h2>
       <ul>
         <li>Refugio Bizarro #4: 100 años de Los Mitos (septiembre 2025)</li>
@@ -258,7 +226,7 @@
       </ul>
     </section>
 
-    <section class="marco-doble">
+    <section>
       <h2>Redes sociales y enlaces</h2>
       <ul>
         <li><p style="font-family: monospace; color: #aaa;">
@@ -276,8 +244,6 @@
 
 </body>
 </html>
-
-
 
 
 
