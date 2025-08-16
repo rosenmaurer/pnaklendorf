@@ -9,7 +9,7 @@
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta name="author" content="Ricardo Meyer Manríquez" />
   <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Rosenmaurer, Cthulhu, Ricardo Meyer Manríquez, Ricardo Meyer" />
-
+  
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
 
   <link rel="canonical" href="https://pnaklendorf.com/" />
@@ -25,142 +25,103 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
   <style>
-    /* --- Body estilo retro --- */
+    /* --- Body y fondo general --- */
     body {
       font-family: 'EB Garamond', serif;
-      background-color: #000000;
-      color: #FFFFFF;
+      background-color: #111;
+      color: #fff;
       margin: 0;
       padding: 0;
-    }
-
-    /* --- Encabezado --- */
-    header {
-      text-align: center;
-      background-color: #111111;
-      border-bottom: 3px solid #B31B1B;
-      padding: 15px;
-    }
-
-    header h1 {
-      color: #B31B1B;
-      font-size: 32px;
-      margin: 0;
-    }
-
-    header p {
-      color: #FFFFFF;
-      margin: 5px 0;
-      font-size: 16px;
-    }
-
-    header a img {
-      display: block;
-      margin: 10px auto;
-      max-width: 200px;
-      border: 2px solid #B31B1B;
-    }
-
-    /* --- Navegación estilo botones antiguos --- */
-    nav {
-      text-align: center;
-      margin: 15px 0;
-    }
-
-    nav a {
-      background-color: #B31B1B;
-      color: #FFFFFF;
-      padding: 6px 12px;
-      margin: 0 5px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px outset #FFFFFF;
-    }
-
-    nav a:hover {
-      background-color: #FFFFFF;
-      color: #B31B1B;
-      border: 2px inset #FFFFFF;
-    }
-
-    /* --- Contenido principal con tablas retro --- */
-    main {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 20px;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    .left-section, .right-section {
-      width: 45%;
-    }
-
-    section {
-      background-color: #111111;
-      border: 2px solid #B31B1B;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-
-    section h2 {
-      color: #B31B1B;
-      font-size: 20px;
-      margin-top: 0;
-    }
-
-    section p, section li {
-      color: #FFFFFF;
-      font-size: 14px;
-    }
-
-    img {
-      display: block;
-      margin: 10px auto;
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #B31B1B;
-    }
-
-    /* --- Banners reducidos --- */
-    .banner-image {
-      max-width: 250px;
-      height: auto;
-      margin: 5px auto;
-      display: block;
-      border: 2px solid #B31B1B;
-    }
-
-    /* --- Pie de página --- */
-    footer {
+    /* --- Encabezado y pie de página --- */
+    header, footer {
       text-align: center;
-      background-color: #111111;
-      border-top: 3px solid #B31B1B;
-      padding: 10px;
-      font-size: 14px;
+      padding: 20px;
+      color: #fff;
+      background-color: #000;
+      border-bottom: 2px solid #B31B1B;
     }
 
-    footer a {
+    /* --- Logo centrado --- */
+    header img.pnaklendorf-image {
+      max-width: 400px;
+      margin: 10px 0;
+      display: block;
+    }
+
+    /* --- Navegación sencilla --- */
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
       color: #B31B1B;
-      text-decoration: none;
-    }
-
-    footer a:hover {
+      font-weight: bold;
+      margin: 0 10px;
       text-decoration: underline;
     }
 
-    /* --- Responsivo --- */
+    /* --- Secciones principales --- */
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .left-section, .right-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .left-section { width: 45%; margin-left: 5%; }
+    .right-section { width: 45%; }
+
+    section {
+      margin-bottom: 20px;
+      border: 2px solid #B31B1B;
+      padding: 15px;
+      background-color: #222;
+    }
+
+    h2 {
+      color: #B31B1B;
+      margin-top: 0;
+    }
+
+    a {
+      color: #1DA1F2;
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+      border: 1px solid #B31B1B;
+    }
+
+    .justified-text { text-align: justify; }
+
     @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        padding: 10px;
+      }
       .left-section, .right-section {
         width: 100%;
+        margin: 0;
       }
-
-      nav a {
-        display: block;
-        margin: 5px auto;
+      header img.pnaklendorf-image {
+        max-width: 100%;
       }
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -169,11 +130,11 @@
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
   <a href="/" rel="home">
-    <img src="Pnaklendorf.png" alt="Pnaklendorf" />
+    <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image" />
   </a>
 
   <nav>
-    <a href="relatos-ricardo-meyer.html">Relatos</a>
+    <a href="relatos-ricardo-meyer.html">Relatos</a> | 
     <a href="refugiobizarro.html">Refugio Bizarro</a>
   </nav>
 </header>
@@ -191,12 +152,12 @@
     <section>
       <h2 style="text-align: center;">
         <a href="https://www.leyenda.net/cthulhu/perfil.php?id=1344" target="_blank" rel="noopener noreferrer">
-          <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" class="banner-image" />
+          <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" />
         </a>
       </h2>
       <h2>
         <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
-          <img src="3F-1.png" alt="Banner de La Tercera Fundación" class="banner-image" />
+          <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
         </a>
       </h2>
     </section>
@@ -205,7 +166,7 @@
   <div class="right-section">
     <section>
       <h2>Sobre mí</h2>
-      <p>Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" rel="noopener noreferrer">Ricardo Meyer Manríquez</a>, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank" rel="noopener noreferrer">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
+      <p class="justified-text">Me llamo <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" rel="noopener noreferrer">Ricardo Meyer Manríquez</a>, soy de Chile. Desde muy pequeño me atrajo el terror, y a los trece años descubrí los Mitos de Cthulhu, lo cual se convirtió en una de mis pasiones más profundas y trascendentales. En 2023 decidí comenzar a "escribir en serio" y redacté mis primeros relatos. Posteriormente, en 2024, publiqué junto a Yuke Kabula, amigo de la infancia con quien también colaboré en la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer">Wiki Lovecraft</a>, una pequeña antología de microrelatos que luego servirían como trasfondo para relatos futuros. Soy miembro fundador del colectivo <a href="https://www.leyenda.net/cthulhu/biblio_editorial.php?id=515" target="_blank" rel="noopener noreferrer">Refugio Bizarro</a> y coordino y edito la eZine homónima.</p>
     </section>
 
     <section>
@@ -231,7 +192,7 @@
       <ul>
         <li><p style="font-family: monospace; color: #aaa;">
           Perfil en Twitter (X): 
-          <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer" style="color: #1DA1F2;">@PaterDagon</a>
+          <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer">@PaterDagon</a>
         </p></li>
       </ul>
     </section>
@@ -244,6 +205,7 @@
 
 </body>
 </html>
+
 
 
 
