@@ -64,7 +64,7 @@
       transition: all 0.3s ease;
     }
     header nav a:hover {
-      color: #d46a6a; /* rojo cálido más suave */
+      color: #d46a6a;
       text-shadow: 0 0 4px #d46a6a;
       transform: scale(1.05);
     }
@@ -122,7 +122,7 @@
       transition: all 0.3s ease;
     }
     a:hover {
-      color: #d46a6a; /* coherencia con barra de navegación */
+      color: #d46a6a;
       text-shadow: 0 0 4px #d46a6a;
     }
 
@@ -144,6 +144,16 @@
     }
     .module-image { max-width: 300px; }
     .pnaklendorf-image { max-width: 500px; }
+
+    /* --- Banners reducidos --- */
+    .banner-image {
+      max-width: 300px;
+      height: auto;
+      margin: 10px auto;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
 
     .centered-image {
       display: block;
@@ -167,6 +177,9 @@
         height: auto;
       }
       .module-image {
+        max-width: 100%;
+      }
+      .banner-image {
         max-width: 100%;
       }
       footer { font-size: 14px; }
@@ -210,12 +223,12 @@
     <section>
       <h2 style="text-align: center;">
         <a href="https://www.leyenda.net/cthulhu/perfil.php?id=1344" target="_blank" rel="noopener noreferrer">
-          <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" />
+          <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" class="banner-image" />
         </a>
       </h2>
       <h2>
         <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
-          <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
+          <img src="3F-1.png" alt="Banner de La Tercera Fundación" class="banner-image" />
         </a>
       </h2>
     </section>
