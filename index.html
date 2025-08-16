@@ -15,7 +15,7 @@
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/x-icon" />
 
-  <!-- Open Graph para redes sociales -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Pnaklendorf | Mitos de Ricardo Meyer" />
   <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
@@ -25,99 +25,89 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
   <style>
-    /* --- Body y fondo general --- */
     body {
       font-family: 'EB Garamond', serif;
       background-color: #111;
       color: #fff;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
 
-    /* --- Encabezado y pie de página --- */
-    header, footer {
+    /* --- Encabezado estilo 2000 --- */
+    header {
       text-align: center;
-      padding: 20px;
-      color: #fff;
       background-color: #000;
+      color: #fff;
       border-bottom: 2px solid #B31B1B;
+      padding: 20px 0;
     }
-
-    /* --- Logo centrado --- */
-    header img.pnaklendorf-image {
-      max-width: 400px;
-      margin: 10px 0;
+    header img {
       display: block;
+      margin: 10px auto;
+      max-width: 400px;
     }
-
-    /* --- Navegación sencilla --- */
-    nav {
-      margin-top: 10px;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #B31B1B;
+    }
+    header p {
+      margin: 5px 0;
     }
     nav a {
-      color: #B31B1B;
-      font-weight: bold;
-      margin: 0 10px;
+      color: #1DA1F2;
       text-decoration: underline;
+      margin: 0 10px;
+      font-weight: bold;
     }
 
-    /* --- Secciones principales --- */
+    /* --- Contenedor principal usando tablas --- */
     main {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      flex-wrap: wrap;
+      width: 95%;
+      margin: 20px auto;
+      display: table;
+      border-collapse: collapse;
     }
     .left-section, .right-section {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+      display: table-cell;
+      vertical-align: top;
+      width: 50%;
+      padding: 0 10px;
     }
-    .left-section { width: 45%; margin-left: 5%; }
-    .right-section { width: 45%; }
 
     section {
-      margin-bottom: 20px;
-      border: 2px solid #B31B1B;
-      padding: 15px;
       background-color: #222;
+      border: 2px solid #B31B1B;
+      margin-bottom: 20px;
+      padding: 15px;
     }
-
     h2 {
       color: #B31B1B;
       margin-top: 0;
     }
-
     a {
       color: #1DA1F2;
       text-decoration: underline;
     }
-
     img {
-      max-width: 100%;
-      height: auto;
       display: block;
       margin: 10px auto;
+      max-width: 100%;
       border: 1px solid #B31B1B;
     }
-
     .justified-text { text-align: justify; }
 
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #000;
+      border-top: 2px solid #B31B1B;
+    }
+
     @media (max-width: 768px) {
-      main {
-        flex-direction: column;
-        padding: 10px;
-      }
-      .left-section, .right-section {
-        width: 100%;
-        margin: 0;
-      }
-      header img.pnaklendorf-image {
-        max-width: 100%;
-      }
+      main { display: block; }
+      .left-section, .right-section { width: 100%; padding: 0; }
+      header img { max-width: 100%; }
     }
   </style>
 </head>
@@ -128,11 +118,9 @@
   <h1>EL PAÍS DE PNAKLENDORF</h1>
   <p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
-
   <a href="/" rel="home">
-    <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image" />
+    <img src="Pnaklendorf.png" alt="Pnaklendorf" />
   </a>
-
   <nav>
     <a href="relatos-ricardo-meyer.html">Relatos</a> | 
     <a href="refugiobizarro.html">Refugio Bizarro</a>
@@ -200,16 +188,4 @@
 </main>
 
 <footer>
-  <p>© 2025 Ricardo Meyer Manríquez | <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
-</footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
+  <p>© 2025 Ricardo Meyer Manríquez
