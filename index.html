@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title> Pnaklendorf | Mitos de Ricardo Meyer Manríquez</title>
+  <title>Pnaklendorf | Mitos de Ricardo Meyer Manríquez</title>
   
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta name="author" content="Ricardo Meyer Manríquez" />
@@ -36,6 +36,7 @@
     .right-section {
       width: 45%;
     }
+
     /* Borde y sombra doble */
     .marco-doble {
       border: 4px solid #B31B1B;
@@ -43,6 +44,7 @@
       margin: 30px 0;
       box-shadow: 0 0 20px rgba(0,0,0,0.6);
     }
+
     /* Estilos generales del body */
     body {
       font-family: 'EB Garamond', serif;
@@ -54,6 +56,7 @@
       flex-direction: column;
       min-height: 100vh;
     }
+
     /* Estilos de los enlaces */
     a {
       color: #B31B1B;
@@ -63,13 +66,44 @@
       text-shadow: 0 0 5px #8e44ad;
       color: #c39bd3;
     }
+
     /* Encabezado y pie de página */
     header, footer {
-      background-color: #000000;
       text-align: center;
       padding: 20px;
       color: #ffffff;
     }
+
+    /* Barra de navegación full width */
+    header nav {
+      background: linear-gradient(90deg, #111, #333); /* degradado oscuro visible */
+      padding: 12px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      width: 100%;
+      display: block;
+    }
+
+    header nav a {
+      color: #B31B1B; /* rojo característico */
+      font-weight: bold;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #f0a500; /* amarillo cálido */
+      text-shadow: 0 0 8px #f0a500;
+      transform: scale(1.1);
+    }
+
+    /* Separadores estilizados */
+    header nav .separator {
+      color: #888;
+      margin: 0 10px;
+    }
+
     /* Estilos del main */
     main {
       display: flex;
@@ -79,6 +113,7 @@
     section {
       margin-bottom: 20px;
     }
+
     /* Imágenes */
     .module-image,
     .pnaklendorf-image {
@@ -94,16 +129,19 @@
     .pnaklendorf-image {
       max-width: 500px;
     }
+
     /* Centrado de imagen de Cthulhu */
     .centered-image {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+
     /* Texto justificado */
     .justified-text {
       text-align: justify;
     }
+
     @media (max-width: 768px) {
       main {
         flex-direction: column;
@@ -140,35 +178,7 @@
       header p {
         font-size: 16px;
       }
-  /* Barra de navegación moderna */
-header nav {
-  background: linear-gradient(90deg, #1a1a1a, #2c2c2c); /* degradado oscuro */
-  padding: 10px 0;
-  border-radius: 8px;
-  display: inline-block;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
-}
-
-header nav a {
-  color: #B31B1B; /* rojo característico */
-  font-weight: bold;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-header nav a:hover {
-  color: #f0a500; /* amarillo cálido */
-  text-shadow: 0 0 8px #f0a500;
-  transform: scale(1.1);
-}
-
-/* Separadores estilizados */
-header nav .separator {
-  color: #888;
-  margin: 0 10px;
-}
-
+    }
   </style>
 </head>
 <body>
@@ -184,11 +194,12 @@ header nav .separator {
     <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image" />
   </a>
 
-<nav>
-  <a href="relatos-ricardo-meyer.html">Relatos</a>
-  <span class="separator">|</span>
-  <a href="refugiobizarro.html">Refugio Bizarro</a>
-</nav>
+  <!-- Barra de navegación full width -->
+  <nav>
+    <a href="relatos-ricardo-meyer.html">Relatos</a>
+    <span class="separator">|</span>
+    <a href="refugiobizarro.html">Refugio Bizarro</a>
+  </nav>
 </header>
 
 <main>
@@ -259,6 +270,7 @@ header nav .separator {
 
 </body>
 </html>
+
 
 
 
