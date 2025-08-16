@@ -140,7 +140,35 @@
       header p {
         font-size: 16px;
       }
-    }
+  /* Barra de navegación moderna */
+header nav {
+  background: linear-gradient(90deg, #1a1a1a, #2c2c2c); /* degradado oscuro */
+  padding: 10px 0;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+header nav a {
+  color: #B31B1B; /* rojo característico */
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #f0a500; /* amarillo cálido */
+  text-shadow: 0 0 8px #f0a500;
+  transform: scale(1.1);
+}
+
+/* Separadores estilizados */
+header nav .separator {
+  color: #888;
+  margin: 0 10px;
+}
+
   </style>
 </head>
 <body>
@@ -156,10 +184,11 @@
     <img src="Pnaklendorf.png" alt="Pnaklendorf" class="pnaklendorf-image" />
   </a>
 
-  <nav style="text-align: center; margin-top: 10px;">
-    <a href="relatos-ricardo-meyer.html">Relatos</a> | 
-    <a href="refugiobizarro.html" style="color: #28a745;">Refugio Bizarro</a>
-  </nav>
+<nav>
+  <a href="relatos-ricardo-meyer.html">Relatos</a>
+  <span class="separator">|</span>
+  <a href="refugiobizarro.html">Refugio Bizarro</a>
+</nav>
 </header>
 
 <main>
@@ -230,6 +259,7 @@
 
 </body>
 </html>
+
 
 
 
