@@ -55,11 +55,22 @@
       margin: 5px 0;
       color: #ccc;
     }
+
+    /* 🔥 Estilo mejorado del NAV */
+    nav {
+      margin-top: 15px;
+    }
     nav a {
-      color: #b55555; /* enlaces en rojo apagado */
-      text-decoration: underline;
-      margin: 0 10px;
+      margin: 0 12px;
       font-weight: bold;
+      text-decoration: none;
+      background: linear-gradient(90deg, #9b1f1f, #ff5555, #9b1f1f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      text-shadow: 0 0 8px #ff5555, 0 0 12px #9b1f1f;
     }
 
     /* --- Contenedor principal usando tablas --- */
@@ -126,7 +137,7 @@
   <nav>
     <a href="relatos-ricardo-meyer.html">Relatos</a> | 
     <a href="refugiobizarro.html">Refugio Bizarro</a> |
-    <a href="https://pnaklendorf.com/que-es-pnaklendorf.html">¿Qué es Pnaklendorf?
+    <a href="https://pnaklendorf.com/que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
   </nav>
 </header>
 
@@ -189,9 +200,5 @@
 
 </body>
 </html>
-
-
-
-
 
 
