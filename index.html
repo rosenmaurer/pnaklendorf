@@ -27,16 +27,15 @@
   <style>
     body {
       font-family: 'EB Garamond', serif;
-      background-color: #000000; /* fondo negro sólido */
+      background-color: #000000;
       color: #e0e0e0;
       margin: 0;
       padding: 0;
     }
 
-    /* --- Encabezado estilo 2000 --- */
     header {
       text-align: center;
-      background-color: #000000; /* fondo negro sólido */
+      background-color: #000000;
       color: #e0e0e0;
       border-bottom: 2px solid #9b1f1f;
       padding: 20px 0;
@@ -56,7 +55,7 @@
       color: #ccc;
     }
 
-    /* 🔥 Estilo mejorado del NAV */
+    /* --- NAV con gradiente y resplandor --- */
     nav {
       margin-top: 15px;
     }
@@ -73,7 +72,7 @@
       text-shadow: 0 0 8px #ff5555, 0 0 12px #9b1f1f;
     }
 
-    /* --- Contenedor principal usando tablas --- */
+    /* --- Contenedor principal --- */
     main {
       width: 95%;
       margin: 20px auto;
@@ -88,7 +87,7 @@
     }
 
     section {
-      background-color: #000000; /* fondo negro sólido */
+      background-color: #000000;
       border: 2px solid #9b1f1f;
       margin-bottom: 20px;
       padding: 15px;
@@ -97,10 +96,20 @@
       color: #9b1f1f;
       margin-top: 0;
     }
-    a {
-      color: #b55555; /* enlaces en rojo apagado */
-      text-decoration: underline;
+
+    /* --- enlaces dentro de las secciones con estilo místico --- */
+    section a {
+      font-weight: bold;
+      text-decoration: none;
+      background: linear-gradient(90deg, #9b1f1f, #ff5555, #9b1f1f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease;
     }
+    section a:hover {
+      text-shadow: 0 0 6px #ff5555, 0 0 10px #9b1f1f;
+    }
+
     img {
       display: block;
       margin: 10px auto;
@@ -112,9 +121,21 @@
     footer {
       text-align: center;
       padding: 15px;
-      background-color: #000000; /* fondo negro sólido */
+      background-color: #000000;
       border-top: 2px solid #9b1f1f;
       color: #aaa;
+    }
+
+    footer a {
+      font-weight: bold;
+      text-decoration: none;
+      background: linear-gradient(90deg, #9b1f1f, #ff5555, #9b1f1f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease;
+    }
+    footer a:hover {
+      text-shadow: 0 0 6px #ff5555, 0 0 10px #9b1f1f;
     }
 
     @media (max-width: 768px) {
@@ -195,7 +216,7 @@
 </main>
 
 <footer>
-  <p>© 2025 Ricardo Meyer Manríquez — <a href="mailto:rosenmaurer@gmail.com" style="color:#b55555; text-decoration: underline;">rosenmaurer@gmail.com</a></p>
+  <p>© 2025 Ricardo Meyer Manríquez — <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
 </footer>
 
 </body>
