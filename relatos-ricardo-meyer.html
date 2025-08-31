@@ -10,7 +10,7 @@
   <style>
     body {
       font-family: 'EB Garamond', serif;
-      background-color: #000000; /* fondo negro sólido */
+      background-color: #000000; 
       color: #e0e0e0;
       margin: 0;
       padding: 0;
@@ -19,8 +19,6 @@
 
     header {
       text-align: center;
-      background-color: #000000;
-      color: #e0e0e0;
       border-bottom: 2px solid #9b1f1f;
       padding: 20px 0;
     }
@@ -38,7 +36,7 @@
     }
 
     ul {
-      list-style-type: none; /* sin viñetas */
+      list-style-type: none; /* sacamos viñetas default */
       padding-left: 0;
       margin-bottom: 2rem;
     }
@@ -46,11 +44,22 @@
     li {
       margin-bottom: 1rem;
       font-size: 1.2rem;
+      position: relative;
+      padding-left: 1.5rem; /* espacio para viñeta custom */
+    }
+
+    li::before {
+      content: "◆"; /* viñeta tipo rombo */
+      color: #9b1f1f; 
+      position: absolute;
+      left: 0;
+      font-size: 0.9rem;
+      top: 0.2rem;
     }
 
     a {
-      color: #e0e0e0;
-      text-decoration: none; /* sin subrayado */
+      color: #b55555;  /* color diferente al texto normal */
+      text-decoration: none; 
       transition: color 0.3s ease, text-shadow 0.3s ease;
     }
 
@@ -69,7 +78,6 @@
     footer {
       text-align: center;
       padding: 15px;
-      background-color: #000000;
       border-top: 2px solid #9b1f1f;
       color: #aaa;
       font-size: 0.9rem;
@@ -114,6 +122,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
