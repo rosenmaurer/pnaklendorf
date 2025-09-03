@@ -44,7 +44,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Todos los relatos -->
+  <!-- Relatos individuales -->
   <url>
     <loc>https://pnaklendorf.com/los-heraldos-de-la-penitencia.html</loc>
     <lastmod>2025-07-24</lastmod>
@@ -81,5 +81,4 @@
   </url>
 
 </urlset>
-
 
