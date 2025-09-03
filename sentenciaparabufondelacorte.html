@@ -66,7 +66,7 @@
         margin-bottom: 2rem;
       }
       article {
-        white-space: pre-line; /* respeta los saltos de línea del poema */
+        white-space: pre-line;
         font-size: 1.1rem;
       }
       article em { color: #cfcfcf; font-style: italic; }
@@ -84,18 +84,10 @@
         color: var(--muted);
       }
       .return img {
-        width: 200px;
+        width: 250px; /* tamaño aumentado */
         max-width: 100%;
         height: auto;
-        opacity: .9;
-        transition: transform .25s ease, opacity .25s ease;
-        will-change: transform, opacity;
         border-radius: 8px;
-      }
-      .return img:focus,
-      .return img:hover {
-        opacity: 1;
-        transform: translateY(-2px) scale(1.03);
       }
       .sr-only {
         position: absolute;
@@ -110,7 +102,6 @@
       }
     </style>
 
-    <!-- Estructurados (JSON-LD) opcional -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -189,12 +180,6 @@ Dudo que este poema comprendas, pues hay referencias cruzadas...
 Doble sentidos, cosas que dices saber y que no comprendes para nada.
 Aun así te digo que no me interesa tregua ni tocar tu sucia palma,
 Pero pasarán los eones, morirá la Muerte y seguirás siendo una perra.
-
-Conozco mujeres que se esmeran para alimentar a sus familias...
-En mi reino se aprende que las prostitutas son más fieles, pese a su trabajo.
-No me interesa estar a tus niveles, prefiero seguir acá abajo...
-Para que después de haber malgastado tu vida de teatro en teatro
-Seas el estropajo con el que se te limpie la boca por difamador y payaso.
       </article>
 
       <nav class="return">
