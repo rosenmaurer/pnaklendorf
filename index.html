@@ -1,188 +1,175 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Pnaklendorf | Mitos de Ricardo Meyer Manríquez</title>
-
+  <title>Pnaklendorf ☄️ | Mitos de Ricardo Meyer Manríquez</title>
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta name="author" content="Ricardo Meyer Manríquez" />
   <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Rosenmaurer, Cthulhu, Ricardo Meyer Manríquez, Ricardo Meyer" />
-  
-  <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
-  <meta name="google-adsense-account" content="ca-pub-6193869420432550">
 
   <link rel="canonical" href="https://pnaklendorf.com/" />
-  <link rel="icon" href="eldersign.png" type="image/x-icon" />
+  <link rel="icon" href="eldersign.png" type="image/png" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Pnaklendorf | Mitos de Ricardo Meyer Manríquez" />
   <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
-  <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
+  <meta property="og:image" content="Pnaklendorf.png" />
   <meta property="og:url" content="https://pnaklendorf.com" />
   <meta property="og:type" content="website" />
 
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
   <style>
+    :root {
+      --bg: #000;
+      --fg: #e0e0e0;
+      --accent: #9b1f1f;
+      --highlight: #ff5555;
+      --border: 2px solid var(--accent);
+      --maxw: 1200px;
+    }
+
     body {
-      font-family: 'EB Garamond', serif;
-      background-color: #000000;
-      color: #e0e0e0;
       margin: 0;
-      padding: 0;
+      font-family: 'EB Garamond', serif;
+      background-color: var(--bg);
+      color: var(--fg);
     }
 
     header {
       text-align: center;
-      background-color: #000000;
-      color: #e0e0e0;
-      border-bottom: 2px solid #9b1f1f;
-      padding: 20px 0;
-    }
-    header img {
-      display: block;
-      margin: 10px auto;
-      max-width: 400px;
+      padding: 2rem 1rem;
+      border-bottom: var(--border);
     }
     header h1 {
-      margin: 0;
-      font-size: 28px;
-      color: #9b1f1f;
+      margin: 0.5rem 0;
+      color: var(--accent);
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
     }
     header p {
-      margin: 5px 0;
+      margin: 0.25rem 0;
       color: #ccc;
+    }
+    header em { color: #aaa; font-style: italic; }
+    header img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 300px;
+      border-radius: 8px;
     }
 
     nav {
-      margin-top: 15px;
+      margin-top: 1rem;
     }
     nav a {
-      margin: 0 12px;
+      margin: 0 10px;
       font-weight: bold;
       text-decoration: none;
-      background: linear-gradient(90deg, #9b1f1f, #ff5555, #9b1f1f);
+      background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      transition: all 0.3s ease;
+      transition: text-shadow 0.3s ease;
     }
-    nav a:hover {
-      text-shadow: 0 0 8px #ff5555, 0 0 12px #9b1f1f;
-    }
+    nav a:hover { text-shadow: 0 0 8px var(--highlight), 0 0 12px var(--accent); }
 
     main {
-      width: 95%;
-      margin: 20px auto;
-      display: table;
-      border-collapse: collapse;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: var(--maxw);
+      margin: 2rem auto;
+      gap: 1rem;
+      padding: 0 1rem;
     }
     .left-section, .right-section {
-      display: table-cell;
-      vertical-align: top;
-      width: 50%;
-      padding: 0 10px;
+      flex: 1 1 45%;
+      min-width: 300px;
     }
 
     section {
-      background-color: #000000;
-      border: 2px solid #9b1f1f;
-      margin-bottom: 20px;
-      padding: 15px;
+      background-color: var(--bg);
+      border: var(--border);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
     }
     h2 {
-      color: #9b1f1f;
+      color: var(--accent);
       margin-top: 0;
     }
-
     section a {
       font-weight: bold;
       text-decoration: none;
-      background: linear-gradient(90deg, #9b1f1f, #ff5555, #9b1f1f);
+      background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      transition: all 0.3s ease;
+      transition: text-shadow 0.3s ease;
     }
-    section a:hover {
-      text-shadow: 0 0 6px #ff5555, 0 0 10px #9b1f1f;
-    }
+    section a:hover { text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent); }
 
-    img {
-      display: block;
-      margin: 10px auto;
-      max-width: 100%;
-      border: 1px solid #9b1f1f;
-    }
+    img { display: block; margin: 1rem auto; max-width: 100%; border: 1px solid var(--accent); border-radius: 6px; }
     .justified-text { text-align: justify; }
 
     footer {
       text-align: center;
-      padding: 15px;
-      background-color: #000000;
-      border-top: 2px solid #9b1f1f;
+      padding: 1rem;
+      border-top: var(--border);
       color: #aaa;
     }
-
     footer a {
       font-weight: bold;
       text-decoration: none;
-      background: linear-gradient(90deg, #9b1f1f, #ff5555, #9b1f1f);
+      background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      transition: all 0.3s ease;
+      transition: text-shadow 0.3s ease;
     }
-    footer a:hover {
-      text-shadow: 0 0 6px #ff5555, 0 0 10px #9b1f1f;
-    }
+    footer a:hover { text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent); }
   </style>
 </head>
 
 <body>
-
 <header>
   <h1>EL PAÍS DE PNAKLENDORF</h1>
   <p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
   <a href="/" rel="home">
-    <img src="Pnaklendorf.png" alt="Pnaklendorf" />
+    <img src="Pnaklendorf.png" alt="Logo de Pnaklendorf" />
   </a>
   <nav>
-    <a href="relatos-ricardo-meyer.html">Relatos y poemas</a> | 
+    <a href="relatos-ricardo-meyer.html">Relatos y poemas</a> |
     <a href="refugiobizarro.html">Refugio Bizarro</a> |
-    <a href="https://pnaklendorf.com/que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
+    <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
   </nav>
 </header>
 
 <main>
-<div class="left-section">
-  <!-- Sección de banners -->
-  <section>
-    <h2 style="text-align: center;">
-      <a href="https://www.leyenda.net/cthulhu/perfil.php?id=1344" target="_blank" rel="noopener noreferrer">
-        <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" />
-      </a>
-    </h2>
-    <h2>
-      <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
-        <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
-      </a>
-    </h2>
-  </section>
+  <div class="left-section">
+    <section>
+      <h2 style="text-align:center;">
+        <a href="https://www.leyenda.net/cthulhu/perfil.php?id=1344" target="_blank" rel="noopener noreferrer">
+          <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" />
+        </a>
+      </h2>
+      <h2>
+        <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
+          <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
+        </a>
+      </h2>
+    </section>
 
-  <!-- Sección aparte para redes sociales -->
-  <section>
-    <h2>Redes sociales y enlaces</h2>
-    <ul>
-      <li>
-        <p style="font-family: monospace; color: #aaa;">
-          Perfil en Twitter (X): 
-          <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer">@PaterDagon</a>
-        </p>
-      </li>
-    </ul>
-  </section>
-</div>
+    <section>
+      <h2>Redes sociales y enlaces</h2>
+      <ul>
+        <li>
+          <p style="font-family: monospace; color: #aaa;">
+            Perfil en Twitter (X): <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer">@PaterDagon</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </div>
 
   <div class="right-section">
     <section>
@@ -216,5 +203,3 @@
 
 </body>
 </html>
-
-
