@@ -1,138 +1,208 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sentencia para el Bufón de la Corte</title>
-  <meta name="description" content="Poema (2025)" />
-  <meta property="og:title" content="Sentencia para el Bufón de la Corte" />
-  <meta property="og:description" content="Poema (2025)" />
-  <meta property="og:image" content="charlestheclown.jpg" />
-  <meta property="og:type" content="article" />
-  <meta property="og:locale" content="es_CL" />
-  <!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Sentencia para el Bufón de la Corte" />
-<meta name="twitter:description" content="Poema (2025)" />
-<meta name="twitter:image" content="charlestheclown.jpg" />
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="eldersign.png" type="image/png" />
+    <title>Sentencia para el Bufón de la Corte — Poema (2025)</title>
+    <meta name="description" content="Poema (2025) de Ricardo Meyer: ‘Sentencia para el Bufón de la Corte’." />
 
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      background-color: #000;
-      color: #ccc;
-      font-family: 'Georgia', serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      white-space: pre-line;
-    }
-    h1 {
-      color: #fff;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .autor {
-      text-align: center;
-      font-style: italic;
-      margin-bottom: 3rem;
-    }
-    em {
-      color: #aaa;
-      font-style: italic;
-    }
-    .return-link {
-      text-align: center;
-      margin-top: 4rem;
-    }
-    .return-link img {
-      width: 64px;
-      height: auto;
-      opacity: 0.8;
-      transition: opacity 0.3s ease;
-    }
-    .return-link img:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <h1>Sentencia para el Bufón de la Corte</h1>
-  <div class="autor">por Ricardo Meyer</div>
+    <!-- Canonical -->
+    <link rel="canonical" href="sentencia.html" />
 
-  <div>
-No pisen mi jardín, que ese es mi cementerio.
-Mis muertos me informan siempre quién osa pisar mi reino.  
-Como bautistas frustrados con panfleto en mano en el exterior  
-Predicas un credo que desacredita lo que el Refugio les dio.  
-Yo no exijo diezmos ni denarios para darles moralejas.  
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sentencia para el Bufón de la Corte" />
+    <meta property="og:description" content="Poema (2025) de Ricardo Meyer." />
+    <meta property="og:image" content="charlestheclown.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:site_name" content="Pnaklendorf" />
+    <meta property="article:author" content="Ricardo Meyer" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sentencia para el Bufón de la Corte" />
+    <meta name="twitter:description" content="Poema (2025) de Ricardo Meyer." />
+    <meta name="twitter:image" content="charlestheclown.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="charlestheclown.jpg" type="image/jpeg" />
+
+    <style>
+      :root {
+        --bg: #000;
+        --fg: #e7e7e7;
+        --muted: #bdbdbd;
+        --accent: #f1f1f1;
+        --maxw: 70ch;
+      }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        padding: 2rem 1.25rem 3rem;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: Georgia, "Times New Roman", serif;
+        line-height: 1.7;
+        display: grid;
+        place-items: start center;
+      }
+      .wrap {
+        width: 100%;
+        max-width: var(--maxw);
+      }
+      header {
+        text-align: center;
+        margin: 0 0 1.25rem;
+      }
+      h1 {
+        font-size: clamp(1.8rem, 2.5vw + 1rem, 2.6rem);
+        margin: 0 0 .25rem;
+        letter-spacing: .2px;
+      }
+      .autor {
+        color: var(--muted);
+        font-style: italic;
+        margin-bottom: 2rem;
+      }
+      article {
+        white-space: pre-line; /* respeta los saltos de línea del poema */
+        font-size: 1.1rem;
+      }
+      article em { color: #cfcfcf; font-style: italic; }
+
+      .return {
+        margin-top: 3rem;
+        display: grid;
+        place-items: center;
+      }
+      .return a {
+        display: inline-grid;
+        place-items: center;
+        gap: .5rem;
+        text-decoration: none;
+        color: var(--muted);
+      }
+      .return img {
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        opacity: .9;
+        transition: transform .25s ease, opacity .25s ease;
+        will-change: transform, opacity;
+        border-radius: 8px;
+      }
+      .return img:focus,
+      .return img:hover {
+        opacity: 1;
+        transform: translateY(-2px) scale(1.03);
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+
+    <!-- Estructurados (JSON-LD) opcional -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Sentencia para el Bufón de la Corte",
+        "author": {
+          "@type": "Person",
+          "name": "Ricardo Meyer"
+        },
+        "inLanguage": "es-CL",
+        "genre": "Poema",
+        "about": ["horror", "mitos de Cthulhu", "poesía oscura"],
+        "datePublished": "2025-01-01",
+        "image": "charlestheclown.jpg"
+      }
+    </script>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <h1>Sentencia para el Bufón de la Corte</h1>
+        <p class="autor">por Ricardo Meyer</p>
+      </header>
+
+      <article aria-label="Poema Sentencia para el Bufón de la Corte">
+No pisen mi jardín, que ese es mi cementerio. Mis muertos me informan siempre quién osa pisar mi reino.
+Como bautistas frustrados con panfleto en mano en el exterior
+Predicas un credo que desacredita lo que el Refugio les dio.
+Yo no exijo diezmos ni denarios para darles moralejas.
 Solo que a nuestra musa rindas tributo y que prestes oreja…
 
-Mammon y la soberbia te tienen anonadado,  
-Irónico, ya que Mammon me dijo que por tu valle nunca se ha asomado.  
-Las frases que escupes se pierden en las alcantarillas de los arrabales,  
-Carentes de Verdad y Vida que guían a Caminos que no son reales.  
-Yo tengo el don de tocar corazones sin usar las manos  
-Y ya hurgué en tu alma putrefacta y sé lo que hacen esas manos.  
-Mis verdades verdaderas son los clavos de tu cruz;  
+Mammon y la soberbia te tienen anonadado,
+Irónico, ya que Mammon me dijo que por tu valle nunca se ha asomado.
+Las frases que escupes se pierden en las alcantarillas de los arrabales,
+Carentes de Verdad y Vida que guían a Caminos que no son reales.
+Yo tengo el don de tocar corazones sin usar las manos
+Y ya hurgué en tu alma putrefacta y sé lo que hacen esas manos.
+Mis verdades verdaderas son los clavos de tu cruz;
 No son reliquias, para eso tendrías que ser el Cristo, nuestro Señor Jesús.
+Gestas tampoco eres porque tendrías que ser más listo.
+Irónico que cuervos tus ojos extirpen por ser un buitre
+Que manchó nuestro noble arte con su vil depravación.
 
-Gestas tampoco eres porque tendrías que ser más listo. 
-Irónico que cuervos tus ojos extirpen por ser un buitre  
-Que manchó nuestro noble arte con su vil depravación.  
-Embaucaste a novicias de la Escuela de Medusa,  
-Con descaro, con saliva, con tretas de harpía fea.  
-Prefiero no despegar mi nariz de un libro en Vida  
-Que morirse por ser un sátiro defenestrador 
-Luego de dormirlas con tus textos vacíos  
+Embaucaste a novicias de la Escuela de Medusa,
+Con descaro, con saliva, con tretas de harpía fea.
+Prefiero no despegar mi nariz de un libro en Vida
+Que morirse por ser un sátiro defenestrador
+Luego de dormirlas con tus textos vacíos
 Como una siniestra canción de cuna.
 
-Mi nombre es desconocido y aun así infunde temores  
-En aquellos hipócritas que para hablar de horror pintan rosas flores.  
+Mi nombre es desconocido y aun así infunde temores
+En aquellos hipócritas que para hablar de horror pintan rosas flores.
 La sangre es horror real y para sangrar hay que sufrir.
-Lo que he visto es un océano de Cristos en el Getsemaní,  
-Tanto así ha sido que mis manos se han manchado...  
+Lo que he visto es un océano de Cristos en el Getsemaní,
+Tanto así ha sido que mis manos se han manchado...
 Y aun me mantengo de pie, como Barón y como un pequeño lord.
-
-Un pequeño bosquejo mío educa a los profanos,  
-Les da sed de esos nombres muertos que en nuestros textos depositamos.  
-Mi linaje no es color azul ni color rojo, pues viene del exterior... 
+Un pequeño bosquejo mío educa a los profanos,
+Les da sed de esos nombres muertos que en nuestros textos depositamos.
+Mi linaje no es color azul ni color rojo, pues viene del exterior...
 No pertenecemos a este mundo, pero no le guardamos rencor.
 
-Osaste enviar una paloma con un papiro barato  
-Con un mamotreto que pretendía ser un Misterio revelado  
-En él predicabas la mentira de la mentira que decías que El Innombrable es  
+Osaste enviar una paloma con un papiro barato
+Con un mamotreto que pretendía ser un Misterio revelado
+En él predicabas la mentira de la mentira que decías que El Innombrable es
 ¡Otro que no entendió la obra! ¡otro Louis Castaigne!
+Tú sabes bien que no necesito que sea de noche para poder soñar...
+Tampoco dormir, basta con vivir sin despertar...
+Seguiré así hasta morir, honrando mi epíteto antecesor.
 
-Tú sabes bien que no necesito que sea de noche para poder soñar...  
-Tampoco dormir, basta con vivir sin despertar...  
-Seguiré así hasta morir, honrando mi epíteto antecesor.  
-Mi gente viene desde lo subterráneo y cuando emergemos a la superficie,  
-Alimentamos con nuestros gusanos las delicatessen que desayunan los príncipes.  
-Esperamos al acecho para que se esconda el sol, maquillaje barato que oculta La Oscuridad,  
+Mi gente viene desde lo subterráneo y cuando emergemos a la superficie,
+Alimentamos con nuestros gusanos las delicatessen que desayunan los príncipes.
+Esperamos al acecho para que se esconda el sol, maquillaje barato que oculta La Oscuridad,
 Para así poder contemplar de donde vino todo, nuestra estrella Xoth.
 
-Dudo que este poema comprendas, pues hay referencias cruzadas...  
-Doble sentidos, cosas que dices saber y que no comprendes para nada.  
+Dudo que este poema comprendas, pues hay referencias cruzadas...
+Doble sentidos, cosas que dices saber y que no comprendes para nada.
 Aun así te digo que no me interesa tregua ni tocar tu sucia palma,
-Pero pasarán los eones, morirá la Muerte y seguirás siendo una perra.  
-Conozco mujeres que se esmeran para alimentar a sus familias...  
-En mi reino se aprende que las prostitutas son más fieles, pese a su trabajo.  
-No me interesa estar a tus niveles, prefiero seguir acá abajo...  
-Para que después de haber malgastado tu vida de teatro en teatro  
-Seas el estropajo con el que se te limpie la boca por difamador y payaso.
-  </div>
+Pero pasarán los eones, morirá la Muerte y seguirás siendo una perra.
 
-  <div class="return-link">
-    <a href="index.html">
-      <img src="eldersign.png" alt="Volver al inicio" title="Volver al inicio">
-    </a>
-  </div>
-</body>
+Conozco mujeres que se esmeran para alimentar a sus familias...
+En mi reino se aprende que las prostitutas son más fieles, pese a su trabajo.
+No me interesa estar a tus niveles, prefiero seguir acá abajo...
+Para que después de haber malgastado tu vida de teatro en teatro
+Seas el estropajo con el que se te limpie la boca por difamador y payaso.
+      </article>
+
+      <nav class="return">
+        <a href="index.html" aria-label="Volver al inicio">
+          <img src="charlestheclown.jpg" alt="Volver al inicio" />
+          <span class="sr-only">Volver al inicio</span>
+        </a>
+      </nav>
+    </main>
+  </body>
 </html>
