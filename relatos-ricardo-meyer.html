@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Relatos y poemas de Ricardo Meyer</title>
-  <link rel="icon" href="eldersign.png" type="image/x-icon" />
+  <link rel="icon" href="eldersign.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
-  
+
   <style>
+    :root {
+      --bg: #000;
+      --fg: #e0e0e0;
+      --accent: #9b1f1f;
+      --highlight: #ff5555;
+      --link-hover: #c39bd3;
+      --border: 2px solid var(--accent);
+      --maxw: 800px;
+    }
+
     body {
       font-family: 'EB Garamond', serif;
-      background-color: #000000; 
-      color: #e0e0e0;
+      background-color: var(--bg);
+      color: var(--fg);
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -19,38 +29,42 @@
 
     header {
       text-align: center;
-      border-bottom: 2px solid #9b1f1f;
-      padding: 20px 0;
+      border-bottom: var(--border);
+      padding: 2rem 1rem;
     }
     header h1 {
       margin: 0;
-      font-size: 28px;
-      color: #9b1f1f;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      color: var(--accent);
       letter-spacing: 1px;
     }
 
     main {
       width: 95%;
-      margin: 20px auto;
-      max-width: 800px;
+      max-width: var(--maxw);
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
     }
 
     ul {
-      list-style-type: none; /* sacamos viñetas default */
+      list-style: none;
       padding-left: 0;
-      margin-bottom: 2rem;
+      width: 100%;
     }
 
     li {
       margin-bottom: 1rem;
       font-size: 1.2rem;
       position: relative;
-      padding-left: 1.5rem; /* espacio para viñeta custom */
+      padding-left: 1.5rem;
     }
 
     li::before {
-      content: "◆"; /* viñeta tipo rombo */
-      color: #9b1f1f; 
+      content: "◆";
+      color: var(--accent);
       position: absolute;
       left: 0;
       font-size: 0.9rem;
@@ -58,38 +72,37 @@
     }
 
     a {
-      color: #b55555;  /* color diferente al texto normal */
-      text-decoration: none; 
+      color: var(--highlight);
+      text-decoration: none;
       transition: color 0.3s ease, text-shadow 0.3s ease;
     }
-
     a:hover {
-      color: #c39bd3;
+      color: var(--link-hover);
       text-shadow: 0 0 6px #8e44ad;
     }
 
     img {
       display: block;
-      margin: 20px auto;
-      max-width: 120px;
-      border: 1px solid #9b1f1f;
+      margin: 1rem auto;
+      max-width: 150px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
     }
 
     footer {
       text-align: center;
-      padding: 15px;
-      border-top: 2px solid #9b1f1f;
+      padding: 1rem;
+      border-top: var(--border);
       color: #aaa;
       font-size: 0.9rem;
     }
-
     footer a {
-      color: #b55555;
+      color: var(--highlight);
       text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
     }
-
     footer a:hover {
-      color: #c39bd3;
+      color: var(--link-hover);
       text-shadow: 0 0 5px #8e44ad;
     }
 
@@ -100,7 +113,7 @@
 </head>
 <body>
   <header>
-    <h1>Relatos</h1>
+    <h1>Relatos y poemas</h1>
   </header>
 
   <main>
@@ -113,7 +126,7 @@
     </ul>
 
     <a href="/index.html">
-      <img alt="Volver a Pnaklendorf" src="sellotindalos-asinnart.png"/>
+      <img src="sellotindalos-asinnart.png" alt="Volver a Pnaklendorf" />
     </a>
   </main>
 
@@ -122,10 +135,6 @@
   </footer>
 </body>
 </html>
-
-
-
-
 
 
 
