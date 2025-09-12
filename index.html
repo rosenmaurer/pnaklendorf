@@ -74,6 +74,16 @@
     }
     nav a:hover { text-shadow: 0 0 8px var(--highlight), 0 0 12px var(--accent); }
 
+    /* Efecto hover para la cruz junto al nav */
+    .nav-cross img {
+      transition: filter 0.3s ease, transform 0.3s ease;
+      filter: grayscale(100%) brightness(1);
+    }
+    .nav-cross:hover img {
+      filter: grayscale(0%) brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
+      transform: scale(1.1);
+    }
+
     main {
       display: flex;
       flex-wrap: wrap;
@@ -141,6 +151,9 @@
     <a href="relatos-ricardo-meyer.html">Relatos y poemas</a> |
     <a href="refugiobizarro.html">Refugio Bizarro</a> |
     <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
+    <a href="https://pnaklendorf.com/ermita" class="nav-cross" style="margin-left:5px;">
+      <img src="Latin_cross_gold.png" alt="Ermita" style="height:20px; vertical-align:middle;">
+    </a>
   </nav>
 </header>
 
