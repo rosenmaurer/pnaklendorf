@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ermita a San Carlo Acutis</title>
+    <link rel="icon" type="image/png" href="eldersign.png">
+
     <meta name="description" content="Pequeña ermita dedicada a San Carlo Acutis en pnaklendorf.com. Inspirada en la fe católica y el ejemplo del joven santo.">
     <meta name="keywords" content="San Carlo Acutis, catolicismo, ermita, pnaklendorf, fe, juventud santa">
 
@@ -38,6 +39,11 @@
         }
         main {
             padding: 2rem 1rem;
+        }
+        main p {
+            text-align: justify;
+            max-width: 700px;
+            margin: 0 auto;
             line-height: 1.6;
         }
         a img {
@@ -54,8 +60,15 @@
         }
         footer {
             padding: 1rem;
-            font-size: 0.9rem;
-            color: #aaa;
+            font-size: 1rem;
+            color: #fff;
+        }
+        footer .fecha {
+            font-weight: bold;
+            color: #ffd700; /* dorado para destacar */
+            background-color: rgba(255, 255, 255, 0.05); /* fondo muy sutil */
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -76,7 +89,7 @@
     </main>
 
     <footer>
-        12-09-2025
+        <span class="fecha">12-09-2025</span>
     </footer>
 </body>
 </html>
