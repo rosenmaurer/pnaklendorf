@@ -45,6 +45,7 @@
             max-width: 700px;
             margin: 0 auto;
             line-height: 1.6;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.4); /* resplandor sutil */
         }
         a img {
             max-width: 300px;
@@ -64,11 +65,48 @@
             color: #fff;
         }
         footer .fecha {
+            display: block;
             font-weight: bold;
             color: #ffd700; /* dorado para destacar */
             background-color: rgba(255, 255, 255, 0.05); /* fondo muy sutil */
             padding: 0.2rem 0.5rem;
             border-radius: 4px;
+            margin-bottom: 0.5rem;
+        }
+        footer .mensaje {
+            font-style: italic;
+            color: #ccc;
+            text-shadow: 0 0 3px rgba(255, 255, 255, 0.3); /* resplandor sutil */
+        }
+
+        /* Media queries para móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.7rem;
+            }
+            main p {
+                max-width: 90%; /* ocupa más ancho en pantallas pequeñas */
+                font-size: 1rem;
+            }
+            a img {
+                max-width: 80%; /* ajusta imagen para móviles */
+            }
+            footer {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            main p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+            a img {
+                max-width: 100%; /* ocupa casi todo el ancho disponible */
+            }
         }
     </style>
 </head>
@@ -90,6 +128,9 @@
 
     <footer>
         <span class="fecha">12-09-2025</span>
+        <span class="mensaje">Nunca olvidaré este día</span>
     </footer>
 </body>
 </html>
+
+
