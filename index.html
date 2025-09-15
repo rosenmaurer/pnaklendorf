@@ -74,7 +74,6 @@
     }
     nav a:hover { text-shadow: 0 0 8px var(--highlight), 0 0 12px var(--accent); }
 
-    /* Efecto hover para la cruz junto al nav */
     .nav-cross img {
       transition: filter 0.3s ease, transform 0.3s ease;
       filter: grayscale(100%) brightness(1);
@@ -136,6 +135,46 @@
       transition: text-shadow 0.3s ease;
     }
     footer a:hover { text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent); }
+
+    /* Recuadro RB4 responsive */
+    .portada-rb4 {
+      border: var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background-color: var(--bg);
+      text-align: center;
+    }
+    .portada-rb4 h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+    .portada-rb4 a img {
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    .portada-rb4 a img:hover {
+      filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
+      transform: scale(1.05);
+    }
+    .portada-rb4 p {
+      color: #fff;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .portada-rb4 a img {
+        width: 100%;
+      }
+      .portada-rb4 h2 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 
@@ -159,6 +198,15 @@
 
 <main>
   <div class="left-section">
+    <!-- Recuadro Refugio Bizarro #4 -->
+    <section class="portada-rb4">
+      <h2>Refugio Bizarro #4</h2>
+      <a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=XXXX" target="_blank" rel="noopener noreferrer">
+        <img src="Portada Refugio Bizarro #4.png" alt="Portada Refugio Bizarro #4" />
+      </a>
+      <p>Haz click acá para más información</p>
+    </section>
+
     <section>
       <h2 style="text-align:center;">
         <a href="https://www.leyenda.net/cthulhu/biblio_persona.php?id=3894" target="_blank" rel="noopener noreferrer">
@@ -216,4 +264,3 @@
 
 </body>
 </html>
-
