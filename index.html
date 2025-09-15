@@ -136,42 +136,63 @@
     }
     footer a:hover { text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent); }
 
-    /* Recuadro RB4 responsive */
-    .portada-rb4 {
+    .banner-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
       border: var(--border);
       border-radius: 6px;
       padding: 1rem;
       margin-bottom: 1.5rem;
       background-color: var(--bg);
-      text-align: center;
     }
-    .portada-rb4 h2 {
-      margin-top: 0;
+    .banner-section h2 {
       color: var(--accent);
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      margin: 0.5rem 0;
     }
-    .portada-rb4 a img {
+    .banner-section a img {
       width: 80%;
       max-width: 400px;
       border: 1px solid var(--accent);
       border-radius: 6px;
       transition: filter 0.3s ease, transform 0.3s ease;
     }
-    .portada-rb4 a img:hover {
+    .banner-section a img:hover {
       filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
       transform: scale(1.05);
     }
-    .portada-rb4 p {
+    .banner-section p {
       color: #fff;
       margin-top: 0.5rem;
       font-size: 1rem;
     }
 
+    /* Sección redes sociales centrada con recuadro rojo */
+    .social-links {
+      text-align: center;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: var(--border);
+      border-radius: 6px;
+      max-width: 500px;
+      background-color: var(--bg);
+    }
+    .social-links h2 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .social-links p {
+      font-family: monospace;
+      color: #fff;
+      margin: 0.25rem 0;
+    }
+
     @media (max-width: 600px) {
-      .portada-rb4 a img {
+      .banner-section a img {
         width: 100%;
       }
-      .portada-rb4 h2 {
+      .banner-section h2 {
         font-size: 1.5rem;
       }
     }
@@ -198,37 +219,20 @@
 
 <main>
   <div class="left-section">
-    <!-- Recuadro Refugio Bizarro #4 -->
-    <section class="portada-rb4">
+    <section class="banner-section">
       <h2>Refugio Bizarro #4</h2>
       <a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=XXXX" target="_blank" rel="noopener noreferrer">
         <img src="Portada%20Refugio%20Bizarro%20%234.png" alt="Portada Refugio Bizarro #4" />
       </a>
       <p>Haz click acá para más información</p>
-    </section>
 
-    <section>
-      <h2 style="text-align:center;">
-        <a href="https://www.leyenda.net/cthulhu/biblio_persona.php?id=3894" target="_blank" rel="noopener noreferrer">
-          <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" />
-        </a>
-      </h2>
-      <h2>
-        <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
-          <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
-        </a>
-      </h2>
-    </section>
+      <a href="https://www.leyenda.net/cthulhu/biblio_persona.php?id=3894" target="_blank" rel="noopener noreferrer">
+        <img src="leyenda_banner.jpg" alt="Banner de Leyenda.net" />
+      </a>
 
-    <section>
-      <h2>Redes sociales y enlaces</h2>
-      <ul>
-        <li>
-          <p style="font-family: monospace; color: #aaa;">
-            Perfil en Twitter (X): <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer">@PaterDagon</a>
-          </p>
-        </li>
-      </ul>
+      <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
+        <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
+      </a>
     </section>
   </div>
 
@@ -258,6 +262,12 @@
     </section>
   </div>
 </main>
+
+<!-- Redes sociales centradas debajo de main con recuadro rojo -->
+<section class="social-links">
+  <h2>Redes sociales y enlaces</h2>
+  <p>Perfil en Twitter (X): <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer">@PaterDagon</a></p>
+</section>
 
 <footer>
   <p>© 2025 Ricardo Meyer Manríquez — <a href="mailto:rosenmaurer@gmail.com">rosenmaurer@gmail.com</a></p>
