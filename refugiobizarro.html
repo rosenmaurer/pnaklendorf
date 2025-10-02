@@ -19,15 +19,16 @@
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Refugio Bizarro">
   <meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta property="og:image" content="Petralogo.png">
+  <meta property="og:image" content="https://pnaklendorf.com/Petralogo.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pnaklendorf.com/refugiobizarro.html">
 
-  <!-- Twitter Meta Tags -->
+  <!-- Twitter Card: formato clásico con logo y descripción -->
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Refugio Bizarro">
   <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta name="twitter:image" content="Petralogo.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://pnaklendorf.com/Petralogo.png">
+  <meta name="twitter:image:alt" content="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
 
   <style>
     body {
@@ -38,7 +39,7 @@
       align-items: center;
       min-height: 100vh;
       margin: 0;
-      padding: 40px;
+      padding: 20px;
       line-height: 1.6;
       background-color: #000000;
       color: #ffffff;
@@ -50,7 +51,7 @@
     }
 
     header img {
-      width: 120px;
+      width: 100px;
       height: auto;
     }
 
@@ -60,7 +61,7 @@
     }
 
     .description {
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #8e44ad;
       margin-top: 10px;
     }
@@ -76,14 +77,6 @@
 
     .left-column, .right-column {
       flex: 1;
-    }
-
-    /* Responsive: dos columnas en pantallas medianas/grandes */
-    @media (min-width: 768px) {
-      main {
-        flex-direction: row;
-        align-items: flex-start;
-      }
     }
 
     .projects, .social-links {
@@ -112,13 +105,13 @@
     }
 
     .tolker img {
-      width: 300px;
+      max-width: 100%;
       height: auto;
     }
 
     /* Footer en la columna derecha */
     .footer-link {
-      font-size: 1.2em;
+      font-size: 1.1em;
       text-align: center;
       margin-top: 20px;
     }
@@ -137,6 +130,49 @@
       margin-top: 15px;
       font-size: 0.9em;
       color: #aaa;
+    }
+
+    /* ✅ Adaptación para pantallas grandes */
+    @media (min-width: 768px) {
+      main {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      header img {
+        width: 120px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .description {
+        font-size: 1.2em;
+      }
+    }
+
+    /* ✅ Ajustes extra para móviles pequeños */
+    @media (max-width: 480px) {
+      body {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.6em;
+      }
+
+      .description {
+        font-size: 1em;
+      }
+
+      .projects, .social-links {
+        padding: 15px;
+      }
+
+      .footer-link {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
@@ -196,3 +232,5 @@
   
 </body>
 </html>
+
+
