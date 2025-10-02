@@ -65,20 +65,32 @@
       margin-top: 10px;
     }
 
-    .container {
+    /* MAIN con 2 columnas */
+    main {
       display: flex;
+      flex-direction: column;
       width: 100%;
       max-width: 1200px;
-      flex-direction: column;
-      align-items: center;
       gap: 40px;
+    }
+
+    .left-column, .right-column {
+      flex: 1;
+    }
+
+    /* Responsive: dos columnas en pantallas medianas/grandes */
+    @media (min-width: 768px) {
+      main {
+        flex-direction: row;
+        align-items: flex-start;
+      }
     }
 
     .projects, .social-links {
       width: 100%;
       padding: 20px;
       border: 5px double #8e44ad;
-      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     a {
@@ -92,10 +104,23 @@
       color: #c39bd3;
     }
 
+    /* Imagen centrada */
+    .tolker {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .tolker img {
+      width: 300px;
+      height: auto;
+    }
+
+    /* Footer en la columna derecha */
     .footer-link {
       font-size: 1.2em;
-      margin-top: 40px;
       text-align: center;
+      margin-top: 20px;
     }
 
     .footer-link a {
@@ -107,6 +132,12 @@
       text-shadow: 0 0 5px #8e44ad;
       color: #c39bd3;
     }
+
+    .footer-link .copyright {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
@@ -114,55 +145,54 @@
   <header>
     <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
     <h1>Refugio Bizarro</h1>
-    <div class="description">
+    <p class="description">
       Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima. Coordinada por la Wiki Lovecraft.
-    </div>
+    </p>
   </header>
 
-  <div class="container">
-    <div class="projects">
-      <h2>Proyectos publicados</h2>
-      <ul>
-        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
-        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
-        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
-        <li><a href="https://leyenda.net/cthulhu/articulo.php?id=1556">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
-            <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2579">Refugio Bizarro #3 (julio 2025)</a></li>
-            <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591">Refugio Bizarro #4 (septiembre 2025)</a></li>
-      </ul>
+  <main>
+    <!-- Columna izquierda -->
+    <div class="left-column">
+      <div class="projects">
+        <h2>Proyectos publicados</h2>
+        <ul>
+          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
+          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
+          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
+          <li><a href="https://leyenda.net/cthulhu/articulo.php?id=1556">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
+          <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2579">Refugio Bizarro #3 (julio 2025)</a></li>
+          <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591">Refugio Bizarro #4 (septiembre 2025)</a></li>
+        </ul>
+      </div>
+
+      <div class="social-links">
+        <h2>Redes Sociales</h2>
+        <p><strong>Twitter (Gestionado por Ricardo Meyer):</strong></p>
+        <ul>
+          <li><a href="https://x.com/refugiobizarro">@refugiobizarro</a></li>
+        </ul>
+
+        <p><strong>Instagram y Threads (Gestionados por Yuke Kabula):</strong></p>
+        <ul>
+          <li><a href="https://www.threads.net/@refugio.bizarro">Threads</a></li>
+          <li><a href="https://www.instagram.com/refugio.bizarro/">Instagram</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="social-links">
-      <h2>Redes Sociales</h2>
-      <p><strong> Twitter (Gestionado por Ricardo Meyer) </strong></p>
-      <ul>
-        <li><a href="https://x.com/refugiobizarro">@refugiobizarro</a></li>
-      </ul>
+    <!-- Columna derecha -->
+    <div class="right-column">
+      <div class="tolker">
+        <img src="Tolker_el_Olvidado.png" alt="Ilustración Tolker el Olvidado">
+      </div>
 
-      <p><strong>Instagram y Threads (Gestionados por Yuke Kabula):</strong></p>
-      <ul>
-        <li><a href="https://www.threads.net/@refugio.bizarro">Threads</a></li>
-        <li><a href="https://www.instagram.com/refugio.bizarro/">Instagram</a></li>
-      </ul>
+      <div class="footer-link">
+        <p><a href="RefugioBizarro1-4.rar" download><strong>Descargar Refugio Bizarro #1-#4</strong></a></p>
+        <p><strong>Visita la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft">Wiki Lovecraft</a></strong></p>
+        <p class="copyright">© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
+      </div>
     </div>
-
-    <center>
-  <img src="Tolker_el_Olvidado.png" style="width: 300px;">
-</center>
-
-    <div class="footer-link">
-       <p><a href="RefugioBizarro1-4.rar" download> <strong>Descargar Refugio Bizarro #1-#4</strong> </a> </p>
-      <p><strong>Visita la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft">Wiki Lovecraft</a></strong></p>
-      
-  
-
-    </div>
-  </div>
+  </main>
   
 </body>
 </html>
-
-
-
-
-
