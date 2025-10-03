@@ -11,48 +11,17 @@
   <link rel="canonical" href="https://pnaklendorf.com/relatos-ricardo-meyer.html" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Relatos y poemas de Ricardo Meyer" />
-  <meta property="og:description" content="Relatos y poemas de Ricardo Meyer Manríquez para lectura gratuita." />
-  <meta property="og:image" content="Pnaklendorf.png" />
-  <meta property="og:url" content="https://pnaklendorf.com/relatos-ricardo-meyer.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_CL" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Relatos y poemas de Ricardo Meyer" />
-  <meta name="twitter:description" content="Relatos y poemas de Ricardo Meyer Manríquez para lectura gratuita." />
-  <meta name="twitter:image" content="Pnaklendorf.png" />
-
-  <!-- JSON-LD para SEO de obras literarias -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Relatos y poemas de Ricardo Meyer",
-    "author": {
-      "@type": "Person",
-      "name": "Ricardo Meyer Manríquez"
-    },
-    "url": "https://pnaklendorf.com/relatos-ricardo-meyer.html",
-    "description": "Relatos y poemas de Ricardo Meyer Manríquez para lectura gratuita.",
-    "genre": ["Horror", "Cthulhu Mythos", "Poemas", "Relatos"],
-    "inLanguage": "es",
-    "datePublished": "2023-2025",
-    "about": "Colección de relatos y poemas de horror y Mitos de Cthulhu"
-  }
-  </script>
-
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+
   <style>
     :root {
-      --bg: #000;
-      --fg: #e0e0e0;
-      --accent: #9b1f1f;
+      --bg: #f5f5f5;        
+      --fg: #1a1a1a;        
+      --accent: #9b1f1f;    
       --highlight: #ff5555;
       --link-hover: #c39bd3;
-      --border: 2px solid var(--accent);
+      --border: 1px solid #ccc;
       --maxw: 800px;
     }
 
@@ -68,13 +37,34 @@
     header {
       text-align: center;
       border-bottom: var(--border);
-      padding: 2rem 1rem;
+      background: #cccccc; 
+      padding: 1.5rem 1rem;
+      border-radius: 0 0 8px 8px;
     }
     header h1 {
-      margin: 0;
+      margin: 0.5rem 0;
       font-size: clamp(1.8rem, 4vw, 2.5rem);
       color: var(--accent);
       letter-spacing: 1px;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin: 0 12px;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--highlight);
+      background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: text-shadow 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      text-shadow: 0 0 8px var(--link-hover), 0 0 12px var(--accent);
+      transform: scale(1.05);
     }
 
     main {
@@ -131,8 +121,10 @@
       text-align: center;
       padding: 1rem;
       border-top: var(--border);
-      color: #aaa;
+      background: #cccccc; 
+      color: #222;
       font-size: 0.9rem;
+      border-radius: 8px 8px 0 0;
     }
     footer a {
       color: var(--highlight);
@@ -146,12 +138,19 @@
 
     @media (max-width: 768px) {
       main { width: 100%; padding: 0 10px; }
+      nav a { display: block; margin: 5px 0; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Relatos y poemas</h1>
+    <nav>
+      <a href="/index.html">Inicio</a>
+      <a href="relatos-ricardo-meyer.html">Relatos y poemas</a>
+      <a href="refugiobizarro.html">Refugio Bizarro</a>
+      <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
+    </nav>
   </header>
 
   <main>
@@ -173,9 +172,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
