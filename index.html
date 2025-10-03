@@ -31,12 +31,12 @@
   
   <style>
     :root {
-      --bg: #000;
-      --fg: #e0e0e0;
-      --accent: #9b1f1f;
+      --bg: #f5f5f5;       /* gris muy claro */
+      --fg: #1a1a1a;       /* texto oscuro */
+      --accent: #9b1f1f;   /* rojo acento */
       --highlight: #ff5555;
-      --border-color: var(--accent);
-      --border: 2px solid var(--border-color);
+      --border-color: #ccc;
+      --border: 1px solid var(--border-color);
       --maxw: 1200px;
     }
 
@@ -51,14 +51,15 @@
       text-align: center;
       padding: 2rem 1rem;
       border-bottom: var(--border);
+      background: #fff;
     }
     header h1 {
       margin: 0.5rem 0;
       color: var(--accent);
       font-size: clamp(2rem, 3vw + 1rem, 3rem);
     }
-    header p { margin: 0.25rem 0; color: #ccc; }
-    header em { color: #aaa; font-style: italic; }
+    header p { margin: 0.25rem 0; color: #444; }
+    header em { color: #666; font-style: italic; }
     header img {
       display: block;
       margin: 1rem auto;
@@ -103,7 +104,7 @@
     }
 
     section {
-      background-color: var(--bg);
+      background-color: #fff;
       border: var(--border);
       padding: 1rem;
       margin-bottom: 1.5rem;
@@ -120,14 +121,15 @@
     }
     section a:hover { text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent); }
 
-    img { display: block; margin: 1rem auto; max-width: 100%; border: 1px solid var(--accent); border-radius: 6px; }
+    img { display: block; margin: 1rem auto; max-width: 100%; border: 1px solid var(--border-color); border-radius: 6px; }
     .justified-text { text-align: justify; }
 
     footer {
       text-align: center;
       padding: 1rem;
       border-top: var(--border);
-      color: #aaa;
+      background: #fff;
+      color: #555;
     }
     footer a {
       font-weight: bold;
@@ -148,21 +150,21 @@
       border-radius: 6px;
       padding: 1rem;
       margin-bottom: 1.5rem;
-      background-color: var(--bg);
+      background-color: #fff;
     }
     .banner-section h2 { color: var(--accent); margin: 0.5rem 0; }
     .banner-section a img {
       width: 60%;
       max-width: 400px;
-      border: 1px solid var(--accent);
+      border: 1px solid var(--border-color);
       border-radius: 6px;
       transition: filter 0.3s ease, transform 0.3s ease;
     }
     .banner-section a img:hover {
-      filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
+      filter: brightness(1.1) drop-shadow(0 0 6px var(--highlight));
       transform: scale(1.05);
     }
-    .banner-section p { color: #fff; margin-top: 0.5rem; font-size: 1rem; }
+    .banner-section p { color: #222; margin-top: 0.5rem; font-size: 1rem; }
 
     .social-links {
       text-align: center;
@@ -171,16 +173,16 @@
       border: var(--border);
       border-radius: 6px;
       max-width: 500px;
-      background-color: var(--bg);
+      background-color: #fff;
     }
     .social-links h2 { color: var(--accent); margin-bottom: 0.5rem; }
-    .social-links p { font-family: monospace; color: #fff; margin: 0.25rem 0; }
+    .social-links p { font-family: monospace; color: #333; margin: 0.25rem 0; }
 
     .projects-section {
       border: var(--border);
       border-radius: 6px;
       padding: 1rem;
-      background-color: var(--bg);
+      background-color: #fff;
       margin-bottom: 1.5rem;
     }
     .projects-section h2 {
@@ -193,9 +195,7 @@
       padding-left: 1.5rem;
       margin-bottom: 1rem;
     }
-    .projects-section ul li {
-      margin-bottom: 0.5rem;
-    }
+    .projects-section ul li { margin-bottom: 0.5rem; }
     .projects-section ul li a {
       font-weight: bold;
       text-decoration: none;
@@ -209,7 +209,7 @@
     }
     .redacted {
       background-color: var(--accent);
-      color: var(--fg);
+      color: #fff;
       padding: 0 6px;
       border-radius: 4px;
       font-weight: bold;
@@ -268,7 +268,7 @@
     <section class="projects-section">
       <h2>Publicaciones</h2>
       <ul>
-        <li><a href="https://hplovecraft.fandom.com/es/wiki/Shangri-La_93:_Los_Mitos_de_Ghisguth" target="_blank" rel="noopener noreferrer">Shangri-La 93: Los Mitos de Ghisguth (enero 2024)</li>
+        <li><a href="https://hplovecraft.fandom.com/es/wiki/Shangri-La_93:_Los_Mitos_de_Ghisguth" target="_blank" rel="noopener noreferrer">Shangri-La 93: Los Mitos de Ghisguth (enero 2024)</a></li>
         <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531" target="_blank" rel="noopener noreferrer">Refugio Bizarro #1 (noviembre 2024)</a></li>
         <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550" target="_blank" rel="noopener noreferrer">Refugio Bizarro #2 (marzo 2025)</a></li>
         <li><a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave" target="_blank" rel="noopener noreferrer">La Pedanía del Agave (mayo 2025)</a></li>
@@ -295,7 +295,3 @@
 
 </body>
 </html>
-
-
-
-
