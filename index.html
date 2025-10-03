@@ -76,32 +76,28 @@
       flex-wrap: wrap;
       gap: 0.8rem;
       margin-top: 1rem;
-      background: #cccccc; /* gris oscuro */
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
     }
 
     nav a {
       display: inline-block;
-      padding: 0.5rem 1rem;
-      background: #fff; /* fondo blanco botones */
+      padding: 0.6rem 1.2rem;
+      background: #bbb; /* gris oscuro para los botones */
       color: var(--fg);
       font-weight: bold;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     nav a:hover {
-      background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
-      color: #fff;
+      box-shadow: 0 0 12px var(--highlight), 0 0 20px var(--accent);
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      background: #999; /* gris un poco más oscuro al hover */
     }
 
     .nav-cross img {
-      filter: none; /* eliminamos el gris original */
+      filter: none;
       transform: scale(1);
     }
     .nav-cross:hover img {
@@ -333,4 +329,3 @@
 
 </body>
 </html>
-
