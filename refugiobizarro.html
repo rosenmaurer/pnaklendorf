@@ -42,6 +42,9 @@
       --maxw: 1200px;
       --footer-bg: #eeeeee;
       --shadow: rgba(0,0,0,0.15);
+      --btn-bg: #8e44ad;
+      --btn-color: #fff;
+      --btn-hover-bg: #1abc9c;
     }
 
     * {
@@ -171,6 +174,38 @@
       transform: scale(1.05);
     }
 
+    /* Separación de banners */
+    .banners a {
+      display: block;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .banners a:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Botón de descarga */
+    .download-btn {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: var(--btn-bg);
+      color: var(--btn-color);
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 10px;
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 10px var(--shadow);
+    }
+
+    .download-btn:hover {
+      background-color: var(--btn-hover-bg);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px var(--shadow);
+    }
+
     .footer {
       width: 100%;
       text-align: center;
@@ -259,12 +294,14 @@
         <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
           <img src="wikilovecraft.png" alt="Banner de Wiki Lovecraft">
         </a>
+
+        <!-- Botón de descarga -->
+        <a href="RefugioBizarro1-4.rar" download class="download-btn">Descargar Refugio Bizarro #1-#4</a>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <p><a href="RefugioBizarro1-4.rar" download>Descargar Refugio Bizarro #1-#4</a></p>
     <p>© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
   </footer>
 </body>
