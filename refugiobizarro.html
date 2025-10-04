@@ -17,6 +17,7 @@
   --border-color: #ccc;
   --border: 1px solid var(--border-color);
   --maxw: 1200px;
+  --shadow: rgba(0,0,0,0.15);
 }
 
 body {
@@ -95,21 +96,63 @@ img:hover {
   filter: brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
 }
 
+/* Redes sociales */
+.social-links ul, .projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li, .projects li {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+  text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent);
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(1);
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
+}
+
+/* Botón descargar */
 .download-wrapper { display: flex; justify-content: center; margin-top: 1rem; }
 .download-btn {
-  padding: 0.6rem 1.2rem;
-  background: #bbb;
-  color: var(--fg);
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent);
+  color: #fff;
   font-weight: bold;
   border-radius: 8px;
-  box-shadow: 0 0 4px rgba(0,0,0,0.2);
   text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
 }
 .download-btn:hover {
+  background-color: var(--highlight);
   box-shadow: 0 0 12px var(--highlight), 0 0 20px var(--accent);
   transform: translateY(-2px);
-  background: #999;
 }
 
 footer {
@@ -182,9 +225,5 @@ footer {
 
 </body>
 </html>
-
-
-
-
 
 
