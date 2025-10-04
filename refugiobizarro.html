@@ -35,9 +35,9 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
-      background-color: #000000;
+      background: linear-gradient(135deg, #000000, #0b0010);
       color: #ffffff;
-      transition: background-color 0.5s, color 0.5s;
+      transition: background 0.5s, color 0.5s;
     }
 
     header {
@@ -56,6 +56,10 @@
 
     header img:hover {
       transform: scale(1.1);
+    }
+
+    h1, h2 {
+      text-shadow: 0 0 10px #8e44ad, 0 0 20px #c39bd3;
     }
 
     h1 {
@@ -90,12 +94,14 @@
       padding: 20px;
       border: 5px double #8e44ad;
       margin-bottom: 20px;
+      background-color: rgba(0,0,0,0.6);
+      box-shadow: 0 0 25px rgba(142, 68, 173, 0.4);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .projects:hover, .social-links:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 20px #8e44ad;
+      box-shadow: 0 0 35px #8e44ad;
     }
 
     a {
@@ -302,8 +308,6 @@
   </main>
   
 </body>
-</html>
-
 </html>
 
 
