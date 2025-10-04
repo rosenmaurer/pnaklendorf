@@ -14,22 +14,7 @@
   <!-- Meta SEO -->
   <meta name="description" content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura.">
   <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura">
-  <meta name="author" content="Refugio Bizarro">
   <link rel="canonical" href="https://pnaklendorf.com/refugiobizarro.html">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Refugio Bizarro">
-  <meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta property="og:image" content="https://pnaklendorf.com/Petralogo.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pnaklendorf.com/refugiobizarro.html">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Refugio Bizarro">
-  <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta name="twitter:image" content="https://pnaklendorf.com/Petralogo.png">
-  <meta name="twitter:image:alt" content="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
 
   <style>
     :root {
@@ -42,9 +27,6 @@
       --maxw: 1200px;
       --footer-bg: #eeeeee;
       --shadow: rgba(0,0,0,0.15);
-      --btn-bg: #8e44ad;
-      --btn-color: #fff;
-      --btn-hover-bg: #1abc9c;
     }
 
     * {
@@ -60,7 +42,6 @@
       flex-direction: column;
       align-items: center;
       padding: 20px;
-      transition: background-color 0.3s, color 0.3s;
     }
 
     header {
@@ -72,23 +53,11 @@
       width: 120px;
       height: auto;
       margin-bottom: 10px;
-      transition: transform 0.3s;
-    }
-
-    header img:hover {
-      transform: rotate(10deg) scale(1.05);
     }
 
     h1 {
       font-size: 2.5em;
       margin: 0.5rem 0;
-      color: var(--fg);
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-
-    h1:hover {
-      color: var(--accent);
-      text-shadow: 0 0 10px var(--accent);
     }
 
     .description {
@@ -118,25 +87,17 @@
       margin-bottom: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 15px var(--shadow);
-      transition: transform 0.3s, box-shadow 0.3s;
       background-color: #fff;
-    }
-
-    .projects:hover, .social-links:hover, .banners:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px var(--shadow);
     }
 
     a {
       color: var(--link-color);
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s, text-shadow 0.3s;
     }
 
     a:hover {
       color: var(--link-hover);
-      text-shadow: 0 0 8px var(--link-hover);
     }
 
     .social-links ul, .projects ul {
@@ -154,56 +115,27 @@
       height: auto;
       vertical-align: middle;
       margin-right: 8px;
-      transition: transform 0.3s;
     }
 
-    .social-links a:hover img {
-      transform: scale(1.2);
-    }
-
-    .banners img, header img {
+    .banners img {
       display: block;
       max-width: 100%;
       height: auto;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       border-radius: 6px;
-      transition: transform 0.3s;
     }
 
-    .banners img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Separación de banners */
-    .banners a {
-      display: block;
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-    }
-
-    .banners a:last-child {
-      margin-bottom: 0;
-    }
-
-    /* Botón de descarga */
+    /* Botón de descarga simple, marino con letras blancas */
     .download-btn {
       display: inline-block;
       padding: 15px 25px;
-      background-color: var(--btn-bg);
-      color: var(--btn-color);
+      background-color: #2c3e50; /* marino */
+      color: #ffffff; /* letras blancas */
       font-weight: bold;
       border-radius: 6px;
       text-decoration: none;
       text-align: center;
       margin-top: 10px;
-      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 4px 10px var(--shadow);
-    }
-
-    .download-btn:hover {
-      background-color: var(--btn-hover-bg);
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px var(--shadow);
     }
 
     .footer {
@@ -213,16 +145,6 @@
       padding: 20px 0;
       margin-top: 30px;
       border-top: 2px solid var(--accent);
-    }
-
-    .footer a {
-      color: var(--link-color);
-      font-weight: bold;
-    }
-
-    .footer a:hover {
-      color: var(--link-hover);
-      text-shadow: 0 0 8px var(--link-hover);
     }
 
     @media (min-width: 768px) {
@@ -254,7 +176,7 @@
 
 <body>
   <header>
-    <img src="Petralogo.png" alt="Logo morado del colectivo Refugio Bizarro con temática de Cthulhu">
+    <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro">
     <h1>Refugio Bizarro</h1>
     <p class="description">
       Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.
@@ -278,9 +200,9 @@
       <div class="social-links">
         <h2>Redes Sociales</h2>
         <ul>
-          <li><a href="https://x.com/refugiobizarro"><img src="twitter.png" alt="Icono de X/Twitter"> @refugiobizarro</a></li>
-          <li><a href="https://www.threads.net/@refugio.bizarro"><img src="threads.png" alt="Icono de Threads"> refugio.bizarro</a></li>
-          <li><a href="https://www.instagram.com/refugio.bizarro/"><img src="instagram.png" alt="Icono de Instagram"> @refugio.bizarro</a></li>
+          <li><a href="https://x.com/refugiobizarro"><img src="twitter.png" alt="Twitter"> @refugiobizarro</a></li>
+          <li><a href="https://www.threads.net/@refugio.bizarro"><img src="threads.png" alt="Threads"> refugio.bizarro</a></li>
+          <li><a href="https://www.instagram.com/refugio.bizarro/"><img src="instagram.png" alt="Instagram"> @refugio.bizarro</a></li>
         </ul>
       </div>
     </div>
@@ -289,15 +211,15 @@
       <div class="banners">
         <h2>Sitios y colectivos aliados</h2>
         <a href="http://yogsotheria.wikidot.com/antologias-por-serie-en-espanol" target="_blank">
-          <img src="yogsotheria.png" alt="Banner de Yogsotheria, antologías por serie en español">
+          <img src="yogsotheria.png" alt="Banner de Yogsotheria">
         </a>
         <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
           <img src="wikilovecraft.png" alt="Banner de Wiki Lovecraft">
         </a>
-
-        <!-- Botón de descarga -->
-        <a href="RefugioBizarro1-4.rar" download class="download-btn">Descargar Refugio Bizarro #1-#4</a>
       </div>
+
+      <!-- Botón de descarga debajo de la caja morada -->
+      <a href="RefugioBizarro1-4.rar" download class="download-btn">Descargar Refugio Bizarro #1-#4</a>
     </div>
   </main>
 
