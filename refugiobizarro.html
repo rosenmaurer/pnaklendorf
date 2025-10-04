@@ -32,12 +32,12 @@
 
   <style>
     :root {
-      --bg: #000000;
-      --fg: #ffffff;
+      --bg: #f5f5f5;
+      --fg: #1a1a1a;
       --accent: #8e44ad;
       --link-color: #2ecc71;
       --link-hover: #c39bd3;
-      --border: 5px double #8e44ad;
+      --border: 5px double var(--accent);
       --maxw: 1200px;
     }
 
@@ -71,7 +71,7 @@
 
     .description {
       font-size: 1.2em;
-      color: var(--accent);
+      color: var(--fg);
       margin-top: 10px;
     }
 
@@ -92,6 +92,8 @@
       padding: 20px;
       border: var(--border);
       margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 8px;
     }
 
     a {
@@ -117,6 +119,7 @@
       height: auto;
       border: 3px solid var(--accent);
       box-shadow: 0 0 15px var(--accent);
+      border-radius: 8px;
     }
 
     .social-links ul {
@@ -157,7 +160,7 @@
     .footer-link .copyright {
       margin-top: 10px;
       font-size: 0.9em;
-      color: #aaa;
+      color: #555;
     }
 
     @media (min-width: 768px) {
@@ -246,5 +249,3 @@
   </main>
 </body>
 </html>
-
-
