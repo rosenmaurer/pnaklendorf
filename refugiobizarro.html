@@ -5,25 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Refugio Bizarro</title>
 
-  <!-- Favicon -->
   <link rel="icon" href="Petralogo.png" type="image/png">
-
-  <!-- Fuente EB Garamond -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-  <!-- Meta SEO -->
   <meta name="description" content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura.">
   <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura">
   <link rel="canonical" href="https://pnaklendorf.com/refugiobizarro.html">
 
-  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Refugio Bizarro">
   <meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
   <meta property="og:image" content="https://pnaklendorf.com/Petralogo.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pnaklendorf.com/refugiobizarro.html">
 
-  <!-- Twitter Card: formato clásico con logo y descripción -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Refugio Bizarro">
   <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
@@ -43,16 +37,25 @@
       line-height: 1.6;
       background-color: #000000;
       color: #ffffff;
+      transition: background-color 0.5s, color 0.5s;
     }
 
     header {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeIn 1s forwards;
     }
 
     header img {
       width: 100px;
       height: auto;
+      transition: transform 0.3s;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
     }
 
     h1 {
@@ -66,7 +69,6 @@
       margin-top: 10px;
     }
 
-    /* MAIN con 2 columnas */
     main {
       display: flex;
       flex-direction: column;
@@ -77,6 +79,10 @@
 
     .left-column, .right-column {
       flex: 1;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+      animation-delay: 0.5s;
     }
 
     .projects, .social-links {
@@ -84,36 +90,58 @@
       padding: 20px;
       border: 5px double #8e44ad;
       margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .projects:hover, .social-links:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #8e44ad;
     }
 
     a {
-      color: darkgreen;
+      color: #2ecc71;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s, text-shadow 0.3s;
     }
 
     a:hover {
-      text-shadow: 0 0 5px #8e44ad;
+      text-shadow: 0 0 12px #c39bd3;
       color: #c39bd3;
     }
 
-    /* Imagen centrada */
     .tolker {
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+      animation-delay: 0.8s;
     }
 
     .tolker img {
       max-width: 100%;
       height: auto;
+      border: 3px solid #8e44ad;
+      box-shadow: 0 0 15px #8e44ad;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: ghostGlow 2s infinite alternate;
     }
 
-    /* Footer en la columna derecha */
+    .tolker img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #c39bd3;
+    }
+
     .footer-link {
       font-size: 1.1em;
       text-align: center;
       margin-top: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+      animation-delay: 1s;
     }
 
     .footer-link a {
@@ -122,7 +150,7 @@
     }
 
     .footer-link a:hover {
-      text-shadow: 0 0 5px #8e44ad;
+      text-shadow: 0 0 12px #c39bd3;
       color: #c39bd3;
     }
 
@@ -132,7 +160,41 @@
       color: #aaa;
     }
 
-    /* ✅ Adaptación para pantallas grandes */
+    .social-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-links li {
+      margin-bottom: 10px;
+    }
+
+    .social-links img {
+      width: 20px;
+      height: auto;
+      vertical-align: middle;
+      margin-right: 8px;
+      transition: filter 0.3s, transform 0.3s;
+    }
+
+    .social-links a:hover img {
+      filter: drop-shadow(0 0 12px #8e44ad);
+      transform: scale(1.2);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes ghostGlow {
+      0% { box-shadow: 0 0 15px #8e44ad; }
+      50% { box-shadow: 0 0 25px #c39bd3; }
+      100% { box-shadow: 0 0 15px #8e44ad; }
+    }
+
     @media (min-width: 768px) {
       main {
         flex-direction: row;
@@ -152,7 +214,6 @@
       }
     }
 
-    /* ✅ Ajustes extra para móviles pequeños */
     @media (max-width: 480px) {
       body {
         padding: 15px;
@@ -187,7 +248,6 @@
   </header>
 
   <main>
-    <!-- Columna izquierda -->
     <div class="left-column">
       <div class="projects">
         <h2>Proyectos publicados</h2>
@@ -205,18 +265,29 @@
         <h2>Redes Sociales</h2>
         <p><strong>Twitter (Gestionado por Ricardo Meyer):</strong></p>
         <ul>
-          <li><a href="https://x.com/refugiobizarro">@refugiobizarro</a></li>
+          <li>
+            <a href="https://x.com/refugiobizarro">
+              <img src="twitter.png" alt="Twitter"> @refugiobizarro
+            </a>
+          </li>
         </ul>
 
         <p><strong>Instagram y Threads (Gestionados por Yuke Kabula):</strong></p>
         <ul>
-          <li><a href="https://www.threads.net/@refugio.bizarro">Threads</a></li>
-          <li><a href="https://www.instagram.com/refugio.bizarro/">Instagram</a></li>
+          <li>
+            <a href="https://www.threads.net/@refugio.bizarro">
+              <img src="threads.png" alt="Threads"> refugio.bizarro
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/refugio.bizarro/">
+              <img src="instagram.png" alt="Instagram"> @refugio.bizarro
+            </a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <!-- Columna derecha -->
     <div class="right-column">
       <div class="tolker">
         <img src="Tolker_el_Olvidado.png" alt="Ilustración Tolker el Olvidado">
@@ -232,6 +303,9 @@
   
 </body>
 </html>
+
+</html>
+
 
 
 
