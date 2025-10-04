@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Refugio Bizarro</title>
 
+  <!-- Favicon -->
   <link rel="icon" href="Petralogo.png" type="image/png">
+
+  <!-- Fuente EB Garamond -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
+  <!-- Meta SEO -->
   <meta name="description" content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura.">
   <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura">
   <link rel="canonical" href="https://pnaklendorf.com/refugiobizarro.html">
@@ -19,84 +23,87 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pnaklendorf.com/refugiobizarro.html">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Refugio Bizarro">
   <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
   <meta name="twitter:image" content="https://pnaklendorf.com/Petralogo.png">
   <meta name="twitter:image:alt" content="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
 
   <style>
+    :root {
+      --bg: #000000;
+      --fg: #ffffff;
+      --accent: #8e44ad;
+      --link-color: #2ecc71;
+      --link-hover: #c39bd3;
+      --border: 5px double #8e44ad;
+      --maxw: 1200px;
+    }
+
     body {
+      margin: 0;
       font-family: 'EB Garamond', serif;
+      background-color: var(--bg);
+      color: var(--fg);
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      margin: 0;
       padding: 20px;
-      line-height: 1.6;
-      background: linear-gradient(135deg, #000000, #1a001a);
-      color: #ffffff;
     }
 
     header {
       text-align: center;
       margin-bottom: 30px;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: fadeIn 1s forwards;
     }
 
     header img {
       width: 120px;
       height: auto;
-      transition: transform 0.3s;
+      margin-bottom: 10px;
     }
-    header img:hover { transform: scale(1.1); }
 
-    h1 { font-size: 2.5em; margin-top: 10px; color: #8e44ad; }
-    .description { font-size: 1.2em; color: #c39bd3; margin-top: 10px; }
+    h1 {
+      font-size: 2.5em;
+      margin: 0.5rem 0;
+      color: var(--accent);
+    }
+
+    .description {
+      font-size: 1.2em;
+      color: var(--accent);
+      margin-top: 10px;
+    }
 
     main {
       display: flex;
       flex-direction: column;
+      max-width: var(--maxw);
       width: 100%;
-      max-width: 1200px;
       gap: 40px;
     }
 
     .left-column, .right-column {
       flex: 1;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s forwards;
     }
-    .left-column { animation-delay: 0.5s; }
-    .right-column { animation-delay: 0.8s; }
 
     .projects, .social-links {
       width: 100%;
       padding: 20px;
-      border: 5px double #8e44ad;
+      border: var(--border);
       margin-bottom: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .projects:hover, .social-links:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px #8e44ad;
     }
 
     a {
-      color: #2ecc71;
+      color: var(--link-color);
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s, text-shadow 0.3s;
     }
+
     a:hover {
-      text-shadow: 0 0 12px #c39bd3;
-      color: #c39bd3;
+      color: var(--link-hover);
+      text-shadow: 0 0 8px var(--link-hover);
     }
 
     .tolker {
@@ -104,131 +111,140 @@
       justify-content: center;
       margin-bottom: 20px;
     }
+
     .tolker img {
       max-width: 100%;
       height: auto;
-      border: 3px solid #8e44ad;
-      box-shadow: 0 0 15px #8e44ad;
-      transition: transform 0.3s, box-shadow 0.3s;
-      animation: ghostGlow 2s infinite alternate;
-    }
-    .tolker img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px #c39bd3;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 15px var(--accent);
     }
 
-    .social-links ul { list-style: none; padding: 0; }
-    .social-links li { margin-bottom: 10px; }
+    .social-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-links li {
+      margin-bottom: 10px;
+    }
+
     .social-links img {
       width: 20px;
       height: auto;
       vertical-align: middle;
       margin-right: 8px;
-      transition: filter 0.3s, transform 0.3s;
+      transition: transform 0.3s;
     }
+
     .social-links a:hover img {
-      filter: drop-shadow(0 0 12px #8e44ad);
       transform: scale(1.2);
     }
 
     .footer-link {
-      font-size: 1.1em;
       text-align: center;
       margin-top: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s forwards;
-      animation-delay: 1s;
     }
-    .footer-link a:hover { text-shadow: 0 0 12px #c39bd3; }
 
-    .footer-link .copyright { margin-top: 15px; font-size: 0.9em; color: #aaa; }
+    .footer-link a {
+      color: var(--accent);
+    }
 
-    @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
-    @keyframes ghostGlow {
-      0% { box-shadow: 0 0 15px #8e44ad; }
-      50% { box-shadow: 0 0 25px #c39bd3; }
-      100% { box-shadow: 0 0 15px #8e44ad; }
+    .footer-link a:hover {
+      color: var(--link-hover);
+      text-shadow: 0 0 8px var(--link-hover);
+    }
+
+    .footer-link .copyright {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #aaa;
     }
 
     @media (min-width: 768px) {
-      main { flex-direction: row; align-items: flex-start; }
-      header img { width: 120px; }
-      h1 { font-size: 2.5em; }
-      .description { font-size: 1.2em; }
+      main {
+        flex-direction: row;
+        align-items: flex-start;
+      }
     }
 
     @media (max-width: 480px) {
-      body { padding: 15px; }
-      h1 { font-size: 1.6em; }
-      .description { font-size: 1em; }
-      .projects, .social-links { padding: 15px; }
+      body {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .description {
+        font-size: 1em;
+      }
+
+      .projects, .social-links {
+        padding: 15px;
+      }
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
+    <h1>Refugio Bizarro</h1>
+    <p class="description">
+      Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.
+    </p>
+  </header>
 
-<header>
-  <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro">
-  <h1>Refugio Bizarro</h1>
-  <p class="description">
-    Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima. Coordinada por la Wiki Lovecraft.
-  </p>
-</header>
+  <main>
+    <div class="left-column">
+      <div class="projects">
+        <h2>Proyectos publicados</h2>
+        <ul>
+          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
+          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
+          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
+          <li><a href="https://leyenda.net/cthulhu/articulo.php?id=1556">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
+          <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2579">Refugio Bizarro #3 (junio 2025)</a></li>
+          <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591">Refugio Bizarro #4 (septiembre 2025)</a></li>
+        </ul>
+      </div>
 
-<main>
-  <div class="left-column">
-    <div class="projects">
-      <h2>Proyectos publicados</h2>
-      <ul>
-        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
-        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
-        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
-        <li><a href="https://leyenda.net/cthulhu/articulo.php?id=1556">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
-        <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2579">Refugio Bizarro #3 (junio 2025)</a></li>
-        <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591">Refugio Bizarro #4 (septiembre 2025)</a></li>
-      </ul>
+      <div class="social-links">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li>
+            <a href="https://x.com/refugiobizarro">
+              <img src="twitter.png" alt="Twitter"> @refugiobizarro
+            </a>
+          </li>
+          <li>
+            <a href="https://www.threads.net/@refugio.bizarro">
+              <img src="threads.png" alt="Threads"> refugio.bizarro
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/refugio.bizarro/">
+              <img src="instagram.png" alt="Instagram"> @refugio.bizarro
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="social-links">
-      <h2>Redes Sociales</h2>
-      <p><strong>Twitter (Gestionado por Ricardo Meyer):</strong></p>
-      <ul>
-        <li>
-          <a href="https://x.com/refugiobizarro">
-            <img src="twitter.png" alt="Twitter"> @refugiobizarro
-          </a>
-        </li>
-      </ul>
+    <div class="right-column">
+      <div class="tolker">
+        <img src="Tolker_el_Olvidado.png" alt="Ilustración Tolker el Olvidado">
+      </div>
 
-      <p><strong>Instagram y Threads (Gestionados por Yuke Kabula):</strong></p>
-      <ul>
-        <li>
-          <a href="https://www.threads.net/@refugio.bizarro">
-            <img src="threads.png" alt="Threads"> refugio.bizarro
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/refugio.bizarro/">
-            <img src="instagram.png" alt="Instagram"> @refugio.bizarro
-          </a>
-        </li>
-      </ul>
+      <div class="footer-link">
+        <p><a href="RefugioBizarro1-4.rar" download><strong>Descargar Refugio Bizarro #1-#4</strong></a></p>
+        <p><strong>Visita la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft">Wiki Lovecraft</a></strong></p>
+        <p class="copyright">© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
+      </div>
     </div>
-  </div>
-
-  <div class="right-column">
-    <div class="tolker">
-      <img src="Tolker_el_Olvidado.png" alt="Ilustración Tolker el Olvidado">
-    </div>
-
-    <div class="footer-link">
-      <p><a href="RefugioBizarro1-4.rar" download><strong>Descargar Refugio Bizarro #1-#4</strong></a></p>
-      <p><strong>Visita la <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft">Wiki Lovecraft</a></strong></p>
-      <p class="copyright">© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</main>
-
+  </main>
 </body>
 </html>
+
+
