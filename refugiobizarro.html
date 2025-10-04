@@ -1,234 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Refugio Bizarro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refugio Bizarro | Estilo Pnaklendorf</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="Petralogo.png" type="image/png">
+<link rel="icon" href="Petralogo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-  <!-- Fuente EB Garamond -->
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f5f5;
+  --fg: #1a1a1a;
+  --accent: #9b1f1f;
+  --highlight: #ff5555;
+  --border-color: #ccc;
+  --border: 1px solid var(--border-color);
+  --maxw: 1200px;
+}
 
-  <style>
-    :root {
-      --bg: #fefefe;
-      --fg: #111111;
-      --accent: #000000; /* ahora negro en lugar de morado */
-      --link-color: #2c3e50;
-      --link-hover: #1abc9c;
-      --border: 5px double var(--accent);
-      --maxw: 1200px;
-      --footer-bg: #eeeeee;
-      --shadow: rgba(0,0,0,0.15);
-    }
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  background-color: var(--bg);
+  color: var(--fg);
+}
 
-    * {
-      box-sizing: border-box;
-    }
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: var(--border);
+  background: #cccccc;
+  border-radius: 0 0 8px 8px;
+}
+header h1 { margin: 0.5rem 0; color: var(--accent); font-size: clamp(2rem, 3vw + 1rem, 3rem); }
+header p { color: #222; margin: 0.25rem 0; }
+header img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+header img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
+}
 
-    body {
-      margin: 0;
-      font-family: 'EB Garamond', serif;
-      background-color: var(--bg);
-      color: var(--fg);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--maxw);
+  margin: 2rem auto;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.left-column, .right-column { flex: 1 1 45%; min-width: 300px; }
 
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+.projects, .social-links, .banners {
+  background-color: #fff;
+  border: var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.projects:hover, .social-links:hover, .banners:hover {
+  box-shadow: 0 0 12px var(--highlight), 0 0 20px var(--accent);
+  transform: translateY(-2px);
+}
 
-    header img {
-      width: 120px;
-      height: auto;
-      margin-bottom: 10px;
-    }
+h2 { color: var(--accent); margin-top: 0; }
 
-    h1 {
-      font-size: 2.5em;
-      margin: 0.5rem 0;
-    }
+a {
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text-shadow 0.3s ease;
+}
+a:hover { text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent); }
 
-    .description {
-      font-size: 1.2em;
-      color: var(--fg);
-      margin-top: 10px;
-    }
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
+}
 
-    main {
-      display: flex;
-      flex-direction: column;
-      max-width: var(--maxw);
-      width: 100%;
-      gap: 40px;
-      padding: 0 10px;
-    }
+.download-wrapper { display: flex; justify-content: center; margin-top: 1rem; }
+.download-btn {
+  padding: 0.6rem 1.2rem;
+  background: #bbb;
+  color: var(--fg);
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.download-btn:hover {
+  box-shadow: 0 0 12px var(--highlight), 0 0 20px var(--accent);
+  transform: translateY(-2px);
+  background: #999;
+}
 
-    .left-column, .right-column {
-      flex: 1;
-      min-width: 300px;
-    }
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: var(--border);
+  background: #cccccc;
+  color: #222;
+  border-radius: 8px 8px 0 0;
+}
 
-    .projects, .social-links, .banners {
-      width: 100%;
-      padding: 20px;
-      border: var(--border);
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px var(--shadow);
-      background-color: #fff;
-    }
-
-    a {
-      color: var(--link-color);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      color: var(--link-hover);
-    }
-
-    .social-links ul, .projects ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .social-links li, .projects li {
-      margin-bottom: 10px;
-    }
-
-    .social-links img {
-      width: 20px;
-      height: auto;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-
-    .banners img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto 20px;
-      border-radius: 6px;
-    }
-
-    /* Botón centrado debajo de banners */
-    .download-wrapper {
-      display: flex;
-      justify-content: center;
-      margin-top: 15px;
-    }
-
-    .download-btn {
-      padding: 15px 25px;
-      background-color: #2c3e50; /* marino oscuro */
-      color: #ffffff; /* letras blancas */
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    .footer {
-      width: 100%;
-      text-align: center;
-      background-color: var(--footer-bg);
-      padding: 20px 0;
-      margin-top: 30px;
-      border-top: 2px solid var(--accent); /* ahora negro */
-    }
-
-    @media (min-width: 768px) {
-      main {
-        flex-direction: row;
-        gap: 40px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 15px;
-      }
-
-      h1 {
-        font-size: 1.8em;
-      }
-
-      .description {
-        font-size: 1em;
-      }
-
-      .projects, .social-links, .banners {
-        padding: 15px;
-      }
-    }
-  </style>
+@media (max-width: 600px) {
+  main { flex-direction: column; }
+  .left-column, .right-column { width: 100%; }
+}
+</style>
 </head>
-
 <body>
-  <header>
-    <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro">
-    <h1>Refugio Bizarro</h1>
-    <p class="description">
-      Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.
-    </p>
-  </header>
 
-  <main>
-    <div class="left-column">
-      <div class="projects">
-        <h2>Proyectos publicados</h2>
-        <ul>
-          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
-          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
-          <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
-          <li><a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
-          <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2579">Refugio Bizarro #3 (junio 2025)</a></li>
-          <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591">Refugio Bizarro #4 (septiembre 2025)</a></li>
-        </ul>
-      </div>
+<header>
+  <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro">
+  <h1>Refugio Bizarro</h1>
+  <p>Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.</p>
+</header>
 
-      <div class="social-links">
-        <h2>Redes Sociales</h2>
-        <ul>
-          <li><a href="https://x.com/refugiobizarro"><img src="twitter.png" alt="Twitter"> @refugiobizarro</a></li>
-          <li><a href="https://www.threads.net/@refugio.bizarro"><img src="threads.png" alt="Threads"> refugio.bizarro</a></li>
-          <li><a href="https://www.instagram.com/refugio.bizarro/"><img src="instagram.png" alt="Instagram"> @refugio.bizarro</a></li>
-        </ul>
-      </div>
+<main>
+  <div class="left-column">
+    <div class="projects">
+      <h2>Proyectos publicados</h2>
+      <ul>
+        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
+        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2550">Refugio Bizarro #2 (marzo 2025)</a></li>
+        <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2557">El tirano del sol naciente (marzo 2025)</a></li>
+        <li><a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">La Pedanía del Agave (CthulhuD100) (mayo 2025)</a></li>
+        <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2579">Refugio Bizarro #3 (junio 2025)</a></li>
+        <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591">Refugio Bizarro #4 (septiembre 2025)</a></li>
+      </ul>
     </div>
 
-    <div class="right-column">
-      <div class="banners">
-        <h2>Sitios y colectivos aliados</h2>
-        <a href="http://yogsotheria.wikidot.com/" target="_blank">
-          <img src="yogsotheria.png" alt="Banner de Yogsotheria">
-        </a>
-        <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
-          <img src="wikilovecraft.png" alt="Banner de Wiki Lovecraft">
-        </a>
-      </div>
-
-      <!-- Botón centrado debajo de la caja de banners -->
-      <div class="download-wrapper">
-        <a href="RefugioBizarro1-4.rar" download class="download-btn">Descargar Refugio Bizarro #1-#4</a>
-      </div>
+    <div class="social-links">
+      <h2>Redes Sociales</h2>
+      <ul>
+        <li><a href="https://x.com/refugiobizarro"><img src="twitter.png" alt="Twitter"> @refugiobizarro</a></li>
+        <li><a href="https://www.threads.net/@refugio.bizarro"><img src="threads.png" alt="Threads"> refugio.bizarro</a></li>
+        <li><a href="https://www.instagram.com/refugio.bizarro/"><img src="instagram.png" alt="Instagram"> @refugio.bizarro</a></li>
+      </ul>
     </div>
-  </main>
+  </div>
 
-  <footer class="footer">
-    <p>© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
-  </footer>
+  <div class="right-column">
+    <div class="banners">
+      <h2>Sitios y colectivos aliados</h2>
+      <a href="http://yogsotheria.wikidot.com/" target="_blank">
+        <img src="yogsotheria.png" alt="Banner de Yogsotheria">
+      </a>
+      <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
+        <img src="wikilovecraft.png" alt="Banner de Wiki Lovecraft">
+      </a>
+    </div>
+
+    <div class="download-wrapper">
+      <a href="RefugioBizarro1-4.rar" download class="download-btn">Descargar Refugio Bizarro #1-#4</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
+
+
 
 
 
