@@ -32,14 +32,14 @@
 
   <style>
     :root {
-      --bg: #f5f5f5;
-      --fg: #1a1a1a;
+      --bg: #f5f5f5;       /* fondo gris claro como en el index */
+      --fg: #1a1a1a;       /* texto oscuro */
       --accent: #8e44ad;
       --link-color: #2ecc71;
       --link-hover: #c39bd3;
-      --border: 5px double var(--accent);
+      --border: 5px double #8e44ad;
       --maxw: 1200px;
-      --header-bg: #cccccc; /* header gris igual que en index */
+      --header-bg: #ccc;   /* header gris */
     }
 
     body {
@@ -75,7 +75,7 @@
 
     .description {
       font-size: 1.2em;
-      color: var(--fg);
+      color: var(--accent);
       margin-top: 10px;
     }
 
@@ -97,7 +97,7 @@
       border: var(--border);
       margin-bottom: 20px;
       background-color: #fff;
-      border-radius: 8px;
+      border-radius: 6px;
     }
 
     a {
@@ -116,10 +116,6 @@
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
-      min-height: 250px; /* espacio vacío reservado */
-      background-color: #fff;
-      border: var(--border);
-      border-radius: 8px;
     }
 
     .social-links ul {
@@ -183,7 +179,7 @@
         font-size: 1em;
       }
 
-      .projects, .social-links, .tolker {
+      .projects, .social-links {
         padding: 15px;
       }
     }
@@ -237,7 +233,9 @@
 
     <div class="right-column">
       <div class="tolker">
-        <!-- Espacio vacío reservado para uso futuro -->
+        <a href="http://yogsotheria.wikidot.com/antologias-por-serie-en-espanol" target="_blank" rel="noopener noreferrer">
+          <img src="yogsotheria.png" alt="Banner Yogsotheria" style="max-width: 90%; height: auto; display: block; margin: 0 auto;">
+        </a>
       </div>
 
       <div class="footer-link">
