@@ -12,18 +12,6 @@
   <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura">
   <link rel="canonical" href="https://pnaklendorf.com/refugiobizarro.html">
 
-  <meta property="og:title" content="Refugio Bizarro">
-  <meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta property="og:image" content="https://pnaklendorf.com/Petralogo.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pnaklendorf.com/refugiobizarro.html">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Refugio Bizarro">
-  <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta name="twitter:image" content="https://pnaklendorf.com/Petralogo.png">
-  <meta name="twitter:image:alt" content="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
-
   <style>
     body {
       font-family: 'EB Garamond', serif;
@@ -37,15 +25,11 @@
       line-height: 1.6;
       background: linear-gradient(135deg, #000000, #0b0010);
       color: #ffffff;
-      transition: background 0.5s, color 0.5s;
     }
 
     header {
       text-align: center;
       margin-bottom: 30px;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: fadeIn 1s forwards;
     }
 
     header img {
@@ -55,16 +39,17 @@
     }
 
     header img:hover {
-      transform: scale(1.1);
-    }
-
-    h1, h2 {
-      text-shadow: 0 0 10px #8e44ad, 0 0 20px #c39bd3;
+      transform: scale(1.05);
     }
 
     h1 {
       font-size: 2em;
       margin-top: 10px;
+      color: #c39bd3;
+    }
+
+    h2 {
+      color: #8e44ad;
     }
 
     .description {
@@ -83,10 +68,6 @@
 
     .left-column, .right-column {
       flex: 1;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s forwards;
-      animation-delay: 0.5s;
     }
 
     .projects, .social-links {
@@ -95,24 +76,16 @@
       border: 5px double #8e44ad;
       margin-bottom: 20px;
       background-color: rgba(0,0,0,0.6);
-      box-shadow: 0 0 25px rgba(142, 68, 173, 0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .projects:hover, .social-links:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 35px #8e44ad;
     }
 
     a {
       color: #2ecc71;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s, text-shadow 0.3s;
+      transition: color 0.3s;
     }
 
     a:hover {
-      text-shadow: 0 0 12px #c39bd3;
       color: #c39bd3;
     }
 
@@ -120,34 +93,18 @@
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s forwards;
-      animation-delay: 0.8s;
     }
 
     .tolker img {
       max-width: 100%;
       height: auto;
       border: 3px solid #8e44ad;
-      box-shadow: 0 0 15px #8e44ad;
-      transition: transform 0.3s, box-shadow 0.3s;
-      animation: ghostGlow 2s infinite alternate;
-    }
-
-    .tolker img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px #c39bd3;
     }
 
     .footer-link {
       font-size: 1.1em;
       text-align: center;
       margin-top: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s forwards;
-      animation-delay: 1s;
     }
 
     .footer-link a {
@@ -156,7 +113,6 @@
     }
 
     .footer-link a:hover {
-      text-shadow: 0 0 12px #c39bd3;
       color: #c39bd3;
     }
 
@@ -180,25 +136,6 @@
       height: auto;
       vertical-align: middle;
       margin-right: 8px;
-      transition: filter 0.3s, transform 0.3s;
-    }
-
-    .social-links a:hover img {
-      filter: drop-shadow(0 0 12px #8e44ad);
-      transform: scale(1.2);
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes ghostGlow {
-      0% { box-shadow: 0 0 15px #8e44ad; }
-      50% { box-shadow: 0 0 25px #c39bd3; }
-      100% { box-shadow: 0 0 15px #8e44ad; }
     }
 
     @media (min-width: 768px) {
@@ -309,6 +246,8 @@
   
 </body>
 </html>
+
+
 
 
 
