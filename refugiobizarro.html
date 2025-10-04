@@ -5,41 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Refugio Bizarro</title>
 
-  <!-- Favicon -->
   <link rel="icon" href="Petralogo.png" type="image/png">
-
-  <!-- Fuente EB Garamond -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-  <!-- Meta SEO -->
   <meta name="description" content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura.">
   <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura">
   <link rel="canonical" href="https://pnaklendorf.com/refugiobizarro.html">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Refugio Bizarro">
-  <meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta property="og:image" content="https://pnaklendorf.com/Petralogo.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pnaklendorf.com/refugiobizarro.html">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Refugio Bizarro">
-  <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta name="twitter:image" content="https://pnaklendorf.com/Petralogo.png">
-  <meta name="twitter:image:alt" content="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
-
   <style>
     :root {
-      --bg: #f5f5f5;
-      --fg: #1a1a1a;
-      --accent: #8e44ad;
-      --link-color: #064635; /* verde marino */
-      --link-hover: #046d54;
-      --border: 5px double #8e44ad;
+      --bg: #ffffff;
+      --fg: #000000;
+      --accent: #2e4d4d; /* verde marino suave */
+      --link-color: #2e4d4d;
+      --link-hover: #3c7a7a;
+      --border: 1px solid #555;
       --maxw: 1200px;
-      --footer-bg: #ddd;
     }
 
     body {
@@ -51,8 +32,6 @@
       flex-direction: column;
       align-items: center;
       padding: 20px;
-      min-height: 100vh;
-      box-sizing: border-box;
     }
 
     header {
@@ -84,48 +63,42 @@
       max-width: var(--maxw);
       width: 100%;
       gap: 40px;
-      flex: 1 0 auto; /* para empujar el footer hacia abajo */
-    }
-
-    @media (min-width: 768px) {
-      main {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 40px;
-      }
     }
 
     .left-column, .right-column {
       flex: 1;
     }
 
-    .projects, .social-links, .banners {
-      width: 100%;
-      padding: 20px;
+    .section-box {
+      background-color: #fff;
       border: var(--border);
+      padding: 20px;
       margin-bottom: 20px;
-      background-color: #ffffff;
       border-radius: 6px;
+    }
+
+    .section-box h2 {
+      color: var(--fg);
+      margin-top: 0;
     }
 
     a {
       color: var(--link-color);
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s, text-shadow 0.3s;
+      transition: color 0.3s;
     }
 
     a:hover {
       color: var(--link-hover);
-      text-shadow: 0 0 8px var(--link-hover);
     }
 
-    .social-links ul, .projects ul {
+    .social-links ul {
       list-style: none;
       padding: 0;
     }
 
-    .social-links li, .projects li {
+    .social-links li {
       margin-bottom: 10px;
     }
 
@@ -141,83 +114,63 @@
       transform: scale(1.2);
     }
 
-    .banners h2 {
-      text-align: center;
-      margin-bottom: 15px;
-      color: var(--accent);
+    .banners {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
     }
 
-    .banners a {
-      display: block;
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
-    .banners img {
+    .banners a img {
       max-width: 100%;
       height: auto;
-      border: 3px solid var(--accent);
+      border: var(--border);
       border-radius: 6px;
       transition: transform 0.3s;
     }
 
-    .banners img:hover {
+    .banners a img:hover {
       transform: scale(1.05);
     }
 
     footer {
       width: 100%;
-      background-color: var(--footer-bg);
       text-align: center;
       padding: 20px;
-      flex-shrink: 0;
+      background-color: #ddd;
+      margin-top: 40px;
+      border-radius: 6px;
     }
 
-    footer a.download {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: var(--accent);
-      color: #fff;
-      border-radius: 6px;
-      margin-bottom: 10px;
+    footer a {
+      color: var(--accent);
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s, transform 0.3s;
     }
 
-    footer a.download:hover {
-      background-color: #6f3490;
-      transform: scale(1.05);
+    footer a:hover {
+      color: var(--link-hover);
     }
 
-    footer p {
-      margin: 5px 0;
-      color: var(--fg);
+    @media (min-width: 768px) {
+      main {
+        flex-direction: row;
+        align-items: flex-start;
+      }
     }
 
     @media (max-width: 480px) {
-      body {
-        padding: 15px;
-      }
-
-      h1 {
-        font-size: 1.8em;
-      }
-
-      .description {
-        font-size: 1em;
-      }
-
-      .projects, .social-links, .banners {
-        padding: 15px;
-      }
+      body { padding: 15px; }
+      h1 { font-size: 1.8em; }
+      .description { font-size: 1em; }
+      .section-box { padding: 15px; }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro centrado en los Mitos de Cthulhu">
+    <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro">
     <h1>Refugio Bizarro</h1>
     <p class="description">
       Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.
@@ -226,7 +179,7 @@
 
   <main>
     <div class="left-column">
-      <div class="projects">
+      <div class="section-box">
         <h2>Proyectos publicados</h2>
         <ul>
           <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
@@ -238,46 +191,32 @@
         </ul>
       </div>
 
-      <div class="social-links">
+      <div class="section-box social-links">
         <h2>Redes Sociales</h2>
         <ul>
-          <li>
-            <a href="https://x.com/refugiobizarro">
-              <img src="twitter.png" alt="Twitter"> @refugiobizarro
-            </a>
-          </li>
-          <li>
-            <a href="https://www.threads.net/@refugio.bizarro">
-              <img src="threads.png" alt="Threads"> refugio.bizarro
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/refugio.bizarro/">
-              <img src="instagram.png" alt="Instagram"> @refugio.bizarro
-            </a>
-          </li>
+          <li><a href="https://x.com/refugiobizarro"><img src="twitter.png" alt="Twitter"> @refugiobizarro</a></li>
+          <li><a href="https://www.threads.net/@refugio.bizarro"><img src="threads.png" alt="Threads"> refugio.bizarro</a></li>
+          <li><a href="https://www.instagram.com/refugio.bizarro/"><img src="instagram.png" alt="Instagram"> @refugio.bizarro</a></li>
         </ul>
       </div>
     </div>
 
     <div class="right-column">
-      <div class="banners">
+      <div class="section-box banners">
         <h2>Sitios y colectivos aliados</h2>
         <a href="http://yogsotheria.wikidot.com/antologias-por-serie-en-espanol" target="_blank" rel="noopener noreferrer">
-          <img src="yogsotheria.png" alt="Banner Yogsotheria">
+          <img src="yogsotheria.png" alt="Yogsotheria">
         </a>
         <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer">
-          <img src="wikilovecraft.png" alt="Banner Wiki Lovecraft">
+          <img src="wikilovecraft.png" alt="Wiki Lovecraft">
         </a>
       </div>
     </div>
   </main>
 
   <footer>
-    <a href="RefugioBizarro1-4.rar" download class="download">Descargar Refugio Bizarro #1-#4</a>
+    <p><a href="RefugioBizarro1-4.rar" download>Descargar Refugio Bizarro #1-#4</a></p>
     <p>© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
-
-
