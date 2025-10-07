@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Refugio Bizarro</title>
+<meta name="description" content="Refugio Bizarro, colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura.">
+<meta name="author" content="Refugio Bizarro">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Refugio Bizarro">
+<meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
+<meta property="og:image" content="RB4.png">
+<meta property="og:image:alt" content="Portada Refugio Bizarro #4">
+<meta property="og:url" content="https://tusitio.com/">
+<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Refugio Bizarro #4">
+<meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
+<meta name="twitter:image" content="RB4.png">
+<meta name="twitter:image:alt" content="Portada Refugio Bizarro #4">
 
 <link rel="icon" href="Petralogo.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -17,7 +34,6 @@
   --border-color: #ccc;
   --border: 1px solid var(--border-color);
   --maxw: 1200px;
-  --shadow: rgba(0,0,0,0.15);
 }
 
 body {
@@ -27,6 +43,7 @@ body {
   color: var(--fg);
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 2rem 1rem;
@@ -34,15 +51,8 @@ header {
   background: #cccccc;
   border-radius: 0 0 8px 8px;
 }
-header h1 { 
-  margin: 0.5rem 0; 
-  color: var(--accent); 
-  font-size: clamp(2rem, 3vw + 1rem, 3rem); 
-}
-header p { 
-  color: #222; 
-  margin: 0.25rem 0; 
-}
+header h1 { margin: 0.5rem 0; color: var(--accent); font-size: clamp(2rem, 3vw + 1rem, 3rem); }
+header p { color: #222; margin: 0.25rem 0; }
 header img {
   display: block;
   margin: 1rem auto;
@@ -55,6 +65,7 @@ header img:hover {
   filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
 }
 
+/* MAIN */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -65,41 +76,17 @@ main {
 }
 .left-column, .right-column { flex: 1 1 45%; min-width: 300px; }
 
-.featured {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  border: var(--border);
-  border-radius: 6px;
-  background-color: #fff;
-  padding: 1rem;
-}
-.featured img {
-  max-width: 220px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 12px var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.featured img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 12px var(--highlight), 0 0 20px var(--accent);
-}
-
-.projects, .banners {
+/* SECTIONS */
+.projects, .banners, .social-links {
   background-color: #fff;
   border: var(--border);
   border-radius: 6px;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-.projects:hover, .banners:hover {
-  box-shadow: 0 0 12px var(--highlight), 0 0 20px var(--accent);
-  transform: translateY(-2px);
-}
-
 h2 { color: var(--accent); margin-top: 0; }
 
+/* LINKS */
 a {
   font-weight: bold;
   text-decoration: none;
@@ -110,33 +97,33 @@ a {
 }
 a:hover { text-shadow: 0 0 6px var(--highlight), 0 0 10px var(--accent); }
 
-img {
-  display: block;
-  margin: 1rem auto;
-  max-width: 100%;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
-}
+/* IMAGES */
+img { display: block; margin: 1rem auto; max-width: 100%; border: 1px solid var(--border-color); border-radius: 6px; transition: transform 0.3s ease, filter 0.3s ease; }
+img:hover { transform: scale(1.05); filter: brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent)); }
 
-/* Redes sociales centradas sin viñetas */
+/* BANNERS RB4 */
+.banner-rb4 a img { max-width: 300px; border-radius: 8px; }
+
+/* REDES SOCIALES (centradas) */
 .social-links {
   text-align: center;
-  margin: 2rem auto;
-  padding: 1rem;
-  border: var(--border);
-  border-radius: 6px;
   max-width: 500px;
-  background-color: #fff;
+  margin: 1rem auto;
+  padding: 1rem;
 }
-.social-links h2 { color: var(--accent); margin-bottom: 0.5rem; }
-.social-links p { font-family: 'EB Garamond', serif; color: #333; margin: 0.25rem 0; }
-.social-links img { height: 20px; vertical-align: middle; margin-right: 8px; }
+.social-links h2 { margin-bottom: 0.5rem; }
+.social-links p {
+  font-family: monospace;
+  color: #333;
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.social-links img { height: 20px; vertical-align: middle; }
 
+/* BOTÓN DESCARGA */
 .download-wrapper { display: flex; justify-content: center; margin-top: 1rem; }
 .download-btn {
   padding: 0.8rem 1.5rem;
@@ -167,6 +154,7 @@ footer {
 @media (max-width: 600px) {
   main { flex-direction: column; }
   .left-column, .right-column { width: 100%; }
+  .banner-rb4 a img { width: 100%; }
 }
 </style>
 </head>
@@ -180,15 +168,17 @@ footer {
 
 <main>
   <div class="left-column">
-    <div class="featured">
+    <!-- PORTADA RB4 -->
+    <section class="banner-rb4">
       <h2>Refugio Bizarro #4</h2>
       <a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591" target="_blank" rel="noopener noreferrer">
-        <img src="portada_rb4.png" alt="Portada Refugio Bizarro #4">
+        <img src="RB4.png" alt="Portada Refugio Bizarro #4">
       </a>
-      <p>Haz click acá para más información</p>
-    </div>
+      <p>Haz click para más información</p>
+    </section>
 
-    <div class="projects">
+    <!-- PROYECTOS PUBLICADOS -->
+    <section class="projects">
       <h2>Proyectos publicados</h2>
       <ul>
         <li><a href="https://leyenda.net/cthulhu/biblio_volumen.php?id=2531">Refugio Bizarro #1 (noviembre 2024)</a></li>
@@ -198,11 +188,12 @@ footer {
         <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2579">Refugio Bizarro #3 (junio 2025)</a></li>
         <li><a href="https://www.leyenda.net/cthulhu/biblio_volumen.php?id=2591">Refugio Bizarro #4 (septiembre 2025)</a></li>
       </ul>
-    </div>
+    </section>
   </div>
 
   <div class="right-column">
-    <div class="banners">
+    <!-- BANNERS ALIADOS -->
+    <section class="banners">
       <h2>Sitios y colectivos aliados</h2>
       <a href="http://yogsotheria.wikidot.com/" target="_blank">
         <img src="yogsotheria.png" alt="Banner de Yogsotheria">
@@ -210,35 +201,22 @@ footer {
       <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
         <img src="wikilovecraft.png" alt="Banner de Wiki Lovecraft">
       </a>
-    </div>
+    </section>
 
+    <!-- REDES SOCIALES -->
+    <section class="social-links">
+      <h2>Redes sociales y enlaces</h2>
+      <p><a href="https://x.com/refugiobizarro"><img src="twitter.png" alt="Icono"> @refugiobizarro</a></p>
+      <p><a href="https://www.threads.net/@refugio.bizarro"><img src="threads.png" alt="Icono"> @refugio.bizarro</a></p>
+      <p><a href="https://www.instagram.com/refugio.bizarro/"><img src="instagram.png" alt="Icono"> @refugio.bizarro</a></p>
+    </section>
+
+    <!-- BOTÓN DESCARGA -->
     <div class="download-wrapper">
       <a href="RefugioBizarro1-4.rar" download class="download-btn">Descargar Refugio Bizarro #1-#4</a>
     </div>
   </div>
 </main>
-
-<section class="social-links">
-  <h2>Redes sociales y enlaces</h2>
-  <p>
-    Perfil en X (Twitter): 
-    <a href="https://x.com/refugiobizarro" target="_blank" rel="noopener noreferrer">
-      <img src="twitter.png" alt="Twitter"> @refugiobizarro
-    </a>
-  </p>
-  <p>
-    Perfil en Threads: 
-    <a href="https://www.threads.net/@refugio.bizarro" target="_blank" rel="noopener noreferrer">
-      <img src="threads.png" alt="Threads"> @refugio.bizarro
-    </a>
-  </p>
-  <p>
-    Perfil en Instagram: 
-    <a href="https://www.instagram.com/refugio.bizarro/" target="_blank" rel="noopener noreferrer">
-      <img src="instagram.png" alt="Instagram"> @refugio.bizarro
-    </a>
-  </p>
-</section>
 
 <footer>
   <p>© 2024-2025 Refugio Bizarro. Todos los derechos reservados.</p>
@@ -246,3 +224,5 @@ footer {
 
 </body>
 </html>
+
+
