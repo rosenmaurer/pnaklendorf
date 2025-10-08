@@ -44,27 +44,60 @@ body {
   color: var(--fg);
 }
 
+/* ===== HEADER ===== */
 header {
+  position: relative;
   text-align: center;
   padding: 2rem 1rem;
   border-bottom: var(--border);
-  background: #cccccc;
   border-radius: 0 0 8px 8px;
+  color: #fff;
+  overflow: hidden;
 }
-header h1 { margin: 0.5rem 0; color: var(--accent); font-size: clamp(2rem, 3vw + 1rem, 3rem); }
-header p { color: #222; margin: 0.25rem 0; }
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(180deg, rgba(70,20,0,0.8), rgba(160,40,0,0.6)),
+    url('weresnake.png') center/cover no-repeat;
+  filter: blur(6px) brightness(0.7);
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+  color: #ffddb3;
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+header p {
+  color: #f8e7d0;
+  margin: 0.25rem 0;
+  text-shadow: 0 0 6px rgba(0,0,0,0.8);
+}
+
 header img {
   display: block;
   margin: 1rem auto;
   max-width: 200px;
   border-radius: 8px;
   transition: transform 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
 }
 header img:hover {
   transform: scale(1.1);
-  filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
+  filter: brightness(1.2) drop-shadow(0 0 8px var(--highlight));
 }
 
+/* ===== MAIN ===== */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -113,50 +146,35 @@ img:hover {
   filter: brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
 }
 
-.social-links {
-  text-align: center;
-  padding: 1rem;
-}
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin: 0.5rem;
-}
-.social-links img {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-}
-
-.download-wrapper { display: flex; justify-content: center; margin-top: 1rem; }
-.download-btn {
-  padding: 0.8rem 1.5rem;
-  background-color: var(--accent);
-  color: #fff;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-}
-.download-btn:hover {
-  background-color: var(--highlight);
-  box-shadow: 0 0 12px var(--highlight), 0 0 20px var(--accent);
-  transform: translateY(-2px);
-}
-
+/* ===== FOOTER ===== */
 footer {
+  position: relative;
   text-align: center;
   padding: 1rem;
   border-top: var(--border);
-  background: #cccccc;
-  color: #222;
+  color: #fff;
   border-radius: 8px 8px 0 0;
+  overflow: hidden;
 }
 
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, rgba(80,25,0,0.85), rgba(160,50,0,0.55)),
+    url('weresnake.png') center/cover no-repeat;
+  filter: blur(6px) brightness(0.5);
+  z-index: 0;
+}
+
+footer p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 6px #000;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   main { flex-direction: column; }
   .left-column, .right-column { width: 100%; }
@@ -223,5 +241,3 @@ footer {
 
 </body>
 </html>
-
-
