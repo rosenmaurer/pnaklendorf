@@ -44,7 +44,7 @@ body {
   color: var(--fg);
 }
 
-/* === Header con fondo borroso === */
+/* === Header con fondo borroso ajustado === */
 header {
   position: relative;
   text-align: center;
@@ -59,8 +59,8 @@ header::before {
   position: absolute;
   inset: 0;
   background: url('weresnake.png') center/cover no-repeat;
-  filter: blur(6px);
-  transform: scale(1.05);
+  filter: blur(4px);         /* menos difuminado */
+  transform: scale(1.15);    /* un poquito más grande para suavizar */
   z-index: 0;
 }
 
@@ -177,7 +177,7 @@ img:hover {
   transform: translateY(-2px);
 }
 
-/* === Footer con fondo borroso === */
+/* === Footer con fondo borroso ajustado === */
 footer {
   position: relative;
   text-align: center;
@@ -193,8 +193,8 @@ footer::before {
   position: absolute;
   inset: 0;
   background: url('weresnake.png') center/cover no-repeat;
-  filter: blur(6px);
-  transform: scale(1.05);
+  filter: blur(4px);         /* menos difuminado */
+  transform: scale(1.15);    /* un poquito más grande para suavizar */
   z-index: 0;
 }
 
@@ -270,5 +270,3 @@ footer * {
 
 </body>
 </html>
-
-
