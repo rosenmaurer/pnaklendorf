@@ -14,11 +14,10 @@
   <!-- Google Search Console verification -->
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Pnaklendorf | Mitos de Ricardo Meyer Manríquez" />
   <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez. Sitio oficial." />
   <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
-  <meta property="og:image:alt" content="Logo de Pnaklendorf" />
   <meta property="og:url" content="https://pnaklendorf.com/" />
   <meta property="og:type" content="website" />
 
@@ -27,9 +26,8 @@
   <meta name="twitter:title" content="Pnaklendorf | Mitos de Ricardo Meyer Manríquez" />
   <meta name="twitter:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez. Sitio oficial." />
   <meta name="twitter:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
-  <meta name="twitter:image:alt" content="Logo de Pnaklendorf" />
 
-  <!-- JSON-LD Person Schema -->
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +39,7 @@
       "https://www.leyenda.net/cthulhu/biblio_persona.php?id=3894",
       "https://tercerafundacion.net/biblioteca/ver/persona/50383"
     ],
-    "description": "Ricardo Meyer Manríquez, escritor chileno especializado en los Mitos de Cthulhu y horror cósmico. Sitio oficial de Ricardo Meyer Manríquez."
+    "description": "Ricardo Meyer Manríquez, escritor chileno especializado en los Mitos de Cthulhu y horror cósmico. Sitio oficial."
   }
   </script>
 
@@ -62,6 +60,7 @@
       font-family: 'EB Garamond', serif;
       background-color: var(--bg);
       color: var(--fg);
+      line-height: 1.6;
     }
 
     header {
@@ -71,12 +70,31 @@
       background: #f9f9f9;
       border-radius: 0 0 8px 8px;
     }
-    header h1 { margin: 0.5rem 0; color: #000; font-size: clamp(2rem, 3vw + 1rem, 3rem); }
+
+    header h1 {
+      margin: 0.5rem 0;
+      color: #000;
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    }
+
     header p { color: #333; margin: 0.25rem 0; }
     header em { color: #555; font-style: italic; }
-    header img { display: block; margin: 1rem auto; max-width: 300px; border-radius: 8px; }
 
-    nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+    header img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 280px;
+      border-radius: 8px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
     nav a {
       display: inline-block;
       padding: 0.6rem 1.2rem;
@@ -88,7 +106,12 @@
       box-shadow: 0 0 4px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
     }
-    nav a:hover { box-shadow: 0 0 10px #000; transform: translateY(-2px); background: #d0d0d0; }
+
+    nav a:hover {
+      box-shadow: 0 0 10px #000;
+      transform: translateY(-2px);
+      background: #d0d0d0;
+    }
 
     main {
       display: flex;
@@ -98,15 +121,49 @@
       gap: 1rem;
       padding: 0 1rem;
     }
-    .left-section, .right-section { flex: 1 1 45%; min-width: 300px; }
 
-    section { background-color: #fff; border: var(--border); padding: 1rem; margin-bottom: 1.5rem; border-radius: 6px; }
-    h2 { color: #000; margin-top: 0; text-align: center; }
+    .left-section, .right-section {
+      flex: 1 1 45%;
+      min-width: 300px;
+    }
 
-    img { display: block; margin: 1rem auto; max-width: 100%; border: 1px solid var(--border-color); border-radius: 6px; }
+    section {
+      background-color: #fff;
+      border: var(--border);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+    }
 
-    footer { text-align: center; padding: 1rem; border-top: var(--border); background: #f9f9f9; color: #000; border-radius: 8px 8px 0 0; }
-    footer a { font-weight: bold; color: #000; text-decoration: none; }
+    h2 {
+      color: #000;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: var(--border);
+      background: #f9f9f9;
+      color: #000;
+      border-radius: 8px 8px 0 0;
+    }
+
+    footer a {
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
     footer a:hover { text-decoration: underline; }
 
     .banner-section {
@@ -116,16 +173,17 @@
       padding: 1rem;
       background-color: #fff;
     }
-    .banner-section h2 { margin: 0.5rem 0; color: #000; }
+
     .banner-section a img {
-      width: 60%;
+      width: 80%;
       max-width: 400px;
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
       transition: transform 0.3s ease, filter 0.3s ease;
     }
-    .banner-section a img:hover { filter: brightness(0.9); transform: scale(1.03); }
-    .banner-section p { color: #333; margin-top: 0.5rem; font-size: 1rem; }
+
+    .banner-section a img:hover {
+      filter: brightness(0.9);
+      transform: scale(1.03);
+    }
 
     .social-links {
       text-align: center;
@@ -134,28 +192,77 @@
       border-radius: 6px;
       background-color: #fff;
     }
-    .social-links img { height: 20px; vertical-align: middle; }
-    .social-links a { text-decoration: none; }
-    .social-links p { margin: 0.5rem 0; }
 
-    /* Banners sin restricciones de tamaño */
-    .social-links a img {
-      border: 1px solid var(--border-color);
+    .social-links img {
+      height: 22px;
+      vertical-align: middle;
+    }
+
+    /* Caja independiente para los banners */
+    .banner-box {
+      text-align: center;
+      border: var(--border);
       border-radius: 6px;
-      margin: 1rem auto;
+      background-color: #fff;
+      padding: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .external-banners {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .external-banners a img {
       display: block;
+      width: 80%;
+      max-width: 320px;
       transition: transform 0.3s ease, filter 0.3s ease;
     }
-    .social-links a img:hover {
+
+    .external-banners a img:hover {
       filter: brightness(0.9);
       transform: scale(1.03);
     }
 
-    @media (max-width: 600px) {
-      .banner-section a img { width: 100%; }
-      .banner-section h2 { font-size: 1.5rem; }
-      nav { flex-direction: column; align-items: center; }
-      nav a { width: 80%; text-align: center; }
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left-section, .right-section {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 90%;
+        text-align: center;
+      }
+
+      header img {
+        max-width: 220px;
+      }
+
+      .banner-section a img {
+        width: 100%;
+      }
+
+      .external-banners a img {
+        width: 100%;
+        max-width: 360px;
+      }
     }
   </style>
 </head>
@@ -187,26 +294,29 @@
   </div>
 
   <div class="right-section">
-  <section class="social-links">
-    <h2>Redes sociales y enlaces</h2>
-    <p>
-      Perfil en Twitter: 
-      <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer">
-        <img src="twitter.png" alt="Twitter">
-      </a>
-    </p>
+    <!-- Social media -->
+    <section class="social-links">
+      <h2>Social media</h2>
+      <p>
+        Perfil en Twitter: 
+        <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer">
+          <img src="twitter.png" alt="Twitter">
+        </a>
+      </p>
+    </section>
 
-    <div class="external-banners">
-      <a href="https://app.roll20.net/users/15618641/rosenmaurer" target="_blank" rel="noopener noreferrer">
-        <img src="Roll20banner.png" alt="Banner de Roll20" />
-      </a>
-
-      <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
-        <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
-      </a>
-    </div>
-  </section>
-</div>
+    <!-- Recuadro independiente de banners -->
+    <section class="banner-box">
+      <h2>Otros espacios</h2>
+      <div class="external-banners">
+        <a href="https://app.roll20.net/users/15618641/rosenmaurer" target="_blank" rel="noopener noreferrer">
+          <img src="Roll20banner.png" alt="Banner de Roll20" />
+        </a>
+        <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
+          <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
+        </a>
+      </div>
+    </section>
   </div>
 </main>
 
