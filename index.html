@@ -53,6 +53,8 @@
       --border-color: #ccc;
       --border: 1px solid var(--border-color);
       --maxw: 1200px;
+      --accent: #7b0000;
+      --highlight: #ff4444;
     }
 
     body {
@@ -64,27 +66,50 @@
     }
 
     header {
+      position: relative;
       text-align: center;
       padding: 2rem 1rem;
       border-bottom: var(--border);
-      background: #f9f9f9;
       border-radius: 0 0 8px 8px;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('weresnake.png') center/cover no-repeat;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
     }
 
     header h1 {
       margin: 0.5rem 0;
-      color: #000;
+      color: #111;
       font-size: clamp(2rem, 3vw + 1rem, 3rem);
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 12px rgba(0, 0, 0, 0.6);
+      letter-spacing: 1px;
     }
 
-    header p { color: #333; margin: 0.25rem 0; }
-    header em { color: #555; font-style: italic; }
+    header p { color: #222; margin: 0.25rem 0; text-shadow: 0 0 4px rgba(255,255,255,0.6); }
+    header em { color: #333; font-style: italic; }
 
     header img {
       display: block;
       margin: 1rem auto;
       max-width: 280px;
       border-radius: 8px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.08);
+      filter: brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent));
     }
 
     nav {
@@ -98,7 +123,7 @@
     nav a {
       display: inline-block;
       padding: 0.6rem 1.2rem;
-      background: #e0e0e0;
+      background: rgba(240,240,240,0.9);
       color: #000;
       font-weight: bold;
       text-decoration: none;
@@ -108,9 +133,9 @@
     }
 
     nav a:hover {
-      box-shadow: 0 0 10px #000;
+      box-shadow: 0 0 10px var(--highlight);
       transform: translateY(-2px);
-      background: #d0d0d0;
+      background: rgba(255,255,255,0.95);
     }
 
     main {
@@ -150,12 +175,28 @@
     }
 
     footer {
+      position: relative;
       text-align: center;
       padding: 1rem;
       border-top: var(--border);
-      background: #f9f9f9;
       color: #000;
       border-radius: 8px 8px 0 0;
+      overflow: hidden;
+    }
+
+    footer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('weresnake.png') center/cover no-repeat;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    footer * {
+      position: relative;
+      z-index: 1;
+      text-shadow: 0 0 4px rgba(255,255,255,0.5);
     }
 
     footer a {
@@ -166,103 +207,13 @@
 
     footer a:hover { text-decoration: underline; }
 
-    .banner-section {
-      text-align: center;
-      border: var(--border);
-      border-radius: 6px;
-      padding: 1rem;
-      background-color: #fff;
-    }
-
-    .banner-section a img {
-      width: 80%;
-      max-width: 400px;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-
-    .banner-section a img:hover {
-      filter: brightness(0.9);
-      transform: scale(1.03);
-    }
-
-    .social-links {
-      text-align: center;
-      padding: 1rem;
-      border: var(--border);
-      border-radius: 6px;
-      background-color: #fff;
-    }
-
-    .social-links img {
-      height: 22px;
-      vertical-align: middle;
-    }
-
-    /* Caja independiente para los banners */
-    .banner-box {
-      text-align: center;
-      border: var(--border);
-      border-radius: 6px;
-      background-color: #fff;
-      padding: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    .external-banners {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .external-banners a img {
-      display: block;
-      width: 80%;
-      max-width: 320px;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-
-    .external-banners a img:hover {
-      filter: brightness(0.9);
-      transform: scale(1.03);
-    }
-
-    /* RESPONSIVE DESIGN */
+    /* RESPONSIVE */
     @media (max-width: 900px) {
-      main {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .left-section, .right-section {
-        width: 100%;
-        max-width: 600px;
-      }
-
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav a {
-        width: 90%;
-        text-align: center;
-      }
-
-      header img {
-        max-width: 220px;
-      }
-
-      .banner-section a img {
-        width: 100%;
-      }
-
-      .external-banners a img {
-        width: 100%;
-        max-width: 360px;
-      }
+      main { flex-direction: column; align-items: center; }
+      .left-section, .right-section { width: 100%; max-width: 600px; }
+      nav { flex-direction: column; align-items: center; }
+      nav a { width: 90%; text-align: center; }
+      header img { max-width: 220px; }
     }
   </style>
 </head>
@@ -326,9 +277,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
