@@ -38,13 +38,14 @@
 
   <style>
     :root {
-      --bg: #f5f5f5;
-      --fg: #0a2a66;          /* azul oscuro legible */
-      --accent: #0057b7;      /* azul bandera ucraniana */
-      --highlight: #1e90ff;   /* azul claro para efectos */
-      --link-hover: #5aa0ff;  /* azul más claro en hover */
-      --border: 1px solid #aac4f2; /* azul pálido para bordes */
+      --bg: #fff;
+      --fg: #000;
+      --border-color: #ccc;
+      --border: 1px solid var(--border-color);
       --maxw: 800px;
+      --accent: #7b0000;     /* rojo oscuro */
+      --highlight: #ff4444;  /* rojo vivo */
+      --link-hover: #ff6666; /* rojo claro al hover */
     }
 
     body {
@@ -59,7 +60,7 @@
     header {
       text-align: center;
       border-bottom: var(--border);
-      background: #e6efff; /* antes #cccccc */
+      background: #fff;
       padding: 1.5rem 1rem;
       border-radius: 0 0 8px 8px;
     }
@@ -128,7 +129,7 @@
     }
     a:hover {
       color: var(--link-hover);
-      text-shadow: 0 0 6px var(--highlight); /* antes #8e44ad */
+      text-shadow: 0 0 6px var(--highlight);
     }
 
     img {
@@ -143,7 +144,7 @@
       text-align: center;
       padding: 1rem;
       border-top: var(--border);
-      background: #e6efff; /* antes #cccccc */
+      background: #fff;
       color: var(--fg);
       font-size: 0.9rem;
       border-radius: 8px 8px 0 0;
@@ -155,7 +156,7 @@
     }
     footer a:hover {
       color: var(--link-hover);
-      text-shadow: 0 0 5px var(--highlight); /* antes #8e44ad */
+      text-shadow: 0 0 5px var(--highlight);
     }
 
     @media (max-width: 768px) {
@@ -194,7 +195,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
