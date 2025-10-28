@@ -4,7 +4,7 @@
   <!-- Páginas principales -->
   <url>
     <loc>https://pnaklendorf.com/</loc>
-    <lastmod>2025-10-15</lastmod>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,7 +18,7 @@
 
   <url>
     <loc>https://pnaklendorf.com/relatos-ricardo-meyer.html</loc>
-    <lastmod>2025-10-15</lastmod>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -82,8 +82,8 @@
 
   <!-- Nueva página: Ermita a San Carlo Acutis -->
   <url>
-    <loc>https://pnaklendorf.com/ermita</loc>
-    <lastmod>2025-09-12</lastmod>
+    <loc>https://pnaklendorf.com/ermita.html</loc>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
