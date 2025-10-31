@@ -1,471 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Los Heraldos de la Penitencia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Heraldos de la Penitencia</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="eldersign.png" type="image/png" />
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="../eldersign.png">
 
-  <!-- Meta Description -->
-  <meta name="description" content="‘Los Heraldos de la Penitencia’ (2023), relato de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93." />
-  <meta name="author" content="Ricardo Meyer Manríquez" />
-  <meta name="keywords" content="Ricardo Meyer, Los Heraldos de la Penitencia, relato, horror, Mitos de Cthulhu, Shangri-La 93, Pnaklendorf, oficial" />
+<!-- Meta -->
+<meta name="description" content="‘Los Heraldos de la Penitencia’ (2023), relato de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93.">
+<meta name="author" content="Ricardo Meyer Manríquez">
+<meta name="keywords" content="Ricardo Meyer, Los Heraldos de la Penitencia, relato, horror, Mitos de Cthulhu, Shangri-La 93, Pnaklendorf, oficial">
 
-  <!-- Open Graph para redes sociales -->
-  <meta property="og:title" content="Los Heraldos de la Penitencia" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pnaklendorf.com/relatos/los-heraldos-de-la-penitencia.html" />
-  <meta property="og:image" content="https://pnaklendorf.com/baffometo.jpg" />
-  <meta property="og:description" content="‘Los Heraldos de la Penitencia’ (2023), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93." />
+<!-- Open Graph -->
+<meta property="og:title" content="Los Heraldos de la Penitencia">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pnaklendorf.com/relatos/los-heraldos-de-la-penitencia.html">
+<meta property="og:image" content="https://pnaklendorf.com/baffometo.jpg">
+<meta property="og:description" content="‘Los Heraldos de la Penitencia’ (2023), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93.">
+<meta property="og:site_name" content="Pnaklendorf">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Los Heraldos de la Penitencia" />
-  <meta name="twitter:description" content="‘Los Heraldos de la Penitencia’ (2023), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93." />
-  <meta name="twitter:image" content="https://pnaklendorf.com/baffometo.jpg" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Los Heraldos de la Penitencia">
+<meta name="twitter:description" content="‘Los Heraldos de la Penitencia’ (2023), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93.">
+<meta name="twitter:image" content="https://pnaklendorf.com/baffometo.jpg">
 
-  <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond&display=swap" rel="stylesheet" />
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
-      font-family: 'EB Garamond', serif;
-      font-size: 20px;
-      line-height: 1.7;
-    }
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ShortStory",
+  "name": "Los Heraldos de la Penitencia",
+  "author": {
+    "@type": "Person",
+    "name": "Ricardo Meyer Manríquez",
+    "email": "mailto:rosenmaurer@gmail.com",
+    "sameAs": "https://pnaklendorf.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pnaklendorf",
+    "url": "https://pnaklendorf.com"
+  },
+  "url": "https://pnaklendorf.com/relatos/los-heraldos-de-la-penitencia.html",
+  "description": "‘Los Heraldos de la Penitencia’ (2023), relato de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93.",
+  "genre": ["Horror", "Mitos de Cthulhu"],
+  "datePublished": "2024-01-01",
+  "inLanguage": "es",
+  "isAccessibleForFree": true
+}
+</script>
 
-    h1, h2 {
-      font-family: 'Cormorant Garamond', serif;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #d4af37;
-      margin-top: 2rem;
-    }
+<style>
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #000;
+  color: #e5e5e5;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
 
-    .ritual-title {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
+main {
+  max-width: 850px;
+  margin: auto;
+}
 
-    .author-credit {
-      text-align: center;
-      font-style: italic;
-      color: #cfa;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-    }
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #1e90ff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
 
-    .scroll {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background-color: #1b1b1b;
-      border: 1px solid #3f3f3f;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
-    }
+h2 {
+  text-align: center;
+  font-style: italic;
+  color: #87cefa;
+  margin-bottom: 40px;
+}
 
-    p {
-      text-align: justify;
-      margin-bottom: 1.5rem;
-    }
+.frase-blanca {
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 10px;
+}
 
-    /* Sangría añadida después del segundo párrafo */
-    p:nth-of-type(3) {
-      text-indent: 2em;
-    }
+.autor-cita {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  color: #aaa;
+}
 
-    .frase-blanca {
-      text-align: center;
-      font-style: italic;
-      color: #eee;
-      margin-bottom: 1rem;
-    }
+p {
+  margin-bottom: 1.6rem;
+}
 
-    .autor-cita {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
-    }
+p:nth-of-type(3) {
+  text-indent: 2em;
+}
 
-    em {
-      font-style: italic;
-      color: #cfa;
-    }
+em {
+  color: #b0e0e6;
+}
 
-    blockquote {
-      margin: 2em 0;
-      padding-left: 1em;
-      border-left: 4px solid #444;
-      font-style: italic;
-      color: #aaa;
-    }
+img {
+  display: block;
+  margin: 30px auto;
+  width: 230px;
+  height: auto;
+  border: none;
+}
 
-    img {
-      display: block;
-      margin: 2rem auto;
-      max-width: 100%;
-      border: 1px solid #3f3f3f;
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
-    }
+footer {
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
 
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      color: #999;
-      font-size: 0.9rem;
-    }
+footer img {
+  width: 45px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
 
-    footer img {
-      width: 50px;
-      height: auto;
-      display: block;
-      margin: 1rem auto;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        font-size: 1.1rem;
-        padding: 1rem;
-      }
-
-      h1, h2 {
-        font-size: 1.5rem;
-      }
-
-      .scroll {
-        padding: 1rem;
-      }
-    }
-  </style>
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Los Heraldos de la Penitencia",
-    "author": {
-      "@type": "Person",
-      "name": "Ricardo Meyer Manríquez",
-      "email": "mailto:rosenmaurer@gmail.com",
-      "sameAs": "https://pnaklendorf.com"
-    },
-    "copyrightHolder": {
-      "@type": "Person",
-      "name": "Ricardo Meyer Manríquez"
-    },
-    "url": "https://pnaklendorf.com/relatos/los-heraldos-de-la-penitencia.html",
-    "description": "‘Los Heraldos de la Penitencia’ (2023), relato de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93.",
-    "genre": ["Horror", "Mitos de Cthulhu"],
-    "datePublished": "2024-01-01",
-    "inLanguage": "es",
-    "isAccessibleForFree": true
-  }
-  </script>
+@media (max-width: 700px) {
+  body { font-size: 16px; padding: 20px 10px; }
+  h1 { font-size: 22px; }
+}
+</style>
 </head>
 
 <body>
-  <div class="scroll">
-    <h1 class="ritual-title">Los Heraldos de la Penitencia</h1>
-    <p class="author-credit">por Ricardo Meyer</p>
+<main>
+  <h1>Los Heraldos de la Penitencia</h1>
+  <h2>por Ricardo Meyer</h2>
 
-    <main>
-      <p class="frase-blanca">"Y sólo pido no pedirte nada,<br />
-      estar aquí, junto a tu imagen muerta,<br />
-      ir aprendiendo que el dolor es sólo<br />
-      la llave santa de tu santa puerta".</p>
-      <p class="autor-cita">— Gabriela Mistral</p>
+  <p class="frase-blanca">"Y sólo pido no pedirte nada,<br>
+  estar aquí, junto a tu imagen muerta,<br>
+  ir aprendiendo que el dolor es sólo<br>
+  la llave santa de tu santa puerta".</p>
+  <p class="autor-cita">— Gabriela Mistral</p>
 
-      <p>En las regiones del Al-Andalus, donde el aire se torna espeso y los susurros se aferran como garras en la pierna de un Padre negligente y adúltero, se despliega un paisaje que da voz a relatos de terror. Los murmullos, envueltos en un aura de morbo y depravación, tejen la siniestra historia de un culto ancestral, que se arrastra desde los tiempos remotos del pusilánime Hisam II. Este execrable culto, referido en los textos más antiguos como «Banū al-Nadam», se alza como un puente entre la corrupción y lo mundano, envuelto en un manto lúgubre que exhibe las cicatrices como trofeos de un honor macabro.</p>
+  <p>En las regiones del Al-Andalus, donde el aire se torna espeso y los susurros se aferran como garras en la pierna de un Padre negligente y adúltero, se despliega un paisaje que da voz a relatos de terror. Los murmullos, envueltos en un aura de morbo y depravación, tejen la siniestra historia de un culto ancestral, que se arrastra desde los tiempos remotos del pusilánime Hisam II. Este execrable culto, referido en los textos más antiguos como «Banū al-Nadam», se alza como un puente entre la corrupción y lo mundano, envuelto en un manto lúgubre que exhibe las cicatrices como trofeos de un honor macabro.</p>
 
-      <p>La leyenda, tejida entre los hilos del vestido harapiento de una Gran Ramera, desvela que estos visires, adoradores del dolor, se congregan en la clandestinidad, como almas sobre cual recae la ira de un falso Ilāh, para proteger y difundir un evangelio blasfemo. Sus palabras impías proclaman que sólo a través de la sumisión a un sufrimiento desgarrador se alcanza una apoteosis maldita y se fusiona con el absoluto: el Baffometo, una deidad oculta y retorcida, custodiada por los moradores de los arrabales proscritos y los moriscos de peor estirpe, en los corazones mismos de los hijos del Nadam.</p>
+  <p>La leyenda, tejida entre los hilos del vestido harapiento de una Gran Ramera, desvela que estos visires, adoradores del dolor, se congregan en la clandestinidad, como almas sobre cual recae la ira de un falso Ilāh, para proteger y difundir un evangelio blasfemo. Sus palabras impías proclaman que sólo a través de la sumisión a un sufrimiento desgarrador se alcanza una apoteosis maldita y se fusiona con el absoluto: el Baffometo, una deidad oculta y retorcida, custodiada por los moradores de los arrabales proscritos y los moriscos de peor estirpe, en los corazones mismos de los hijos del Nadam.</p>
 
-      <p>Las enseñanzas oscuras del <i>Evangelio según el Nadam</i> desvelan una verdad desconcertante: las religiones mismas son un cruel bulo, una creación corrupta forjada por el orgullo, el odio y la ambición de fariseos hipócritas. Niegan que algún hijo divino se comunique a través de impostores y dogmas sin valor. Solo ellos, los hijos de La Mano Negra, atesoran el conocimiento prohibido que descorre un velo hacia dominios más allá del que se oculta tras el muro, permitiendo la comunión con los siete cielos de lo profano.</p>
+  <p>Las enseñanzas oscuras del <i>Evangelio según el Nadam</i> desvelan una verdad desconcertante: las religiones mismas son un cruel bulo, una creación corrupta forjada por el orgullo, el odio y la ambición de fariseos hipócritas. Niegan que algún hijo divino se comunique a través de impostores y dogmas sin valor. Solo ellos, los hijos de La Mano Negra, atesoran el conocimiento prohibido que descorre un velo hacia dominios más allá del que se oculta tras el muro, permitiendo la comunión con los siete cielos de lo profano.</p>
 
-      <p>La doctrina del dolor, revelada por el desdichado Apóstol Hasim ibn Qādis, describe tormentos inenarrables que flagelaron al autor del <i>Kitab Al-Azif</i> durante su vida. A través de un sufrimiento incesante, accedió a planos abisales de conciencia, fusionándose con los noventa y nueve nombres prohibidos de Allah. Estas enseñanzas heréticas, una amalgama tenebrosa que entrelaza el cristianismo ibérico, la judería cabalística y los senderos oscuros del sufismo, se propagaron como una plaga en la península bajo la macabra tutela de Hasim el torturado.</p>
+  <p>La doctrina del dolor, revelada por el desdichado Apóstol Hasim ibn Qādis, describe tormentos inenarrables que flagelaron al autor del <i>Kitab Al-Azif</i> durante su vida. A través de un sufrimiento incesante, accedió a planos abisales de conciencia, fusionándose con los noventa y nueve nombres prohibidos de Allah. Estas enseñanzas heréticas, una amalgama tenebrosa que entrelaza el cristianismo ibérico, la judería cabalística y los senderos oscuros del sufismo, se propagaron como una plaga en la península bajo la macabra tutela de Hasim el torturado.</p>
 
-      <p>En el presente, Los Heraldos de la Penitencia acechan culebreando, tras caretas de normalidad que resguardan su cilicio y sus flagelos. Se disfrazan como sacristanes, protegiendo un Misterio que yace enterrado en pasajes olvidados de historias del Templo de Salomón, descubierto por los mismos templarios en épocas gloriosas. Sin embargo, su aparente protección a la antigua patria de Argantonio no es más que un velo siniestro, impuesto mediante métodos perversos y cuestionables.</p>
+  <p>En el presente, Los Heraldos de la Penitencia acechan culebreando, tras caretas de normalidad que resguardan su cilicio y sus flagelos. Se disfrazan como sacristanes, protegiendo un Misterio que yace enterrado en pasajes olvidados de historias del Templo de Salomón, descubierto por los mismos templarios en épocas gloriosas. Sin embargo, su aparente protección a la antigua patria de Argantonio no es más que un velo siniestro, impuesto mediante métodos perversos y cuestionables.</p>
 
-      <p>Bajo la fachada de inocentes fiestas, los carnavales esconden un rito oscuro y abominable. Allí, la esencia vital de los andaluces se extrae sin piedad, saciando un apetito de un Ilāh insaciable y hambriento.</p>
+  <p>Bajo la fachada de inocentes fiestas, los carnavales esconden un rito oscuro y abominable. Allí, la esencia vital de los andaluces se extrae sin piedad, saciando un apetito de un Ilāh insaciable y hambriento.</p>
 
-      <p>En pasajes secretos bajo la olvidada Tartessos, cámaras abisales saturadas de podredumbre albergan a los Heraldos, cuyos rostros ocultos tras máscaras grotescas reflejan la desfiguración de sus almas. Allí, con herramientas ennegrecidas por siglos de práctica, perforan el tejido de la realidad y extraen el mítico <i>aqua vitae</i> con cruel precisión, siguiendo el infalible método legado por el alquimista Geber.</p>
+  <p>En pasajes secretos bajo la olvidada Tartessos, cámaras abisales saturadas de podredumbre albergan a los Heraldos, cuyos rostros ocultos tras máscaras grotescas reflejan la desfiguración de sus almas. Allí, con herramientas ennegrecidas por siglos de práctica, perforan el tejido de la realidad y extraen el mítico <i>aqua vitae</i> con cruel precisión, siguiendo el infalible método legado por el alquimista Geber.</p>
 
-      <p>Los gritos postrados rasgan el aire enrarecido, mientras los cuerpos de los incautos, en una macabra danza moribunda, se despojan de su esencia. Esa sustancia impía, sellada con la impronta de la piel de toro, es vertida en las profundidades del Saqar, donde <i>Ella, de los Siete Úteros</i>, se alimenta y crece, su poder primal aumentando con cada denario manchado por Mammon y Asmodeo.</p>
+  <p>Los gritos postrados rasgan el aire enrarecido, mientras los cuerpos de los incautos, en una macabra danza moribunda, se despojan de su esencia. Esa sustancia impía, sellada con la impronta de la piel de toro, es vertida en las profundidades del Saqar, donde <i>Ella, de los Siete Úteros</i>, se alimenta y crece, su poder primal aumentando con cada denario manchado por Mammon y Asmodeo.</p>
 
-      <p>En los días siguientes, los agaveños despojados de su esencia vagan por las callejas como sombras: cáscaras vacías cuya mirada delata que el verdadero tormento no fue la tortura, sino el haber sobrevivido. Sus voces, ahora meros susurros vacuos, advierten que el peor suplicio quizá no fue al que fueron sometidos, sino el tener que seguir viviendo después.</p>
+  <p>En los días siguientes, los agaveños despojados de su esencia vagan por las callejas como sombras: cáscaras vacías cuya mirada delata que el verdadero tormento no fue la tortura, sino el haber sobrevivido. Sus voces, ahora meros susurros vacuos, advierten que el peor suplicio quizá no fue al que fueron sometidos, sino el tener que seguir viviendo después.</p>
 
-      <p>Así perdura este ciclo inquietante, oculto tras las risas y la algarabía de los carnavales: una pesadilla sin fin que consume la esencia misma de la vida y exalta los placeres antinominianos. Embriagados por su poder blasfemo, los Heraldos aguardan el próximo carnaval, donde el horror se repetirá, engendrando futilidad en los corazones de quienes se adentren en las procesiones de la Pedanía del Agave.</p>
+  <p>Así perdura este ciclo inquietante, oculto tras las risas y la algarabía de los carnavales: una pesadilla sin fin que consume la esencia misma de la vida y exalta los placeres antinominianos. Embriagados por su poder blasfemo, los Heraldos aguardan el próximo carnaval, donde el horror se repetirá, engendrando futilidad en los corazones de quienes se adentren en las procesiones de la Pedanía del Agave.</p>
 
-      <p>En este credo oscuro, el dolor y el sufrimiento son sacramentos mistéricos de una divinidad retorcida. Cada tormento infligido es un tributo sanguinario; sus devotos, verdugos enmascarados en su propia humanidad, se convierten en instrumentos del castigo, guiados por las brumas de <i>La Oscuridad</i>.</p>
+  <p>En este credo oscuro, el dolor y el sufrimiento son sacramentos mistéricos de una divinidad retorcida. Cada tormento infligido es un tributo sanguinario; sus devotos, verdugos enmascarados en su propia humanidad, se convierten en instrumentos del castigo, guiados por las brumas de <i>La Oscuridad</i>.</p>
 
-      <p>El sufrimiento abre portales hacia dimensiones prohibidas. Quienes abrazan este evangelio sufren una transfiguración grotesca: sus almas distorsionadas alcanzan una santidad maldita, entrelazándose con las coronas de las naciones. Pero quienes lo rechazan están destinados a un abismo absoluto. Cuando la séptima vulva se abra y el retoño adulterino entone la canción del fin, el horror alcanzará su clímax. El universo resonará con la desesperación de aquellos que negaron el dolor; sus almas serán juguetes de la impiedad, y sus gritos se funden con el penumbroso sonar de aulos y pífanos de hueso negro, creando un coro funesto que retumba en el alma de la muerte misma que se quiebra al paso firme de los últimos eones.</p>
-    </main>
+  <p>El sufrimiento abre portales hacia dimensiones prohibidas. Quienes abrazan este evangelio sufren una transfiguración grotesca: sus almas distorsionadas alcanzan una santidad maldita, entrelazándose con las coronas de las naciones. Pero quienes lo rechazan están destinados a un abismo absoluto. Cuando la séptima vulva se abra y el retoño adulterino entone la canción del fin, el horror alcanzará su clímax. El universo resonará con la desesperación de aquellos que negaron el dolor; sus almas serán juguetes de la impiedad, y sus gritos se funden con el penumbroso sonar de aulos y pífanos de hueso negro, creando un coro funesto que retumba en el alma de la muerte misma que se quiebra al paso firme de los últimos eones.</p>
 
-    <footer>
-      <a href="relatos-ricardo-meyer.html" title="Volver a relatos">
-        <img src="redgoat.png" alt="Volver a relatos" />
-      </a>
-      <p>&copy; 2025 Ricardo Meyer Manríquez. Todos los derechos reservados.</p>
-    </footer>
-  </div>
+  <footer>
+    <a href="../relatos-ricardo-meyer.html" title="Volver a relatos">
+      <img src="../redgoat.png" alt="Volver a relatos">
+    </a>
+    <p>&copy; 2025 Ricardo Meyer Manríquez. Todos los derechos reservados.</p>
+  </footer>
+</main>
 </body>
 </html>
-¿Quieres que el JSON-LD se cambie a tipo ShortStory (más preciso que CreativeWork para relatos literarios)? Puedo ajustarlo en segundos.
-
-
-
-
-
-
-
-Tú dijiste:
-Como quieras
-
-
-
-ChatGPT Plus
-Perfecto 😌
-Entonces te dejo la versión óptima y final, con el tipo ShortStory (reconocido por Schema.org como una subcategoría literaria de CreativeWork), lo cual mejora el SEO y la clasificación de tu relato en buscadores y bases literarias.
-
-Este es tu archivo completo y validado, versión definitiva:
-
-html
-Copiar código
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Los Heraldos de la Penitencia</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="eldersign.png" type="image/png" />
-
-  <!-- Meta Description -->
-  <meta name="description" content="‘Los Heraldos de la Penitencia’ (2023), relato de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93." />
-  <meta name="author" content="Ricardo Meyer Manríquez" />
-  <meta name="keywords" content="Ricardo Meyer, Los Heraldos de la Penitencia, relato, horror, Mitos de Cthulhu, Shangri-La 93, Pnaklendorf, oficial" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Los Heraldos de la Penitencia" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://pnaklendorf.com/relatos/los-heraldos-de-la-penitencia.html" />
-  <meta property="og:image" content="https://pnaklendorf.com/baffometo.jpg" />
-  <meta property="og:description" content="‘Los Heraldos de la Penitencia’ (2023), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93." />
-  <meta property="og:site_name" content="Pnaklendorf" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Los Heraldos de la Penitencia" />
-  <meta name="twitter:description" content="‘Los Heraldos de la Penitencia’ (2023), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93." />
-  <meta name="twitter:image" content="https://pnaklendorf.com/baffometo.jpg" />
-
-  <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond&display=swap" rel="stylesheet" />
-
-  <!-- CSS -->
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
-      font-family: 'EB Garamond', serif;
-      font-size: 20px;
-      line-height: 1.7;
-    }
-
-    h1, h2 {
-      font-family: 'Cormorant Garamond', serif;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #d4af37;
-      margin-top: 2rem;
-    }
-
-    .ritual-title {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .author-credit {
-      text-align: center;
-      font-style: italic;
-      color: #cfa;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-    }
-
-    .scroll {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background-color: #1b1b1b;
-      border: 1px solid #3f3f3f;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
-    }
-
-    p {
-      text-align: justify;
-      margin-bottom: 1.5rem;
-    }
-
-    /* Sangría añadida después del segundo párrafo */
-    p:nth-of-type(3) {
-      text-indent: 2em;
-    }
-
-    .frase-blanca {
-      text-align: center;
-      font-style: italic;
-      color: #eee;
-      margin-bottom: 1rem;
-    }
-
-    .autor-cita {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
-    }
-
-    em {
-      font-style: italic;
-      color: #cfa;
-    }
-
-    blockquote {
-      margin: 2em 0;
-      padding-left: 1em;
-      border-left: 4px solid #444;
-      font-style: italic;
-      color: #aaa;
-    }
-
-    img {
-      display: block;
-      margin: 2rem auto;
-      max-width: 100%;
-      border: 1px solid #3f3f3f;
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      color: #999;
-      font-size: 0.9rem;
-    }
-
-    footer img {
-      width: 50px;
-      height: auto;
-      display: block;
-      margin: 1rem auto;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        font-size: 1.1rem;
-        padding: 1rem;
-      }
-
-      h1, h2 {
-        font-size: 1.5rem;
-      }
-
-      .scroll {
-        padding: 1rem;
-      }
-    }
-  </style>
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ShortStory",
-    "name": "Los Heraldos de la Penitencia",
-    "author": {
-      "@type": "Person",
-      "name": "Ricardo Meyer Manríquez",
-      "email": "mailto:rosenmaurer@gmail.com",
-      "sameAs": "https://pnaklendorf.com"
-    },
-    "copyrightHolder": {
-      "@type": "Person",
-      "name": "Ricardo Meyer Manríquez"
-    },
-    "url": "https://pnaklendorf.com/relatos/los-heraldos-de-la-penitencia.html",
-    "description": "‘Los Heraldos de la Penitencia’ (2023), relato de Ricardo Meyer Manríquez, publicado originalmente en la antología Shangri-La 93.",
-    "genre": ["Horror", "Mitos de Cthulhu"],
-    "publisher": {
-      "@type": "Organization",
-      "name": "Pnaklendorf",
-      "url": "https://pnaklendorf.com/"
-    },
-    "datePublished": "2024-01-01",
-    "inLanguage": "es",
-    "isAccessibleForFree": true
-  }
-  </script>
-</head>
-
-<body>
-  <div class="scroll">
-    <h1 class="ritual-title">Los Heraldos de la Penitencia</h1>
-    <p class="author-credit">por Ricardo Meyer</p>
-
-    <main>
-      <p class="frase-blanca">"Y sólo pido no pedirte nada,<br />
-      estar aquí, junto a tu imagen muerta,<br />
-      ir aprendiendo que el dolor es sólo<br />
-      la llave santa de tu santa puerta".</p>
-      <p class="autor-cita">— Gabriela Mistral</p>
-
-      <p>En las regiones del Al-Andalus, donde el aire se torna espeso y los susurros se aferran como garras en la pierna de un Padre negligente y adúltero, se despliega un paisaje que da voz a relatos de terror. Los murmullos, envueltos en un aura de morbo y depravación, tejen la siniestra historia de un culto ancestral, que se arrastra desde los tiempos remotos del pusilánime Hisam II. Este execrable culto, referido en los textos más antiguos como «Banū al-Nadam», se alza como un puente entre la corrupción y lo mundano, envuelto en un manto lúgubre que exhibe las cicatrices como trofeos de un honor macabro.</p>
-
-      <p>La leyenda, tejida entre los hilos del vestido harapiento de una Gran Ramera, desvela que estos visires, adoradores del dolor, se congregan en la clandestinidad, como almas sobre cual recae la ira de un falso Ilāh, para proteger y difundir un evangelio blasfemo. Sus palabras impías proclaman que sólo a través de la sumisión a un sufrimiento desgarrador se alcanza una apoteosis maldita y se fusiona con el absoluto: el Baffometo, una deidad oculta y retorcida, custodiada por los moradores de los arrabales proscritos y los moriscos de peor estirpe, en los corazones mismos de los hijos del Nadam.</p>
-
-      <p>Las enseñanzas oscuras del <i>Evangelio según el Nadam</i> desvelan una verdad desconcertante: las religiones mismas son un cruel bulo, una creación corrupta forjada por el orgullo, el odio y la ambición de fariseos hipócritas. Niegan que algún hijo divino se comunique a través de impostores y dogmas sin valor. Solo ellos, los hijos de La Mano Negra, atesoran el conocimiento prohibido que descorre un velo hacia dominios más allá del que se oculta tras el muro, permitiendo la comunión con los siete cielos de lo profano.</p>
-
-      <p>La doctrina del dolor, revelada por el desdichado Apóstol Hasim ibn Qādis, describe tormentos inenarrables que flagelaron al autor del <i>Kitab Al-Azif</i> durante su vida. A través de un sufrimiento incesante, accedió a planos abisales de conciencia, fusionándose con los noventa y nueve nombres prohibidos de Allah. Estas enseñanzas heréticas, una amalgama tenebrosa que entrelaza el cristianismo ibérico, la judería cabalística y los senderos oscuros del sufismo, se propagaron como una plaga en la península bajo la macabra tutela de Hasim el torturado.</p>
-
-      <p>En el presente, Los Heraldos de la Penitencia acechan culebreando, tras caretas de normalidad que resguardan su cilicio y sus flagelos. Se disfrazan como sacristanes, protegiendo un Misterio que yace enterrado en pasajes olvidados de historias del Templo de Salomón, descubierto por los mismos templarios en épocas gloriosas. Sin embargo, su aparente protección a la antigua patria de Argantonio no es más que un velo siniestro, impuesto mediante métodos perversos y cuestionables.</p>
-
-      <p>Bajo la fachada de inocentes fiestas, los carnavales esconden un rito oscuro y abominable. Allí, la esencia vital de los andaluces se extrae sin piedad, saciando un apetito de un Ilāh insaciable y hambriento.</p>
-
-      <p>En pasajes secretos bajo la olvidada Tartessos, cámaras abisales saturadas de podredumbre albergan a los Heraldos, cuyos rostros ocultos tras máscaras grotescas reflejan la desfiguración de sus almas. Allí, con herramientas ennegrecidas por siglos de práctica, perforan el tejido de la realidad y extraen el mítico <i>aqua vitae</i> con cruel precisión, siguiendo el infalible método legado por el alquimista Geber.</p>
-
-      <p>Los gritos postrados rasgan el aire enrarecido, mientras los cuerpos de los incautos, en una macabra danza moribunda, se despojan de su esencia. Esa sustancia impía, sellada con la impronta de la piel de toro, es vertida en las profundidades del Saqar, donde <i>Ella, de los Siete Úteros</i>, se alimenta y crece, su poder primal aumentando con cada denario manchado por Mammon y Asmodeo.</p>
-
-      <p>En los días siguientes, los agaveños despojados de su esencia vagan por las callejas como sombras: cáscaras vacías cuya mirada delata que el verdadero tormento no fue la tortura, sino el haber sobrevivido. Sus voces, ahora meros susurros vacuos, advierten que el peor suplicio quizá no fue al que fueron sometidos, sino el tener que seguir viviendo después.</p>
-
-      <p>Así perdura este ciclo inquietante, oculto tras las risas y la algarabía de los carnavales: una pesadilla sin fin que consume la esencia misma de la vida y exalta los placeres antinominianos. Embriagados por su poder blasfemo, los Heraldos aguardan el próximo carnaval, donde el horror se repetirá, engendrando futilidad en los corazones de quienes se adentren en las procesiones de la Pedanía del Agave.</p>
-
-      <p>En este credo oscuro, el dolor y el sufrimiento son sacramentos mistéricos de una divinidad retorcida. Cada tormento infligido es un tributo sanguinario; sus devotos, verdugos enmascarados en su propia humanidad, se convierten en instrumentos del castigo, guiados por las brumas de <i>La Oscuridad</i>.</p>
-
-      <p>El sufrimiento abre portales hacia dimensiones prohibidas. Quienes abrazan este evangelio sufren una transfiguración grotesca: sus almas distorsionadas alcanzan una santidad maldita, entrelazándose con las coronas de las naciones. Pero quienes lo rechazan están destinados a un abismo absoluto. Cuando la séptima vulva se abra y el retoño adulterino entone la canción del fin, el horror alcanzará su clímax. El universo resonará con la desesperación de aquellos que negaron el dolor; sus almas serán juguetes de la impiedad, y sus gritos se funden con el penumbroso sonar de aulos y pífanos de hueso negro, creando un coro funesto que retumba en el alma de la muerte misma que se quiebra al paso firme de los últimos eones.</p>
-    </main>
-
-    <footer>
-      <a href="relatos-ricardo-meyer.html" title="Volver a relatos">
-        <img src="redgoat.png" alt="Volver a relatos" />
-      </a>
-      <p>&copy; 2025 Ricardo Meyer Manríquez. Todos los derechos reservados.</p>
-    </footer>
-  </div>
-</body>
-</html>
-
-
