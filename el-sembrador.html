@@ -110,6 +110,21 @@
   box-shadow: 0 0 10px rgba(255,255,255,0.05);
   border-radius: 4px;
 }
+img.final {
+  display: block;
+  margin: 4rem auto 0;
+  max-width: 120px; /* más pequeño que antes */
+  height: auto;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img.final:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
 </style>
 
 <script type="application/ld+json">
