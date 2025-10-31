@@ -136,23 +136,29 @@ footer {
 }
 
 footer img {
-  width: 45px;
+  width: 38px;
   height: auto;
   display: block;
   margin: 1rem auto;
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.6s ease;
+  filter: brightness(0.9);
+}
+
+/* Animación de resplandor pulsante */
+@keyframes pulsoRojo {
+  0%, 100% { box-shadow: 0 0 18px 3px rgba(255, 0, 0, 0.5); }
+  50% { box-shadow: 0 0 24px 5px rgba(255, 0, 0, 0.8); }
+}
+
+footer img:hover {
+  transform: scale(1.15);
+  filter: brightness(1.4);
+  animation: pulsoRojo 1.4s ease-in-out infinite;
 }
 
 @media (max-width: 700px) {
   body { font-size: 16px; padding: 20px 10px; }
   h1 { font-size: 24px; }
-}
-  a img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-a img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.3);
 }
 </style>
 </head>
@@ -193,9 +199,9 @@ a img:hover {
   <p>El sufrimiento abre portales hacia dimensiones prohibidas. Quienes abrazan este evangelio sufren una transfiguración grotesca: sus almas distorsionadas alcanzan una santidad maldita, entrelazándose con las coronas de las naciones. Pero quienes lo rechazan están destinados a un abismo absoluto. Cuando la séptima vulva se abra y el retoño adulterino entone la canción del fin, el horror alcanzará su clímax. El universo resonará con la desesperación de aquellos que negaron el dolor; sus almas serán juguetes de la impiedad, y sus gritos se funden con el penumbroso sonar de aulos y pífanos de hueso negro, creando un coro funesto que retumba en el alma de la muerte misma que se quiebra al paso firme de los últimos eones.</p>
 
   <a href="../relatos-ricardo-meyer.html" title="Volver a relatos">
-      <img src="../redgoat.png" alt="Volver a relatos">
-    </a>
-  
+    <img src="../redgoat.png" alt="Volver a relatos">
+  </a>
+
   <footer>
     <p>&copy; 2025 Ricardo Meyer Manríquez. Todos los derechos reservados.</p>
   </footer>
