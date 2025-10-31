@@ -28,7 +28,7 @@
 <meta name="twitter:image" content="https://pnaklendorf.com/baffometo.jpg">
 
 <!-- Fuentes -->
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
@@ -73,18 +73,23 @@ main {
   margin: auto;
 }
 
-h1 {
+h1, h2 {
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
-  font-size: 28px;
-  color: #1e90ff;
+}
+
+h1 {
+  font-size: 32px;
+  color: #cfcfcf;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  font-weight: 700;
 }
 
 h2 {
-  text-align: center;
+  font-size: 18px;
   font-style: italic;
-  color: #87cefa;
+  color: #a0b4ff;
   margin-bottom: 40px;
 }
 
@@ -139,7 +144,7 @@ footer img {
 
 @media (max-width: 700px) {
   body { font-size: 16px; padding: 20px 10px; }
-  h1 { font-size: 22px; }
+  h1 { font-size: 24px; }
 }
 </style>
 </head>
