@@ -106,7 +106,8 @@ p {
   margin-bottom: 1.6rem;
 }
 
-p:nth-of-type(3) {
+/* Sangría desde el segundo párrafo en adelante */
+main p:not(:first-of-type) {
   text-indent: 2em;
 }
 
