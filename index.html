@@ -152,75 +152,10 @@
     }
 
     main {
-      display: flex;
-      flex-wrap: wrap;
       max-width: var(--maxw);
       margin: 2rem auto;
-      gap: 1rem;
       padding: 0 1rem;
-    }
-
-    .left-section,
-    .right-section {
-      flex: 1 1 45%;
-      min-width: 300px;
-    }
-
-    section {
-      background-color: var(--panel);
-      border: var(--border);
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      border-radius: 6px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-    }
-
-    h2 {
-      color: #e8e8e8;
-      margin-top: 0;
-      text-align: center;
-      text-shadow: 0 0 10px rgba(255, 220, 160, 0.6);
-    }
-
-    img {
-      display: block;
-      margin: 1rem auto;
-      max-width: 100%;
-      border: 1px solid #333;
-      border-radius: 6px;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-      filter: brightness(1.15) drop-shadow(0 0 6px var(--highlight));
-    }
-
-    .social-links {
-      text-align: center;
-      padding: 1rem;
-      border-radius: 6px;
-      background-color: var(--panel);
-      border: var(--border);
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    .social-icons a img {
-      height: 28px;
-      width: 28px;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-
-    .social-icons a img:hover {
-      transform: scale(1.2);
-      filter: brightness(1.3) drop-shadow(0 0 6px var(--highlight));
+      min-height: 300px;
     }
 
     footer {
@@ -253,15 +188,6 @@
     }
 
     @media (max-width: 900px) {
-      main {
-        flex-direction: column;
-        align-items: center;
-      }
-      .left-section,
-      .right-section {
-        width: 100%;
-        max-width: 600px;
-      }
       nav {
         flex-direction: column;
         align-items: center;
@@ -296,37 +222,7 @@
 </header>
 
 <main>
-  <div class="left-section">
-    <section class="banner-section">
-      <!-- Sección vacía para pruebas -->
-    </section>
-  </div>
-
-  <div class="right-section">
-    <section class="social-links">
-      <h2>Social media</h2>
-      <div class="social-icons">
-        <a href="https://twitter.com/PaterDagon" target="_blank" rel="noopener noreferrer" title="@PaterDagon">
-          <img src="twitter.png" alt="Twitter" />
-        </a>
-        <a href="http://goodreads.com/rosenmaurer" target="_blank" rel="noopener noreferrer" title="Goodreads">
-          <img src="goodreads.png" alt="Goodreads" />
-        </a>
-      </div>
-    </section>
-
-    <section class="banner-box">
-      <h2>Otros espacios</h2>
-      <div class="external-banners" style="text-align:center;">
-        <a href="https://tercerafundacion.net/biblioteca/ver/persona/50383" target="_blank" rel="noopener noreferrer">
-          <img src="3F-1.png" alt="Banner de La Tercera Fundación" />
-        </a>
-        <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" rel="noopener noreferrer">
-          <img src="wikilovecraft.png" alt="Banner de Wiki Lovecraft" style="max-width:70%;border-radius:6px;margin-top:1rem;" loading="lazy" />
-        </a>
-      </div>
-    </section>
-  </div>
+  <!-- Vacío, listo para contenido nuevo -->
 </main>
 
 <footer>
