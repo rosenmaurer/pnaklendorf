@@ -2,7 +2,7 @@
 <html lang="es-CL">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
   <title>El País de Pnaklendorf ☄️</title>
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
@@ -43,6 +43,7 @@
       background-color: var(--bg);
       color: var(--fg);
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     header, main, footer {
@@ -98,8 +99,9 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 0.8rem;
-      margin-top: 1.5rem;
-      background: #000;
+      margin-top: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(6px);
       padding: 0.8rem;
       border-radius: 8px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
@@ -108,7 +110,7 @@
     nav a {
       display: inline-block;
       padding: 0.35rem 0.9rem;
-      background: #0a0a0a;
+      background: rgba(10, 10, 10, 0.8);
       color: #f0f0f0;
       font-weight: 500;
       text-decoration: none;
@@ -118,7 +120,7 @@
     }
 
     nav a:hover {
-      background: #1a1a1a;
+      background: rgba(26, 26, 26, 0.9);
       border-color: rgba(212, 177, 92, 0.4);
       transform: translateY(-1px) scale(1.03);
       filter: brightness(1.25) drop-shadow(0 0 6px var(--highlight));
@@ -155,6 +157,7 @@
       color: #e0d8c0;
       font-style: italic;
       text-shadow: 0 0 8px rgba(212, 177, 92, 0.4), 0 0 12px rgba(0, 0, 0, 0.8);
+      padding: 0 1rem;
     }
 
     footer {
@@ -165,6 +168,8 @@
       color: #bbb;
       border-radius: 8px 8px 0 0;
       overflow: hidden;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(6px);
     }
 
     footer * {
@@ -183,31 +188,67 @@
       transform: scale(1.05);
       filter: brightness(1.3) drop-shadow(0 0 8px var(--highlight));
     }
+
+    /* Versión móvil */
+    @media (max-width: 768px) {
+      header {
+        padding: 1.5rem 1rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.6rem;
+      }
+
+      nav a {
+        width: 90%;
+        text-align: center;
+      }
+
+      .moon-text {
+        font-size: 1.1rem;
+      }
+
+      main {
+        padding: 3rem 1rem;
+      }
+
+      main a img {
+        max-width: 360px;
+      }
+    }
   </style>
 </head>
 
 <body>
-<header>
-  <h1>EL PAÍS DE PNAKLENDORF</h1>
-  <p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez</p>
-  <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
-  <nav>
-    <a href="relatos-ricardo-meyer.html">Relatos y poemas</a>
-    <a href="refugiobizarro.html">Refugio Bizarro</a>
-    <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
-  </nav>
-</header>
+  <!-- Música de fondo -->
+  <audio autoplay loop preload="auto" volume="0.2">
+    <source src="manhattanserenade.mp3" type="audio/mpeg">
+  </audio>
 
-<main>
-  <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer">
-    <img src="moonlightcabinet.gif" alt="El Gabinete de la Luz Lunar" />
-  </a>
-  <p class="moon-text">EL GABINETE DE LA LUZ LUNAR...<br>¿se supone que ya abre no? O quizás es muy pronto...</p>
-</main>
+  <header>
+    <h1>EL PAÍS DE PNAKLENDORF</h1>
+    <p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez</p>
+    <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
+    <nav>
+      <a href="relatos-ricardo-meyer.html">Relatos y poemas</a>
+      <a href="refugiobizarro.html">Refugio Bizarro</a>
+      <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
+    </nav>
+  </header>
 
-<footer>
-  <p>© 2025 Pnaklendorf. Todos los derechos reservados.</p>
-</footer>
+  <main>
+    <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener noreferrer">
+      <img src="moonlightcabinet.gif" alt="El Gabinete de la Luz Lunar" />
+    </a>
+    <p class="moon-text">EL GABINETE DE LA LUZ LUNAR...<br>¿se supone que ya abre no? O quizás es muy pronto...</p>
+  </main>
 
+  <footer>
+    <p>© 2025. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
+
