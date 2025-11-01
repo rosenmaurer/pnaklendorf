@@ -24,14 +24,10 @@
   </url>
 
   <url>
-    <loc>https://pnaklendorf.com/relatos-ricardo-meyer.html</loc>
-    <lastmod>2025-10-28</lastmod>
+    <loc>https://pnaklendorf.com/relatos.html</loc>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://pnaklendorf.com/Victory.jpg</image:loc>
-      <image:caption>Relatos y poemas de Ricardo Meyer</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -100,3 +96,4 @@
   </url>
 
 </urlset>
+
