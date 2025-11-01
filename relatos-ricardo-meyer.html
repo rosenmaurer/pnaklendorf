@@ -38,14 +38,14 @@
 
   <style>
     :root {
-      --bg: #fff;
-      --fg: #000;
-      --border-color: #ccc;
+      --bg: #000;
+      --fg: #e6e6e6;
+      --border-color: #222;
       --border: 1px solid var(--border-color);
+      --accent: #b32d2d;
+      --highlight: #d4b15c;
+      --link-hover: #f3e2a9;
       --maxw: 800px;
-      --accent: #7b0000;     /* rojo oscuro */
-      --highlight: #ff4444;  /* rojo vivo */
-      --link-hover: #ff6666; /* rojo claro al hover */
     }
 
     body {
@@ -55,39 +55,27 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background-image: url('viaprincipalis.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     header {
       text-align: center;
+      padding: 2rem 1rem;
       border-bottom: var(--border);
-      background: #fff;
-      padding: 1.5rem 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
       border-radius: 0 0 8px 8px;
     }
+
     header h1 {
       margin: 0.5rem 0;
       font-size: clamp(1.8rem, 4vw, 2.5rem);
-      color: var(--accent);
-      letter-spacing: 1px;
-    }
-
-    nav {
-      text-align: center;
-      margin-top: 0.5rem;
-    }
-    nav a {
-      margin: 0 12px;
-      font-weight: bold;
-      text-decoration: none;
       color: var(--highlight);
-      background: linear-gradient(90deg, var(--accent), var(--highlight), var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: text-shadow 0.3s ease, transform 0.3s ease;
-    }
-    nav a:hover {
-      text-shadow: 0 0 8px var(--link-hover), 0 0 12px var(--accent);
-      transform: scale(1.05);
+      text-shadow: 0 0 8px rgba(255, 215, 140, 0.4), 0 0 15px rgba(0, 0, 0, 0.9);
+      letter-spacing: 1px;
     }
 
     main {
@@ -98,6 +86,10 @@
       flex-direction: column;
       align-items: center;
       gap: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
     }
 
     ul {
@@ -127,6 +119,7 @@
       text-decoration: none;
       transition: color 0.3s ease, text-shadow 0.3s ease;
     }
+
     a:hover {
       color: var(--link-hover);
       text-shadow: 0 0 6px var(--highlight);
@@ -136,44 +129,50 @@
       display: block;
       margin: 1rem auto;
       max-width: 150px;
-      border: 1px solid var(--accent);
+      border: 1px solid var(--highlight);
       border-radius: 6px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2) drop-shadow(0 0 6px var(--highlight));
     }
 
     footer {
       text-align: center;
       padding: 1rem;
       border-top: var(--border);
-      background: #fff;
-      color: var(--fg);
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      color: #ccc;
       font-size: 0.9rem;
       border-radius: 8px 8px 0 0;
     }
+
     footer a {
       color: var(--highlight);
       text-decoration: none;
       transition: color 0.3s ease, text-shadow 0.3s ease;
     }
+
     footer a:hover {
       color: var(--link-hover);
       text-shadow: 0 0 5px var(--highlight);
     }
 
     @media (max-width: 768px) {
-      main { width: 100%; padding: 0 10px; }
-      nav a { display: block; margin: 5px 0; }
+      main {
+        width: 90%;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Relatos y poemas</h1>
-    <nav>
-      <a href="/index.html">Inicio</a>
-      <a href="relatos-ricardo-meyer.html">Relatos y poemas</a>
-      <a href="refugiobizarro.html">Refugio Bizarro</a>
-      <a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf?</a>
-    </nav>
   </header>
 
   <main>
@@ -182,7 +181,7 @@
       <li><a href="el-angel.html">El ángel (2024)</a></li>
       <li><a href="a-x.html">A X (poema) (2024)</a></li>
       <li><a href="jibril.html">Jibril (poema) (2025)</a></li>
-      <li><a href="el-sembrador.html"> El Sembrador (2025) </a></li>
+      <li><a href="el-sembrador.html">El Sembrador (2025)</a></li>
     </ul>
 
     <a href="/index.html">
@@ -195,5 +194,3 @@
   </footer>
 </body>
 </html>
-
-
