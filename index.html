@@ -27,7 +27,7 @@
   <meta name="twitter:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
 
-  <!-- Google: datos estructurados para mostrar Pnaklendorf.png -->
+  <!-- Google: datos estructurados (usa Pnaklendorf.png) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -243,9 +243,26 @@
 
 <body>
   <!-- Música de fondo -->
-  <audio autoplay loop preload="auto" volume="0.2">
-    <source src="manhattanserenade.mp3" type="audio/mpeg">
+  <audio id="bgm" loop preload="auto">
+    <source src="https://pnaklendorf.com/manhattanserenade.mp3" type="audio/mpeg">
   </audio>
+
+  <script>
+    // Intentar reproducir automáticamente
+    const audio = document.getElementById('bgm');
+    window.addEventListener('load', () => {
+      audio.volume = 0.2;
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Si el navegador bloquea autoplay, iniciar en el primer clic
+          document.addEventListener('click', () => {
+            audio.play();
+          }, { once: true });
+        });
+      }
+    });
+  </script>
 
   <header>
     <h1>EL PAÍS DE PNAKLENDORF</h1>
