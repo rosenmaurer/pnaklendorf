@@ -11,10 +11,13 @@
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph (para redes sociales) -->
   <meta property="og:title" content="El País de Pnaklendorf ☄️" />
   <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
-  <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
+  <meta property="og:image" content="https://pnaklendorf.com/Victory.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://pnaklendorf.com/" />
   <meta property="og:type" content="website" />
 
@@ -22,7 +25,24 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="El País de Pnaklendorf ☄️" />
   <meta name="twitter:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
-  <meta name="twitter:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
+  <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
+
+  <!-- Google: datos estructurados para mostrar Pnaklendorf.png -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "El País de Pnaklendorf",
+    "url": "https://pnaklendorf.com/",
+    "image": "https://pnaklendorf.com/Pnaklendorf.png",
+    "author": {
+      "@type": "Person",
+      "name": "Ricardo Meyer Manríquez",
+      "url": "https://pnaklendorf.com"
+    },
+    "description": "Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez."
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
@@ -189,7 +209,6 @@
       filter: brightness(1.3) drop-shadow(0 0 8px var(--highlight));
     }
 
-    /* Versión móvil */
     @media (max-width: 768px) {
       header {
         padding: 1.5rem 1rem;
@@ -251,4 +270,5 @@
   </footer>
 </body>
 </html>
+
 
