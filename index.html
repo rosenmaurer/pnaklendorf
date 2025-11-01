@@ -7,7 +7,7 @@
   <title>El País de Pnaklendorf ☄️</title>
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta name="author" content="Ricardo Meyer Manríquez" />
-  <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Rosenmaurer, Cthulhu, Ricardo Meyer Manríquez, Ricardo Meyer, sitio oficial" />
+  <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Cthulhu, Ricardo Meyer Manríquez, sitio oficial" />
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
@@ -114,36 +114,33 @@
       font-style: italic;
     }
 
+    /* NAV completamente transparente */
     nav {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 0.8rem;
       margin-top: 1rem;
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(6px);
+      background: transparent;
       padding: 0.8rem;
       border-radius: 8px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
     }
 
     nav a {
       display: inline-block;
       padding: 0.35rem 0.9rem;
-      background: rgba(10, 10, 10, 0.8);
+      background: transparent;
       color: #f0f0f0;
       font-weight: 500;
       text-decoration: none;
-      border-radius: 5px;
-      border: 1px solid rgba(212, 177, 92, 0.1);
-      transition: transform 0.3s ease, filter 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+      border: none;
+      transition: transform 0.3s ease, filter 0.3s ease, color 0.3s ease;
     }
 
     nav a:hover {
-      background: rgba(26, 26, 26, 0.9);
-      border-color: rgba(212, 177, 92, 0.4);
-      transform: translateY(-1px) scale(1.03);
-      filter: brightness(1.25) drop-shadow(0 0 6px var(--highlight));
+      color: var(--highlight);
+      transform: translateY(-1px) scale(1.05);
+      filter: drop-shadow(0 0 6px var(--highlight));
     }
 
     main {
@@ -275,5 +272,4 @@
   </footer>
 </body>
 </html>
-
 
