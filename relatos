@@ -8,7 +8,7 @@
   <meta name="description" content="Relatos y poemas de Ricardo Meyer Manríquez para lectura gratuita." />
   <meta name="author" content="Ricardo Meyer Manríquez" />
   <meta name="keywords" content="Ricardo Meyer, relatos, poemas, horror, Mitos de Cthulhu, Pnaklendorf, Rosenmaurer, Refugio Bizarro, oficial" />
-  <link rel="canonical" href="https://pnaklendorf.com/relatos-ricardo-meyer.html" />
+  <link rel="canonical" href="https://pnaklendorf.com/relatos.html" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
   <!-- Google Fonts -->
@@ -20,7 +20,7 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Relatos y poemas de Ricardo Meyer",
-    "url": "https://pnaklendorf.com/relatos-ricardo-meyer.html",
+    "url": "https://pnaklendorf.com/relatos.html",
     "author": {
       "@type": "Person",
       "name": "Ricardo Meyer Manríquez",
@@ -188,5 +188,7 @@
   </footer>
 </body>
 </html>
+
+
 
 
