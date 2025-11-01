@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
-  <!-- Open Graph (para redes sociales) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="El País de Pnaklendorf ☄️" />
   <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta property="og:image" content="https://pnaklendorf.com/Victory.jpg" />
@@ -27,7 +27,7 @@
   <meta name="twitter:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez." />
   <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
 
-  <!-- Google: datos estructurados (usa Pnaklendorf.png) -->
+  <!-- Datos estructurados para Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -210,33 +210,12 @@
     }
 
     @media (max-width: 768px) {
-      header {
-        padding: 1.5rem 1rem;
-      }
-
-      nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.6rem;
-        padding: 0.6rem;
-      }
-
-      nav a {
-        width: 90%;
-        text-align: center;
-      }
-
-      .moon-text {
-        font-size: 1.1rem;
-      }
-
-      main {
-        padding: 3rem 1rem;
-      }
-
-      main a img {
-        max-width: 360px;
-      }
+      header { padding: 1.5rem 1rem; }
+      nav { flex-direction: column; align-items: center; gap: 0.6rem; padding: 0.6rem; }
+      nav a { width: 90%; text-align: center; }
+      .moon-text { font-size: 1.1rem; }
+      main { padding: 3rem 1rem; }
+      main a img { max-width: 360px; }
     }
   </style>
 </head>
@@ -248,19 +227,28 @@
   </audio>
 
   <script>
-    // Intentar reproducir automáticamente
     const audio = document.getElementById('bgm');
     window.addEventListener('load', () => {
-      audio.volume = 0.2;
-      const playPromise = audio.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // Si el navegador bloquea autoplay, iniciar en el primer clic
+      audio.volume = 0;
+      const fadeIn = () => {
+        let v = 0;
+        const fade = setInterval(() => {
+          if (v < 0.2) {
+            v += 0.01;
+            audio.volume = v;
+          } else {
+            clearInterval(fade);
+          }
+        }, 150); // ≈ 3 segundos total
+      };
+      const playAudio = () => {
+        audio.play().then(fadeIn).catch(() => {
           document.addEventListener('click', () => {
-            audio.play();
+            audio.play().then(fadeIn);
           }, { once: true });
         });
-      }
+      };
+      playAudio();
     });
   </script>
 
@@ -287,5 +275,6 @@
   </footer>
 </body>
 </html>
+
 
 
