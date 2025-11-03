@@ -4,35 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Relatos y poemas de Ricardo Meyer</title>
-  <meta name="description" content="Relatos y poemas de Ricardo Meyer Manríquez para lectura gratuita." />
+  <title>Relatos y poemas de Ricardo Meyer Manríquez</title>
+  <meta name="description" content="Lectura gratuita de relatos y poemas originales de Ricardo Meyer Manríquez. Literatura de horror, mitos y poesía oscura desde Chile." />
   <meta name="author" content="Ricardo Meyer Manríquez" />
-  <meta name="keywords" content="Ricardo Meyer, relatos, poemas, horror, Mitos de Cthulhu, Pnaklendorf, Rosenmaurer, Refugio Bizarro, oficial" />
+  <meta name="keywords" content="Ricardo Meyer Manríquez, relatos, poemas, horror, Mitos de Cthulhu, Pnaklendorf, Refugio Bizarro, literatura chilena, terror" />
   <link rel="canonical" href="https://pnaklendorf.com/relatos.html" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
-  <!-- JSON-LD para autoría oficial -->
+  <!-- JSON-LD optimizado -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Relatos y poemas de Ricardo Meyer",
+    "name": "Relatos y poemas de Ricardo Meyer Manríquez",
     "url": "https://pnaklendorf.com/relatos.html",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://pnaklendorf.com/relatos.html"
+    },
     "author": {
       "@type": "Person",
       "name": "Ricardo Meyer Manríquez",
       "email": "mailto:rosenmaurer@gmail.com",
-      "sameAs": "https://pnaklendorf.com"
+      "url": "https://pnaklendorf.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pnaklendorf",
+      "url": "https://pnaklendorf.com"
     },
     "copyrightHolder": {
       "@type": "Person",
       "name": "Ricardo Meyer Manríquez"
     },
     "isAccessibleForFree": true,
-    "datePublished": "2023-01-01"
+    "inLanguage": "es-CL",
+    "datePublished": "2023-01-01",
+    "description": "Relatos y poemas de horror y poesía oscura por Ricardo Meyer Manríquez, disponibles para lectura gratuita."
   }
   </script>
 
@@ -120,6 +131,27 @@
       text-shadow: 0 0 6px var(--highlight);
     }
 
+    .disclaimer {
+      text-align: center;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #c8c8c8;
+      background: rgba(20, 20, 20, 0.6);
+      border: 1px solid rgba(212, 177, 92, 0.3);
+      border-radius: 6px;
+      padding: 1rem;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     img {
       display: block;
       margin: 1rem auto;
@@ -178,17 +210,21 @@
       <li><a href="el-sembrador.html">El Sembrador (2025)</a></li>
     </ul>
 
+    <p class="disclaimer">
+      Los siguientes relatos abordan temáticas como la depresión, el suicidio y otros contenidos no aptos para todo público.  
+      Son obras de ficción y no reflejan hechos reales ni ideología alguna del autor, más allá de la mera expresión literaria.
+    </p>
+
     <a href="/index.html">
       <img src="susan-woodings-susan.gif" alt="Volver a Pnaklendorf" />
     </a>
   </main>
 
   <footer>
-    <p>© 2025 Todos los derechos reservados.</p>
+    <p>© 2025 Ricardo Meyer Manríquez — Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
-
 
 
 
