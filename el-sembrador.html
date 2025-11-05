@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<link href="eldersign.png" rel="icon" type="image/png"/>
-<meta charset="utf-8"/>
+  <link href="eldersign.png" rel="icon" type="image/png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>El Sembrador</title>
-<meta name="description" content="‘El Sembrador’ (2025), relato de Ricardo Meyer Manríquez, publicado originalmente en Yog-Sothería (Wikidot)." />
-<meta name="author" content="Ricardo Meyer Manríquez" />
-<meta name="keywords" content="Ricardo Meyer, El Sembrador, relato, horror, Mitos de Cthulhu, Refugio Bizarro, Pnaklendorf, oficial" />
+  <title>El Sembrador</title>
+  <meta name="description" content="‘El Sembrador’ (2025), relato de Ricardo Meyer Manríquez, publicado originalmente en Yog-Sothería (Wikidot)." />
+  <meta name="author" content="Ricardo Meyer Manríquez" />
+  <meta name="keywords" content="Ricardo Meyer, El Sembrador, relato, horror, Mitos de Cthulhu, Refugio Bizarro, Pnaklendorf, oficial" />
 
-<!-- Open Graph Meta Tags -->
-<meta content="El Sembrador" property="og:title">
-<meta content="article" property="og:type"/>
-<meta content="https://pnaklendorf.com/relatos/el-sembrador.html" property="og:url"/>
-<meta content="https://pnaklendorf.com/El%20Sembrador.jpg" property="og:image"/>
-<meta content="‘El Sembrador’ (2025), relato de Ricardo Meyer Manríquez, publicado originalmente en Yog-Sothería (Wikidot)." property="og:description"/>
-<meta content="Pnaklendorf" property="og:site_name"/>
-<meta content="es_CL" property="og:locale"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="El Sembrador" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://pnaklendorf.com/relatos/el-sembrador.html" />
+  <meta property="og:image" content="https://pnaklendorf.com/El%20Sembrador.jpg" />
+  <meta property="og:description" content="‘El Sembrador’ (2025), relato de Ricardo Meyer Manríquez, publicado originalmente en Yog-Sothería (Wikidot)." />
+  <meta property="og:site_name" content="Pnaklendorf" />
+  <meta property="og:locale" content="es_CL" />
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="El Sembrador" />
+  <meta name="twitter:description" content="‘El Sembrador’ (2025), relato de Ricardo Meyer Manríquez, publicado originalmente en Yog-Sothería (Wikidot)." />
+  <meta name="twitter:image" content="https://pnaklendorf.com/El%20Sembrador.jpg" />
 
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ShortStory",
+    "name": "Relatos y poemas de Pnaklendorf",
+    "author": {
+      "@type": "Person",
+      "name": "Ricardo Meyer Manríquez",
+      "email": "mailto:rosenmaurer@gmail.com",
+      "sameAs": "https://pnaklendorf.com"
+    },
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": "Ricardo Meyer Manríquez"
+    },
+    "url": "https://pnaklendorf.com/relatos/el-sembrador.html",
+    "description": "‘El Sembrador’ (2025), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en Yog-Sothería (Wikidot).",
+    "genre": ["Horror", "Mitos de Cthulhu"],
+    "datePublished": "2025-01-01",
+    "inLanguage": "es",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <style>
     body {
       font-family: 'Cardo', Georgia, serif;
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
       background-color: #0d0d0d;
       color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
     }
 
     .container {
@@ -73,16 +106,7 @@
       margin: 3em 0;
     }
 
-    img.final {
-      display: block;
-      margin: 4rem auto 0;
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #333;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-    }
-
-    a { text-decoration: none; }
+    a { text-decoration: none; color: #b0e0e6; }
 
     .nota-origen {
       text-align: center;
@@ -91,71 +115,55 @@
       margin-top: 2rem;
     }
 
+    .tarjeta {
+      text-align: center;
+      border: 1px solid #444;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      max-width: 400px;
+      font-style: italic;
+      color: #ccc;
+      background-color: #111;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+      border-radius: 4px;
+    }
+
+    img.final {
+      display: block;
+      margin: 4rem auto 0;
+      max-width: 120px;
+      height: auto;
+      border: 1px solid #333;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img.final:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    footer {
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
     @media screen and (max-width: 600px) {
       body { font-size: 1.1rem; padding: 1rem; }
       .container { padding: 2rem 1rem; }
       .titulo { font-size: 2rem; }
       .autor { font-size: 0.9rem; }
-      img.final { width: 100%; height: auto; }
     }
-    .tarjeta {
-  text-align: center;
-  border: 1px solid #444;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 400px;
-  font-style: italic;
-  color: #ccc;
-  background-color: #111;
-  box-shadow: 0 0 10px rgba(255,255,255,0.05);
-  border-radius: 4px;
-}
-img.final {
-  display: block;
-  margin: 4rem auto 0;
-  max-width: 120px; /* más pequeño que antes */
-  height: auto;
-  border: 1px solid #333;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-img.final:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-</style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  "name": "El Sembrador",
-  "author": {
-    "@type": "Person",
-    "name": "Ricardo Meyer Manríquez",
-    "email": "mailto:rosenmaurer@gmail.com",
-    "sameAs": "https://pnaklendorf.com"
-  },
-  "copyrightHolder": {
-    "@type": "Person",
-    "name": "Ricardo Meyer Manríquez"
-  },
-  "url": "https://pnaklendorf.com/relatos/el-sembrador.html",
-  "description": "‘El Sembrador’ (2025), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en Yog-Sothería (Wikidot).",
-  "genre": ["Horror", "Mitos de Cthulhu"],
-  "datePublished": "2025-01-01",
-  "inLanguage": "es",
-  "isAccessibleForFree": true
-}
-</script>
+  </style>
 </head>
 
 <body>
-<div class="container">
-  <h1 class="titulo">EL SEMBRADOR</h1>
-  <h2 class="autor">Por Ricardo Meyer</h2>
+  <div class="container">
+    <h1 class="titulo">EL SEMBRADOR</h1>
+    <h2 class="autor">Por Ricardo Meyer</h2>
+
 <p>La primera vez que soñé con él fue durante una noche febril, un par de días antes de nuestra llegada al cruce de Los Andes. Precisamente me había quedado dormido leyendo sobre aquel <em><em>Libro de las Sombras</em></em> que Gerald Gardner, padre de la Wicca, decía se encontraba oculto en una montaña que no podía ser otra que la cordillera andina. Supuestamente conducía a reinos subterráneos, olvidados, quizá al mismo Averno. En el sueño, aquel hombre tenía una apariencia austera, vestía con harapos y lucía un curioso sombrero de paja. Su rostro y manos parecían demacrados y, debido a la oscuridad, no podía distinguir bien sus rasgos. Curiosamente, parecía portar en su mano un <em>bolline</em>, una suerte de hoz pequeña que es además usada como vara mágica en la Wicca.</p>
 <p>—Ey —decía Katherine mientras me daba un beso en el cuello— despierta, despierta.</p>
 <p>Aturdido, quizá por el sueño, la aparté sintiendo cierto asco. Me llevé las manos a la cara y pregunté:</p>
@@ -229,9 +237,12 @@ img.final:hover {
 
   <br>
   <a href="index.html">
-    <img alt="El Sembrador por Yorick" class="final" src="El%20Sembrador.jpg"; height: auto;"/>
-  </a>
-  <br><br><br>
-</div>
+      <img src="El%20Sembrador.jpg" alt="El Sembrador por Yorick" class="final" />
+    </a>
+
+    <footer>
+      © 2025 Círculo de Pnaklendorf. Todos los derechos reservados.
+    </footer>
+  </div>
 </body>
 </html>
