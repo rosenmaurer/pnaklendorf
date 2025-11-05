@@ -119,6 +119,49 @@
       color: #e10600;
       text-shadow: 0 0 10px #6a0dad, 0 0 20px #e10600;
     }
+
+    /* 📱 MEDIA QUERIES */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+        margin: 25px 0;
+      }
+      .content {
+        padding: 30px 15px;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      img.pnaklendorf-image {
+        max-width: 100%;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+      }
+      figcaption {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+      }
+      footer {
+        font-size: 0.85rem;
+        padding: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .content {
+        padding: 25px 12px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      figcaption {
+        font-size: 0.8rem;
+      }
+      footer {
+        font-size: 0.8rem;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -158,4 +201,3 @@
   </footer>
 </body>
 </html>
-
