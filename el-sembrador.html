@@ -54,13 +54,15 @@
   </script>
 
  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
   body {
     font-family: 'Cardo', Georgia, serif;
-    background-color: #0d0d0d;
-    color: #e0e0e0;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    line-height: 1.8;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
   }
 
   .container {
@@ -131,7 +133,7 @@
   img.final {
     display: block;
     margin: 4rem auto 0;
-    max-width: 100%;
+    max-width: 280px; /* tamaño ajustado */
     height: auto;
     border: 1px solid #333;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
@@ -139,7 +141,7 @@
   }
 
   img.final:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     box-shadow: 0 0 25px rgba(217, 164, 65, 0.4); /* dorado tenue */
   }
 
@@ -158,7 +160,7 @@
     .titulo { font-size: 2rem; }
     .autor { font-size: 0.9rem; }
     blockquote { font-size: 1rem; padding: 1rem 1.2rem; }
-    img.final { width: 100%; height: auto; }
+    img.final { max-width: 220px; } /* se ajusta automáticamente en móviles */
   }
 </style>
 
