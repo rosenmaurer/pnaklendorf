@@ -11,6 +11,7 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/Pnaklendorf.png</image:loc>
+      <image:caption>Pnaklendorf — Portal literario</image:caption>
     </image:image>
   </url>
 
@@ -22,6 +23,7 @@
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/cthulhoid.jpg</image:loc>
+      <image:caption>Relatos y poemas de Pnaklendorf</image:caption>
     </image:image>
   </url>
 
@@ -32,6 +34,7 @@
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/Petralogo.png</image:loc>
+      <image:caption>Refugio Bizarro — Colectivo literario</image:caption>
     </image:image>
   </url>
 
@@ -64,6 +67,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/baffometo.jpg</image:loc>
+      <image:caption>Los Heraldos de la Penitencia — relato de Ricardo Meyer Manríquez</image:caption>
     </image:image>
   </url>
 
@@ -74,6 +78,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/Han_Idol.jpg</image:loc>
+      <image:caption>El Ángel — relato de Ricardo Meyer Manríquez</image:caption>
     </image:image>
   </url>
 
@@ -84,6 +89,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/El%20Sembrador.jpg</image:loc>
+      <image:caption>El Sembrador — relato de Ricardo Meyer Manríquez</image:caption>
     </image:image>
   </url>
 
@@ -94,6 +100,7 @@
     <priority>0.75</priority>
   </url>
 
+  <!-- Poemas -->
   <url>
     <loc>https://pnaklendorf.com/relatos/jibril.html</loc>
     <lastmod>2025-11-04</lastmod>
@@ -101,6 +108,7 @@
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/jibril.gif</image:loc>
+      <image:caption>Jibril — poema de Ricardo Meyer Manríquez</image:caption>
     </image:image>
   </url>
 
