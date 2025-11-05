@@ -6,47 +6,46 @@
   <!-- Página principal -->
   <url>
     <loc>https://pnaklendorf.com/</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/Pnaklendorf.png</image:loc>
-      <image:caption>El País de Pnaklendorf ☄️</image:caption>
     </image:image>
   </url>
 
   <!-- Páginas principales -->
   <url>
-    <loc>https://pnaklendorf.com/historia-liber-veneris.html</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
     <loc>https://pnaklendorf.com/relatos.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://pnaklendorf.com/que-es-pnaklendorf.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <loc>https://pnaklendorf.com/refugiobizarro.html</loc>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://pnaklendorf.com/refugiobizarro.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <loc>https://pnaklendorf.com/que-es-pnaklendorf.html</loc>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://pnaklendorf.com/historia-liber-veneris.html</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://pnaklendorf.com/breve_sinopsis_vida_reccaredus_magnus.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -54,39 +53,40 @@
   <!-- Relatos individuales -->
   <url>
     <loc>https://pnaklendorf.com/los-heraldos-de-la-penitencia.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>never</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://pnaklendorf.com/el-angel.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>never</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://pnaklendorf.com/el-sembrador.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>never</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://pnaklendorf.com/a-x.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>never</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://pnaklendorf.com/jibril.html</loc>
-    <lastmod>2025-11-03</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
 </urlset>
+
 
 
