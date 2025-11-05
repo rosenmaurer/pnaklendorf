@@ -1,144 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <link href="eldersign.png" rel="icon" type="image/png"/>
 <meta charset="utf-8"/>
 
 <title>El Ángel</title>
-<meta name="description" content="‘El Ángel’ (2024), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en Refugio Bizarro #1." />
+<meta name="description" content="‘El Ángel’ (2024), relato de Ricardo Meyer Manríquez, publicado originalmente en Refugio Bizarro #1." />
 <meta name="author" content="Ricardo Meyer Manríquez" />
 <meta name="keywords" content="Ricardo Meyer, El Ángel, relato, horror, Mitos de Cthulhu, Refugio Bizarro, Pnaklendorf, oficial" />
 
 <!-- Open Graph Meta Tags -->
-<meta content="El Ángel" property="og:title">
-<meta content="article" property="og:type"/>
-<meta content="https://pnaklendorf.com/relatos/el-angel.html" property="og:url"/>
-<meta content="https://pnaklendorf.com/Han_Idol.jpg" property="og:image"/>
-<meta content="‘El Ángel’ (2024), relato oficial de Ricardo Meyer Manríquez, publicado originalmente en Refugio Bizarro #1." property="og:description"/>
-<meta content="Pnaklendorf" property="og:site_name"/>
-<meta content="es_CL" property="og:locale"/>
+<meta property="og:title" content="El Ángel"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://pnaklendorf.com/relatos/el-angel.html"/>
+<meta property="og:image" content="https://pnaklendorf.com/Han_Idol.jpg"/>
+<meta property="og:description" content="‘El Ángel’ (2024), relato de Ricardo Meyer Manríquez, publicado originalmente en Refugio Bizarro #1."/>
+<meta property="og:site_name" content="Pnaklendorf"/>
+<meta property="og:locale" content="es_CL"/>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 
+  body {
+    font-family: 'Cardo', Georgia, serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+  }
+
+  .container {
+    max-width: 800px;
+    padding: 3rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .autor {
+    text-align: center;
+    font-size: 1rem;
+    color: #bbbbbb;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  blockquote {
+    margin: 2em;
+    padding-left: 1em;
+    border-left: 4px solid #444;
+    font-style: italic;
+    color: #aaa;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 3em 0;
+  }
+
+  img.final {
+    display: block;
+    margin: 4rem auto 0;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .cita-centrada {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #d9a441; /* Color dorado */
+    margin: 30px auto;
+    max-width: 600px;
+    line-height: 1.5;
+    border-left: none;
+    background: #1e1e1e;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(217, 164, 65, 0.5);
+  }
+
+  @media screen and (max-width: 600px) {
     body {
-      font-family: 'Cardo', Georgia, serif;
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
+      font-size: 1.1rem;
+      padding: 1rem;
     }
 
     .container {
-      max-width: 800px;
-      padding: 3rem 1.5rem;
-      margin: 0 auto;
+      padding: 2rem 1rem;
     }
 
     .titulo {
-      text-align: center;
-      font-size: 2.8rem;
-      color: #ffffff;
-      margin-bottom: 0.2rem;
-      letter-spacing: 0.05rem;
+      font-size: 2rem;
     }
 
     .autor {
-      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    blockquote, .cita-centrada {
       font-size: 1rem;
-      color: #bbbbbb;
-      margin-bottom: 2rem;
-    }
-
-    p {
-      text-align: justify;
-      margin-bottom: 1.5rem;
-    }
-
-    em {
-      font-style: italic;
-    }
-
-    strong {
-      font-weight: bold;
-    }
-
-    blockquote {
-      margin: 2em;
-      padding-left: 1em;
-      border-left: 4px solid #444;
-      font-style: italic;
-      color: #aaa;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #444;
-      margin: 3em 0;
+      padding: 1rem 1.2rem;
     }
 
     img.final {
-      display: block;
-      margin: 4rem auto 0;
-      max-width: 100%;
+      width: 100%;
       height: auto;
-      border: 1px solid #333;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
     }
-
-    a {
-      text-decoration: none;
-    }
-
-    .cita-centrada {
-      text-align: center;
-      font-style: italic;
-      font-weight: bold;
-      color: #d9a441; /* Color dorado */
-      margin: 30px auto;
-      max-width: 600px;
-      line-height: 1.5;
-      border-left: none;
-      background: #1e1e1e;
-      padding: 15px 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(217, 164, 65, 0.5);
-    }
-
-    @media screen and (max-width: 600px) {
-      body {
-        font-size: 1.1rem;
-        padding: 1rem;
-      }
-
-      .container {
-        padding: 2rem 1rem;
-      }
-
-      .titulo {
-        font-size: 2rem;
-      }
-
-      .autor {
-        font-size: 0.9rem;
-      }
-
-      blockquote, .cita-centrada {
-        font-size: 1rem;
-        padding: 1rem 1.2rem;
-      }
-
-      img.final {
-        width: 100%;
-        height: auto;
-      }
-    }
+  }
 </style>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
-  "name": "El Ángel",
+  "name": "Relatos y poemas de Pnaklendorf",
   "author": {
     "@type": "Person",
     "name": "Ricardo Meyer Manríquez",
@@ -157,7 +159,6 @@
   "isAccessibleForFree": true
 }
 </script>
-
 </head>
 
 <body>
