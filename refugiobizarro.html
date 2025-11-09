@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Refugio Bizarro</title>
+<title>Refugio Bizarro | Pnaklendorf ☄️</title>
 <meta name="description" content="Refugio Bizarro, colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura.">
 <meta name="author" content="Refugio Bizarro">
 <link rel="icon" href="Petralogo.png" type="image/png">
@@ -63,10 +63,29 @@
 </script>
 
 <style>
-:root{--bg:#f5f5f5;--fg:#1a1a1a;--accent:#9b1f1f;--highlight:#ff5555;--border-color:#ccc;--border:1px solid var(--border-color);--maxw:1200px;--shadow:rgba(0,0,0,0.15)}
+:root{
+  --bg:#f5f5f5;
+  --fg:#1a1a1a;
+  --accent:#6a0dad; /* púrpura principal */
+  --highlight:#b44cff; /* brillo púrpura neón */
+  --border-color:#ccc;
+  --border:1px solid var(--border-color);
+  --maxw:1200px;
+  --shadow:rgba(0,0,0,0.15);
+}
+
 body{margin:0;font-family:'EB Garamond',serif;background-color:var(--bg);color:var(--fg)}
 header{position:relative;text-align:center;padding:2rem 1rem;border-bottom:var(--border);border-radius:0 0 8px 8px;overflow:hidden}
-header::before{content:"";position:absolute;inset:0;background:url('weresnake.png') center/cover no-repeat;opacity:0.2;z-index:0}
+header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(106,13,173,0.35),rgba(106,13,173,0.35)),
+    url('weresnake.png') center/cover no-repeat;
+  opacity:0.3;
+  z-index:0;
+}
 header *{position:relative;z-index:1}
 header h1{margin:0.5rem 0;color:#fff;font-size:clamp(2rem,3vw+1rem,3rem);text-shadow:0 0 8px rgba(0,0,0,0.7)}
 header p{color:#f2f2f2;margin:0.25rem 0;text-shadow:0 0 6px rgba(0,0,0,0.5)}
@@ -88,7 +107,16 @@ img:hover{transform:scale(1.05);filter:brightness(1.15) drop-shadow(0 0 6px var(
 .download-btn{padding:0.8rem 1.5rem;background-color:var(--accent);color:#fff;font-weight:bold;border-radius:8px;text-decoration:none;text-align:center;box-shadow:0 0 6px rgba(0,0,0,0.3);transition:all 0.3s ease}
 .download-btn:hover{background-color:var(--highlight);box-shadow:0 0 12px var(--highlight),0 0 20px var(--accent);transform:translateY(-2px)}
 footer{position:relative;text-align:center;padding:1rem;border-top:var(--border);color:#fff;border-radius:8px 8px 0 0;overflow:hidden}
-footer::before{content:"";position:absolute;inset:0;background:url('weresnake.png') center/cover no-repeat;opacity:0.2;z-index:0}
+footer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(106,13,173,0.35),rgba(106,13,173,0.35)),
+    url('weresnake.png') center/cover no-repeat;
+  opacity:0.3;
+  z-index:0;
+}
 footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
 @media(max-width:600px){main{flex-direction:column}.left-column,.right-column{width:100%}}
 </style>
@@ -122,8 +150,7 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
         <li><a href="https://www.drivethrufiction.com/product/541059/SPANISH-Refugio-Bizarro-4-100-anos-de-Los-Mitos-de-Cthulhu">Refugio Bizarro #4 (septiembre 2025)</a></li>
       </ul>
       <h2>Colaboraciones</h2>
-      <ul><li><a href="https://pnaklendorf.com/Planetas_Prohibidos_Especial_Halloween2025.pdf">Planetas Prohibidos: Especial Halloween 2025 </a></li>
-      </ul>
+      <ul><li><a href="https://pnaklendorf.com/Planetas_Prohibidos_Especial_Halloween2025.pdf">Planetas Prohibidos: Especial Halloween 2025 </a></li></ul>
     </div>
   </div>
 
@@ -134,7 +161,6 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
       <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank"><img src="wikilovecraft.png" alt="Banner de Wiki Lovecraft" loading="lazy"></a>
     </div>
 
-    <!-- Nuevo banner centrado fuera del bloque -->
     <div style="text-align:center; margin-bottom:1.5rem;">
       <a href="https://www.drivethrurpg.com/publisher/30780/refugio-bizarro" target="_blank" rel="noopener noreferrer">
         <img src="drivethrufiction.png" alt="Refugio Bizarro en DriveThruFiction" style="max-width:60%;border-radius:6px;" loading="lazy">
@@ -155,6 +181,8 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
         <a href="RefugioBizarro3.pdf" download class="download-btn">Descargar Refugio Bizarro #3</a>
         <a href="RefugioBizarro4.pdf" download class="download-btn">Descargar Refugio Bizarro #4</a>
         <a href="RefugioBizarro5.pdf" download class="download-btn">Descargar Refugio Bizarro #5 (COMING SOON)</a>
+      </div>
+    </div>
   </div>
 </main>
 
@@ -164,8 +192,3 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
 
 </body>
 </html>
-
-
-
-
-
