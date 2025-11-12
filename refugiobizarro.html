@@ -98,17 +98,23 @@ main{display:flex;flex-wrap:wrap;max-width:var(--maxw);margin:2rem auto;gap:1rem
 .left-column,.right-column{flex:1 1 45%;min-width:300px}
 .projects,.social-links,.banners,.banner-section{background-color:#fff;border:var(--border);border-radius:6px;padding:1rem;margin-bottom:1.5rem;transition:box-shadow 0.3s ease,transform 0.3s ease}
 .projects:hover,.social-links:hover,.banners:hover,.banner-section:hover{box-shadow:0 0 12px var(--highlight),0 0 20px var(--accent);transform:translateY(-2px)}
+
 h2{color:var(--accent);margin-top:0}
+
 a{font-weight:bold;text-decoration:none;background:linear-gradient(90deg,var(--accent),var(--highlight),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;transition:text-shadow 0.3s ease}
 a:hover{text-shadow:0 0 6px var(--highlight),0 0 10px var(--accent)}
+
 img{display:block;margin:1rem auto;max-width:100%;border:1px solid var(--border-color);border-radius:6px;transition:transform 0.3s ease,filter 0.3s ease}
 img:hover{transform:scale(1.05);filter:brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent))}
+
 .social-links{text-align:center;padding:1rem}
 .social-links a{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin:0.5rem}
 .social-links img{width:20px;height:20px;vertical-align:middle}
+
 .download-wrapper{display:flex;justify-content:center;margin-top:1rem}
 .download-btn{padding:0.8rem 1.5rem;background-color:var(--accent);color:#fff;font-weight:bold;border-radius:8px;text-decoration:none;text-align:center;box-shadow:0 0 6px rgba(0,0,0,0.3);transition:all 0.3s ease}
 .download-btn:hover{background-color:var(--highlight);box-shadow:0 0 12px var(--highlight),0 0 20px var(--accent);transform:translateY(-2px)}
+
 footer{position:relative;text-align:center;padding:1rem;border-top:var(--border);color:#fff;border-radius:8px 8px 0 0;overflow:hidden}
 footer::before{
   content:"";
@@ -122,9 +128,17 @@ footer::before{
 }
 footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
 
-/* NUEVA CLASE PARA UNIFICAR TAMAÑOS DE BANNERS */
+/* Tamaño estándar banners aliados */
 .banner-ally{
   max-width:55%;
+  display:block;
+  margin:1rem auto;
+  border-radius:6px;
+}
+
+/* BANNER DE LA BIBLIOTECA ETERNA MÁS PEQUEÑO */
+.banner-ally-small{
+  max-width:40%;
   display:block;
   margin:1rem auto;
   border-radius:6px;
@@ -187,7 +201,7 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
       </a>
 
       <a href="https://www.youtube.com/@LaBibliotecaEterna" target="_blank">
-        <img src="labibliotecaeterna.jpg" alt="La Biblioteca Eterna" loading="lazy" class="banner-ally">
+        <img src="labibliotecaeterna.jpg" alt="La Biblioteca Eterna" loading="lazy" class="banner-ally-small">
       </a>
     </div>
 
@@ -223,3 +237,5 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
 
 </body>
 </html>
+
+
