@@ -4,17 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Refugio Bizarro | Pnaklendorf ☄️</title>
+  <link rel="canonical" href="https://pnaklendorf.com/refugiobizarro.html">
+
 
 <!-- Simple Descriptions -->
-<meta name="description" content="Refugio Bizarro, a collective focused on weird fiction and cosmic horror.">
+<meta name="description" content="Refugio Bizarro, collective of weird fiction, cosmic horror and the official home of the Refugio Bizarro eZine.">
+<meta name="keywords" content="Refugio Bizarro, weird fiction, cosmic horror, eZine, Cthulhu Mythos, horror colectivo, literatura extraña, Lovecraft, weird tales">
 <meta name="author" content="Refugio Bizarro">
 
 <link rel="icon" href="Petralogo.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-<!-- Open Graph / Facebook / Discord -->
+<!-- Open Graph -->
 <meta property="og:title" content="Refugio Bizarro">
-<meta property="og:description" content="Refugio Bizarro, a collective focused on weird fiction and cosmic horror.">
+<meta property="og:description" content="Refugio Bizarro, collective of weird fiction and cosmic horror.">
 <meta property="og:image" content="refugio-preview.png">
 <meta property="og:image:width" content="1500">
 <meta property="og:image:height" content="500">
@@ -31,106 +34,243 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CreativeWork",
+  "@type": "Organization",
   "name": "Refugio Bizarro",
   "alternateName": "Refugio Bizarro Collective",
   "url": "https://pnaklendorf.com/refugiobizarro.html",
+  "logo": "https://pnaklendorf.com/Petralogo.png",
   "image": "https://pnaklendorf.com/refugio-preview.png",
-  "description": "Refugio Bizarro, a collective focused on weird fiction and cosmic horror.",
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Ricardo Meyer Manríquez",
-      "url": "https://pnaklendorf.com"
-    },
-    {
-      "@type": "Person",
-      "name": "Yuke Kabula"
-    },
-    {
-      "@type": "Organization",
-      "name": "Refugio Bizarro",
-      "url": "https://pnaklendorf.com/refugiobizarro.html"
-    }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "Refugio Bizarro",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://pnaklendorf.com/Petralogo.png"
-    }
+  "description": "Refugio Bizarro, a collective focused on weird fiction and cosmic horror, publisher of the Refugio Bizarro eZine.",
+  "founder": {
+    "@type": "Person",
+    "name": "Ricardo Meyer Manríquez",
+    "url": "https://pnaklendorf.com"
   },
-  "inLanguage": "en",
-  "datePublished": "2024-11-01",
-  "dateModified": "2025-10-24"
+  "sameAs": [
+    "https://x.com/refugiobizarro",
+    "https://www.instagram.com/refugio.bizarro/",
+    "https://www.threads.net/@refugio.bizarro"
+  ]
 }
 </script>
 
 <style>
-/* (CSS unchanged) */
+/* ---------- NEW COLOR PALETTE (Black Carbon Theme) ---------- */
 :root{
-  --bg:#f5f5f5;
-  --fg:#1a1a1a;
-  --accent:#6a0dad;
-  --highlight:#b44cff;
-  --border-color:#ccc;
+  --bg:#0d0d0d;
+  --fg:#e6e6e6;
+  --accent:#bbbbbb;
+  --highlight:#ffffff;
+  --border-color:#444;
   --border:1px solid var(--border-color);
   --maxw:1200px;
-  --shadow:rgba(0,0,0,0.15);
+  --shadow:rgba(255,255,255,0.10);
 }
 
-body{margin:0;font-family:'EB Garamond',serif;background-color:var(--bg);color:var(--fg)}
-header{position:relative;text-align:center;padding:2rem 1rem;border-bottom:var(--border);border-radius:0 0 8px 8px;overflow:hidden}
+body{
+  margin:0;
+  font-family:'EB Garamond',serif;
+  background-color:var(--bg);
+  color:var(--fg);
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+  position:relative;
+  text-align:center;
+  padding:2rem 1rem;
+  border-bottom:var(--border);
+  border-radius:0 0 8px 8px;
+  overflow:hidden;
+}
+
 header::before{
   content:"";
   position:absolute;
   inset:0;
   background:
-    linear-gradient(rgba(106,13,173,0.35),rgba(106,13,173,0.35)),
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
     url('weresnake.png') center/cover no-repeat;
-  opacity:0.3;
+  opacity:0.5;
   z-index:0;
 }
-header *{position:relative;z-index:1}
-header h1{margin:0.5rem 0;color:#fff;font-size:clamp(2rem,3vw+1rem,3rem);text-shadow:0 0 8px rgba(0,0,0,0.7)}
-header p{color:#f2f2f2;margin:0.25rem 0;text-shadow:0 0 6px rgba(0,0,0,0.5)}
-header img{display:block;margin:1rem auto;max-width:200px;border-radius:8px;transition:transform 0.3s ease,filter 0.3s ease}
-header img:hover{transform:scale(1.1);filter:brightness(1.2) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent))}
 
-main{display:flex;flex-wrap:wrap;max-width:var(--maxw);margin:2rem auto;gap:1rem;padding:0 1rem}
-.left-column,.right-column{flex:1 1 45%;min-width:300px}
-.projects,.social-links,.banners,.banner-section{background-color:#fff;border:var(--border);border-radius:6px;padding:1rem;margin-bottom:1.5rem;transition:box-shadow 0.3s ease,transform 0.3s ease}
-.projects:hover,.social-links:hover,.banners:hover,.banner-section:hover{box-shadow:0 0 12px var(--highlight),0 0 20px var(--accent);transform:translateY(-2px)}
+header *{
+  position:relative;
+  z-index:1;
+}
 
-h2{color:var(--accent);margin-top:0}
+header h1{
+  margin:0.5rem 0;
+  color:#fff;
+  font-size:clamp(2rem,3vw+1rem,3rem);
+  text-shadow:0 0 8px rgba(0,0,0,0.9);
+}
 
-a{font-weight:bold;text-decoration:none;background:linear-gradient(90deg,var(--accent),var(--highlight),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;transition:text-shadow 0.3s ease}
-a:hover{text-shadow:0 0 6px var(--highlight),0 0 10px var(--accent)}
+header p{
+  color:#ccc;
+  margin:0.25rem 0;
+  text-shadow:0 0 6px rgba(0,0,0,0.7);
+}
 
-img{display:block;margin:1rem auto;max-width:100%;border:1px solid var(--border-color);border-radius:6px;transition:transform 0.3s ease,filter 0.3s ease}
-img:hover{transform:scale(1.05);filter:brightness(1.15) drop-shadow(0 0 6px var(--highlight)) drop-shadow(0 0 10px var(--accent))}
+header img{
+  display:block;
+  margin:1rem auto;
+  max-width:200px;
+  border-radius:8px;
+  transition:transform 0.3s ease,filter 0.3s ease;
+}
 
-.social-links{text-align:center;padding:1rem}
-.social-links a{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin:0.5rem}
-.social-links img{width:20px;height:20px;vertical-align:middle}
+header img:hover{
+  transform:scale(1.1);
+  filter:brightness(1.25) drop-shadow(0 0 6px var(--highlight));
+}
 
-.download-wrapper{display:flex;justify-content:center;margin-top:1rem}
-.download-btn{padding:0.8rem 1.5rem;background-color:var(--accent);color:#fff;font-weight:bold;border-radius:8px;text-decoration:none;text-align:center;box-shadow:0 0 6px rgba(0,0,0,0.3);transition:all 0.3s ease}
-.download-btn:hover{background-color:var(--highlight);box-shadow:0 0 12px var(--highlight),0 0 20px var(--accent);transform:translateY(-2px)}
+/* ---------- MAIN LAYOUT ---------- */
 
-footer{position:relative;text-align:center;padding:1rem;border-top:var(--border);color:#fff;border-radius:8px 8px 0 0;overflow:hidden}
+main{
+  display:flex;
+  flex-wrap:wrap;
+  max-width:var(--maxw);
+  margin:2rem auto;
+  gap:1rem;
+  padding:0 1rem;
+}
+
+.left-column,.right-column{
+  flex:1 1 45%;
+  min-width:300px;
+}
+
+.projects,.social-links,.banners,.banner-section{
+  background-color:#111;
+  border:var(--border);
+  border-radius:6px;
+  padding:1rem;
+  margin-bottom:1.5rem;
+  transition:box-shadow 0.3s ease,transform 0.3s ease;
+}
+
+.projects:hover,.social-links:hover,.banners:hover,.banner-section:hover{
+  box-shadow:0 0 12px var(--shadow);
+  transform:translateY(-2px);
+}
+
+h2{
+  color:#fff;
+  margin-top:0;
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+  font-weight:bold;
+  color:#ddd;
+  text-decoration:none;
+  transition:color 0.3s ease;
+}
+
+a:hover{
+  color:#fff;
+  text-shadow:0 0 6px #fff;
+}
+
+/* ---------- IMAGES ---------- */
+
+img{
+  display:block;
+  margin:1rem auto;
+  max-width:100%;
+  border:1px solid var(--border-color);
+  border-radius:6px;
+  transition:transform 0.3s ease,filter 0.3s ease;
+}
+
+img:hover{
+  transform:scale(1.05);
+  filter:brightness(1.2);
+}
+
+.social-links{
+  text-align:center;
+  padding:1rem;
+}
+
+.social-links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin:0.5rem;
+}
+
+.social-links img{
+  width:20px;
+  height:20px;
+}
+
+/* ---------- DOWNLOAD BUTTONS ---------- */
+
+.download-wrapper{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:0.8rem;
+  padding:1.2rem;
+  background:#111;
+  border:var(--border);
+  border-radius:8px;
+  max-width:380px;
+  margin:1.5rem auto;
+  box-shadow:0 0 12px var(--shadow);
+}
+
+.download-btn{
+  padding:0.8rem 1.5rem;
+  background-color:#222;
+  color:#fff;
+  font-weight:bold;
+  border-radius:8px;
+  text-decoration:none;
+  text-align:center;
+  transition:all 0.3s ease;
+  border:1px solid #333;
+}
+
+.download-btn:hover{
+  background-color:#333;
+  box-shadow:0 0 10px rgba(255,255,255,0.15);
+  transform:translateY(-2px);
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+  position:relative;
+  text-align:center;
+  padding:1rem;
+  border-top:var(--border);
+  color:#ccc;
+  border-radius:8px 8px 0 0;
+  overflow:hidden;
+}
+
 footer::before{
   content:"";
   position:absolute;
   inset:0;
   background:
-    linear-gradient(rgba(106,13,173,0.35),rgba(106,13,173,0.35)),
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
     url('weresnake.png') center/cover no-repeat;
-  opacity:0.3;
+  opacity:0.4;
   z-index:0;
 }
-footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
+
+footer *{
+  position:relative;
+  z-index:1;
+}
 
 .banner-ally{
   max-width:55%;
@@ -152,8 +292,9 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
 }
 </style>
 </head>
-
 <body>
+
+<!-- ---------- CONTENT (unchanged) ---------- -->
 
 <header>
   <img src="Petralogo.png" alt="Refugio Bizarro collective logo" loading="lazy">
@@ -163,22 +304,21 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
 
 <main>
   <div class="left-column">
-   <div class="banner-section" style="text-align:center;">
-  <h2>FEATURED</h2>
 
-  <!-- Featured 1 -->
-  <a href="https://www.drivethrufiction.com/en/product/545351/spanish-refugio-bizarro-5?affiliate_id=4195602" target="_blank">
-    <img src="RB5.png" alt="Cover Refugio Bizarro #5" style="max-width:60%;border-radius:6px;" loading="lazy">
-  </a>
-  <p>Refugio Bizarro #5</p>
+    <div class="banner-section" style="text-align:center;">
+      <h2>FEATURED</h2>
 
-  <!-- Featured 2 -->
-  <a href="agabenoshuraku.jpg" target="_blank">
-    <img src="agabenoshuraku.jpg" alt="アガベの集落" style="max-width:60%;border-radius:6px;" loading="lazy">
-  </a>
-  <p>アガベの集落</p>
+      <a href="https://www.drivethrufiction.com/en/product/545351/spanish-refugio-bizarro-5?affiliate_id=4195602" target="_blank">
+        <img src="RB5.png" alt="Cover Refugio Bizarro #5" style="max-width:60%;border-radius:6px;" loading="lazy">
+      </a>
+      <p>Refugio Bizarro #5</p>
 
-</div>
+      <a href="agabenoshuraku.jpg" target="_blank">
+        <img src="agabenoshuraku.jpg" alt="アガベの集落" style="max-width:60%;border-radius:6px;" loading="lazy">
+      </a>
+      <p>アガベの集落</p>
+    </div>
+
     <div class="projects">
       <h2>Published Projects</h2>
       <ul>
@@ -189,7 +329,7 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
         <li><a href="https://tercerafundacion.net/biblioteca/ver/ficha/40717">Refugio Bizarro #3 (ES) (June 2025)</a></li>
         <li><a href="https://www.drivethrufiction.com/product/541059/SPANISH-Refugio-Bizarro-4-100-anos-de-Los-Mitos-de-Cthulhu">Refugio Bizarro #4 (ES) (September 2025)</a></li>
         <li><a href="https://www.drivethrurpg.com/es/product/545351/spanish-refugio-bizarro-5">Refugio Bizarro #5 (ES) (November 2025)</a></li>
-       <li><a href=""> アガベの集落 (JP) (November 2025) </a> </li>
+        <li><a href=""> アガベの集落 (JP) (November 2025) </a></li>
       </ul>
 
       <h2>Collaborations</h2>
@@ -234,35 +374,20 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
       <a href="https://www.threads.net/@refugio.bizarro"><img src="threads.png" alt="" loading="lazy"> @refugio.bizarro</a>
       <a href="https://www.instagram.com/refugio.bizarro/"><img src="instagram.png" alt="" loading="lazy"> @refugio.bizarro</a>
     </div>
-<div class="download-wrapper" style="
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:0.8rem;
-  padding:1.2rem;
-  background:#fff;
-  border:var(--border);
-  border-radius:8px;
-  max-width:380px;
-  margin:1.5rem auto;
-  box-shadow:0 0 12px var(--shadow);
-">
-  <h2 style="margin-bottom:0.5rem;">Direct Downloads of eZine Issues</h2>
 
-  <div style="
-    display:flex;
-    flex-direction:column;
-    gap:0.6rem;
-    width:100%;
-  ">
-    <a href="RefugioBizarro1.pdf" download class="download-btn">Refugio Bizarro #1</a>
-    <a href="RefugioBizarro2.pdf" download class="download-btn">Refugio Bizarro #2</a>
-    <a href="RefugioBizarro3.pdf" download class="download-btn">Refugio Bizarro #3</a>
-    <a href="RefugioBizarro4.pdf" download class="download-btn">Refugio Bizarro #4</a>
-    <a href="RefugioBizarro5.pdf" download class="download-btn">Refugio Bizarro #5</a>
+    <div class="download-wrapper">
+      <h2 style="margin-bottom:0.5rem;">Direct Downloads of eZine Issues</h2>
+
+      <div style="display:flex; flex-direction:column; gap:0.6rem; width:100%;">
+        <a href="RefugioBizarro1.pdf" download class="download-btn">Refugio Bizarro #1</a>
+        <a href="RefugioBizarro2.pdf" download class="download-btn">Refugio Bizarro #2</a>
+        <a href="RefugioBizarro3.pdf" download class="download-btn">Refugio Bizarro #3</a>
+        <a href="RefugioBizarro4.pdf" download class="download-btn">Refugio Bizarro #4</a>
+        <a href="RefugioBizarro5.pdf" download class="download-btn">Refugio Bizarro #5</a>
+      </div>
+    </div>
+
   </div>
-</div>
-
 </main>
 
 <footer>
@@ -271,16 +396,6 @@ footer *{position:relative;z-index:1;text-shadow:0 0 6px rgba(0,0,0,0.5)}
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
 
 
 
