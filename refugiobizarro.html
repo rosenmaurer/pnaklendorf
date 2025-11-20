@@ -11,13 +11,13 @@
 <meta name="keywords" content="Refugio Bizarro, weird fiction, cosmic horror, eZine, Cthulhu Mythos, horror colectivo, literatura extraña, Lovecraft, weird tales">
 <meta name="author" content="Refugio Bizarro">
 
-<link rel="icon" href="Petralogo.png" type="image/png">
+<link rel="icon" href="https://pnaklendorf.com/Petralogo.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Refugio Bizarro">
 <meta property="og:description" content="Refugio Bizarro, collective of weird fiction and cosmic horror.">
-<meta property="og:image" content="Petralogo.png">
+<meta property="og:image" content="https://pnaklendorf.com/Petralogo.png">
 <meta property="og:image:width" content="1500">
 <meta property="og:image:height" content="500">
 <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Refugio Bizarro">
 <meta name="twitter:description" content="Refugio Bizarro, a collective focused on weird fiction and cosmic horror.">
-<meta name="twitter:image" content="Petralogo.png">
+<meta name="twitter:image" content="https://pnaklendorf.com/Petralogo.png">
 
 <!-- Structured Data JSON-LD -->
 <script type="application/ld+json">
@@ -54,16 +54,19 @@
 </script>
 
 <style>
-/* ---------- NEW COLOR PALETTE (Black Carbon Theme) ---------- */
+/* ---------- NEW COLOR PALETTE (White Elegant Theme) ---------- */
 :root{
-  --bg:#0d0d0d;
-  --fg:#e6e6e6;
-  --accent:#bbbbbb;
-  --highlight:#ffffff;
-  --border-color:#444;
-  --border:1px solid var(--border-color);
+  --bg:#f5f5f5;              /* fondo principal: blanco elegante */
+  --fg:#1a1a1a;              /* texto principal: casi negro para contraste */
+  --accent:#6b6b6b;          /* acentos / subtítulos */
+  --highlight:#000000;      /* resaltos */
+  --border-color:#e2e2e2;    /* bordes suaves */
+  --panel-bg:#ffffff;        /* fondo de tarjetas / paneles */
+  --button-bg:#f0f0f0;       /* botones */
+  --button-bg-hover:#e6e6e6; /* hover botones */
   --maxw:1200px;
-  --shadow:rgba(255,255,255,0.10);
+  --shadow:rgba(0,0,0,0.06);  /* sombra sutil para tema claro */
+  --border:1px solid var(--border-color);
 }
 
 body{
@@ -82,6 +85,7 @@ header{
   border-bottom:var(--border);
   border-radius:0 0 8px 8px;
   overflow:hidden;
+  background-color:transparent;
 }
 
 header::before{
@@ -89,9 +93,9 @@ header::before{
   position:absolute;
   inset:0;
   background:
-    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
     url('weresnake.png') center/cover no-repeat;
-  opacity:0.5;
+  opacity:0.9;
   z-index:0;
 }
 
@@ -102,15 +106,15 @@ header *{
 
 header h1{
   margin:0.5rem 0;
-  color:#fff;
+  color:var(--fg);
   font-size:clamp(2rem,3vw+1rem,3rem);
-  text-shadow:0 0 8px rgba(0,0,0,0.9);
+  text-shadow:0 0 8px rgba(255,255,255,0.6);
 }
 
 header p{
-  color:#ccc;
+  color:var(--accent);
   margin:0.25rem 0;
-  text-shadow:0 0 6px rgba(0,0,0,0.7);
+  text-shadow:none;
 }
 
 header img{
@@ -119,11 +123,13 @@ header img{
   max-width:200px;
   border-radius:8px;
   transition:transform 0.3s ease,filter 0.3s ease;
+  border:1px solid var(--border-color);
+  background:var(--panel-bg);
 }
 
 header img:hover{
-  transform:scale(1.1);
-  filter:brightness(1.25) drop-shadow(0 0 6px var(--highlight));
+  transform:scale(1.05);
+  filter:brightness(0.98) drop-shadow(0 4px 10px var(--shadow));
 }
 
 /* ---------- MAIN LAYOUT ---------- */
@@ -143,21 +149,22 @@ main{
 }
 
 .projects,.social-links,.banners,.banner-section{
-  background-color:#111;
+  background-color:var(--panel-bg);
   border:var(--border);
   border-radius:6px;
   padding:1rem;
   margin-bottom:1.5rem;
   transition:box-shadow 0.3s ease,transform 0.3s ease;
+  box-shadow:0 2px 8px var(--shadow);
 }
 
 .projects:hover,.social-links:hover,.banners:hover,.banner-section:hover{
-  box-shadow:0 0 12px var(--shadow);
+  box-shadow:0 6px 18px var(--shadow);
   transform:translateY(-2px);
 }
 
 h2{
-  color:#fff;
+  color:var(--fg);
   margin-top:0;
 }
 
@@ -165,14 +172,14 @@ h2{
 
 a{
   font-weight:bold;
-  color:#ddd;
+  color:var(--highlight);
   text-decoration:none;
   transition:color 0.3s ease;
 }
 
 a:hover{
-  color:#fff;
-  text-shadow:0 0 6px #fff;
+  color:var(--highlight);
+  text-shadow:0 0 6px rgba(0,0,0,0.06);
 }
 
 /* ---------- IMAGES ---------- */
@@ -184,11 +191,12 @@ img{
   border:1px solid var(--border-color);
   border-radius:6px;
   transition:transform 0.3s ease,filter 0.3s ease;
+  background:var(--panel-bg);
 }
 
 img:hover{
-  transform:scale(1.05);
-  filter:brightness(1.2);
+  transform:scale(1.02);
+  filter:brightness(1.02);
 }
 
 .social-links{
@@ -202,11 +210,13 @@ img:hover{
   justify-content:center;
   gap:10px;
   margin:0.5rem;
+  color:var(--fg);
 }
 
 .social-links img{
   width:20px;
   height:20px;
+  filter:grayscale(0);
 }
 
 /* ---------- DOWNLOAD BUTTONS ---------- */
@@ -217,29 +227,29 @@ img:hover{
   align-items:center;
   gap:0.8rem;
   padding:1.2rem;
-  background:#111;
+  background:var(--panel-bg);
   border:var(--border);
   border-radius:8px;
   max-width:380px;
   margin:1.5rem auto;
-  box-shadow:0 0 12px var(--shadow);
+  box-shadow:0 4px 12px var(--shadow);
 }
 
 .download-btn{
   padding:0.8rem 1.5rem;
-  background-color:#222;
-  color:#fff;
+  background-color:var(--button-bg);
+  color:var(--fg);
   font-weight:bold;
   border-radius:8px;
   text-decoration:none;
   text-align:center;
   transition:all 0.3s ease;
-  border:1px solid #333;
+  border:1px solid var(--border-color);
 }
 
 .download-btn:hover{
-  background-color:#333;
-  box-shadow:0 0 10px rgba(255,255,255,0.15);
+  background-color:var(--button-bg-hover);
+  box-shadow:0 6px 14px var(--shadow);
   transform:translateY(-2px);
 }
 
@@ -250,9 +260,10 @@ footer{
   text-align:center;
   padding:1rem;
   border-top:var(--border);
-  color:#ccc;
+  color:var(--accent);
   border-radius:8px 8px 0 0;
   overflow:hidden;
+  background:transparent;
 }
 
 footer::before{
@@ -260,9 +271,9 @@ footer::before{
   position:absolute;
   inset:0;
   background:
-    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),
     url('weresnake.png') center/cover no-repeat;
-  opacity:0.4;
+  opacity:0.6;
   z-index:0;
 }
 
@@ -393,6 +404,7 @@ footer *{
 
 </body>
 </html>
+
 
 
 
