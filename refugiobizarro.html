@@ -54,18 +54,19 @@
 </script>
 
 <style>
-/* ---------- NEW COLOR PALETTE (White Elegant Theme) ---------- */
+/* ---------- ELEGANT WHITE + HIGH CONTRAST THEME ---------- */
 :root{
-  --bg:#f5f5f5;              /* fondo principal: blanco elegante */
-  --fg:#1a1a1a;              /* texto principal: casi negro para contraste */
-  --accent:#6b6b6b;          /* acentos / subtítulos */
-  --highlight:#000000;      /* resaltos */
-  --border-color:#e2e2e2;    /* bordes suaves */
-  --panel-bg:#ffffff;        /* fondo de tarjetas / paneles */
-  --button-bg:#f0f0f0;       /* botones */
-  --button-bg-hover:#e6e6e6; /* hover botones */
+  --bg:#fafafa;
+  --fg:#141414;
+  --accent:#555;
+  --highlight:#000;
+  --border-color:#dcdcdc;
+  --panel-bg:#ffffff;
+  --button-bg:#f4f4f4;
+  --button-bg-hover:#e8e8e8;
+  --shadow:rgba(0,0,0,0.10);
+  --hover-shadow:rgba(0,0,0,0.16);
   --maxw:1200px;
-  --shadow:rgba(0,0,0,0.06);  /* sombra sutil para tema claro */
   --border:1px solid var(--border-color);
 }
 
@@ -85,7 +86,6 @@ header{
   border-bottom:var(--border);
   border-radius:0 0 8px 8px;
   overflow:hidden;
-  background-color:transparent;
 }
 
 header::before{
@@ -93,9 +93,9 @@ header::before{
   position:absolute;
   inset:0;
   background:
-    linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+    linear-gradient(rgba(255,255,255,0.94),rgba(255,255,255,0.94)),
     url('weresnake.png') center/cover no-repeat;
-  opacity:0.9;
+  opacity:1;
   z-index:0;
 }
 
@@ -104,32 +104,30 @@ header *{
   z-index:1;
 }
 
-header h1{
-  margin:0.5rem 0;
-  color:var(--fg);
-  font-size:clamp(2rem,3vw+1rem,3rem);
-  text-shadow:0 0 8px rgba(255,255,255,0.6);
-}
-
-header p{
-  color:var(--accent);
-  margin:0.25rem 0;
-  text-shadow:none;
-}
-
 header img{
   display:block;
   margin:1rem auto;
   max-width:200px;
   border-radius:8px;
-  transition:transform 0.3s ease,filter 0.3s ease;
-  border:1px solid var(--border-color);
-  background:var(--panel-bg);
+  background:transparent !important;
+  border:none !important;
+  transition:transform 0.3s ease, filter 0.3s ease;
 }
 
 header img:hover{
-  transform:scale(1.05);
-  filter:brightness(0.98) drop-shadow(0 4px 10px var(--shadow));
+  transform:scale(1.06);
+  filter:drop-shadow(0 5px 14px var(--hover-shadow));
+}
+
+header h1{
+  margin:0.5rem 0;
+  font-size:clamp(2rem,3vw+1rem,3rem);
+  color:var(--fg);
+}
+
+header p{
+  margin:0.25rem 0;
+  color:var(--accent);
 }
 
 /* ---------- MAIN LAYOUT ---------- */
@@ -151,21 +149,46 @@ main{
 .projects,.social-links,.banners,.banner-section{
   background-color:var(--panel-bg);
   border:var(--border);
-  border-radius:6px;
+  border-radius:8px;
   padding:1rem;
   margin-bottom:1.5rem;
-  transition:box-shadow 0.3s ease,transform 0.3s ease;
-  box-shadow:0 2px 8px var(--shadow);
+  box-shadow:0 2px 10px var(--shadow);
+  transition:box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .projects:hover,.social-links:hover,.banners:hover,.banner-section:hover{
-  box-shadow:0 6px 18px var(--shadow);
-  transform:translateY(-2px);
+  transform:translateY(-3px);
+  box-shadow:0 8px 22px var(--hover-shadow);
 }
 
 h2{
   color:var(--fg);
   margin-top:0;
+}
+
+/* ---------- GLOBAL IMAGES (LIGHT CLEAN) ---------- */
+
+img{
+  display:block;
+  margin:1rem auto;
+  max-width:100%;
+  border-radius:8px;
+  transition:transform 0.3s ease, filter 0.3s ease;
+}
+
+/* No border / no background for logos & banners */
+.banner-ally,
+.banner-ally-small,
+header img,
+.banners img,
+.social-links img{
+  border:none !important;
+  background:transparent !important;
+}
+
+img:hover{
+  transform:scale(1.03);
+  filter:brightness(1.06);
 }
 
 /* ---------- LINKS ---------- */
@@ -174,49 +197,12 @@ a{
   font-weight:bold;
   color:var(--highlight);
   text-decoration:none;
-  transition:color 0.3s ease;
+  transition:all 0.3s ease;
 }
 
 a:hover{
-  color:var(--highlight);
-  text-shadow:0 0 6px rgba(0,0,0,0.06);
-}
-
-/* ---------- IMAGES ---------- */
-
-img{
-  display:block;
-  margin:1rem auto;
-  max-width:100%;
-  border:1px solid var(--border-color);
-  border-radius:6px;
-  transition:transform 0.3s ease,filter 0.3s ease;
-  background:var(--panel-bg);
-}
-
-img:hover{
-  transform:scale(1.02);
-  filter:brightness(1.02);
-}
-
-.social-links{
-  text-align:center;
-  padding:1rem;
-}
-
-.social-links a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  margin:0.5rem;
-  color:var(--fg);
-}
-
-.social-links img{
-  width:20px;
-  height:20px;
-  filter:grayscale(0);
+  color:#000;
+  text-shadow:0 0 6px rgba(0,0,0,0.22);
 }
 
 /* ---------- DOWNLOAD BUTTONS ---------- */
@@ -232,25 +218,25 @@ img:hover{
   border-radius:8px;
   max-width:380px;
   margin:1.5rem auto;
-  box-shadow:0 4px 12px var(--shadow);
+  box-shadow:0 4px 14px var(--shadow);
 }
 
 .download-btn{
   padding:0.8rem 1.5rem;
   background-color:var(--button-bg);
+  border:1px solid var(--border-color);
   color:var(--fg);
   font-weight:bold;
   border-radius:8px;
   text-decoration:none;
-  text-align:center;
+  width:100%;
   transition:all 0.3s ease;
-  border:1px solid var(--border-color);
 }
 
 .download-btn:hover{
   background-color:var(--button-bg-hover);
-  box-shadow:0 6px 14px var(--shadow);
   transform:translateY(-2px);
+  box-shadow:0 6px 16px var(--hover-shadow);
 }
 
 /* ---------- FOOTER ---------- */
@@ -263,7 +249,6 @@ footer{
   color:var(--accent);
   border-radius:8px 8px 0 0;
   overflow:hidden;
-  background:transparent;
 }
 
 footer::before{
@@ -271,9 +256,9 @@ footer::before{
   position:absolute;
   inset:0;
   background:
-    linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),
+    linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92)),
     url('weresnake.png') center/cover no-repeat;
-  opacity:0.6;
+  opacity:0.85;
   z-index:0;
 }
 
@@ -284,16 +269,9 @@ footer *{
 
 .banner-ally{
   max-width:55%;
-  display:block;
-  margin:1rem auto;
-  border-radius:6px;
 }
-
 .banner-ally-small{
   max-width:40%;
-  display:block;
-  margin:1rem auto;
-  border-radius:6px;
 }
 
 @media(max-width:600px){
@@ -305,12 +283,13 @@ footer *{
 <body>
 
 <header>
-  <img src="Petralogo.png" alt="Refugio Bizarro collective logo" loading="lazy">
+  <img src="Petralogo.png" alt="Refugio Bizarro Logo">
   <h1>Refugio Bizarro</h1>
-  <p>A collective focused on weird fiction and cosmic horror, home of the eZine of the same name.</p>
+  <p>Weird fiction & cosmic horror collective</p>
 </header>
 
 <main>
+  <!-- Left column -->
   <div class="left-column">
 
     <div class="banner-section" style="text-align:center;">
@@ -321,9 +300,9 @@ footer *{
       </a>
       <p>Refugio Bizarro #5</p>
 
-     <a href="https://www.drivethrurpg.com/ja/product/546445/cthulhu" target="_blank">
-  <img src="agabenoshuraku.jpg" alt="アガベの集落" style="max-width:60%;border-radius:6px;" loading="lazy">
-</a>
+      <a href="https://www.drivethrurpg.com/ja/product/546445/cthulhu" target="_blank">
+        <img src="agabenoshuraku.jpg" alt="アガベの集落" style="max-width:60%;border-radius:6px;" loading="lazy">
+      </a>
       <p>アガベの集落</p>
     </div>
 
@@ -335,7 +314,7 @@ footer *{
         <li><a href="https://www.amazon.es/tirano-naciente-Ecos-Emperador-Inmortal/dp/B0DWZF1PCG">El tirano del sol naciente (ES) (March 2025)</a></li>
         <li><a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">La Pedanía del Agave (ES) (May 2025)</a></li>
         <li><a href="https://tercerafundacion.net/biblioteca/ver/ficha/40717">Refugio Bizarro #3 (ES) (June 2025)</a></li>
-        <li><a href="https://www.drivethrufiction.com/product/541059/SPANISH-Refugio-Bizarro-4-100-anos-de-Los-Mitos-de-Cthulhu">Refugio Bizarro #4 (ES) (September 2025)</a></li>
+        <li><a href="https://www.drivethrurpg.com/product/541059/SPANISH-Refugio-Bizarro-4-100-anos-de-Los-Mitos-de-Cthulhu">Refugio Bizarro #4 (ES) (September 2025)</a></li>
         <li><a href="https://www.drivethrurpg.com/es/product/545351/spanish-refugio-bizarro-5">Refugio Bizarro #5 (ES) (November 2025)</a></li>
         <li><a href="https://www.drivethrurpg.com/ja/product/546445/cthulhu">アガベの集落 (JP) (November 2025)</a></li>
       </ul>
@@ -347,6 +326,7 @@ footer *{
     </div>
   </div>
 
+  <!-- Right column -->
   <div class="right-column">
 
     <div class="banners">
@@ -367,13 +347,13 @@ footer *{
 
     <div style="text-align:center; margin-bottom:1.5rem;">
       <a href="https://www.drivethrufiction.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener noreferrer">
-        <img src="drivethrufiction.png" alt="Refugio Bizarro on DriveThruFiction" style="max-width:60%;border-radius:6px;" loading="lazy">
+        <img src="drivethrufiction.png" alt="Refugio Bizarro on DriveThruFiction" style="max-width:60%;" loading="lazy">
       </a>
     </div>
 
     <div style="text-align:center; margin-bottom:1.5rem;">
       <a href="https://www.drivethrurpg.com/publisher/30780/refugio-bizarro" target="_blank" rel="noopener noreferrer">
-        <img src="drivethrurpg.png" alt="Refugio Bizarro on DriveThruRPG" style="max-width:60%;border-radius:6px;" loading="lazy">
+        <img src="drivethrurpg.png" alt="Refugio Bizarro on DriveThruRPG" style="max-width:60%;" loading="lazy">
       </a>
     </div>
 
@@ -404,7 +384,6 @@ footer *{
 
 </body>
 </html>
-
 
 
 
