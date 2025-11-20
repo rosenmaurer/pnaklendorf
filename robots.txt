@@ -2,9 +2,4 @@ User-agent: *
 Disallow: /*.pdf$
 Allow: /
 
-# Evita duplicados generados por parámetros (seguridad suave)
-Disallow: /*?*
-Disallow: /*&*
-
-# Mapa del sitio
 Sitemap: https://pnaklendorf.com/sitemap.xml
