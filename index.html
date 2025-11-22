@@ -29,7 +29,7 @@
   <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
 
   <!-- Structured data about the author -->
- <script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -64,9 +64,7 @@
       overflow-x: hidden;
     }
 
-    header, main, footer {
-      background-color: #000;
-    }
+    header, main, footer { background-color: #000; }
 
     header {
       position: relative;
@@ -88,35 +86,25 @@
       z-index: 0;
     }
 
-    header * {
-      position: relative;
-      z-index: 1;
-    }
+    header * { position: relative; z-index: 1; }
 
     header h1 {
       margin: 0.5rem 0;
       color: #f5f5f5;
       font-size: clamp(2rem, 3vw + 1rem, 3rem);
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
       letter-spacing: 1px;
     }
 
     header p {
       color: #bbb;
       margin: 0.25rem 0;
-      text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+      text-shadow: 0 0 6px rgba(0,0,0,0.8);
     }
 
-    header em {
-      color: #888;
-      font-style: italic;
-    }
+    header em { color: #888; font-style: italic; }
 
-    .logo-center {
-      display: block;
-      margin: 0 auto 1rem auto;
-      max-width: 200px;
-    }
+    .logo-center { display: block; margin: 0 auto 1rem auto; max-width: 200px; }
 
     nav {
       display: flex;
@@ -140,9 +128,7 @@
       transition: color 0.3s ease;
     }
 
-    nav a:hover {
-      color: #ccc;
-    }
+    nav a:hover { color: #ccc; }
 
     main {
       display: flex;
@@ -154,10 +140,7 @@
       position: relative;
     }
 
-    main section {
-      flex: 1 1 300px;
-      text-align: center;
-    }
+    main section { flex: 1 1 300px; text-align: center; }
 
     main section img {
       width: 90%;
@@ -170,7 +153,7 @@
 
     main section img:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(245, 215, 66, 0.8);
+      box-shadow: 0 0 30px rgba(245,215,66,0.8);
       cursor: pointer;
     }
 
@@ -196,9 +179,7 @@
       margin-top: 1rem;
     }
 
-    main ul li {
-      margin: 0.5rem 0;
-    }
+    main ul li { margin: 0.5rem 0; }
 
     main ul li a {
       color: var(--accent);
@@ -209,9 +190,7 @@
       transition: color 0.3s ease;
     }
 
-    main ul li a:hover {
-      color: #fff;
-    }
+    main ul li a:hover { color: #fff; }
 
     .banners {
       margin-top: 2rem;
@@ -229,14 +208,14 @@
     }
 
     .banners a img {
-      max-width: 180px; /* aumentado para ser más visibles */
+      max-width: 220px; /* aumentado para ser más grandes que los textos */
       border-radius: 8px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .banners a img:hover {
       transform: scale(1.03);
-      box-shadow: 0 0 20px rgba(245, 215, 66, 0.8);
+      box-shadow: 0 0 20px rgba(245,215,66,0.8);
       cursor: pointer;
     }
 
@@ -244,7 +223,7 @@
       font-size: 1.3rem;
       color: #e0d8c0;
       font-style: italic;
-      text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+      text-shadow: 0 0 8px rgba(0,0,0,0.6);
       padding: 0 1rem;
     }
 
@@ -256,14 +235,11 @@
       color: #bbb;
       border-radius: 8px 8px 0 0;
       overflow: hidden;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0,0,0,0.6);
       backdrop-filter: blur(6px);
     }
 
-    footer * {
-      position: relative;
-      z-index: 1;
-    }
+    footer * { position: relative; z-index: 1; }
 
     @media (max-width: 768px) {
       header { padding: 1.5rem 1rem; }
@@ -272,7 +248,7 @@
       .moon-text { font-size: 1.1rem; }
       main { padding: 3rem 1rem; flex-direction: column; gap: 3rem; }
       main section img { max-width: 360px; }
-      .banners a img { max-width: 150px; } /* también aumentado un poco en móvil */
+      .banners a img { max-width: 180px; } /* móvil ajustado proporcionalmente */
     }
   </style>
 </head>
@@ -290,19 +266,13 @@
       const fadeIn = () => {
         let v = 0;
         const fade = setInterval(() => {
-          if (v < 0.2) {
-            v += 0.01;
-            audio.volume = v;
-          } else {
-            clearInterval(fade);
-          }
+          if (v < 0.2) { v += 0.01; audio.volume = v; }
+          else { clearInterval(fade); }
         }, 150);
       };
       const playAudio = () => {
         audio.play().then(fadeIn).catch(() => {
-          document.addEventListener('click', () => {
-            audio.play().then(fadeIn);
-          }, { once: true });
+          document.addEventListener('click', () => { audio.play().then(fadeIn); }, { once: true });
         });
       };
       playAudio();
@@ -353,4 +323,5 @@
   </footer>
 </body>
 </html>
+
 
