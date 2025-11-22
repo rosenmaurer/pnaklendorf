@@ -175,6 +175,11 @@
       font-weight: 700;
       color: var(--accent);
       text-align: center;
+      transition: color 0.3s ease;
+    }
+
+    .featured-text:hover {
+      color: #fff176;
     }
 
     main h2 {
@@ -195,27 +200,29 @@
     }
 
     main ul li a {
-      color: #e6e6e6;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--accent);
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
     main ul li a:hover {
-      color: #ccc;
+      color: #fff176;
     }
 
     .banners {
       margin-top: 2rem;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     .banners a img {
-      max-width: 100%;
-      max-height: 120px; /* Ajuste de tamaño */
+      max-height: 80px; /* Miniaturas más compactas */
       width: auto;
-      height: auto;
       border-radius: 8px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -258,6 +265,7 @@
       .moon-text { font-size: 1.1rem; }
       main { padding: 3rem 1rem; flex-direction: column; gap: 3rem; }
       main section img { max-width: 360px; }
+      .banners a img { max-height: 60px; }
     }
   </style>
 </head>
@@ -323,9 +331,9 @@
         <li><a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf? (ES)</a></li>
       </ul>
 
-      <!-- Banners section -->
+      <!-- My works section -->
       <div class="banners">
-        <h2>Banners</h2>
+        <h2>My works on...</h2>
         <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro"><img src="drivethrurpg.png" alt="DriveThruRPG"></a>
         <a href="https://www.drivethrufiction.com/en/publisher/30780/refugio-bizarro"><img src="drivethrufiction.png" alt="DriveThruFiction"></a>
       </div>
