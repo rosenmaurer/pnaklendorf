@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="es-CL">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
 
-  <title>El País de Pnaklendorf ☄️</title>
-  <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez" />
+  <title>The Land of Pnaklendorf ☄️</title>
+  <meta name="description" content="Welcome to The Land of Pnaklendorf, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
   <meta name="author" content="Ricardo Meyer Manríquez" />
-  <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Cthulhu, Ricardo Meyer Manríquez, sitio oficial, literatura chilena, terror" />
+  <meta name="keywords" content="Pnaklendorf, Cthulhu Mythos, cosmic horror, Refugio Bizarro, Cthulhu, Ricardo Meyer Manríquez, official site, Chilean literature, horror" />
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="El País de Pnaklendorf ☄️" />
-  <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez" />
+  <meta property="og:title" content="The Land of Pnaklendorf ☄️" />
+  <meta property="og:description" content="Welcome to The Land of Pnaklendorf, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
   <meta property="og:image" content="https://pnaklendorf.com/Victory.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
@@ -22,13 +22,13 @@
   <meta property="og:url" content="https://pnaklendorf.com/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter -->
+  <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="El País de Pnaklendorf ☄️" />
-  <meta name="twitter:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez" />
+  <meta name="twitter:title" content="The Land of Pnaklendorf ☄️" />
+  <meta name="twitter:description" content="Welcome to The Land of Pnaklendorf, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
   <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
 
-  <!-- Datos estructurados solo sobre el autor -->
+  <!-- Structured data about the author -->
  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,7 +36,7 @@
   "name": "Ricardo Meyer Manríquez",
   "url": "https://pnaklendorf.com",
   "image": "https://pnaklendorf.com/Pnaklendorf.png",
-  "description": "Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez",
+  "description": "Welcome to The Land of Pnaklendorf, The Cthulhu Mythos by Ricardo Meyer Manríquez",
   "sameAs": [
     "https://twitter.com/PaterDagon"
   ]
@@ -139,28 +139,52 @@
 
     main {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      text-align: center;
+      gap: 2rem;
       padding: 4rem 1rem;
       min-height: 50vh;
       position: relative;
     }
 
-    main a img {
-      max-width: 480px;
-      width: 90%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-      margin-bottom: 1.5rem;
-      transition: transform 0.3s ease, filter 0.3s ease;
+    main section {
+      flex: 1 1 300px;
+      text-align: center;
     }
 
-    main a img:hover {
-      transform: scale(1.02);
-      filter: brightness(1.15);
+    main section img {
+      width: 90%;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      margin-top: 1rem;
+    }
+
+    main h2 {
+      margin-bottom: 1rem;
+      color: #e6e6e6;
+      font-size: 1.8rem;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+
+    main ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    main ul li {
+      margin: 0.5rem 0;
+    }
+
+    main ul li a {
+      color: #e6e6e6;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    main ul li a:hover {
+      color: #ccc;
     }
 
     .moon-text {
@@ -193,19 +217,20 @@
       nav { flex-direction: column; align-items: center; gap: 0.6rem; padding: 0.6rem; }
       nav a { width: 90%; text-align: center; }
       .moon-text { font-size: 1.1rem; }
-      main { padding: 3rem 1rem; }
-      main a img { max-width: 360px; }
+      main { padding: 3rem 1rem; flex-direction: column; gap: 3rem; }
+      main section img { max-width: 360px; }
     }
   </style>
 </head>
 
 <body>
-  <!-- Música de fondo -->
+  <!-- Background music -->
   <audio id="bgm" loop preload="auto">
     <source src="https://pnaklendorf.com/manhattanserenade.mp3" type="audio/mpeg">
   </audio>
 
   <script>
+    // Script to fade in background music on page load or click
     const audio = document.getElementById('bgm');
     window.addEventListener('load', () => {
       audio.volume = 0;
@@ -232,8 +257,8 @@
   </script>
 
   <header>
-    <h1>EL PAÍS DE PNAKLENDORF</h1>
-    <p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer Manríquez</p>
+    <h1>THE LAND OF PNAKLENDORF</h1>
+    <p>Welcome to The Land of Pnaklendorf, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
     <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
     <nav>
@@ -242,8 +267,23 @@
   </header>
 
   <main>
+    <!-- Left column -->
+    <section id="left">
+      <h2>FEATURED</h2>
+      <a href="https://www.drivethrurpg.com/en/product/546445/cthulhu">
+        <img src="agabenoshurake.jpg" alt="Featured">
+      </a>
+    </section>
 
-   <p class="moon-text">UNDER CONSTRUCTION. </p>
+    <!-- Right column -->
+    <section id="right">
+      <h2>Texts and Tales</h2>
+      <ul>
+        <li><a href="breve_sinopsis_vida_reccaredus_magnus.html">Breve sinopsis de la vida de Reccaredus Magnus (ES)1</a></li>
+        <li><a href="historia-liber-veneris.htm">Historia del Liber Veneris (ES)</a></li>
+        <li><a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf? (ES)</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
@@ -251,7 +291,6 @@
   </footer>
 </body>
 </html>
-
 
 
 
