@@ -59,12 +59,4 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Relatos individuales aún disponibles -->
-  <url>
-    <loc>https://pnaklendorf.com/relatos/a-x.html</loc>
-    <lastmod>2025-11-22</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.75</priority>
-  </url>
-
 </urlset>
