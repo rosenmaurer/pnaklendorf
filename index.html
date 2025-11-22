@@ -159,9 +159,15 @@
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(0,0,0,0.7);
       margin-top: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* Featured text under image */
+    main section img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(245, 215, 66, 0.8);
+      cursor: pointer;
+    }
+
     .featured-text {
       margin-top: 0.8rem;
       font-family: 'Playfair Display', serif;
@@ -169,13 +175,6 @@
       font-weight: 700;
       color: var(--accent);
       text-align: center;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    .featured-text:hover {
-      color: #fff;
-      transform: scale(1.05);
-      cursor: pointer;
     }
 
     main h2 {
@@ -203,6 +202,25 @@
 
     main ul li a:hover {
       color: #ccc;
+    }
+
+    .banners {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .banners a img {
+      max-width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .banners a img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(245, 215, 66, 0.8);
+      cursor: pointer;
     }
 
     .moon-text {
@@ -301,6 +319,13 @@
         <li><a href="historia-liber-veneris.htm">Historia del Liber Veneris (ES)</a></li>
         <li><a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf? (ES)</a></li>
       </ul>
+
+      <!-- Banners section -->
+      <div class="banners">
+        <h2>Banners</h2>
+        <a href="#"><img src="banner1.jpg" alt="Banner 1"></a>
+        <a href="#"><img src="banner2.jpg" alt="Banner 2"></a>
+      </div>
     </section>
   </main>
 
@@ -309,3 +334,4 @@
   </footer>
 </body>
 </html>
+
