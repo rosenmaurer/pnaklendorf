@@ -93,12 +93,6 @@
       z-index: 1;
     }
 
-    header img {
-      display: block;
-      margin: 0.5rem auto;
-      max-width: 180px;
-    }
-
     header h1 {
       margin: 0.5rem 0;
       color: #f5f5f5;
@@ -116,6 +110,12 @@
     header em {
       color: #888;
       font-style: italic;
+    }
+
+    .logo-center {
+      display: block;
+      margin: 0 auto 1rem auto;
+      max-width: 200px;
     }
 
     nav {
@@ -201,9 +201,10 @@
     }
 
     main ul li a {
+      color: var(--accent);
       font-family: 'Playfair Display', serif;
       font-weight: 700;
-      color: var(--accent);
+      font-size: 1.2rem;
       text-decoration: none;
       transition: color 0.3s ease;
     }
@@ -213,15 +214,22 @@
     }
 
     .banners {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
       align-items: center;
     }
 
+    .banners h2 {
+      color: var(--accent);
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      text-align: center;
+    }
+
     .banners a img {
-      max-width: 180px;
+      max-width: 150px;
       border-radius: 8px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -264,7 +272,7 @@
       .moon-text { font-size: 1.1rem; }
       main { padding: 3rem 1rem; flex-direction: column; gap: 3rem; }
       main section img { max-width: 360px; }
-      .banners a img { max-width: 140px; }
+      .banners a img { max-width: 120px; }
     }
   </style>
 </head>
@@ -302,7 +310,7 @@
   </script>
 
   <header>
-    <img src="Pnaklendorf.png" alt="Pnaklendorf Logo">
+    <img src="Pnaklendorf.png" alt="Pnaklendorf Logo" class="logo-center">
     <h1>PNAKLENDORF MYTHOS</h1>
     <p>Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
     <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
@@ -331,7 +339,7 @@
         <li><a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf? (ES)</a></li>
       </ul>
 
-      <!-- My works on section -->
+      <!-- My Works section -->
       <div class="banners">
         <h2>My works on...</h2>
         <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro"><img src="drivethrurpg.png" alt="DriveThruRPG"></a>
@@ -345,3 +353,5 @@
   </footer>
 </body>
 </html>
+
+
