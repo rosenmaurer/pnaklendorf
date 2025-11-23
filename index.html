@@ -104,7 +104,7 @@
       flex-wrap: wrap;
       gap: 0.8rem;
       margin-top: 1rem;
-      background: transparent;
+      background: rgba(0,0,0,0.6); /* semitransparente */
       padding: 0.8rem;
       border-radius: 8px;
     }
@@ -113,14 +113,14 @@
       display: inline-block;
       padding: 0.35rem 0.9rem;
       background: transparent;
-      color: #f0f0f0;
+      color: #f5d742; /* color destacado para visibilidad */
       font-weight: 500;
       text-decoration: none;
       border: none;
       transition: color 0.3s ease;
     }
 
-    nav a:hover { color: #ccc; }
+    nav a:hover { color: #fff; }
 
     main {
       display: flex;
@@ -195,7 +195,7 @@
 
     .banners h2 {
       color: var(--accent);
-      font-family: 'Yu Gothic', 'YuGothic Medium', sans-serif; /* título japonés */
+      font-family: 'Yu Gothic', 'YuGothic Medium', sans-serif;
       font-weight: 700;
       text-align: center;
       font-size: 1.5rem;
