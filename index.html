@@ -43,9 +43,6 @@
 }
 </script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
-
   <style>
     :root {
       --bg: #000;
@@ -57,7 +54,7 @@
 
     body {
       margin: 0;
-      font-family: 'EB Garamond', serif;
+      font-family: 'Yu Gothic', 'YuGothic Light', 'YuGothic Medium', sans-serif;
       background-color: var(--bg);
       color: var(--fg);
       line-height: 1.6;
@@ -96,12 +93,7 @@
       letter-spacing: 1px;
     }
 
-    header p {
-      color: #bbb;
-      margin: 0.25rem 0;
-      text-shadow: 0 0 6px rgba(0,0,0,0.8);
-    }
-
+    header p { color: #bbb; margin: 0.25rem 0; text-shadow: 0 0 6px rgba(0,0,0,0.8); }
     header em { color: #888; font-style: italic; }
 
     .logo-center { display: block; margin: 0 auto 1rem auto; max-width: 200px; }
@@ -159,9 +151,9 @@
 
     .featured-text {
       margin-top: 0.8rem;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Yu Gothic', 'YuGothic Light', sans-serif;
       font-size: 1.3rem;
-      font-weight: 700;
+      font-weight: 500;
       color: var(--accent);
       text-align: center;
     }
@@ -183,8 +175,8 @@
 
     main ul li a {
       color: var(--accent);
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
+      font-family: 'Yu Gothic', 'YuGothic Light', sans-serif;
+      font-weight: 500;
       font-size: 1.2rem;
       text-decoration: none;
       transition: color 0.3s ease;
@@ -198,17 +190,19 @@
       flex-direction: column;
       gap: 1rem;
       align-items: center;
+      font-family: 'Yu Gothic', 'YuGothic Light', sans-serif;
     }
 
     .banners h2 {
       color: var(--accent);
-      font-family: 'Playfair Display', serif;
+      font-family: 'Yu Gothic', 'YuGothic Medium', sans-serif; /* título japonés */
       font-weight: 700;
       text-align: center;
+      font-size: 1.5rem;
     }
 
     .banners a img {
-      max-width: 220px; /* aumentado para ser más grandes que los textos */
+      max-width: 260px; /* banners más grandes que los textos */
       border-radius: 8px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -248,7 +242,7 @@
       .moon-text { font-size: 1.1rem; }
       main { padding: 3rem 1rem; flex-direction: column; gap: 3rem; }
       main section img { max-width: 360px; }
-      .banners a img { max-width: 180px; } /* móvil ajustado proporcionalmente */
+      .banners a img { max-width: 200px; } /* móvil ajustado proporcionalmente */
     }
   </style>
 </head>
