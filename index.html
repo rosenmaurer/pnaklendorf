@@ -65,7 +65,7 @@ body {
   line-height:1.65;
 }
 
-/* ───────── HEADER + FOOTER (TEXTURE MODE) ───────── */
+/* HEADER + FOOTER */
 
 header, footer {
   position:relative;
@@ -79,8 +79,9 @@ footer::before {
   position:absolute;
   inset:0;
   background-image:url("grossmann.png");
-  background-repeat:repeat;
-  background-size:180px 180px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
   opacity:.22;
   filter:contrast(1.05);
   animation:textureDrift 120s infinite linear;
@@ -94,8 +95,9 @@ footer::after {
   position:absolute;
   inset:0;
   background-image:url("grossmann.png");
-  background-repeat:repeat;
-  background-size:200px 200px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
   opacity:.08;
   mix-blend-mode:overlay;
   animation:textureDriftReverse 180s infinite linear;
@@ -118,7 +120,7 @@ header *, footer * {
   z-index:1;
 }
 
-/* ───────── HEADER ───────── */
+/* HEADER */
 
 header {
   text-align:center;
@@ -144,7 +146,7 @@ header em {
   color:#5f5f5f;
 }
 
-/* ───────── NAV ───────── */
+/* NAV */
 
 nav {
   margin-top:2.2rem;
@@ -172,7 +174,7 @@ nav img {
   opacity:.85;
 }
 
-/* ───────── MAIN ───────── */
+/* MAIN */
 
 main {
   display:flex;
@@ -206,7 +208,7 @@ section img {
   opacity:.85;
 }
 
-/* ───────── FOOTER ───────── */
+/* FOOTER */
 
 footer {
   text-align:center;
@@ -238,7 +240,7 @@ footer {
   <section>
     <h2>ON HIATUS</h2>
 
-    <a href=https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener">
+    <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank" rel="noopener">
       <img src="cthulhoid.jpg" alt="Cthulhoid">
     </a>
 
