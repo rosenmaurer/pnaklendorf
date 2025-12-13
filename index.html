@@ -73,6 +73,7 @@ header, footer {
   overflow:hidden;
 }
 
+/* Noise base (estático) */
 header::before,
 footer::before {
   content:"";
@@ -81,20 +82,34 @@ footer::before {
   background-image:url("noise.jpeg");
   background-size:cover;
   background-position:center;
-  opacity:.28;
-  filter:blur(.8px) contrast(1.15);
-  animation:noisePulse 67s infinite steps(1);
+  opacity:0.18;
+  filter:blur(0.5px) contrast(1.1);
   pointer-events:none;
   z-index:0;
 }
 
-@keyframes noisePulse {
-  0%, 95% { opacity:.28; }
-  96% { opacity:.35; }
-  97% { opacity:.22; }
-  98% { opacity:.31; }
-  99% { opacity:.26; }
-  100% { opacity:.28; }
+/* Noise vivo (interferencia) */
+header::after,
+footer::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:url("noise.jpeg");
+  background-size:cover;
+  background-position:center;
+  opacity:0.07;
+  mix-blend-mode:screen;
+  animation:noiseDrift 1.9s infinite steps(2);
+  pointer-events:none;
+  z-index:0;
+}
+
+@keyframes noiseDrift {
+  0%   { transform:translate(0,0); }
+  25%  { transform:translate(-1px,1px); }
+  50%  { transform:translate(1px,-1px); }
+  75%  { transform:translate(-1px,-1px); }
+  100% { transform:translate(0,0); }
 }
 
 header *, footer * {
@@ -154,6 +169,7 @@ nav img {
   height:18px;
   width:auto;
   opacity:.85;
+  transition:opacity .3s ease;
 }
 
 nav img:hover { opacity:1; }
@@ -243,11 +259,6 @@ footer {
 
 </body>
 </html>
-
-
-
-
-
 
 
 
