@@ -43,25 +43,53 @@
 }
 </script>
 
+  <!-- Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #000000;
-      --fg: #cfcfcf;
-      --muted: #777;
+      --fg: #d0d0d0;
+      --muted: #666;
       --accent: #bfa84f;
       --border: 1px solid #111;
     }
 
     body {
       margin: 0;
-      font-family: 'Yu Gothic', 'YuGothic Light', sans-serif;
+      font-family: 'Cormorant Garamond', Georgia, serif;
       background-color: var(--bg);
       color: var(--fg);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
-    header, main, footer {
+    header, footer {
+      position: relative;
       background-color: #000;
+      background-image: url("noise.jpg");
+      background-repeat: repeat;
+      background-size: 300px 300px;
+      overflow: hidden;
+    }
+
+    /* Blur layer */
+    header::before,
+    footer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("noise.jpg");
+      background-repeat: repeat;
+      background-size: 300px 300px;
+      filter: blur(1.6px);
+      opacity: 0.35;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header *, footer * {
+      position: relative;
+      z-index: 1;
     }
 
     header {
@@ -73,8 +101,9 @@
     header h1 {
       margin: 0;
       font-size: clamp(2rem, 3vw + 1rem, 3rem);
-      color: #e0e0e0;
       letter-spacing: 2px;
+      font-weight: 500;
+      color: #e2e2e2;
     }
 
     header p {
@@ -117,9 +146,10 @@
     }
 
     main h2 {
-      color: #d0d0d0;
+      color: #cfcfcf;
       font-size: 1.8rem;
       margin-bottom: 1rem;
+      font-weight: 500;
     }
 
     main img {
@@ -127,7 +157,7 @@
       max-width: 300px;
       border-radius: 6px;
       margin-top: 1rem;
-      box-shadow: 0 0 25px rgba(0,0,0,0.9);
+      box-shadow: 0 0 30px rgba(0,0,0,0.95);
       transition: transform 0.3s ease;
     }
 
@@ -138,7 +168,7 @@
 
     .featured-text {
       margin-top: 1.2rem;
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       color: var(--accent);
     }
 
@@ -189,7 +219,7 @@
   </header>
 
   <main>
-    <section id="left">
+    <section>
       <h2>ON HIATUS</h2>
 
       <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener">
@@ -211,9 +241,6 @@
 
 </body>
 </html>
-
-
-
 
 
 
