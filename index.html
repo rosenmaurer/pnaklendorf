@@ -175,7 +175,7 @@
 
     main ul li a {
       color: var(--accent);
-      font-family: 'Yu Gothic', 'YuGothic Light', sanssans-serif;
+      font-family: 'Yu Gothic', 'YuGothic Light', sans-serif;
       font-weight: 500;
       font-size: 1.2rem;
       text-decoration: none;
@@ -215,14 +215,6 @@
       cursor: pointer;
     }
 
-    .moon-text {
-      font-size: 1.3rem;
-      color: #e0d8c0;
-      font-style: italic;
-      text-shadow: 0 0 8px rgba(0,0,0,0.6);
-      padding: 0 1rem;
-    }
-
     footer {
       position: relative;
       text-align: center;
@@ -236,20 +228,11 @@
     }
 
     footer * { position: relative; z-index: 1; }
-
-    @media (max-width: 768px) {
-      header { padding: 1.5rem 1rem; }
-      nav { flex-direction: column; align-items: center; gap: 0.6rem; padding: 0.6rem; }
-      nav a { width: 90%; text-align: center; }
-      .moon-text { font-size: 1.1rem; }
-      main { padding: 3rem 1rem; flex-direction: column; gap: 3rem; }
-      main section img { max-width: 360px; }
-      .banners a img { max-width: 200px; }
-    }
   </style>
 </head>
 
 <body>
+
   <!-- Background music -->
   <audio id="bgm" loop preload="auto">
     <source src="https://pnaklendorf.com/manhattanserenade.mp3" type="audio/mpeg">
@@ -268,7 +251,9 @@
       };
       const playAudio = () => {
         audio.play().then(fadeIn).catch(() => {
-          document.addEventListener('click', () => { audio.play().then(fadeIn); }, { once: true });
+          document.addEventListener('click', () => {
+            audio.play().then(fadeIn);
+          }, { once: true });
         });
       };
       playAudio();
@@ -286,17 +271,17 @@
     </nav>
   </header>
 
-<section id="left">
-  <h2>ON HIATUS DUE DEPRESSION</h2>
+  <main>
+    <!-- Left column -->
+    <section id="left">
+      <h2>ON HIATUS DUE DEPRESSION</h2>
 
-  <img src="cthulhoid.jpg" alt="Cthulhoid">
+      <img src="cthulhoid.jpg" alt="Cthulhoid">
 
-  <div class="featured-text">
-    <em>信仰や精神から飲もうとすると、唇は乾いていく。<br>
-    それでも、本当に価値はあるのだろうか。</em>
-  </div>
-</section>
-
+      <div class="featured-text">
+        <em>信仰や精神から飲もうとすると、唇は乾いていく。<br>
+        それでも、本当に価値はあるのだろうか。</em>
+      </div>
     </section>
 
     <!-- Right column -->
@@ -308,14 +293,12 @@
         <li><a href="que-es-pnaklendorf.html">¿Qué es Pnaklendorf? (ES)</a></li>
       </ul>
 
-      <!-- My Works section -->
       <div class="banners">
         <h2>My works on</h2>
         <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro">
           <img src="drivethrurpg.png" alt="Publications by Ricardo Meyer Manríquez on DriveThruRPG">
         </a>
       </div>
-
     </section>
   </main>
 
@@ -325,11 +308,6 @@
 
 </body>
 </html>
-
-
-
-
-
 
 
 
