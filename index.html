@@ -48,7 +48,7 @@
 
   <style>
     :root {
-      --bg: #000000;
+      --bg: #000;
       --fg: #d0d0d0;
       --muted: #666;
       --accent: #bfa84f;
@@ -63,47 +63,46 @@
       line-height: 1.7;
     }
 
-    header, footer {
+    /* Header & Footer with noise */
+    header,
+    footer {
       position: relative;
       background-color: #000;
-      background-image: url("noise.jpg");
-      background-repeat: repeat;
-      background-size: 300px 300px;
       overflow: hidden;
     }
 
-    /* Blur layer */
     header::before,
     footer::before {
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("noise.jpg");
+      background-image: url("noise.jpeg");
       background-repeat: repeat;
-      background-size: 300px 300px;
-      filter: blur(1.6px);
-      opacity: 0.35;
+      background-size: 256px 256px;
+      opacity: 0.32;
+      filter: blur(0.8px);
       pointer-events: none;
       z-index: 0;
     }
 
-    header *, footer * {
+    header *,
+    footer * {
       position: relative;
       z-index: 1;
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 3.5rem 1rem;
       border-bottom: var(--border);
     }
 
     header h1 {
       margin: 0;
-      font-size: clamp(2rem, 3vw + 1rem, 3rem);
-      letter-spacing: 2px;
+      font-size: clamp(2.2rem, 3vw + 1rem, 3.1rem);
+      letter-spacing: 2.5px;
       font-weight: 500;
-      color: #e2e2e2;
+      color: #e4e4e4;
     }
 
     header p {
@@ -117,10 +116,10 @@
     }
 
     nav {
-      margin-top: 1.5rem;
+      margin-top: 1.6rem;
       display: flex;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.2rem;
     }
 
     nav a {
@@ -131,50 +130,51 @@
     }
 
     nav a:hover {
-      color: #ffffff;
+      color: #fff;
     }
 
     main {
       display: flex;
       justify-content: center;
-      padding: 4rem 1rem;
+      padding: 4.5rem 1rem;
     }
 
     main section {
-      max-width: 600px;
+      max-width: 620px;
       text-align: center;
     }
 
     main h2 {
       color: #cfcfcf;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      font-size: 1.9rem;
+      margin-bottom: 1.2rem;
       font-weight: 500;
+      letter-spacing: 1px;
     }
 
     main img {
       width: 90%;
       max-width: 300px;
       border-radius: 6px;
-      margin-top: 1rem;
-      box-shadow: 0 0 30px rgba(0,0,0,0.95);
+      margin-top: 1.2rem;
+      box-shadow: 0 0 35px rgba(0,0,0,1);
       transition: transform 0.3s ease;
     }
 
     main img:hover {
-      transform: scale(1.03);
+      transform: scale(1.04);
       cursor: pointer;
     }
 
     .featured-text {
-      margin-top: 1.2rem;
+      margin-top: 1.5rem;
       font-size: 1.35rem;
       color: var(--accent);
     }
 
     footer {
       text-align: center;
-      padding: 1.2rem;
+      padding: 1.3rem;
       border-top: var(--border);
       color: #555;
       font-size: 0.9rem;
@@ -241,7 +241,6 @@
 
 </body>
 </html>
-
 
 
 
