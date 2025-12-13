@@ -72,15 +72,27 @@ header, footer {
   overflow:hidden;
 }
 
-/* HEADER con grossmann.png */
+/* HEADER con grossmann.png cubriendo todo + ligero drift */
 header {
   text-align:center;
   padding:3.5rem 1rem;
   border-bottom:var(--border);
   background-image:url("grossmann.png");
-  background-size:contain;
+  background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
+  animation:headerDrift 200s infinite alternate linear;
+}
+
+@keyframes headerDrift {
+  0% { background-position: center top; }
+  50% { background-position: center 5px; }
+  100% { background-position: center 0; }
+}
+
+header *, footer * {
+  position:relative;
+  z-index:1;
 }
 
 /* HEADER contenido */
@@ -216,5 +228,4 @@ footer {
 
 </body>
 </html>
-
 
