@@ -22,7 +22,7 @@
   <meta property="og:url" content="https://pnaklendorf.com/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="PNAKLENDORF MYTHOS ☄️" />
   <meta name="twitter:description" content="Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
@@ -43,173 +43,175 @@
 }
 </script>
 
-<style>
-:root {
-  --bg: #050505;
-  --panel: #0a0a0a;
-  --fg: #cfcfcf;
-  --muted: #888;
-  --accent: #bfae6a;
-  --border: 1px solid #111;
-}
+  <style>
+    :root {
+      --bg: #000000;
+      --fg: #cfcfcf;
+      --muted: #777;
+      --accent: #bfa84f;
+      --border: 1px solid #111;
+    }
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: 'Yu Gothic', 'YuGothic Light', sans-serif;
-  line-height: 1.6;
-}
+    body {
+      margin: 0;
+      font-family: 'Yu Gothic', 'YuGothic Light', sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
 
-header, main, footer {
-  background: var(--panel);
-}
+    header, main, footer {
+      background-color: #000;
+    }
 
-header {
-  text-align: center;
-  padding: 2.5rem 1rem;
-  border-bottom: var(--border);
-}
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: var(--border);
+    }
 
-header h1 {
-  margin: 0.5rem 0;
-  font-size: clamp(2rem, 3vw + 1rem, 3rem);
-  color: #e6e6e6;
-  letter-spacing: 1px;
-}
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
+      color: #e0e0e0;
+      letter-spacing: 2px;
+    }
 
-header p {
-  margin: 0.3rem 0;
-  color: var(--muted);
-}
+    header p {
+      margin: 0.4rem 0;
+      color: var(--muted);
+    }
 
-header em {
-  color: #777;
-}
+    header em {
+      color: #555;
+      font-style: italic;
+    }
 
-nav {
-  margin-top: 1.2rem;
-}
+    nav {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
 
-nav a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-}
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-nav a:hover {
-  color: #fff;
-}
+    nav a:hover {
+      color: #ffffff;
+    }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  padding: 4rem 1rem;
-}
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 4rem 1rem;
+    }
 
-main section {
-  flex: 1 1 320px;
-  text-align: center;
-}
+    main section {
+      max-width: 600px;
+      text-align: center;
+    }
 
-main h2 {
-  color: #ddd;
-  margin-bottom: 1rem;
-}
+    main h2 {
+      color: #d0d0d0;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
 
-main img {
-  width: 90%;
-  max-width: 300px;
-  border-radius: 6px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.9);
-}
+    main img {
+      width: 90%;
+      max-width: 300px;
+      border-radius: 6px;
+      margin-top: 1rem;
+      box-shadow: 0 0 25px rgba(0,0,0,0.9);
+      transition: transform 0.3s ease;
+    }
 
-.featured-text {
-  margin-top: 1rem;
-  font-size: 1.25rem;
-  color: var(--accent);
-  font-style: italic;
-}
+    main img:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
 
-.banners h2 {
-  color: #ddd;
-}
+    .featured-text {
+      margin-top: 1.2rem;
+      font-size: 1.3rem;
+      color: var(--accent);
+    }
 
-.banners img {
-  max-width: 240px;
-  border-radius: 6px;
-}
-
-footer {
-  text-align: center;
-  padding: 1.2rem;
-  border-top: var(--border);
-  color: #777;
-  font-size: 0.95rem;
-}
-</style>
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      border-top: var(--border);
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 
 <body>
 
-<audio id="bgm" loop preload="auto">
-  <source src="https://pnaklendorf.com/manhattanserenade.mp3" type="audio/mpeg">
-</audio>
+  <!-- Background music -->
+  <audio id="bgm" loop preload="auto">
+    <source src="https://pnaklendorf.com/manhattanserenade.mp3" type="audio/mpeg">
+  </audio>
 
-<script>
-const audio = document.getElementById('bgm');
-window.addEventListener('load', () => {
-  audio.volume = 0;
-  const fade = setInterval(() => {
-    if (audio.volume < 0.2) audio.volume += 0.01;
-    else clearInterval(fade);
-  }, 150);
-  audio.play().catch(() => {
-    document.addEventListener('click', () => audio.play(), { once: true });
-  });
-});
-</script>
+  <script>
+    const audio = document.getElementById('bgm');
+    window.addEventListener('load', () => {
+      audio.volume = 0;
+      const fadeIn = () => {
+        let v = 0;
+        const fade = setInterval(() => {
+          if (v < 0.2) { v += 0.01; audio.volume = v; }
+          else { clearInterval(fade); }
+        }, 150);
+      };
+      audio.play().then(fadeIn).catch(() => {
+        document.addEventListener('click', () => {
+          audio.play().then(fadeIn);
+        }, { once: true });
+      });
+    });
+  </script>
 
-<header>
-  <h1>PNAKLENDORF MYTHOS</h1>
-  <p>Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
-  <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
+  <header>
+    <h1>PNAKLENDORF MYTHOS</h1>
+    <p>Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
+    <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
-  <nav>
-    <a href="refugiobizarro.html">Refugio Bizarro</a>
-  </nav>
-</header>
+    <nav>
+      <a href="refugiobizarro.html">Refugio Bizarro</a>
+    </nav>
+  </header>
 
-<main>
-  <section id="left">
-    <h2>ON HIATUS</h2>
+  <main>
+    <section id="left">
+      <h2>ON HIATUS</h2>
 
-    <img src="cthulhoid.jpg" alt="Cthulhoid">
-
-    <div class="featured-text">
-      信仰や精神から飲もうとすると、唇は乾いていく。<br>
-      それでも、本当に価値はあるのだろうか。
-    </div>
-  </section>
-
-  <section id="right">
-    <div class="banners">
-      <h2>My works on</h2>
-      <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro">
-        <img src="drivethrurpg.png" alt="Publications by Ricardo Meyer Manríquez">
+      <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener">
+        <img src="cthulhoid.jpg" alt="Cthulhoid">
       </a>
-    </div>
-  </section>
-</main>
 
-<footer>
-  <p>© 2025 Refugio Bizarro. All Rights Reserved.</p>
-</footer>
+      <div class="featured-text">
+        <em>
+          信仰や精神から飲もうとすると、唇は乾いていく。<br>
+          それでも、本当に価値はあるのだろうか。
+        </em>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Refugio Bizarro. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
+
 
 
 
