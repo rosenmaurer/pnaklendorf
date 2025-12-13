@@ -77,11 +77,7 @@ header::before {
   content:"";
   position:absolute;
   inset:0;
-  background-image:url("DELTA%20GREEN.png");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  opacity:1;
+  background:#000; /* header negro de fondo */
   pointer-events:none;
   z-index:0;
 }
@@ -90,7 +86,7 @@ footer::before {
   content:"";
   position:absolute;
   inset:0;
-  background:#000;
+  background:#000; /* footer negro */
   pointer-events:none;
   z-index:0;
 }
@@ -116,9 +112,19 @@ header h1 {
   color:#bbb; /* gris claro */
 }
 
+/* Logo DELTA_GREEN.png entre h1 y bienvenida */
+header .logo {
+  display:block;
+  margin:1.2rem auto; /* separación del título y texto */
+  max-width:180px;
+  width:30%;
+  height:auto;
+}
+
+/* Textos secundarios */
 header p,
 header em {
-  color:#fff; /* textos secundarios blancos */
+  color:#fff; /* textos blancos */
 }
 
 /* NAV */
@@ -202,6 +208,8 @@ footer {
 
 <header>
   <h1>PNAKLENDORF</h1>
+  <!-- Logo centrado -->
+  <img src="DELTA%20GREEN.png" alt="Delta Green Logo" class="logo">
   <p>Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
