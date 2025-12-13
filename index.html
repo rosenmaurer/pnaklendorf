@@ -12,37 +12,6 @@
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Pnaklendorf ☄️" />
-  <meta property="og:description" content="Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
-  <meta property="og:image" content="https://pnaklendorf.com/Victory.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://pnaklendorf.com/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pnaklendorf ☄️" />
-  <meta name="twitter:description" content="Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
-  <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ricardo Meyer Manríquez",
-    "url": "https://pnaklendorf.com",
-    "image": "https://pnaklendorf.com/Pnaklendorf.png",
-    "description": "Author and creator of Pnaklendorf Mythos",
-    "sameAs": [
-      "https://twitter.com/PaterDagon"
-    ]
-  }
-  </script>
-
   <!-- Typography -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -77,7 +46,7 @@ header::before {
   content:"";
   position:absolute;
   inset:0;
-  background:#000; /* header negro de fondo */
+  background:#000;
   pointer-events:none;
   z-index:0;
 }
@@ -86,7 +55,7 @@ footer::before {
   content:"";
   position:absolute;
   inset:0;
-  background:#000; /* footer negro */
+  background:#000;
   pointer-events:none;
   z-index:0;
 }
@@ -112,31 +81,34 @@ header h1 {
   color:#bbb; /* gris claro */
 }
 
-/* Logo DELTA_GREEN.png entre h1 y bienvenida */
+/* Logo centrado debajo del título */
 header .logo {
   display:block;
-  margin:1.2rem auto; /* separación del título y texto */
-  max-width:180px;
-  width:30%;
-  height:auto;
+  margin:1.5rem auto 1rem auto;
+  width:180px;
+  max-width:50%;
 }
 
-/* Textos secundarios */
+/* textos secundarios */
 header p,
 header em {
-  color:#fff; /* textos blancos */
+  color:#fff;
 }
 
-/* NAV */
-
+/* NAV con barra semitransparente duotono */
 nav {
   margin-top:2.2rem;
   display:flex;
   justify-content:center;
   align-items:center;
   gap:1.6rem;
+  padding:0.6rem 1.2rem;
+  border-radius:8px;
+  background: linear-gradient(90deg, rgba(0,51,51,0.8), rgba(128,128,128,0.8)); /* verde marino y gris */
+  backdrop-filter: blur(6px); /* efecto blur */
 }
 
+/* enlaces */
 nav a {
   color:#fff;
   text-decoration:none;
@@ -145,17 +117,22 @@ nav a {
   display:flex;
   align-items:center;
   gap:.5rem;
+  transition: color 0.25s ease;
 }
 
 nav a:hover { color:#ffd; }
 
+/* imagen DriveThru */
 nav img {
   height:18px;
   width:auto;
   opacity:.85;
+  transition: opacity 0.25s ease;
 }
 
-nav img:hover { opacity:1; }
+nav img:hover { 
+  opacity:1; 
+}
 
 /* MAIN */
 
@@ -208,7 +185,6 @@ footer {
 
 <header>
   <h1>PNAKLENDORF</h1>
-  <!-- Logo centrado -->
   <img src="DELTA%20GREEN.png" alt="Delta Green Logo" class="logo">
   <p>Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
