@@ -132,11 +132,13 @@ header h1 {
   font-weight:400;
   letter-spacing:.38em;
   color:#bbb; /* gris claro */
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
 
 header p,
 header em {
   color:#fff; /* textos secundarios blancos */
+  text-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
 /* NAV */
@@ -157,6 +159,7 @@ nav a {
   display:flex;
   align-items:center;
   gap:.5rem;
+  transition: color .25s;
 }
 
 nav a:hover { color:#ffd; }
@@ -165,9 +168,10 @@ nav img {
   height:18px;
   width:auto;
   opacity:.85;
+  transition: opacity .25s, transform .25s;
 }
 
-nav img:hover { opacity:1; }
+nav img:hover { opacity:1; transform:scale(1.05); }
 
 /* MAIN */
 
@@ -254,3 +258,4 @@ footer {
 
 </body>
 </html>
+
