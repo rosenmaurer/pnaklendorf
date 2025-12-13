@@ -33,9 +33,6 @@ body {
 header, footer {
   position:relative;
   background:#000;
-  background-image:url("noise.jpeg");
-  background-repeat:repeat;
-  background-size:180px 180px;
   overflow:hidden;
 }
 
@@ -45,21 +42,22 @@ footer::before {
   position:absolute;
   inset:0;
   background-image:url("noise.jpeg");
-  background-repeat:repeat;
-  background-size:180px 180px;
-  opacity:.24;
-  filter:blur(.6px) contrast(1.15);
-  animation:noisePulse 61s infinite steps(1);
+  background-size:cover;
+  background-position:center;
+  opacity:.28;
+  filter:blur(.8px) contrast(1.15);
+  animation:noisePulse 67s infinite steps(1);
   pointer-events:none;
   z-index:0;
 }
 
 @keyframes noisePulse {
-  0%, 96% { opacity:.24; }
-  97% { opacity:.32; }
-  98% { opacity:.18; }
-  99% { opacity:.27; }
-  100% { opacity:.24; }
+  0%, 95% { opacity:.28; }
+  96% { opacity:.35; }
+  97% { opacity:.22; }
+  98% { opacity:.31; }
+  99% { opacity:.26; }
+  100% { opacity:.28; }
 }
 
 header *, footer * {
@@ -87,7 +85,6 @@ header h1 {
   font-weight:400;
   letter-spacing:.38em;
   color:#ddd;
-  transform:translateX(1px);
   animation:titleBreath 120s infinite alternate ease-in-out;
 }
 
@@ -106,18 +103,38 @@ header em {
   color:#5f5f5f;
 }
 
+/* NAV */
+
 nav {
-  margin-top:2rem;
+  margin-top:2.2rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:1.6rem;
 }
 
 nav a {
   color:#9a9a9a;
   text-decoration:none;
   font-size:.9rem;
-  letter-spacing:.1em;
+  letter-spacing:.12em;
+  display:flex;
+  align-items:center;
+  gap:.5rem;
 }
 
 nav a:hover { color:#fff; }
+
+nav img {
+  height:18px;
+  width:auto;
+  opacity:.85;
+  transition:opacity .3s ease;
+}
+
+nav img:hover {
+  opacity:1;
+}
 
 /* MAIN */
 
@@ -178,8 +195,14 @@ footer {
   <h1>PNAKLENDORF</h1>
   <p>Welcome to Pnaklendorf Mythos</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
+
   <nav>
     <a href="refugiobizarro.html">REFUGIO BIZARRO</a>
+
+    <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro"
+       target="_blank" rel="noopener">
+      <img src="drivethrurpg.png" alt="DriveThruRPG">
+    </a>
   </nav>
 </header>
 
@@ -187,7 +210,8 @@ footer {
   <section>
     <h2>ON HIATUS</h2>
 
-    <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener">
+    <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro"
+       target="_blank" rel="noopener">
       <img src="cthulhoid.jpg" alt="Cthulhoid">
     </a>
 
@@ -206,6 +230,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
