@@ -106,6 +106,7 @@ header img.logo {
   margin:1rem auto;
   max-width:160px;
   height:auto;
+  transition: transform 0.3s ease; /* para hover suave si quieres más adelante */
 }
 
 /* NAV con barra semitransparente gris tenue */
@@ -134,13 +135,18 @@ nav a {
 
 nav a:hover { color:#ffd; }
 
+/* Hover para logo DriveThru */
 nav img {
   height:18px;
   width:auto;
   opacity:.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-nav img:hover { opacity:1; }
+nav img:hover {
+  opacity:1;
+  transform: scale(1.1);
+}
 
 /* MAIN */
 
@@ -167,6 +173,11 @@ section img {
   max-width:300px;
   margin-top:1rem;
   box-shadow:0 0 40px rgba(0,0,0,1);
+  transition: transform 0.3s ease; /* efecto hover */
+}
+
+section img:hover {
+  transform: scale(1.05);
 }
 
 .featured-text {
@@ -190,12 +201,6 @@ footer {
 </head>
 
 <body>
-
-<!-- Reproducción del audio en loop -->
-<audio autoplay loop>
-  <source src="manhattanserenade.mp3" type="audio/mp3" />
-  Your browser does not support the audio element.
-</audio>
 
 <header>
   <h1>PNAKLENDORF</h1>
