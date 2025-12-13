@@ -12,6 +12,37 @@
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/png" />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pnaklendorf ☄️" />
+  <meta property="og:description" content="Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
+  <meta property="og:image" content="https://pnaklendorf.com/Victory.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://pnaklendorf.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pnaklendorf ☄️" />
+  <meta name="twitter:description" content="Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez" />
+  <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ricardo Meyer Manríquez",
+    "url": "https://pnaklendorf.com",
+    "image": "https://pnaklendorf.com/Pnaklendorf.png",
+    "description": "Author and creator of Pnaklendorf Mythos",
+    "sameAs": [
+      "https://twitter.com/PaterDagon"
+    ]
+  }
+  </script>
+
   <!-- Typography -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -41,58 +72,13 @@ header, footer {
   overflow:hidden;
 }
 
-/* Header con mosaico VHS y overlay glitch */
-header::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:url("vhs.jpeg");
-  background-repeat:repeat;
-  background-size:200px 200px;
-  opacity:.22;
-  filter:contrast(1.05);
-  animation:textureDrift 120s infinite linear;
-  pointer-events:none;
-  z-index:0;
-}
-
-header::after {
-  content:"";
-  position:absolute;
-  inset:0;
-  background-color:#fff;
-  opacity:.03;
-  mix-blend-mode:overlay;
-  animation:glitchOverlay 0.8s infinite linear alternate;
-  pointer-events:none;
-  z-index:0;
-}
-
-@keyframes textureDrift {
-  from { background-position:0 0; }
-  to   { background-position:40px 20px; }
-}
-
-@keyframes glitchOverlay {
-  0%   { transform:translate(0,0); opacity:.03; }
-  25%  { transform:translate(2px,-1px); opacity:.04; }
-  50%  { transform:translate(-2px,1px); opacity:.02; }
-  75%  { transform:translate(1px,-2px); opacity:.03; }
-  100% { transform:translate(0,1px); opacity:.03; }
-}
-
-header *, footer * {
-  position:relative;
-  z-index:1;
-}
-
-/* HEADER */
-
 header {
   text-align:center;
   padding:3.5rem 1rem;
-  background:#000;
   border-bottom:var(--border);
+  background-image:url("vhs.jpg");
+  background-repeat:repeat;
+  background-size:200px 200px;
 }
 
 header h1 {
@@ -183,8 +169,8 @@ footer {
   border-top:var(--border);
   font-size:.8rem;
   color:#5a5a5a;
-  letter-spacing:.08em;
   background:#000;
+  letter-spacing:.08em;
 }
 </style>
 </head>
@@ -227,3 +213,4 @@ footer {
 
 </body>
 </html>
+
