@@ -65,7 +65,7 @@ body {
   line-height:1.65;
 }
 
-/* ───────── HEADER + FOOTER NOISE ───────── */
+/* ───────── HEADER + FOOTER (GROSSMANN TEXTURE) ───────── */
 
 header, footer {
   position:relative;
@@ -77,13 +77,13 @@ header::before,
 footer::before {
   content:"";
   position:absolute;
-  inset:-5%;
-  background-image:url("noise.jpeg");
+  inset:-6%;
+  background-image:url("grossmann.png");
   background-size:cover;
   background-position:center;
-  opacity:.22;
-  filter:contrast(1.2);
-  animation:noiseDrift 120s infinite linear;
+  opacity:.25;
+  filter:contrast(1.1);
+  animation:grossmannDrift 140s infinite linear;
   pointer-events:none;
   z-index:0;
 }
@@ -92,25 +92,25 @@ header::after,
 footer::after {
   content:"";
   position:absolute;
-  inset:-5%;
-  background-image:url("noise.jpeg");
+  inset:-6%;
+  background-image:url("grossmann.png");
   background-size:cover;
   background-position:center;
   opacity:.12;
   mix-blend-mode:overlay;
-  animation:noiseDriftReverse 180s infinite linear;
+  animation:grossmannDriftReverse 210s infinite linear;
   pointer-events:none;
   z-index:0;
 }
 
-@keyframes noiseDrift {
+@keyframes grossmannDrift {
   from { transform:translate(0,0); }
-  to   { transform:translate(2%,1%); }
+  to   { transform:translate(1.5%,1%); }
 }
 
-@keyframes noiseDriftReverse {
+@keyframes grossmannDriftReverse {
   from { transform:translate(0,0); }
-  to   { transform:translate(-2%,-1%); }
+  to   { transform:translate(-1.5%,-1%); }
 }
 
 header *, footer * {
@@ -139,8 +139,8 @@ header h1 {
   letter-spacing:.38em;
   color:#ddd;
   text-shadow:
-    0.5px 0 0 rgba(255,0,0,.15),
-   -0.5px 0 0 rgba(0,180,255,.12);
+    0.5px 0 0 rgba(255,0,0,.14),
+   -0.5px 0 0 rgba(0,170,255,.12);
 }
 
 header p {
@@ -272,7 +272,7 @@ footer {
   <section>
     <h2>ON HIATUS</h2>
 
-    <a href="http://yogsotheria.wikidot.com/refugio-bizarro" target="_blank" rel="noopener">
+    <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener">
       <img src="cthulhoid.jpg" alt="Cthulhoid">
     </a>
 
@@ -291,6 +291,5 @@ footer {
 
 </body>
 </html>
-
 
 
