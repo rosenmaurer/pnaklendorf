@@ -73,28 +73,6 @@ header, footer {
   overflow:hidden;
 }
 
-header::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:url("DELTA%20GREEN.png");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  opacity:1;
-  pointer-events:none;
-  z-index:0;
-}
-
-footer::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:#000;
-  pointer-events:none;
-  z-index:0;
-}
-
 header *, footer * {
   position:relative;
   z-index:1;
@@ -113,15 +91,24 @@ header h1 {
   font-size:clamp(2.2rem,3vw,3rem);
   font-weight:400;
   letter-spacing:.38em;
-  color:#bbb; /* gris claro */
+  color:#bbb;
 }
 
 header p,
 header em {
-  color:#fff; /* textos secundarios blancos */
+  color:#fff;
 }
 
-/* NAV con barra semitransparente duotono negro → verde marino */
+/* LOGO DELTA GREEN */
+
+header img.logo {
+  display:block;
+  margin:1rem auto;
+  max-width:160px;
+  height:auto;
+}
+
+/* NAV con barra semitransparente duotono negro → verde */
 
 nav {
   margin-top:2.2rem;
@@ -131,7 +118,7 @@ nav {
   gap:1.6rem;
   padding:0.6rem 1.2rem;
   border-radius:8px;
-  background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,51,51,0.7)); /* negro → verde marino semitransparente */
+  background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,255,0,0.7)); /* negro → verde */
   backdrop-filter: blur(6px);
 }
 
@@ -196,7 +183,7 @@ footer {
   padding:1.5rem 1rem;
   border-top:var(--border);
   font-size:.8rem;
-  color:#fff; /* letras blancas en footer */
+  color:#fff;
   letter-spacing:.08em;
 }
 </style>
@@ -206,6 +193,8 @@ footer {
 
 <header>
   <h1>PNAKLENDORF</h1>
+  <!-- Logo centrado debajo del título -->
+  <img src="DELTA%20GREEN.png" alt="Delta Green Logo" class="logo">
   <p>Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
@@ -240,5 +229,4 @@ footer {
 
 </body>
 </html>
-
 
