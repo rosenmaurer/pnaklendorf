@@ -50,7 +50,7 @@
 :root {
   --bg:#000;
   --fg:#c9c9c9;
-  --muted:#f0e65c; /* amarillo para header secundario */
+  --muted:#fff;
   --border:1px solid #0e0e0e;
 }
 
@@ -73,27 +73,29 @@ header, footer {
   overflow:hidden;
 }
 
-header::before {
+header::before,
+footer::before {
   content:"";
   position:absolute;
   inset:0;
   background-image:url("vhs.jpg");
   background-repeat:repeat;
-  background-size:200px 200px;
-  opacity:.25;
+  background-size:180px 180px;
+  opacity:.22;
   filter:contrast(1.05);
   animation:textureDrift 120s infinite linear;
   pointer-events:none;
   z-index:0;
 }
 
-header::after {
+header::after,
+footer::after {
   content:"";
   position:absolute;
   inset:0;
   background-image:url("vhs.jpg");
   background-repeat:repeat;
-  background-size:220px 220px;
+  background-size:200px 200px;
   opacity:.08;
   mix-blend-mode:overlay;
   animation:textureDriftReverse 180s infinite linear;
@@ -129,12 +131,12 @@ header h1 {
   font-size:clamp(2.2rem,3vw,3rem);
   font-weight:400;
   letter-spacing:.38em;
-  color:#ddd; /* título sigue igual */
+  color:#bbb; /* gris claro */
 }
 
 header p,
 header em {
-  color:var(--muted); /* amarillo suave */
+  color:#fff; /* textos secundarios blancos */
 }
 
 /* NAV */
@@ -148,7 +150,7 @@ nav {
 }
 
 nav a {
-  color:#9a9a9a;
+  color:#fff;
   text-decoration:none;
   font-size:.9rem;
   letter-spacing:.12em;
@@ -157,13 +159,15 @@ nav a {
   gap:.5rem;
 }
 
-nav a:hover { color:#fff; }
+nav a:hover { color:#ffd; }
 
 nav img {
   height:18px;
   width:auto;
   opacity:.85;
 }
+
+nav img:hover { opacity:1; }
 
 /* MAIN */
 
@@ -206,7 +210,7 @@ footer {
   padding:1.5rem 1rem;
   border-top:var(--border);
   font-size:.8rem;
-  color:#5a5a5a;
+  color:#fff; /* letras blancas en footer */
   letter-spacing:.08em;
 }
 </style>
@@ -250,4 +254,3 @@ footer {
 
 </body>
 </html>
-
