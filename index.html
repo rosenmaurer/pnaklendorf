@@ -106,7 +106,7 @@ header img.logo {
   margin:1rem auto;
   max-width:160px;
   height:auto;
-  transition: transform 0.3s ease; /* para hover suave si quieres más adelante */
+  transition: transform 0.3s ease;
 }
 
 /* NAV con barra semitransparente gris tenue */
@@ -119,7 +119,7 @@ nav {
   gap:1.6rem;
   padding:0.6rem 1.2rem;
   border-radius:8px;
-  background: rgba(192,192,192,0.3); /* gris tenue semitransparente */
+  background: rgba(192,192,192,0.3);
   backdrop-filter: blur(6px);
 }
 
@@ -135,7 +135,6 @@ nav a {
 
 nav a:hover { color:#ffd; }
 
-/* Hover para logo DriveThru */
 nav img {
   height:18px;
   width:auto;
@@ -148,16 +147,21 @@ nav img:hover {
   transform: scale(1.1);
 }
 
-/* MAIN */
+/* MAIN dividido */
 
 main {
   display:flex;
   justify-content:center;
   padding:4.5rem 1rem;
+  flex-wrap:wrap;
+  gap:2rem;
+  max-width:1200px;
+  margin:0 auto;
 }
 
-section {
-  max-width:560px;
+main section {
+  flex:1;
+  min-width:280px;
   text-align:center;
 }
 
@@ -173,7 +177,7 @@ section img {
   max-width:300px;
   margin-top:1rem;
   box-shadow:0 0 40px rgba(0,0,0,1);
-  transition: transform 0.3s ease; /* efecto hover */
+  transition: transform 0.3s ease;
 }
 
 section img:hover {
@@ -204,20 +208,17 @@ footer {
 
 <header>
   <h1>PNAKLENDORF</h1>
-  <!-- Logo centrado debajo del título -->
   <img src="UniversidadGAB.png" alt="Universidad GAB Logo" class="logo">
   <p>Welcome to Pnaklendorf Mythos, The Cthulhu Mythos by Ricardo Meyer Manríquez</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
   <nav>
     <a href="refugiobizarro.html">REFUGIO BIZARRO</a>
-    <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener">
-      <img src="drivethrurpg.png" alt="DriveThruRPG">
-    </a>
   </nav>
 </header>
 
 <main>
+  <!-- SECCIÓN IZQUIERDA -->
   <section>
     <h2>ON HIATUS</h2>
 
@@ -232,6 +233,19 @@ footer {
       </em>
     </div>
   </section>
+
+  <!-- SECCIÓN DERECHA: BANNERS -->
+  <section>
+    <h2>BANNERS</h2>
+
+    <a href="https://www.ligotti.net/index.php?members/rosenmaurer.5048/" target="_blank" rel="noopener">
+      <img src="nightmare_banner.jpg" alt="Nightmare Banner">
+    </a>
+
+    <a href="https://www.drivethrurpg.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener">
+      <img src="drivethrurpg.png" alt="DriveThru Banner" style="max-width:220px;">
+    </a>
+  </section>
 </main>
 
 <footer>
@@ -240,4 +254,6 @@ footer {
 
 </body>
 </html>
+
+
 
