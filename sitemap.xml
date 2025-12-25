@@ -6,7 +6,7 @@
   <!-- Página principal -->
   <url>
     <loc>https://pnaklendorf.com/</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -29,8 +29,8 @@
 
   <url>
     <loc>https://pnaklendorf.com/refugiobizarro.html</loc>
-    <lastmod>2025-12-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://pnaklendorf.com/Petralogo.png</image:loc>
@@ -60,4 +60,5 @@
   </url>
 
 </urlset>
+
 
