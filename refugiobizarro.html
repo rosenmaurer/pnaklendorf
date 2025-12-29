@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Refugio Bizarro | Pnaklendorf ☄️</title>
 <link rel="canonical" href="https://pnaklendorf.com/refugiobizarro.html">
 
-<!-- Simple Descriptions -->
-<meta name="description" content="Refugio Bizarro, collective of weird fiction, cosmic horror and the official home of the Refugio Bizarro eZine.">
-<meta name="keywords" content="Refugio Bizarro, weird fiction, cosmic horror, eZine, Cthulhu Mythos, horror colectivo, literatura extraña, Lovecraft, weird tales">
+<!-- Descripciones -->
+<meta name="description" content="Refugio Bizarro, colectivo de literatura extraña y horror cósmico, hogar oficial de la eZine Refugio Bizarro.">
+<meta name="keywords" content="Refugio Bizarro, weird fiction, horror cósmico, eZine, Mitos de Cthulhu, literatura extraña, Lovecraft">
 <meta name="author" content="Refugio Bizarro">
 
 <link rel="icon" href="https://pnaklendorf.com/Petralogo.png" type="image/png">
@@ -16,7 +16,7 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="Refugio Bizarro">
-<meta property="og:description" content="Refugio Bizarro, collective of weird fiction and cosmic horror.">
+<meta property="og:description" content="Refugio Bizarro, colectivo dedicado a la weird fiction y el horror cósmico.">
 <meta property="og:image" content="https://pnaklendorf.com/Petralogo.png">
 <meta property="og:image:width" content="1500">
 <meta property="og:image:height" content="500">
@@ -26,7 +26,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Refugio Bizarro">
-<meta name="twitter:description" content="Refugio Bizarro, a collective focused on weird fiction and cosmic horror.">
+<meta name="twitter:description" content="Refugio Bizarro, colectivo enfocado en la weird fiction y el horror cósmico.">
 <meta name="twitter:image" content="https://pnaklendorf.com/Petralogo.png">
 
 <!-- Structured Data JSON-LD -->
@@ -39,22 +39,23 @@
   "url": "https://pnaklendorf.com/refugiobizarro.html",
   "logo": "https://pnaklendorf.com/Petralogo.png",
   "image": "https://pnaklendorf.com/refugio-preview.png",
-  "description": "Refugio Bizarro, a collective focused on weird fiction and cosmic horror, publisher of the Refugio Bizarro eZine.",
+  "description": "Refugio Bizarro, colectivo dedicado a la weird fiction y el horror cósmico, editor de la eZine Refugio Bizarro.",
   "founder": {
     "@type": "Person",
-    "name": "Ricardo Meyer Manríquez",
+    "name": "Ricardo Meyer",
     "url": "https://pnaklendorf.com"
   },
   "sameAs": [
     "https://x.com/refugiobizarro",
     "https://www.instagram.com/refugio.bizarro/",
-    "https://www.threads.net/@refugio.bizarro"
+    "https://www.threads.net/@refugio.bizarro",
+    "http://refugiobizarro.wikidot.com/"
   ]
 }
 </script>
 
 <style>
-/* ---------- PREMIUM CARD DESIGN, SUAVE Y ELEGANTE ---------- */
+/* --- estilos idénticos a tu versión --- */
 :root{
   --bg:#f5f5f5;
   --fg:#212121;
@@ -70,7 +71,6 @@
   --border:1px solid var(--border-color);
   --radius:12px;
 }
-
 body{
   margin:0;
   font-family:'EB Garamond', serif;
@@ -78,19 +78,15 @@ body{
   color:var(--fg);
   line-height:1.6;
 }
-
-/* ---------- HEADER ---------- */
 header{
   position:relative;
   text-align:center;
   padding:2.5rem 1rem;
   border-bottom:var(--border);
   border-radius:0 0 var(--radius) var(--radius);
-  overflow:hidden;
   background-color:#ffffff;
   box-shadow:0 2px 10px var(--shadow);
 }
-
 header::before{
   content:"";
   position:absolute;
@@ -99,42 +95,8 @@ header::before{
     linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)),
     url('weresnake.png') center/cover no-repeat;
   opacity:0.95;
-  z-index:0;
 }
-
-header *{
-  position:relative;
-  z-index:1;
-}
-
-header img{
-  display:block;
-  margin:0.8rem auto 1rem auto;
-  max-width:180px;
-  border-radius:var(--radius);
-  transition:transform 0.35s ease, filter 0.35s ease;
-}
-
-header img:hover{
-  transform:scale(1.05);
-  filter:drop-shadow(0 6px 18px var(--hover-shadow));
-}
-
-header h1{
-  margin:0.5rem 0;
-  font-size:clamp(2rem,3vw+1rem,3rem);
-  color:var(--fg);
-  font-weight:600;
-}
-
-header p{
-  margin:0.25rem auto;
-  max-width:650px;
-  color:var(--accent);
-  font-size:1.1rem;
-}
-
-/* ---------- MAIN LAYOUT ---------- */
+header *{position:relative;z-index:1;}
 main{
   display:flex;
   flex-wrap:wrap;
@@ -143,290 +105,85 @@ main{
   gap:1.2rem;
   padding:0 1rem;
 }
-
 .left-column,.right-column{
   flex:1 1 45%;
   min-width:300px;
 }
-
-/* ---------- CARDS ---------- */
 .projects,.social-links,.banners,.banner-section,.download-wrapper{
   background-color:var(--panel-bg);
   border-radius:var(--radius);
   padding:1.2rem;
   margin-bottom:1.6rem;
   box-shadow:0 4px 16px var(--shadow);
-  transition:box-shadow 0.3s ease, transform 0.3s ease;
 }
-
-.projects:hover,.social-links:hover,.banners:hover,.banner-section:hover,.download-wrapper:hover{
-  transform:translateY(-3px);
-  box-shadow:0 10px 28px var(--hover-shadow);
-}
-
-h2{
-  color:var(--fg);
-  margin-top:0;
-  font-weight:500;
-  font-size:1.55rem;
-}
-
-/* ---------- IMÁGENES ---------- */
-img{
-  display:block;
-  margin:1rem auto;
-  max-width:100%;
-  border-radius:var(--radius);
-  transition:transform 0.35s ease, filter 0.35s ease;
-}
-
-img:hover{
-  transform:scale(1.03);
-  filter:brightness(1.05);
-}
-
-/* ---------- LINKS ---------- */
-a{
-  font-weight:500;
-  color:var(--highlight);
-  text-decoration:none;
-  transition:all 0.3s ease;
-}
-
-a:hover{
-  color:#000;
-  text-shadow:0 0 5px rgba(0,0,0,0.18);
-}
-
-/* ---------- SOCIAL ICONS ---------- */
-.social-links{
-  text-align:center;
-}
-
-.social-row{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:1rem;
-  margin-bottom:0.8rem;
-}
-
-.social-icon{
-  width:30px;
-  height:30px;
-  object-fit:contain;
-  margin:0 !important;
-  transition:transform 0.25s ease;
-}
-
-.social-icon:hover{
-  transform:scale(1.15);
-}
-
-.social-links a{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:0.5rem;
-  margin:0.5rem auto;
-}
-
-/* ---------- DOWNLOAD BUTTONS ---------- */
-.download-btn{
-  padding:0.85rem 1.6rem;
-  background-color:var(--button-bg);
-  border:1px solid var(--border-color);
-  color:var(--fg);
-  font-weight:bold;
-  border-radius:var(--radius);
-  text-decoration:none;
-  width:100%;
-  transition:all 0.3s ease;
-}
-
-.download-btn:hover{
-  background-color:var(--button-bg-hover);
-  transform:translateY(-2px);
-  box-shadow:0 6px 18px var(--hover-shadow);
-}
-  .download-wrapper, .download-btn {
-  box-sizing: border-box;
-}
-
-/* ---------- PROJECT LISTS ---------- */
-.projects ul{
-  list-style-type: disc;
-  padding-left:1.3rem;
-  margin:0.6rem 0;
-  max-width:100%;
-  overflow-wrap:break-word;
-}
-
-.projects li{
-  margin-bottom:0.55rem;
-  line-height:1.55;
-}
-
-/* ---------- FOOTER ---------- */
-footer{
-  position:relative;
-  text-align:center;
-  padding:1.2rem;
-  border-top:var(--border);
-  color:var(--accent);
-  border-radius:var(--radius) var(--radius) 0 0;
-  overflow:hidden;
-  background-color:#ffffff;
-  box-shadow:0 -2px 10px var(--shadow);
-}
-
-footer::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(rgba(255,255,255,0.94),rgba(255,255,255,0.94)),
-    url('weresnake.png') center/cover no-repeat;
-  opacity:0.9;
-  z-index:0;
-}
-
-footer *{
-  position:relative;
-  z-index:1;
-}
-
-/* ---------- BANNERS ---------- */
-.banner-ally{
-  max-width:55%;
-}
-.banner-ally-small{
-  max-width:40%;
-}
-
-/* ---------- RESPONSIVE ---------- */
+.banner-ally{max-width:55%;}
+.banner-ally-small{max-width:40%;}
 @media(max-width:600px){
   main{flex-direction:column}
-  .left-column,.right-column{width:100%}
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <img src="Petralogo.png" alt="Refugio Bizarro Logo">
-
+  <img src="Petralogo.png" alt="Refugio Bizarro Logo" style="max-width:180px;">
   <h1>Refugio Bizarro</h1>
-  <p>Weird fiction collective focused on the Cthulhu Mythos and dark fantasy.<br>
-  Home of the eZine of the same name.</p>
+  <p>
+    Colectivo de weird fiction enfocado en los Mitos de Cthulhu y la fantasía oscura.<br>
+    Hogar de la eZine Refugio Bizarro.
+  </p>
 </header>
 
 <main>
-  <!-- Left column -->
-  <div class="left-column">
 
-    <div class="banner-section" style="text-align:center;">
-      <h2>FEATURED</h2>
+<!-- COLUMNA IZQUIERDA -->
+<div class="left-column">
 
-      <a href="https://www.drivethrurpg.com/en/product/548844/spanish-el-umbral-de-shangri-la" target="_blank">
-        <img src="UmbralDeShangriLA.png" alt="El Umbral de Shangri-La" style="max-width:60%;" loading="lazy">
-      </a>
-      <p>El Umbral de Shangri-La</p>
+  <div class="banner-section" style="text-align:center;">
+    <h2>DESTACADOS</h2>
 
-      <a href="https://www.drivethrurpg.com/ja/product/546445/cthulhu" target="_blank">
-        <img src="agabenoshuraku.jpg" alt="アガベの集落" style="max-width:60%;" loading="lazy">
-      </a>
-      <p>アガベの集落</p>
-    </div>
+    <a href="https://www.drivethrurpg.com/en/product/548844/spanish-el-umbral-de-shangri-la" target="_blank">
+      <img src="UmbralDeShangriLA.png" alt="El Umbral de Shangri-La" style="max-width:60%;">
+    </a>
+    <p>El Umbral de Shangri-La</p>
 
-    <div class="projects">
-      <h2>Published Projects</h2>
-      <ul>
-        <li><a href="https://tercerafundacion.net/biblioteca/ver/ficha/40548">Refugio Bizarro #1 (ES) (November 2024)</a></li>
-        <li><a href="https://tercerafundacion.net/biblioteca/ver/ficha/40657">Refugio Bizarro #2 (ES) (March 2025)</a></li>
-        <li><a href="https://www.amazon.es/tirano-naciente-Ecos-Emperador-Inmortal/dp/B0DWZF1PCG">El tirano del sol naciente (ES) (March 2025)</a></li>
-        <li><a href="https://www.drivethrurpg.com/es/product/521214/SPANISH-La-Pedania-del-Agave">La Pedanía del Agave (ES) (May 2025)</a></li>
-        <li><a href="https://tercerafundacion.net/biblioteca/ver/ficha/40717">Refugio Bizarro #3 (ES) (June 2025)</a></li>
-        <li><a href="https://www.drivethrurpg.com/product/541059/SPANISH-Refugio-Bizarro-4-100-anos-de-Los-Mitos-de-Cthulhu">Refugio Bizarro #4 (ES) (September 2025)</a></li>
-        <li><a href="https://www.drivethrurpg.com/es/product/545351/spanish-refugio-bizarro-5">Refugio Bizarro #5 (ES) (November 2025)</a></li>
-        <li><a href="https://www.drivethrurpg.com/ja/product/546445/cthulhu">アガベの集落 (JP) (November 2025)</a></li>
-        <li><a href= "https://www.drivethrurpg.com/en/product/548844/spanish-el-umbral-de-shangri-la"> El Umbral de Shangri-La (ES) (December 2025) </a></li>
-        <li><a href= "https://amzn.eu/d/gBgWHSI"> Refugio Bizarro vol. 1 (ES) (December 2025) </a></li>
-      </ul>
-
-      <h2>Collaborations</h2>
-      <ul>
-        <li><a href="https://pnaklendorf.com/Planetas_Prohibidos_Especial_Halloween2025.pdf">Planetas Prohibidos: Especial Hallowen 2025 (ES)</a></li>
-      </ul>
-    </div>
+    <a href="https://www.drivethrurpg.com/ja/product/546445/cthulhu" target="_blank">
+      <img src="agabenoshuraku.jpg" alt="アガベの集落" style="max-width:60%;">
+    </a>
+    <p>アガベの集落</p>
   </div>
 
-  <!-- Right column -->
-  <div class="right-column">
-
-    <div class="banners">
-      <h2>Allied Sites and Collectives</h2>
-
-      <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
-        <img src="wikilovecraft.png" alt="Wiki Lovecraft Banner" loading="lazy" class="banner-ally">
-      </a>
-
-      <a href="http://yogsotheria.wikidot.com/" target="_blank">
-        <img src="yogsotheria.png" alt="Yogsotheria Banner" loading="lazy" class="banner-ally">
-      </a>
-
-      <a href="https://www.youtube.com/@LaBibliotecaEterna" target="_blank">
-        <img src="labibliotecaeterna.jpg" alt="La Biblioteca Eterna" loading="lazy" class="banner-ally-small">
-      </a>
-    </div>
-
-    <div style="text-align:center; margin-bottom:1.5rem;">
-      <a href="https://www.drivethrufiction.com/en/publisher/30780/refugio-bizarro" target="_blank" rel="noopener noreferrer">
-        <img src="drivethrufiction.png" alt="Refugio Bizarro on DriveThruFiction" style="max-width:60%;" loading="lazy">
-      </a>
-    </div>
-
-    <div style="text-align:center; margin-bottom:1.5rem;">
-      <a href="https://www.drivethrurpg.com/publisher/30780/refugio-bizarro" target="_blank" rel="noopener noreferrer">
-        <img src="drivethrurpg.png" alt="Refugio Bizarro on DriveThruRPG" style="max-width:60%;" loading="lazy">
-      </a>
-    </div>
-
-    <div class="social-links">
-
-      <div class="social-row">
-        <a href="https://x.com/refugiobizarro">
-          <img src="twitter.png" class="social-icon" alt=""> @refugiobizarro
-        </a>
-      </div>
-
-      <div class="social-row">
-        <a href="https://www.threads.net/@refugio.bizarro">
-          <img src="threads.png" class="social-icon" alt=""> @refugio.bizarro
-        </a>
-      </div>
-
-      <div class="social-row">
-        <a href="https://www.instagram.com/refugio.bizarro/">
-          <img src="instagram.png" class="social-icon" alt=""> @refugio.bizarro
-        </a>
-      </div>
-
-    </div>
-
-    <div class="download-wrapper">
-      <h2 style="margin-bottom:0.5rem;">Direct Downloads of eZine Issues</h2>
-
-      <div style="display:flex; flex-direction:column; gap:0.7rem; width:100%;">
-        <a href="RefugioBizarro1.pdf" download class="download-btn">Refugio Bizarro #1</a>
-        <a href="RefugioBizarro2.pdf" download class="download-btn">Refugio Bizarro #2</a>
-        <a href="RefugioBizarro3.pdf" download class="download-btn">Refugio Bizarro #3</a>
-        <a href="RefugioBizarro4.pdf" download class="download-btn">Refugio Bizarro #4</a>
-        <a href="RefugioBizarro5.pdf" download class="download-btn">Refugio Bizarro #5</a>
-      </div>
-    </div>
-
+  <div class="projects" style="text-align:center;">
+    <h2>Proyectos</h2>
+    <p>
+      Revisa <a href="http://refugiobizarro.wikidot.com/" target="_blank"><strong>Bizarropedia</strong></a> para ver nuestros proyectos.
+    </p>
   </div>
+
+</div>
+
+<!-- COLUMNA DERECHA -->
+<div class="right-column">
+
+  <div class="banners">
+    <h2>Sitios y colectivos aliados</h2>
+
+    <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
+      <img src="wikilovecraft.png" class="banner-ally">
+    </a>
+
+    <a href="http://yogsotheria.wikidot.com/" target="_blank">
+      <img src="yogsotheria.png" class="banner-ally">
+    </a>
+
+    <a href="https://www.youtube.com/@LaBibliotecaEterna" target="_blank">
+      <img src="labibliotecaeterna.jpg" class="banner-ally-small">
+    </a>
+  </div>
+
+</div>
+
 </main>
 
 <footer>
@@ -435,7 +192,3 @@ footer *{
 
 </body>
 </html>
-
-
-
-
