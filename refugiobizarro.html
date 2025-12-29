@@ -55,7 +55,6 @@
 </script>
 
 <style>
-/* --- estilos idénticos a tu versión --- */
 :root{
   --bg:#f5f5f5;
   --fg:#212121;
@@ -63,14 +62,12 @@
   --highlight:#333333;
   --border-color:#e2e2e2;
   --panel-bg:#ffffff;
-  --button-bg:#fafafa;
-  --button-bg-hover:#f0f0f0;
   --shadow:rgba(0,0,0,0.08);
-  --hover-shadow:rgba(0,0,0,0.15);
   --maxw:1200px;
   --border:1px solid var(--border-color);
   --radius:12px;
 }
+
 body{
   margin:0;
   font-family:'EB Garamond', serif;
@@ -78,6 +75,7 @@ body{
   color:var(--fg);
   line-height:1.6;
 }
+
 header{
   position:relative;
   text-align:center;
@@ -87,6 +85,7 @@ header{
   background-color:#ffffff;
   box-shadow:0 2px 10px var(--shadow);
 }
+
 header::before{
   content:"";
   position:absolute;
@@ -94,9 +93,13 @@ header::before{
   background:
     linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)),
     url('weresnake.png') center/cover no-repeat;
-  opacity:0.95;
 }
-header *{position:relative;z-index:1;}
+
+header *{
+  position:relative;
+  z-index:1;
+}
+
 main{
   display:flex;
   flex-wrap:wrap;
@@ -105,21 +108,54 @@ main{
   gap:1.2rem;
   padding:0 1rem;
 }
-.left-column,.right-column{
+
+.left-column,
+.right-column{
   flex:1 1 45%;
   min-width:300px;
 }
-.projects,.social-links,.banners,.banner-section,.download-wrapper{
+
+.projects,
+.banners,
+.banner-section{
   background-color:var(--panel-bg);
   border-radius:var(--radius);
   padding:1.2rem;
   margin-bottom:1.6rem;
   box-shadow:0 4px 16px var(--shadow);
 }
-.banner-ally{max-width:55%;}
-.banner-ally-small{max-width:40%;}
+
+/* DESTACADOS en vertical y centrados */
+.banner-section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:1rem;
+}
+
+.banner-section img{
+  max-width:60%;
+  height:auto;
+}
+
+/* Banners aliados */
+.banner-ally{
+  max-width:55%;
+  display:block;
+  margin:0 auto 1rem;
+}
+
+.banner-ally-small{
+  max-width:40%;
+  display:block;
+  margin:0 auto 1rem;
+}
+
 @media(max-width:600px){
-  main{flex-direction:column}
+  main{
+    flex-direction:column;
+  }
 }
 </style>
 </head>
@@ -131,7 +167,7 @@ main{
   <h1>Refugio Bizarro</h1>
   <p>
     Colectivo de weird fiction enfocado en los Mitos de Cthulhu y la fantasía oscura.<br>
-    Hogar de la eZine Refugio Bizarro.
+    Hogar de la eZine homónima.
   </p>
 </header>
 
@@ -140,25 +176,26 @@ main{
 <!-- COLUMNA IZQUIERDA -->
 <div class="left-column">
 
-  <div class="banner-section" style="text-align:center;">
+  <div class="projects">
+    <h2>Proyectos</h2>
+    <p>
+      Revisa <a href="http://refugiobizarro.wikidot.com/" target="_blank"><strong>Bizarropedia</strong></a>
+      para conocer nuestros proyectos y publicaciones.
+    </p>
+  </div>
+
+  <div class="banner-section">
     <h2>DESTACADOS</h2>
 
     <a href="https://www.drivethrurpg.com/en/product/548844/spanish-el-umbral-de-shangri-la" target="_blank">
-      <img src="UmbralDeShangriLA.png" alt="El Umbral de Shangri-La" style="max-width:60%;">
+      <img src="UmbralDeShangriLA.png" alt="El Umbral de Shangri-La">
     </a>
     <p>El Umbral de Shangri-La</p>
 
     <a href="https://www.drivethrurpg.com/ja/product/546445/cthulhu" target="_blank">
-      <img src="agabenoshuraku.jpg" alt="アガベの集落" style="max-width:60%;">
+      <img src="agabenoshuraku.jpg" alt="アガベの集落">
     </a>
     <p>アガベの集落</p>
-  </div>
-
-  <div class="projects" style="text-align:center;">
-    <h2>Proyectos</h2>
-    <p>
-      Revisa <a href="http://refugiobizarro.wikidot.com/" target="_blank"><strong>Bizarropedia</strong></a> para ver nuestros proyectos.
-    </p>
   </div>
 
 </div>
@@ -170,15 +207,15 @@ main{
     <h2>Sitios y colectivos aliados</h2>
 
     <a href="https://hplovecraft.fandom.com/es/wiki/Wiki_Lovecraft" target="_blank">
-      <img src="wikilovecraft.png" class="banner-ally">
+      <img src="wikilovecraft.png" class="banner-ally" alt="Wiki Lovecraft">
     </a>
 
     <a href="http://yogsotheria.wikidot.com/" target="_blank">
-      <img src="yogsotheria.png" class="banner-ally">
+      <img src="yogsotheria.png" class="banner-ally" alt="Yogsotheria">
     </a>
 
     <a href="https://www.youtube.com/@LaBibliotecaEterna" target="_blank">
-      <img src="labibliotecaeterna.jpg" class="banner-ally-small">
+      <img src="labibliotecaeterna.jpg" class="banner-ally-small" alt="La Biblioteca Eterna">
     </a>
   </div>
 
@@ -187,7 +224,7 @@ main{
 </main>
 
 <footer>
-  <p>© 2024-2025 Refugio Bizarro. All rights reserved.</p>
+  <p>© 2024–2025 Refugio Bizarro. All rights reserved.</p>
 </footer>
 
 </body>
