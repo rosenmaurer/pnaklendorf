@@ -117,7 +117,8 @@ main{
 
 .projects,
 .banners,
-.banner-section{
+.banner-section,
+.social-box{
   background-color:var(--panel-bg);
   border-radius:var(--radius);
   padding:1.2rem;
@@ -125,7 +126,7 @@ main{
   box-shadow:0 4px 16px var(--shadow);
 }
 
-/* DESTACADOS en vertical y centrados */
+/* DESTACADOS */
 .banner-section{
   display:flex;
   flex-direction:column;
@@ -139,7 +140,7 @@ main{
   height:auto;
 }
 
-/* Banners aliados */
+/* Aliados */
 .banner-ally{
   max-width:55%;
   display:block;
@@ -150,6 +151,44 @@ main{
   max-width:40%;
   display:block;
   margin:0 auto 1rem;
+}
+
+/* Redes */
+.social-box ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.social-box li{
+  display:flex;
+  align-items:center;
+  gap:0.8rem;
+  margin-bottom:0.8rem;
+}
+
+.social-box img{
+  width:24px;
+  height:auto;
+}
+
+.social-box a{
+  text-decoration:none;
+  color:var(--fg);
+}
+
+.social-box a:hover{
+  text-decoration:underline;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:1.5rem 1rem;
+  margin-top:2rem;
+  border-top:var(--border);
+  background-color:#ffffff;
+  box-shadow:0 -2px 8px var(--shadow);
 }
 
 @media(max-width:600px){
@@ -173,7 +212,6 @@ main{
 
 <main>
 
-<!-- COLUMNA IZQUIERDA -->
 <div class="left-column">
 
   <div class="projects">
@@ -200,7 +238,6 @@ main{
 
 </div>
 
-<!-- COLUMNA DERECHA -->
 <div class="right-column">
 
   <div class="banners">
@@ -217,6 +254,24 @@ main{
     <a href="https://www.youtube.com/@LaBibliotecaEterna" target="_blank">
       <img src="labibliotecaeterna.jpg" class="banner-ally-small" alt="La Biblioteca Eterna">
     </a>
+  </div>
+
+  <div class="social-box">
+    <h2>Nuestras redes</h2>
+    <ul>
+      <li>
+        <img src="twitter.png" alt="X / Twitter">
+        <a href="https://x.com/refugiobizarro" target="_blank">X (Twitter)</a>
+      </li>
+      <li>
+        <img src="instagram.png" alt="Instagram">
+        <a href="https://www.instagram.com/refugio.bizarro/" target="_blank">Instagram</a>
+      </li>
+      <li>
+        <img src="threads.png" alt="Threads">
+        <a href="https://www.threads.net/@refugio.bizarro" target="_blank">Threads</a>
+      </li>
+    </ul>
   </div>
 
 </div>
