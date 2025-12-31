@@ -47,6 +47,7 @@
 
   <!-- Typography -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -90,6 +91,7 @@ header h1 {
   font-weight:400;
   letter-spacing:.38em;
   color:#bbb;
+  font-family: Papyrus, "Cinzel", "Times New Roman", serif;
 }
 
 header p,
@@ -99,7 +101,7 @@ header em {
 
 header img.logo {
   display:block;
-  margin:1rem auto;
+  margin:1.2rem auto;
   max-width:160px;
   height:auto;
 }
@@ -110,10 +112,15 @@ nav {
   justify-content:center;
   align-items:center;
   gap:1.2rem;
-  padding:0.6rem 1.2rem;
-  border-radius:8px;
-  background: rgba(192,192,192,0.3);
+  padding:0.7rem 1.4rem;
+  border-radius:10px;
+  background: linear-gradient(
+    135deg,
+    rgba(48, 16, 64, 0.85),
+    rgba(28, 8, 44, 0.85)
+  );
   backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(64, 0, 96, 0.35);
 }
 
 nav a {
@@ -123,7 +130,7 @@ nav a {
   letter-spacing:.12em;
 }
 
-nav a:hover { color:#ffd; }
+nav a:hover { color:#e6d4ff; }
 
 nav .sep {
   color:rgba(255,255,255,0.45);
@@ -190,7 +197,7 @@ footer {
 
 <header>
   <h1>PNAKLENDORF</h1>
-  <img src="UniversidadGAB.png" alt="Universidad GAB Logo" class="logo">
+  <img src="Pnaklendorf.png" alt="Pnaklendorf Sigil" class="logo">
   <p>Bienvenido a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer.</p>
   <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
