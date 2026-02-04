@@ -153,6 +153,26 @@ main{
   margin:0 auto 1rem;
 }
 
+/* === EFECTOS HOVER (CAMBIO SOLICITADO) === */
+.banner-section a img,
+.banners a img{
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+  border-radius:8px;
+}
+
+.banner-section a:hover img,
+.banners a:hover img{
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  filter: brightness(1.05) contrast(1.05);
+}
+
+.banner-section a,
+.banners a{
+  display:inline-block;
+  cursor:pointer;
+}
+
 /* Redes */
 .social-box ul{
   list-style:none;
@@ -279,5 +299,7 @@ footer{
 
 </body>
 </html>
+
+
 
 
