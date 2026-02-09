@@ -1,5 +1,13 @@
 User-agent: *
 Disallow: /*.pdf$
+
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.webp$
+Disallow: /*.svg$
+
 Allow: /
 
 Sitemap: https://pnaklendorf.com/sitemap.xml
