@@ -5,15 +5,15 @@
 
   <!-- Página principal -->
   <url>
-    <loc>https://pnaklendorf.com/</loc>
-    <lastmod>2026-13-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://pnaklendorf.com/Pnaklendorf.png</image:loc>
-      <image:caption>Pnaklendorf — Literary Portal </image:caption>
-    </image:image>
-  </url>
+  <loc>https://pnaklendorf.com/</loc>
+  <lastmod>2026-02-13</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+  <image:image>
+    <image:loc>https://pnaklendorf.com/Pnaklendorf.png</image:loc>
+    <image:caption>Pnaklendorf — Literary Portal</image:caption>
+  </image:image>
+</url>
 
   <!-- Secciones principales -->
   <url>
