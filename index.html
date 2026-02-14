@@ -17,11 +17,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
 
+  <!-- SCHEMA.ORG STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ricardo Meyer",
+    "url": "https://pnaklendorf.com/",
+    "image": "https://pnaklendorf.com/Pnaklendorf.png",
+    "description": "Chilean writer devoted to cosmic horror and weird fiction. Creator of the Pnaklendorf Mythos.",
+    "nationality": {
+      "@type": "Country",
+      "name": "Chile"
+    },
+    "jobTitle": "Writer",
+    "sameAs": [
+      "https://twitter.com/PaterDagon",
+      "https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer",
+      "https://www.ligotti.net/index.php?members/r-von-pnaklendorf.5048/",
+      "https://www.drivethrurpg.com/en/browse?author=%22Ricardo%20Meyer%22"
+    ],
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Refugio Bizarro"
+    },
+    "knowsAbout": [
+      "Cthulhu Mythos",
+      "Weird Fiction",
+      "Cosmic Horror",
+      "Lovecraftian Literature"
+    ],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Hispanic Lovecraft Wiki"
+    }
+  }
+  </script>
+
   <style>
     :root {
       --bg: #000;
       --fg: #c9c9c9;
       --border: 1px solid #0e0e0e;
+      --purple: #7a5cff;
+      --purple-soft: #b8a8ff;
     }
 
     * { box-sizing: border-box; }
@@ -65,14 +104,15 @@
     }
 
     nav a {
-      color: #fff;
+      color: var(--purple-soft);
       text-decoration: none;
       font-size: .95rem;
       letter-spacing: .14em;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #e6d4ff;
+      color: var(--purple);
     }
 
     main {
@@ -81,33 +121,44 @@
       padding: 4rem 1rem;
     }
 
-    section {
-      margin-bottom: 4rem;
-      text-align: center;
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
     }
 
     section h2 {
       letter-spacing: .3em;
       color: #bcbcbc;
       margin-bottom: 1.8rem;
+      text-align: left;
     }
 
     .featured-text {
-      max-width: 700px;
-      margin: 1.2rem auto;
       font-size: 1.05rem;
       color: #9a9a9a;
+      margin-bottom: 1.4rem;
+    }
+
+    .featured-text a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .featured-text a:hover {
+      color: var(--purple-soft);
     }
 
     .banners {
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 2.5rem;
+      align-items: center;
     }
 
     .banners img {
-      width: 90%;
+      width: 100%;
       max-width: 320px;
       box-shadow: 0 0 40px rgba(0,0,0,1);
       transition: transform 0.3s ease;
@@ -117,19 +168,22 @@
       transform: scale(1.05);
     }
 
-    /* GOODREADS CONTAINER */
-    .goodreads-wrapper {
-      margin-top: 3rem;
-      display: flex;
-      justify-content: flex-start;
-    }
-
     footer {
       text-align: center;
       padding: 1.5rem;
       border-top: var(--border);
       font-size: .85rem;
       color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
+
+      section h2 {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -151,67 +205,49 @@
 
 <main>
 
-  <section>
-    <h2>ABOUT ME</h2>
+  <div class="two-columns">
 
-    <p class="featured-text">
-      My name is 
-      <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" style="color:#fff; text-decoration:none;">
-        Ricardo Meyer
-      </a>. I'm a writer from Chile devoted to cosmic horror, weird fiction, and metaphysical narratives.
-    </p>
+    <!-- LEFT COLUMN -->
+    <section>
+      <h2>ABOUT ME</h2>
 
-    <p class="featured-text">
-      Since 2024, I have been co-directing the Refugio Bizarro collective, managing its eZine, and working on projects related to the Cthulhu Mythos within the Hispanic literary scene.
-    </p>
+      <p class="featured-text">
+        My name is 
+        <a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank">
+          Ricardo Meyer
+        </a>. I'm a writer from Chile devoted to cosmic horror and weird fiction.
+      </p>
 
-    <p class="featured-text">
-      You can find me on Twitter as 
-      <a href="https://twitter.com/PaterDagon" target="_blank" style="color:#fff; text-decoration:none;">
-        @PaterDagon
-      </a>.
-    </p>
-  </section>
+      <p class="featured-text">
+        Since 2024, I have been co-directing the Refugio Bizarro collective, managing its eZine, and working on projects related to the Cthulhu Mythos within the Hispanic literary scene.
+      </p>
 
-  <section class="banners">
-    <a href="https://www.ligotti.net/index.php?members/r-von-pnaklendorf.5048/" target="_blank">
-      <img src="nightmare_banner.jpg" alt="Ricardo Meyer profile on Ligotti.net">
-    </a>
+      <p class="featured-text">
+        I have edited and administered the Hispanic Lovecraft Wiki since 2010, contributing to the preservation and expansion of Lovecraftian scholarship in Spanish.
+      </p>
 
-    <a href="https://www.drivethrurpg.com/en/browse?author=%22Ricardo%20Meyer%22" target="_blank">
-      <img src="drivethrurpg.png" alt="Ricardo Meyer works on DriveThruRPG">
-    </a>
-  </section>
+      <p class="featured-text">
+        I am the creator of the Pnaklendorf Mythos.
+      </p>
 
-  <!-- GOODREADS WIDGET -->
-  <div class="goodreads-wrapper">
+      <p class="featured-text">
+        You can find me on Twitter as 
+        <a href="https://twitter.com/PaterDagon" target="_blank">
+          @PaterDagon
+        </a>.
+      </p>
+    </section>
 
-    <style type="text/css">
-    .gr_container {
-      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-      width: 250px;
-      background: #111;
-      padding: 10px;
-    }
-    .gr_book_container {
-      border-bottom: 1px solid #222;
-      padding: 5px 0px;
-    }
-    .gr_book_image {
-      float: left;
-      padding-right: 15px;
-    }
-    .gr_book_title a {
-      color: #fff !important;
-      text-decoration: none;
-    }
-    </style>
+    <!-- RIGHT COLUMN -->
+    <section class="banners">
+      <a href="https://www.ligotti.net/index.php?members/r-von-pnaklendorf.5048/" target="_blank">
+        <img src="nightmare_banner.jpg" alt="Ricardo Meyer profile on Ligotti.net">
+      </a>
 
-    <div id="gr_author_widget_1771027070"></div>
-
-    <script type="text/javascript" charset="utf-8"
-      src="https://www.goodreads.com/author/author_widget/18824255.Ricardo_Meyer?num_books=20&widget_id=1771027070">
-    </script>
+      <a href="https://www.drivethrurpg.com/en/browse?author=%22Ricardo%20Meyer%22" target="_blank">
+        <img src="drivethrurpg.png" alt="Ricardo Meyer works on DriveThruRPG">
+      </a>
+    </section>
 
   </div>
 
