@@ -167,16 +167,17 @@
       color: #FFD966;
     }
 
+    /* Banners sin brillo permanente, solo hover */
     .banners img {
       width: 90%;
       max-width: 300px;
-      box-shadow: 0 0 40px rgba(0,0,0,1);
+      box-shadow: none; /* brillo eliminado */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .banners img:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 60px rgba(255, 215, 102, 0.8);
+      box-shadow: 0 0 60px rgba(255, 215, 102, 0.8); /* solo al hover */
     }
 
     footer {
@@ -244,4 +245,5 @@
   </footer>
 </body>
 </html>
+
 
