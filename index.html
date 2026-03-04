@@ -7,49 +7,12 @@
   <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
 
   <title>Pnaklendorf ☄️</title>
-
   <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer." />
   <meta name="author" content="Ricardo Meyer" />
   <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Cthulhu, Ricardo Meyer, sitio oficial, literatura chilena, horror" />
 
   <link rel="canonical" href="https://pnaklendorf.com/" />
   <link rel="icon" href="eldersign.png" type="image/png" />
-
-  <meta property="og:title" content="Pnaklendorf ☄️" />
-  <meta property="og:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer." />
-  <meta property="og:image" content="https://pnaklendorf.com/Victory.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://pnaklendorf.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_CL" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pnaklendorf ☄️" />
-  <meta name="twitter:description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer." />
-  <meta name="twitter:image" content="https://pnaklendorf.com/Victory.jpg" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Pnaklendorf",
-    "url": "https://pnaklendorf.com/",
-    "inLanguage": "es-CL",
-    "description": "Sitio oficial de Ricardo Meyer. Universo literario vinculado a Los Mitos de Cthulhu.",
-    "author": {
-      "@type": "Person",
-      "name": "Ricardo Meyer",
-      "url": "https://pnaklendorf.com",
-      "email": "mailto:rosenmaurer@gmail.com"
-    },
-    "publisher": {
-      "@type": "Person",
-      "name": "Ricardo Meyer"
-    }
-  }
-  </script>
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
@@ -72,42 +35,24 @@
       line-height: 1.7;
     }
 
-    /* --- Header final con efecto zoom --- */
+    /* Header limpio con logo */
     header {
-      position: relative;
       text-align: center;
-      padding: 2.5rem 1rem 6rem 1rem;
+      padding: 3rem 1rem 1rem 1rem;
       border-bottom: var(--border);
-      background: url("Pnaklendorf.png") center/70% no-repeat;
-      background-size: contain;
-      overflow: hidden;
-      animation: zoomBackground 60s linear infinite;
-    }
-
-    @keyframes zoomBackground {
-      0%   { background-size: 68% auto; }
-      50%  { background-size: 72% auto; }
-      100% { background-size: 68% auto; }
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    header * {
-      position: relative;
-      z-index: 1;
     }
 
     header h1 {
-      margin: 0.5rem 0 1rem 0;
+      margin: 0.5rem 0;
       font-size: clamp(2.2rem, 3vw, 3rem);
       letter-spacing: .38em;
       color: #bbb;
       font-family: Papyrus, "Cinzel", serif;
+    }
+
+    header .logo {
+      width: 150px;
+      margin: 1rem 0;
     }
 
     header p, header em {
@@ -116,15 +61,15 @@
       font-size: 1rem;
     }
 
+    /* Barra de navegación elegante pegada al main */
     header .nav-bar {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
-      padding: 0.8rem 1rem;
-      background: #111;
-      border-top: var(--border);
-      border-bottom: var(--border);
-      margin-top: 0.5rem; /* más cerca del main */
+      padding: 0.8rem 0;
+      margin: 0;
+      background: linear-gradient(to bottom, #111, #000);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     }
 
     header .nav-bar a {
@@ -132,18 +77,19 @@
       text-decoration: none;
       font-size: 0.95rem;
       letter-spacing: .15em;
-      transition: color 0.2s ease;
+      transition: color 0.25s ease, transform 0.25s ease;
     }
 
     header .nav-bar a:hover {
       color: #FFD966;
+      transform: translateY(-2px);
     }
 
-    /* --- Main --- */
+    /* Main */
     main {
       display: flex;
       justify-content: space-between;
-      padding: 4.5rem 3rem;
+      padding: 3rem;
       max-width: 1200px;
       margin: 0 auto;
       gap: 3rem;
@@ -166,7 +112,7 @@
       flex-direction: column;
       align-items: center;
       z-index: 1;
-      gap: 3rem; /* más separación entre banners */
+      gap: 3rem;
     }
 
     main::after {
@@ -225,11 +171,12 @@
       width: 90%;
       max-width: 300px;
       box-shadow: 0 0 40px rgba(0,0,0,1);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .banners img:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 60px rgba(255, 215, 102, 0.8);
     }
 
     footer {
@@ -245,6 +192,7 @@
 <body>
   <header>
     <h1>PNAKLENDORF</h1>
+    <img src="Pnaklendorf.png" alt="Logo Pnaklendorf" class="logo">
     <p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer.</p>
     <p><em>Homo sum, humani nihil a me alienum puto.</em></p>
 
@@ -266,6 +214,7 @@
         <li><a href="RefugioBizarro3.pdf" target="_blank">Refugio Bizarro #3</a></li>
         <li><a href="RefugioBizarro4.pdf" target="_blank">Refugio Bizarro #4</a></li>
         <li><a href="RefugioBizarro5.pdf" target="_blank">Refugio Bizarro #5</a></li>
+        <li><a href="RefugioBizarro6.pdf" target="_blank">Refugio Bizarro #6</a></li>
       </ul>
 
       <h2 style="margin-top:3rem;">OTROS AUTORES</h2>
