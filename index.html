@@ -72,14 +72,22 @@
       line-height: 1.7;
     }
 
-    /* --- Header refinado --- */
+    /* --- Header final con efecto zoom --- */
     header {
       position: relative;
       text-align: center;
-      padding: 3rem 1rem 6rem 1rem;
+      padding: 2.5rem 1rem 6rem 1rem;
       border-bottom: var(--border);
       background: url("Pnaklendorf.png") center/70% no-repeat;
       background-size: contain;
+      overflow: hidden;
+      animation: zoomBackground 60s linear infinite;
+    }
+
+    @keyframes zoomBackground {
+      0%   { background-size: 68% auto; }
+      50%  { background-size: 72% auto; }
+      100% { background-size: 68% auto; }
     }
 
     header::before {
@@ -116,7 +124,7 @@
       background: #111;
       border-top: var(--border);
       border-bottom: var(--border);
-      margin-top: 1.5rem;
+      margin-top: 0.5rem; /* más cerca del main */
     }
 
     header .nav-bar a {
@@ -158,9 +166,9 @@
       flex-direction: column;
       align-items: center;
       z-index: 1;
+      gap: 3rem; /* más separación entre banners */
     }
 
-    /* Línea divisoria entre secciones */
     main::after {
       content: "";
       position: absolute;
@@ -173,17 +181,14 @@
       z-index: 0;
     }
 
-    /* Responsive */
     @media (max-width: 900px) {
       main {
         flex-direction: column;
         gap: 2rem;
       }
-
       main::after {
         display: none;
       }
-
       main section:first-child,
       main section.banners {
         padding: 0;
