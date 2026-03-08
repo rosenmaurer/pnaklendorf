@@ -1,319 +1,174 @@
 <!DOCTYPE html>
 <html lang="es-CL">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Language" content="es" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
 
-  <title>El País de Pnaklendorf ☄️</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="CsshDJwqA1ZQ2zSH-eLjCO_2EGiUd-HzEy8tpijEZtY" />
 
-  <meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer." />
-  <meta name="author" content="Ricardo Meyer" />
-  <meta name="keywords" content="Pnaklendorf, Mitos de Cthulhu, horror cósmico, Refugio Bizarro, Cthulhu, Ricardo Meyer, sitio oficial, literatura chilena, horror" />
+<title>El País de Pnaklendorf ☄️</title>
 
-  <link rel="canonical" href="https://pnaklendorf.com/" />
-  <link rel="icon" href="eldersign.png" type="image/png" />
+<meta name="description" content="Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer.">
+<meta name="author" content="Ricardo Meyer">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="El País de Pnaklendorf ☄️" />
-  <meta property="og:description" content="Los Mitos de Cthulhu de Ricardo Meyer." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pnaklendorf.com/" />
-  <meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png" />
-  <meta property="og:locale" content="es_CL" />
+<link rel="icon" href="eldersign.png">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="El País de Pnaklendorf ☄️">
-  <meta name="twitter:description" content="Los Mitos de Cthulhu de Ricardo Meyer.">
-  <meta name="twitter:image" content="https://pnaklendorf.com/Pnaklendorf.png">
+<!-- OpenGraph -->
+<meta property="og:title" content="El País de Pnaklendorf">
+<meta property="og:description" content="Los Mitos de Cthulhu de Ricardo Meyer">
+<meta property="og:image" content="https://pnaklendorf.com/Pnaklendorf.png">
+<meta property="og:type" content="website">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="El País de Pnaklendorf">
+<meta name="twitter:image" content="https://pnaklendorf.com/Pnaklendorf.png">
 
-  <style>
-    :root {
-      --bg: #0f0f0f;
-      --fg: #d6d6d6;
-      --accent: #c8a96a;
-      --border: 1px solid #1e1e1e;
-    }
+<!-- JSON SEO -->
 
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Cormorant Garamond", serif;
-      letter-spacing: .02em;
-      line-height: 1.8;
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 1rem 2rem 1rem;
-      border-bottom: var(--border);
-    }
-
-    header h1 {
-      margin: 0.5rem 0;
-      font-size: clamp(2.6rem, 4vw, 3.6rem);
-      letter-spacing: .25em;
-      color: #e6e6e6;
-      font-family: "Cinzel", serif;
-    }
-
-    header .logo {
-      width: 140px;
-      margin: 1.5rem 0;
-    }
-
-    header p, header em {
-      color: #bdbdbd;
-      margin: 0.4rem 0;
-      font-size: 1.05rem;
-    }
-
-    header .nav-bar {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      margin-top: 1rem;
-    }
-
-    header .nav-bar a {
-      color: #bdbdbd;
-      text-decoration: none;
-      font-size: 0.95rem;
-      letter-spacing: .18em;
-      transition: color 0.25s ease;
-    }
-
-    header .nav-bar a:hover {
-      color: var(--accent);
-    }
-
-    main {
-      display: flex;
-      justify-content: space-between;
-      padding: 4rem 2rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      gap: 4rem;
-      position: relative;
-      flex-wrap: wrap;
-    }
-
-    main section:first-child {
-      flex: 1;
-      min-width: 260px;
-      z-index: 1;
-    }
-
-    main section.banners {
-      flex: 1;
-      min-width: 260px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3rem;
-      z-index: 1;
-    }
-
-    main::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 1px;
-      background: #222;
-      transform: translateX(-50%);
-    }
-
-    @media (max-width: 900px) {
-      main {
-        flex-direction: column;
-        gap: 3rem;
-      }
-
-      main::after {
-        display: none;
-      }
-
-      main section:first-child,
-      main section.banners {
-        padding: 0;
-      }
-    }
-
-    section h2 {
-      font-weight: 500;
-      letter-spacing: .25em;
-      color: #e2e2e2;
-      margin-bottom: 1.8rem;
-      text-align: center;
-      position: relative;
-    }
-
-    section h2::before,
-    section h2::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 30%;
-      height: 1px;
-      background: #333;
-    }
-
-    section h2::before { left: 0; }
-    section h2::after { right: 0; }
-
-    section ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    section ul li {
-      margin-bottom: 0.7rem;
-      text-align: center;
-    }
-
-    section ul li a {
-      color: #cfcfcf;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    section ul li a:hover {
-      color: var(--accent);
-    }
-
-    .banners img {
-      width: 95%;
-      max-width: 320px;
-      transition: transform 0.35s ease;
-    }
-
-    .banners img:hover {
-      transform: scale(1.04);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      border-top: var(--border);
-      font-size: .9rem;
-      color: #9a9a9a;
-    }
-  </style>
-
-  <!-- JSON-LD SEO -->
-
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@type":"WebSite",
-"name":"El País de Pnaklendorf",
-"url":"https://pnaklendorf.com/"
+ "@context":"https://schema.org",
+ "@type":"WebSite",
+ "name":"El País de Pnaklendorf",
+ "url":"https://pnaklendorf.com/"
 }
 </script>
 
 <script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@type":"CreativeWork",
-"name":"El País de Pnaklendorf",
-"author":{
-"@type":"Person",
-"name":"Ricardo Meyer"
-},
-"genre":"Horror cósmico",
-"inLanguage":"es",
-"url":"https://pnaklendorf.com/"
-}
-</script>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"Person",
-"name":"Ricardo Meyer",
-"alternateName":"R. von Pnaklendorf",
-"url":"https://pnaklendorf.com/",
-"jobTitle":"Escritor",
-"description":"Autor de horror cósmico asociado a los Mitos de Cthulhu y creador del universo narrativo Pnaklendorf.",
-"nationality":"Chile",
-"sameAs":[
-"https://www.ligotti.net/index.php?members/r-von-pnaklendorf.5048/",
-"https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer",
-"https://www.drivethrurpg.com/en/browse?author=%22Ricardo%20Meyer%22"
-]
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"Ricardo Meyer",
+ "alternateName":"R. von Pnaklendorf",
+ "url":"https://pnaklendorf.com/",
+ "jobTitle":"Escritor",
+ "sameAs":[
+ "https://twitter.com/PaterDagon",
+ "https://www.ligotti.net/index.php?members/r-von-pnaklendorf.5048/",
+ "https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer",
+ "https://www.drivethrurpg.com/en/browse?author=%22Ricardo%20Meyer%22"
+ ]
 }
 </script>
 
 </head>
 
-<body>
-<header>
-<h1>PNAKLENDORF</h1>
-<img src="Pnaklendorf.png" alt="Logo Pnaklendorf" class="logo">
-<p>Bienvenidos a El País de Pnaklendorf, Los Mitos de Cthulhu de Ricardo Meyer.</p>
-<p><em>Homo sum, humani nihil a me alienum puto.</em></p>
+<body bgcolor="#000000" text="#cccccc" link="#c8a96a" vlink="#999999">
 
-<div class="nav-bar">
-<a href="refugiobizarro.html">Refugio Bizarro</a>
-<span class="sep">·</span>
-<a href="https://pnaklendorf.com/relatos">Relatos</a>
-<span class="sep">·</span>
-<a href="https://pnaklendorf.com/que-es-pnaklendorf">¿Qué es Pnaklendorf?</a>
-</div>
-</header>
+<center>
 
-<main>
-<section>
+<br>
+
+<img src="Pnaklendorf.png" width="220">
+
+<h1>
+<font face="Times New Roman" color="#ffffff">
+PNAKLENDORF
+</font>
+</h1>
+
+<p>
+Bienvenidos a <b>El País de Pnaklendorf</b>,  
+Los Mitos de Cthulhu de Ricardo Meyer.
+</p>
+
+<p>
+<i>Homo sum, humani nihil a me alienum puto.</i>
+</p>
+
+<hr width="600">
+
+<p>
+
+<a href="refugiobizarro.html">REFUGIO BIZARRO</a>
+ |
+<a href="https://pnaklendorf.com/relatos">RELATOS</a>
+ |
+<a href="https://pnaklendorf.com/que-es-pnaklendorf">¿QUÉ ES PNAKLENDORF?</a>
+
+</p>
+
+<hr width="600">
+
+</center>
+
+<br>
+
+<table width="800" align="center" cellpadding="20">
+
+<tr>
+
+<td width="50%" valign="top">
+
+<center>
+
 <h2>DESCARGAS</h2>
-<ul>
-<li><a href="RefugioBizarro1.pdf" target="_blank" rel="noopener noreferrer">Refugio Bizarro #1</a></li>
-<li><a href="RefugioBizarro2.pdf" target="_blank" rel="noopener noreferrer">Refugio Bizarro #2</a></li>
-<li><a href="RefugioBizarro3.pdf" target="_blank" rel="noopener noreferrer">Refugio Bizarro #3</a></li>
-<li><a href="RefugioBizarro4.pdf" target="_blank" rel="noopener noreferrer">Refugio Bizarro #4</a></li>
-<li><a href="RefugioBizarro5.pdf" target="_blank" rel="noopener noreferrer">Refugio Bizarro #5</a></li>
-<li><a href="RefugioBizarro6.pdf" target="_blank" rel="noopener noreferrer">Refugio Bizarro #6</a></li>
-</ul>
 
-<h2 style="margin-top:3rem;">OTROS AUTORES</h2>
-<ul>
-<li>
-<a href="El_anima_de_la_maquina.pdf" target="_blank" rel="noopener noreferrer">
-El ánima de la máquina, por Yuke Kabula (PDF)
+<p><a href="RefugioBizarro1.pdf">Refugio Bizarro #1</a></p>
+<p><a href="RefugioBizarro2.pdf">Refugio Bizarro #2</a></p>
+<p><a href="RefugioBizarro3.pdf">Refugio Bizarro #3</a></p>
+<p><a href="RefugioBizarro4.pdf">Refugio Bizarro #4</a></p>
+<p><a href="RefugioBizarro5.pdf">Refugio Bizarro #5</a></p>
+<p><a href="RefugioBizarro6.pdf">Refugio Bizarro #6</a></p>
+
+<br>
+
+<h2>OTROS AUTORES</h2>
+
+<p>
+<a href="El_anima_de_la_maquina.pdf">
+El ánima de la máquina — Yuke Kabula
 </a>
-</li>
-</ul>
-</section>
+</p>
 
-<section class="banners">
-<a href="https://www.ligotti.net/index.php?members/r-von-pnaklendorf.5048/" target="_blank" rel="noopener noreferrer">
-<img src="nightmare_banner.jpg" alt="Perfil de Ricardo Meyer en Ligotti.net">
+</center>
+
+</td>
+
+<td width="50%" valign="top">
+
+<center>
+
+<a href="https://www.ligotti.net/index.php?members/r-von-pnaklendorf.5048/">
+<img src="nightmare_banner.jpg" width="260">
 </a>
 
-<a href="https://www.drivethrurpg.com/en/browse?author=%22Ricardo%20Meyer%22" target="_blank" rel="noopener noreferrer">
-<img src="drivethrurpg.png" alt="Obras de Ricardo Meyer en DriveThruRPG">
+<br><br>
+
+<a href="https://www.drivethrurpg.com/en/browse?author=%22Ricardo%20Meyer%22">
+<img src="drivethrurpg.png" width="260">
 </a>
 
-<a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer" target="_blank" rel="noopener noreferrer">
-<img src="wikilovecraft.png" alt="Ricardo Meyer en WikiLovecraft">
-</a>
-</section>
-</main>
+<br><br>
 
-<footer>
-<p>&copy; Todos los derechos reservados</p>
-</footer>
+<a href="https://hplovecraft.fandom.com/es/wiki/Ricardo_Meyer">
+<img src="wikilovecraft.png" width="260">
+</a>
+
+</center>
+
+</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<center>
+
+<hr width="600">
+
+<p>
+© Ricardo Meyer
+</p>
+
+</center>
 
 </body>
 </html>
+
 
