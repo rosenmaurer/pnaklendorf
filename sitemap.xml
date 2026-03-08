@@ -16,16 +16,6 @@
 </url>
 
   <!-- Secciones principales -->
-  <url>
-    <loc>https://pnaklendorf.com/relatos.html</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://pnaklendorf.com/cthulhoid.jpg</image:loc>
-      <image:caption>Relatos y poemas de Pnaklendorf</image:caption>
-    </image:image>
-  </url>
 
   <url>
     <loc>https://pnaklendorf.com/refugiobizarro.html</loc>
