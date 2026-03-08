@@ -53,41 +53,31 @@
   </script>
 
   <style>
-    :root {
-      --bg: #000;
-      --fg: #e6e6e6;
-      --border-color: #222;
-      --border: 1px solid var(--border-color);
-      --accent: #b32d2d;
-      --highlight: #d4b15c;
-      --link-hover: #f3e2a9;
-      --maxw: 800px;
-    }
-
     body {
       font-family: 'EB Garamond', serif;
-      background-color: var(--bg);
-      color: var(--fg);
+      background-color: #000;
+      color: #cccccc;
       margin: 0;
       line-height: 1.6;
+      text-align: center;
     }
 
+    a { color: #d4b15c; text-decoration: none; }
+    a:hover { color: #f3e2a9; text-shadow: 0 0 6px #d4b15c; }
+
     header {
-      text-align: center;
       padding: 2rem 1rem;
-      border-bottom: var(--border);
-      background: rgba(0, 0, 0, 0.9);
+      border-bottom: 1px solid #222;
     }
 
     header h1 {
       margin: 0;
       font-size: clamp(1.8rem, 4vw, 2.5rem);
-      color: var(--highlight);
+      color: #d4b15c;
       letter-spacing: 1px;
     }
 
     .disclaimer {
-      text-align: center;
       font-size: 0.95rem;
       color: #d9d4c3;
       background: rgba(20, 20, 20, 0.85);
@@ -99,49 +89,29 @@
     }
 
     main {
-      max-width: var(--maxw);
+      max-width: 800px;
       margin: 0 auto 2rem;
       padding: 2rem;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 1rem;
-      font-size: 1.2rem;
-      position: relative;
-      padding-left: 1.5rem;
-    }
-
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 1rem; font-size: 1.2rem; position: relative; padding-left: 1.5rem; }
     li::before {
       content: "◆";
-      color: var(--accent);
+      color: #b32d2d;
       position: absolute;
       left: 0;
       top: 0.2rem;
     }
 
-    a {
-      color: var(--highlight);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: var(--link-hover);
-      text-shadow: 0 0 6px var(--highlight);
-    }
-
-    /* BLOQUE YOG-SOTHERÍA FINAL */
     .yog-bar {
-      border-top: var(--border);
+      border-top: 1px solid #222;
       background: rgba(0, 0, 0, 0.9);
+      margin-top: 3rem;
     }
 
     .yog-inner {
-      max-width: var(--maxw);
+      max-width: 800px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -152,35 +122,14 @@
       gap: 1.5rem;
     }
 
-    .yog-left {
-      max-width: 65%;
-      text-align: left;
-    }
+    .yog-left { max-width: 65%; text-align: left; }
+    .yog-right img { max-height: 50px; max-width: 180px; border: none; }
 
-    .yog-right img {
-      max-height: 50px;
-      max-width: 180px;
-      border: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 0.8rem;
-      font-size: 0.8rem;
-      color: #777;
-      border-top: var(--border);
-      background: #000;
-    }
+    footer { text-align: center; padding: 0.8rem; font-size: 0.8rem; color: #777; border-top: 1px solid #222; background: #000; margin-top: 2rem; }
 
     @media (max-width: 600px) {
-      .yog-inner {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .yog-left {
-        max-width: 100%;
-      }
+      .yog-inner { flex-direction: column; text-align: center; }
+      .yog-left { max-width: 100%; margin-bottom: 1rem; }
     }
   </style>
 </head>
@@ -224,8 +173,16 @@
   </div>
 </section>
 
+<!-- Logo final que vuelve al índice -->
+<center>
+  <br><br>
+  <a href="index.html">
+    <img src="sellotindalos-asinnart.png" alt="Volver al inicio" width="180">
+  </a>
+</center>
+
 <footer>
-  © All Rights Reserved
+  © Todos los derechos reservados.
 </footer>
 
 </body>
