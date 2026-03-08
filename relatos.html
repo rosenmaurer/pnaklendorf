@@ -17,42 +17,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
-<!-- Open Graph / Redes Sociales -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Relatos y poemas de Ricardo Meyer" />
-<meta property="og:description" content="Relatos de ficción vinculados a Los Mitos de Cthulhu. Obras literarias de Ricardo Meyer." />
-<meta property="og:url" content="https://pnaklendorf.com/relatos.html" />
-<meta property="og:site_name" content="Pnaklendorf" />
-<meta property="og:locale" content="es_CL" />
-<meta property="og:image" content="https://pnaklendorf.com/cthulhoid.jpg" />
-<meta property="og:image:width" content="1080" />
-<meta property="og:image:height" content="1080" />
-<meta property="og:image:alt" content="Sello cthulhoide – Relatos de horror cósmico" />
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Relatos y poemas de Ricardo Meyer" />
-<meta name="twitter:description" content="Relatos de Ricardo Meyer vinculados a Los Mitos de Cthulhu." />
-<meta name="twitter:image" content="https://pnaklendorf.com/cthulhoid.jpg" />
-
-<!-- JSON-LD -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "WebPage",
- "name": "Relatos y poemas de Ricardo Meyer",
- "url": "https://pnaklendorf.com/relatos.html",
- "author": {
-   "@type": "Person",
-   "name": "Ricardo Meyer",
-   "email": "mailto:rosenmaurer@gmail.com",
-   "url": "https://pnaklendorf.com"
- },
- "description": "Relatos de ficción oscura vinculados a Los Mitos",
- "inLanguage": "es-CL",
- "isAccessibleForFree": true
-}
-</script>
-
 <style>
   body {
     font-family: 'EB Garamond', serif;
@@ -60,7 +24,6 @@
     color: #cccccc;
     margin: 0;
     line-height: 1.6;
-    text-align: center;
   }
 
   a { color: #d4b15c; text-decoration: none; }
@@ -69,6 +32,7 @@
   header {
     padding: 2rem 1rem;
     border-bottom: 1px solid #222;
+    text-align: center;
   }
 
   header h1 {
@@ -88,6 +52,7 @@
     padding: 1.2rem;
     max-width: 750px;
     margin: 2rem auto;
+    text-align: center;
   }
 
   main {
@@ -96,8 +61,19 @@
     padding: 2rem;
   }
 
-  ul { list-style: none; padding: 0; }
-  li { margin-bottom: 1rem; font-size: 1.2rem; position: relative; padding-left: 1.5rem; }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 1.8rem;
+  }
+
   li::before {
     content: "◆";
     color: #b32d2d;
@@ -109,29 +85,57 @@
   .yog-bar {
     border-top: 1px solid #222;
     background: rgba(0, 0, 0, 0.9);
-    margin-top: 3rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
   }
 
   .yog-inner {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 1.2rem 2rem;
+    gap: 0.8rem;
     color: #ccc;
     font-size: 0.9rem;
-    gap: 1.5rem;
+    text-align: center;
   }
 
-  .yog-left { max-width: 65%; text-align: left; }
-  .yog-right img { max-height: 50px; max-width: 180px; border: none; }
+  .yog-left {
+    max-width: 100%;
+  }
 
-  footer { text-align: center; padding: 0.8rem; font-size: 0.8rem; color: #777; border-top: 1px solid #222; background: #000; margin-top: 2rem; }
+  .yog-right img {
+    max-height: 50px;
+    max-width: 180px;
+    border: none;
+  }
+
+  .yog-seal {
+    width: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo-index {
+    display: block;
+    margin: 2rem auto 1rem auto;
+    width: 180px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: 1px solid #222;
+    background: #000;
+    margin-top: 2rem;
+  }
 
   @media (max-width: 600px) {
-    .yog-inner { flex-direction: column; text-align: center; }
-    .yog-left { max-width: 100%; margin-bottom: 1rem; }
+    main { padding: 1rem; }
+    .yog-left { max-width: 100%; }
   }
 </style>
 
@@ -162,8 +166,16 @@
   </ul>
 </main>
 
+<!-- sello finañ -->
+<a href="index.html">
+  <img src="sellotindalos-asinnart.png" alt="Volver al inicio" class="logo-index">
+</a>
+
 <section class="yog-bar">
   <div class="yog-inner">
+    <!-- sello centrado -->
+    <img src="sellotindalos-asinnart.png" alt="Sello Yog-Sothería" class="yog-seal">
+
     <div class="yog-left">
       Relatos almacenados en portal Yog-Sothería, visítalo para ver obras de diferentes autores de Los Mitos.
     </div>
@@ -176,21 +188,12 @@
   </div>
 </section>
 
-<!-- Logo final que vuelve al índice -->
-<center>
-  <br><br>
-  <a href="index.html" style="display:inline-block; margin-bottom:2rem;">
-    <img src="sellotindalos-asinnart.png" alt="Volver al inicio" width="180">
-  </a>
-</center>
-
 <footer>
   © Todos los derechos reservados.
 </footer>
 
 </body>
 </html>
-
 
 
 
