@@ -8,33 +8,41 @@
 <link rel="icon" href="eldersign.png" type="image/png">
 
 <style>
+  :root {
+    --bg: #000;
+    --fg: #ccc;
+    --accent: #b32d2d;
+    --highlight: #d4b15c;
+    --border: 1px solid #222;
+    --maxw: 800px;
+  }
+
   body {
     font-family: 'EB Garamond', serif;
-    background-color: #000;
-    color: #ccc;
+    background-color: var(--bg);
+    color: var(--fg);
     margin: 0;
     line-height: 1.6;
   }
 
   a {
-    color: #d4b15c;
+    color: var(--highlight);
     text-decoration: none;
   }
   a:hover {
     color: #f3e2a9;
-    text-shadow: 0 0 6px #d4b15c;
+    text-shadow: 0 0 6px var(--highlight);
   }
 
   header {
     text-align: center;
     padding: 2rem 1rem;
-    border-bottom: 1px solid #222;
+    border-bottom: var(--border);
   }
-
   header h1 {
     margin: 0;
     font-size: clamp(1.8rem, 4vw, 2.5rem);
-    color: #ffffff;
+    color: var(--highlight);
     font-family: 'Times New Roman', serif;
     letter-spacing: 1px;
   }
@@ -47,12 +55,12 @@
     border: 1px solid rgba(212,177,92,0.4);
     border-radius: 8px;
     padding: 1.2rem;
-    max-width: 750px;
+    max-width: var(--maxw);
     margin: 2rem auto;
   }
 
   main {
-    max-width: 800px;
+    max-width: var(--maxw);
     margin: 2rem auto;
     padding: 0 1rem;
   }
@@ -60,16 +68,18 @@
   ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   li {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     position: relative;
     padding-left: 1.5rem;
+    text-align: left;
   }
   li::before {
     content: "◆";
-    color: #b32d2d;
+    color: var(--accent);
     position: absolute;
     left: 0;
     top: 0.2rem;
@@ -84,20 +94,23 @@
   }
 
   .yog-bar {
-    border-top: 1px solid #222;
+    border-top: var(--border);
     background: rgba(0,0,0,0.9);
-    margin-top: 2rem;
-    padding: 1rem 0;
-    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
   .yog-bar img {
     max-width: 150px;
-    margin-bottom: 0.5rem;
   }
   .yog-bar p {
     margin: 0;
     font-size: 0.9rem;
-    color: #ccc;
+    color: var(--fg);
+    text-align: center;
   }
 
   footer {
@@ -105,9 +118,15 @@
     padding: 0.8rem;
     font-size: 0.8rem;
     color: #777;
-    border-top: 1px solid #222;
-    background: #000;
+    border-top: var(--border);
+    background: var(--bg);
     margin-top: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    .yog-bar {
+      padding: 1rem;
+    }
   }
 </style>
 </head>
@@ -123,6 +142,13 @@
   Son obras de ficción y no reflejan hechos reales ni ideología alguna del autor.
 </p>
 
+<!-- Logo que vuelve al índice -->
+<div class="index-logo">
+  <a href="index.html">
+    <img src="sellotindalos-asinnart.png" alt="Volver al inicio">
+  </a>
+</div>
+
 <main>
   <ul>
     <li><a href="http://yogsotheria.wikidot.com/demonios-del-sur">Demonios del Sur (2015)</a></li>
@@ -137,13 +163,6 @@
   </ul>
 </main>
 
-<!-- Logo que vuelve al índice -->
-<div class="index-logo">
-  <a href="index.html">
-    <img src="sellotindalos-asinnart.png" alt="Volver al inicio">
-  </a>
-</div>
-
 <!-- Yog-Sothería -->
 <div class="yog-bar">
   <img src="yogsotheria.png" alt="Yog-Sothería">
@@ -156,8 +175,5 @@
 
 </body>
 </html>
-
-
-
 
 
